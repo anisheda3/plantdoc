@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_CottonBacterialBlight(AngularLeafSpot)
+  m_EditorClassIdentifier: 
+  diseaseId: bacterial_blight
+  diseaseName: Bacterial Blight (Angular Leaf Spot)
+  aiLabelAliases:
+  - cotton_bacterial_blight
+  - Cotton___Bacterial_blight
+  - cotton bacterial blight
+  - angular leaf spot of cotton
+  pathogenType: 1
+  pathogen: Xanthomonas citri pv. malvacearum
+  affectedPart: 0
+  sources:
+  - 'CropScan XR model class: Cotton___Bacterial_blight, cotton bacterial blight,
+    angular leaf spot of cotton'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: A bacterial disease of cotton that spots the leaves, blackens the
+    stems ('black arm') and rots the bolls.
+  causes: The bacteria come in on seed and crop debris and spread by wind-driven
+    rain, splash and overhead irrigation in warm, humid weather.
+  effectOnPlant: Leaf loss and boll rot reduce yield and lint quality.
+  untreatedOutcome: In wet seasons it defoliates plants and rots many bolls.
+  symptoms:
+  - Small, water-soaked, angular spots between the leaf veins
+  - Spots turn brown to black; leaves yellow and fall
+  - Black, sunken lesions on stems and on the bolls
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  - yellowing
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: 4386776f8b3a1d1459c5e07264f94dde, type: 2}
+  preventionPlan: {fileID: 11400000, guid: 8a0beb2e95ac58541ae9c68822b16eac, type: 2}
+  simulationProfile: {fileID: 11400000, guid: 07fb08c15307d44419df03a2f0dfbf1e, type: 2}
+  lifecycleStages:
+  - Bacteria survive on seed and crop debris.
+  - Rain splash carries them to the leaves.
+  - They enter through pores and wounds; angular spots form.
+  - Spots on stems and bolls spread it further.
+  conditionFactors:
+  - Warm, humid weather.
+  - Wind-driven rain.
+  - Overhead irrigation.
+  - Infected seed.
+  referencePhotos: []
+  lesionLabel: Angular spot
+  haloLabel: Water-soaked edge
+  areaLabel: Spotted leaf

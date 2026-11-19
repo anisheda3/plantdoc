@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_CherryPowderyMildew
+  m_EditorClassIdentifier: 
+  diseaseId: powdery_mildew
+  diseaseName: Powdery Mildew
+  aiLabelAliases:
+  - Cherry___Powdery_mildew
+  - cherry_powdery_mildew
+  - cherry powdery mildew
+  - Cherry_(including_sour)___Powdery_mildew
+  pathogenType: 0
+  pathogen: 
+  affectedPart: 0
+  sources: []
+  description: A fungal disease (Podosphaera clandestina) of cherry leaves, shoots
+    and fruit.
+  causes: Warm, humid weather with dry leaves; spores overwinter on the tree and
+    in fallen leaves.
+  effectOnPlant: Infected leaves photosynthesise less and may drop; fruit is blemished.
+  untreatedOutcome: Repeated years weaken young trees and spoil fruit.
+  symptoms:
+  - White powdery patches on young leaves
+  - Leaves curl and pucker
+  - White patches on fruit near harvest
+  supportingFeatureIds:
+  - leaf_spots
+  - yellowing
+  - leaf_color
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: ffb76143366b1a74c8dee8b68fa82d7e, type: 2}
+  preventionPlan: {fileID: 11400000, guid: 52c6daa8b27422646a0a53117168bf30, type: 2}
+  simulationProfile: {fileID: 11400000, guid: d8d631341b453134a85ed153551f8d70, type: 2}
+  lifecycleStages:
+  - The fungus overwinters on the tree and in leaf litter.
+  - Spores infect young leaves in warm, humid weather.
+  - White powdery patches spread and leaves curl.
+  - New spores spread through the canopy.
+  conditionFactors:
+  - Warm, humid weather.
+  - Dry leaves are enough.
+  - Dense, shaded canopies.
+  - Young, soft growth.
+  referencePhotos:
+  - {fileID: 2800000, guid: 9feaa1eb50e11f64da75edd4be730cf6, type: 3}
+  lesionLabel: White patch
+  haloLabel: Puckered area
+  areaLabel: Powdery area

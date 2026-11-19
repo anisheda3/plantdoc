@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5132a70f51fe6cb4ea3c7d283552eb79, type: 3}
+  m_Name: TreatmentPlan_Apple_BlackRot
+  m_EditorClassIdentifier: 
+  treatmentId: apple_black_rot_treatment
+  planName: "Apple \u2014 Black Rot"
+  steps:
+  - {fileID: 11400000, guid: 922a29510db01e54bb58b1380377ccb3, type: 2}
+  - {fileID: 11400000, guid: d7007b359c451814489d32a4dbc9ae54, type: 2}
+  - {fileID: 11400000, guid: 38acaa6f4fa48a041b4ec5e78b9f6897, type: 2}
+  residualSeverityFloor: 0.18
+  residualDamageFloor: 0.12
+  disclaimer: Educational guidance only. Treatment does not guarantee recovery. Consult
+    a local agricultural extension service for field decisions.

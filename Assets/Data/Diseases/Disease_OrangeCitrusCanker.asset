@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_OrangeCitrusCanker
+  m_EditorClassIdentifier: 
+  diseaseId: citrus_canker
+  diseaseName: Citrus Canker
+  aiLabelAliases:
+  - orange_citrus_canker
+  - citrus canker
+  pathogenType: 1
+  pathogen: Xanthomonas citri subsp. citri
+  affectedPart: 0
+  sources:
+  - 'PlantSeg (Wei et al. 2024, CC BY 4.0) class: citrus canker'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: A bacterial disease of citrus leaves, twigs and fruit that leaves
+    raised, corky spots.
+  causes: Wind-driven rain spreads the bacteria; they enter through pores and wounds,
+    including citrus leafminer tunnels.
+  effectOnPlant: Spotted leaves and fruit drop early; marked fruit cannot be sold
+    fresh.
+  untreatedOutcome: Heavy infection defoliates trees and causes large fruit losses;
+    the disease is regulated in many countries.
+  symptoms:
+  - Raised, corky tan-brown spots on both sides of the leaf
+  - A water-soaked margin and yellow halo round each spot
+  - Similar scabby spots on fruit and twigs
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  - yellowing
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: 117b6767356f4f446b8921215fc17fdc, type: 2}
+  preventionPlan: {fileID: 11400000, guid: bf33033f27de0b747b1d0b655c5b44fb, type: 2}
+  simulationProfile: {fileID: 11400000, guid: ef0914c73b2c0ce44a41dfb13066a6d2, type: 2}
+  lifecycleStages:
+  - Bacteria survive in spots on leaves, twigs and fruit.
+  - Wind-driven rain splashes them onto new growth.
+  - They enter through pores and wounds.
+  - Raised corky spots with yellow halos form.
+  conditionFactors:
+  - Warm, wet, windy weather.
+  - Tropical storms.
+  - Leafminer damage.
+  - Young, expanding leaves.
+  referencePhotos:
+  - {fileID: 2800000, guid: 4b6b7b34388627d47ae0d0977734f2f8, type: 3}
+  lesionLabel: Corky spot
+  haloLabel: Yellow halo
+  areaLabel: Spotted leaf

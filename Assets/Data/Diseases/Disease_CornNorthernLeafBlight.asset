@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_CornNorthernLeafBlight
+  m_EditorClassIdentifier: 
+  diseaseId: northern_leaf_blight
+  diseaseName: Northern Leaf Blight
+  aiLabelAliases:
+  - Corn___Northern_Leaf_Blight
+  - corn_northern_leaf_blight
+  - corn northern leaf blight
+  - Corn leaf blight
+  - Corn_(maize)___Northern_Leaf_Blight
+  pathogenType: 0
+  pathogen: 
+  affectedPart: 0
+  sources: []
+  description: A fungal disease (Exserohilum turcicum) of maize leaves.
+  causes: Moderate temperatures with long dew or rain; the fungus survives on maize
+    residue.
+  effectOnPlant: Large lesions kill big parts of the leaves.
+  untreatedOutcome: Heavy infection before or soon after tasselling can cut yield
+    substantially.
+  symptoms:
+  - Long, cigar-shaped grey-green to tan lesions (several cm)
+  - Lesions start on the lower leaves
+  - Dark spores in the lesions in damp weather
+  supportingFeatureIds:
+  - leaf_spots
+  - yellowing
+  - leaf_color
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: f4aea5a7a826da44c908fe56cde39abf, type: 2}
+  preventionPlan: {fileID: 11400000, guid: 3f60d3e5739d27e4d8a95ea675fe2ebc, type: 2}
+  simulationProfile: {fileID: 11400000, guid: 46e17c5f10a547c42b00ef5110a2ee45, type: 2}
+  lifecycleStages:
+  - The fungus survives on maize residue.
+  - Spores reach the lower leaves in wet, mild weather.
+  - Long grey-green lesions form and turn tan.
+  - Spores from the lesions spread to upper leaves.
+  conditionFactors:
+  - "Moderate temperatures (about 18-27 \xB0C)."
+  - Long dew or rain.
+  - Residue from the last maize crop.
+  - Susceptible hybrids.
+  referencePhotos:
+  - {fileID: 2800000, guid: 9995e9a30492a6246b04db99e7b3656e, type: 3}
+  lesionLabel: Cigar lesion
+  haloLabel: Dark edge
+  areaLabel: Blighted leaf

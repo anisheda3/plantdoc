@@ -1,0 +1,118 @@
+{
+ "plantId": "basil",
+ "plantName": "Basil",
+ "scientificName": "Ocimum basilicum",
+ "description": "Ocimum basilicum: a bushy aromatic herb with opposite leaves.",
+ "diseases": [
+  {
+   "id": "downy_mildew",
+   "name": "Basil Downy Mildew",
+   "type": "Oomycete",
+   "part": "Leaf",
+   "pathogen": "Peronospora belbahrii",
+   "labels": [
+    "basil downy mildew"
+   ],
+   "description": "A water-mould disease that yellows basil leaves and covers their undersides with grey-purple spores.",
+   "causes": "Spores come in on infected seed and transplants and blow in on the wind; warm, humid nights with wet leaves let them infect.",
+   "symptoms": [
+    "Yellowing between the main veins of the upper leaf",
+    "Grey to purple-brown fuzzy spores on the underside",
+    "Leaves turn brown and drop"
+   ],
+   "effect": "Leaves are unsaleable; plants can be lost within days.",
+   "untreated": "The whole planting can be lost in humid weather.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Remove infected plants",
+     "instruction": "Bag and remove plants with fuzzy undersides.",
+     "rationale": "Spores spread fast from them.",
+     "mode": "GrabAndRemove",
+     "days": 1,
+     "effect": "Rogue",
+     "chemical": false
+    },
+    {
+     "title": "Keep leaves dry",
+     "instruction": "Water in the morning at the base; increase spacing and airflow.",
+     "rationale": "Spores need long leaf wetness.",
+     "mode": "AdjustSetting",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Protective spray",
+     "instruction": "Spray a registered product for basil downy mildew on the label's schedule.",
+     "rationale": "Protects healthy growth; it cannot cure what is already infected.",
+     "mode": "SprayApply",
+     "days": 3,
+     "effect": "Protect",
+     "chemical": true
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropManagement",
+     "title": "Grow resistant varieties",
+     "detail": "Several resistant sweet basils exist."
+    },
+    {
+     "category": "CropManagement",
+     "title": "Buy clean seed and transplants",
+     "detail": "Many outbreaks start there."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_Interveinal",
+    "yellowMask": "T_YellowMask_Angular",
+    "lesion": [
+     0.56,
+     0.46,
+     0.38
+    ],
+    "halo": [
+     0.8,
+     0.8,
+     0.34
+    ],
+    "yellow": [
+     0.86,
+     0.84,
+     0.36
+    ],
+    "lesions": 0.9,
+    "yellowing": 1.0,
+    "wilting": 0.4,
+    "damage": 0.6,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Yellow patch",
+   "haloLabel": "Grey-purple spores",
+   "areaLabel": "Yellowing leaf",
+   "lifecycle": [
+    "Spores arrive on seed, transplants or wind.",
+    "Humid nights let them infect wet leaves.",
+    "Leaves yellow between the veins.",
+    "Grey-purple spores form underneath and spread."
+   ],
+   "conditions": [
+    "Warm, humid nights.",
+    "Long leaf wetness.",
+    "Crowded plants.",
+    "Susceptible sweet basil."
+   ],
+   "photos": [
+    "basil_downy_mildew_1"
+   ],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: basil downy mildew",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  }
+ ],
+ "aliases": [],
+ "healthyLabels": []
+}

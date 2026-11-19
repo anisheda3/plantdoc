@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccc3a12f85304364b8d4fb1f0eb0fae7, type: 3}
+  m_Name: Step_maple_tar_spot_1
+  m_EditorClassIdentifier: 
+  stepId: maple_tar_spot_1
+  title: Keep the tree vigorous
+  instruction: Water in drought and mulch the root area.
+  rationale: Healthy trees are not harmed.
+  interactionMode: 4
+  targetRegionType: lesion
+  effect:
+    diseaseSeverity: -0.08
+    lesionDensity: 0
+    yellowing: -0.04
+    wilting: 0
+    leafDamage: 0
+    healthyGrowth: 0.06
+  simulatedDaysAdvanced: 3
+  chemicalInfo:
+    involvesChemicalProduct: 0
+    productOrActiveIngredient: 
+    dosage: 
+    applicationMethod: 
+    safetyNotes: 
+    localRegulationsNote: Product availability and legal use vary by region. Follow
+      the product label and local agricultural regulations.
+    preHarvestInterval: 
+  illustration: {fileID: 2800000, guid: b04823d6b5aa251479babc77b2fe6491, type: 3}
+  safetyNote: 

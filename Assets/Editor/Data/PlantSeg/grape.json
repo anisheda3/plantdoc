@@ -1,0 +1,259 @@
+{
+ "plantId": "grape",
+ "plantName": "Grape",
+ "scientificName": "",
+ "description": "",
+ "diseases": [
+  {
+   "id": "downy_mildew",
+   "name": "Downy Mildew",
+   "type": "Oomycete",
+   "part": "Leaf",
+   "pathogen": "Plasmopara viticola",
+   "labels": [
+    "grape downy mildew"
+   ],
+   "description": "A water-mould disease of grapevine leaves, shoots and young berries.",
+   "causes": "Warm, wet weather: rain splashes spores from the soil and leaf litter onto leaves, which must stay wet for hours to be infected.",
+   "symptoms": [
+    "Yellow, oily-looking spots on the upper leaf",
+    "White downy growth under the spots in humid nights",
+    "Spots turn brown; young berries go grey and shrivel"
+   ],
+   "effect": "Infected leaves die and fall, and berry bunches can be lost.",
+   "untreated": "Severe years strip vines of leaves, so fruit and wood ripen poorly.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Remove infected leaves and clusters",
+     "instruction": "Take off spotted leaves and grey bunches and remove them.",
+     "rationale": "Each spot releases spores on humid nights.",
+     "mode": "TapRegion",
+     "days": 2,
+     "effect": "Remove",
+     "chemical": false
+    },
+    {
+     "title": "Open the canopy",
+     "instruction": "Thin shoots and remove leaves around the bunches.",
+     "rationale": "Leaves dry faster after rain.",
+     "mode": "AdjustSetting",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Protective fungicide before rain",
+     "instruction": "Spray a registered product on the label's schedule from early shoot growth.",
+     "rationale": "Protects new leaves; it cannot cure spots already there.",
+     "mode": "SprayApply",
+     "days": 3,
+     "effect": "Protect",
+     "chemical": true
+    }
+   ],
+   "prevention": [
+    {
+     "category": "AirCirculation",
+     "title": "Train for an open canopy",
+     "detail": "Air movement shortens leaf wetness."
+    },
+    {
+     "category": "CropHygiene",
+     "title": "Clear fallen leaves",
+     "detail": "The water mould overwinters in them."
+    },
+    {
+     "category": "Monitoring",
+     "title": "Watch after warm rain in spring",
+     "detail": "The first infections follow warm, wet spells."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_Colony",
+    "yellowMask": "T_YellowMask_Angular",
+    "lesion": [
+     0.8,
+     0.76,
+     0.36
+    ],
+    "halo": [
+     0.55,
+     0.42,
+     0.2
+    ],
+    "yellow": [
+     0.86,
+     0.82,
+     0.38
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.8,
+    "wilting": 0.4,
+    "damage": 0.6,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Oil spot",
+   "haloLabel": "Browning edge",
+   "areaLabel": "Yellow patch",
+   "lifecycle": [
+    "Spores survive in leaf litter and soil.",
+    "Rain splashes them onto wet leaves.",
+    "Oily yellow spots appear, white down forms underneath.",
+    "New spores spread on wind and rain to leaves and berries."
+   ],
+   "conditions": [
+    "Warm (about 18-25 °C), wet weather.",
+    "Leaves wet for several hours.",
+    "Humid nights.",
+    "Dense canopies."
+   ],
+   "photos": [
+    "grape_downy_mildew_1"
+   ],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: grape downy mildew",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "leafroll",
+   "name": "Grapevine Leafroll",
+   "type": "Viral",
+   "part": "Leaf",
+   "pathogen": "Grapevine leafroll-associated viruses (mainly GLRaV-3)",
+   "labels": [
+    "grapevine leafroll disease"
+   ],
+   "description": "A virus disease of grapevines that reddens and rolls the leaves in late summer and spoils the fruit.",
+   "causes": "Spread in infected cuttings and rootstocks, and from vine to vine by mealybugs and soft scale insects.",
+   "symptoms": [
+    "Red to purple leaves between green main veins (red varieties)",
+    "Leaf margins roll downward",
+    "Yellowing instead of red on white varieties"
+   ],
+   "effect": "Grapes ripen late with less sugar and poor colour.",
+   "untreated": "Infected vines stay infected; yield and quality fall over the years and the disease spreads along the row.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Mark the vine",
+     "instruction": "Flag vines with symptoms in late summer.",
+     "rationale": "Symptoms are clearest then; marked vines can be removed later.",
+     "mode": "TapRegion",
+     "days": 1,
+     "effect": "Small",
+     "chemical": false
+    },
+    {
+     "title": "Control mealybugs",
+     "instruction": "Check for mealybugs and treat as advised locally.",
+     "rationale": "Mealybugs carry the virus from vine to vine.",
+     "mode": "AdjustSetting",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Remove infected vines",
+     "instruction": "Pull out infected vines and replant with certified stock.",
+     "rationale": "There is no cure; removal stops the spread.",
+     "mode": "GrabAndRemove",
+     "days": 4,
+     "effect": "Rogue",
+     "chemical": false
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropManagement",
+     "title": "Plant certified virus-tested vines",
+     "detail": "Most new outbreaks start from infected nursery stock."
+    },
+    {
+     "category": "Monitoring",
+     "title": "Survey every autumn",
+     "detail": "Remove new cases early."
+    },
+    {
+     "category": "EnvironmentalManagement",
+     "title": "Manage mealybugs and ants",
+     "detail": "Ants protect mealybugs from predators."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_Interveinal",
+    "yellowMask": "T_LesionMask_Interveinal",
+    "lesion": [
+     0.52,
+     0.12,
+     0.18
+    ],
+    "halo": [
+     0.62,
+     0.2,
+     0.22
+    ],
+    "yellow": [
+     0.58,
+     0.18,
+     0.2
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.9,
+    "wilting": 0.2,
+    "damage": 0.3,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Red leaf",
+   "haloLabel": "Green vein",
+   "areaLabel": "Rolled margin",
+   "lifecycle": [
+    "The virus is in the vine's sap.",
+    "Mealybugs feeding on it pick it up.",
+    "They carry it to nearby vines; cuttings carry it farther.",
+    "Leaves redden and roll from late summer."
+   ],
+   "conditions": [
+    "Uncertified planting material.",
+    "Mealybugs and soft scale.",
+    "Ants tending them.",
+    "Older, mixed vineyards."
+   ],
+   "photos": [],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: grapevine leafroll disease",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  }
+ ],
+ "aliases": [
+  {
+   "disease": "black_rot",
+   "labels": [
+    "grape black rot",
+    "grape leaf black rot",
+    "Grape___Black_rot"
+   ]
+  },
+  {
+   "disease": "leaf_blight",
+   "labels": [
+    "grape leaf spot",
+    "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)"
+   ]
+  },
+  {
+   "disease": "esca",
+   "labels": [
+    "Grape___Esca_(Black_Measles)"
+   ]
+  }
+ ],
+ "healthyLabels": [
+  "grape leaf",
+  "Grape___healthy"
+ ]
+}

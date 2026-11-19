@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5132a70f51fe6cb4ea3c7d283552eb79, type: 3}
+  m_Name: TreatmentPlan_Rice_Blast
+  m_EditorClassIdentifier: 
+  treatmentId: rice_blast_treatment
+  planName: "Rice \u2014 Rice Blast"
+  steps:
+  - {fileID: 11400000, guid: b9cf86063e52a1447b56c560031ba0fb, type: 2}
+  - {fileID: 11400000, guid: bbef2d1bb6e65e047837f739879f215d, type: 2}
+  - {fileID: 11400000, guid: 1dcce3a68741cf54b81584f93dd1ec22, type: 2}
+  residualSeverityFloor: 0.15
+  residualDamageFloor: 0.1
+  disclaimer: Educational guidance only. Treatment does not guarantee recovery. Consult
+    a local agricultural extension service for field decisions.

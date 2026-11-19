@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_StrawberryLeafScorch
+  m_EditorClassIdentifier: 
+  diseaseId: leaf_scorch
+  diseaseName: Leaf Scorch
+  aiLabelAliases:
+  - Strawberry___Leaf_scorch
+  - strawberry_leaf_scorch
+  - strawberry leaf scorch
+  pathogenType: 0
+  pathogen: 
+  affectedPart: 0
+  sources: []
+  description: A fungal disease (Diplocarpon earlianum) of strawberry leaves, stalks
+    and runners.
+  causes: Wet weather and long leaf wetness; the fungus survives on old infected
+    leaves.
+  effectOnPlant: Leaves die back, weakening the plant.
+  untreatedOutcome: Heavily infected plants yield less and survive the winter poorly.
+  symptoms:
+  - Many small irregular purple spots
+  - Spot centres stay dark purple (no pale centre)
+  - Spots merge and the leaf looks scorched and dries
+  supportingFeatureIds:
+  - leaf_spots
+  - yellowing
+  - leaf_color
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: 5c68388faa20a7c499a1e1e634c00f64, type: 2}
+  preventionPlan: {fileID: 11400000, guid: fa426e7a22ea865488f2598ede984f78, type: 2}
+  simulationProfile: {fileID: 11400000, guid: 766149db963d8264c88c0889ba87ad70, type: 2}
+  lifecycleStages:
+  - The fungus survives on old infected leaves.
+  - Spores splash onto new leaves in wet weather.
+  - Small dark purple spots multiply.
+  - Spots join and the leaf looks scorched.
+  conditionFactors:
+  - Wet weather.
+  - Long leaf wetness.
+  - Old, dense beds.
+  - Susceptible varieties.
+  referencePhotos:
+  - {fileID: 2800000, guid: e8c9be3446b782c4d8b596242767f920, type: 3}
+  lesionLabel: Purple spot
+  haloLabel: Red ring
+  areaLabel: Scorched leaf

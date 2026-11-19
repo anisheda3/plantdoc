@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5132a70f51fe6cb4ea3c7d283552eb79, type: 3}
+  m_Name: TreatmentPlan_Coffee_BrownEyeSpot
+  m_EditorClassIdentifier: 
+  treatmentId: coffee_brown_eye_spot_treatment
+  planName: "Coffee \u2014 Brown Eye Spot"
+  steps:
+  - {fileID: 11400000, guid: f63609b6bd6c9db49b1e2ca314c67924, type: 2}
+  - {fileID: 11400000, guid: 31a343b52d2d08a4880f4b078fe42a90, type: 2}
+  - {fileID: 11400000, guid: 3651fc2f768341b48bcd295b08fea336, type: 2}
+  residualSeverityFloor: 0.15
+  residualDamageFloor: 0.1
+  disclaimer: Educational guidance only. Treatment does not guarantee recovery. Consult
+    a local agricultural extension service for field decisions.

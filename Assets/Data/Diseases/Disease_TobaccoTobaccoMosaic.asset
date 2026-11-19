@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_TobaccoTobaccoMosaic
+  m_EditorClassIdentifier: 
+  diseaseId: mosaic_virus
+  diseaseName: Tobacco Mosaic
+  aiLabelAliases:
+  - tobacco_mosaic_virus
+  - tobacco mosaic virus
+  pathogenType: 2
+  pathogen: Tobacco mosaic virus (TMV, a tobamovirus)
+  affectedPart: 0
+  sources:
+  - 'PlantSeg (Wei et al. 2024, CC BY 4.0) class: tobacco mosaic virus'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: A very stable, contagious virus that mottles and distorts tobacco
+    leaves.
+  causes: 'Spreads by contact: hands, tools and clothing; it survives for years in
+    debris and dried leaf. No insect is needed.'
+  effectOnPlant: Yield and leaf quality fall.
+  untreatedOutcome: Every handling spreads it along the row.
+  symptoms:
+  - Light and dark green mosaic on the leaves
+  - Leaves distorted, puckered and narrow
+  - Plants stunted; sometimes dead patches in hot weather
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  - yellowing
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: 2a7a8d18ac5631a49bfde9afd3a62f8e, type: 2}
+  preventionPlan: {fileID: 11400000, guid: ff95e6ec97bdb4841a3c3141ccead566, type: 2}
+  simulationProfile: {fileID: 11400000, guid: 73ad72cca0dcc924b8edeb530eeb9ce6, type: 2}
+  lifecycleStages:
+  - The virus survives in debris and cured leaf.
+  - Hands and tools carry it to plants.
+  - Leaves mottle and pucker.
+  - Handling spreads it along the row.
+  conditionFactors:
+  - Handling plants.
+  - Infected debris.
+  - Tobacco products near plants.
+  - Susceptible varieties.
+  referencePhotos:
+  - {fileID: 2800000, guid: 140eeab1f2c782d43a6ae91a53960c19, type: 3}
+  lesionLabel: Light green patch
+  haloLabel: Puckered area
+  areaLabel: Mottled leaf

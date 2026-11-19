@@ -1,0 +1,277 @@
+{
+ "_about": "CropScan XR model classes (GET https://cropscan-api-ovmb.onrender.com/api/diseases, 19 Nov 2026, bioclip_vit_b16@v6) -> app plant and disease. Applied as aliases by make_plantseg_json.py; dataset CropScan in the content database.",
+ "labels": {
+  "Apple___Apple_scab": {
+   "plant": "apple",
+   "disease": "apple_scab"
+  },
+  "Apple___Black_rot": {
+   "plant": "apple",
+   "disease": "black_rot"
+  },
+  "Apple___Cedar_apple_rust": {
+   "plant": "apple",
+   "disease": "cedar_apple_rust"
+  },
+  "Apple___healthy": {
+   "plant": "apple",
+   "disease": "healthy"
+  },
+  "Blueberry___healthy": {
+   "plant": "blueberry",
+   "disease": "healthy"
+  },
+  "Cherry_(including_sour)___Powdery_mildew": {
+   "plant": "cherry",
+   "disease": "powdery_mildew"
+  },
+  "Cherry_(including_sour)___healthy": {
+   "plant": "cherry",
+   "disease": "healthy"
+  },
+  "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": {
+   "plant": "corn",
+   "disease": "gray_leaf_spot"
+  },
+  "Corn_(maize)___Common_rust_": {
+   "plant": "corn",
+   "disease": "common_rust"
+  },
+  "Corn_(maize)___Northern_Leaf_Blight": {
+   "plant": "corn",
+   "disease": "northern_leaf_blight"
+  },
+  "Corn_(maize)___healthy": {
+   "plant": "corn",
+   "disease": "healthy"
+  },
+  "Grape___Black_rot": {
+   "plant": "grape",
+   "disease": "black_rot"
+  },
+  "Grape___Esca_(Black_Measles)": {
+   "plant": "grape",
+   "disease": "esca"
+  },
+  "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": {
+   "plant": "grape",
+   "disease": "leaf_blight"
+  },
+  "Grape___healthy": {
+   "plant": "grape",
+   "disease": "healthy"
+  },
+  "Orange___Haunglongbing_(Citrus_greening)": {
+   "plant": "orange",
+   "disease": "citrus_greening"
+  },
+  "Peach___Bacterial_spot": {
+   "plant": "peach",
+   "disease": "bacterial_spot"
+  },
+  "Peach___healthy": {
+   "plant": "peach",
+   "disease": "healthy"
+  },
+  "Pepper,_bell___Bacterial_spot": {
+   "plant": "pepper",
+   "disease": "bacterial_spot"
+  },
+  "Pepper,_bell___healthy": {
+   "plant": "pepper",
+   "disease": "healthy"
+  },
+  "Potato___Early_blight": {
+   "plant": "potato",
+   "disease": "early_blight"
+  },
+  "Potato___Late_blight": {
+   "plant": "potato",
+   "disease": "late_blight"
+  },
+  "Potato___healthy": {
+   "plant": "potato",
+   "disease": "healthy"
+  },
+  "Raspberry___healthy": {
+   "plant": "raspberry",
+   "disease": "healthy"
+  },
+  "Soybean___healthy": {
+   "plant": "soybean",
+   "disease": "healthy"
+  },
+  "Squash___Powdery_mildew": {
+   "plant": "squash",
+   "disease": "powdery_mildew"
+  },
+  "Strawberry___Leaf_scorch": {
+   "plant": "strawberry",
+   "disease": "leaf_scorch"
+  },
+  "Strawberry___healthy": {
+   "plant": "strawberry",
+   "disease": "healthy"
+  },
+  "Tomato___Bacterial_spot": {
+   "plant": "tomato",
+   "disease": "bacterial_spot"
+  },
+  "Tomato___Early_blight": {
+   "plant": "tomato",
+   "disease": "early_blight"
+  },
+  "Tomato___Late_blight": {
+   "plant": "tomato",
+   "disease": "late_blight"
+  },
+  "Tomato___Leaf_Mold": {
+   "plant": "tomato",
+   "disease": "leaf_mold"
+  },
+  "Tomato___Septoria_leaf_spot": {
+   "plant": "tomato",
+   "disease": "septoria_leaf_spot"
+  },
+  "Tomato___Spider_mites Two-spotted_spider_mite": {
+   "plant": "tomato",
+   "disease": "spider_mites"
+  },
+  "Tomato___Target_Spot": {
+   "plant": "tomato",
+   "disease": "target_spot"
+  },
+  "Tomato___Tomato_Yellow_Leaf_Curl_Virus": {
+   "plant": "tomato",
+   "disease": "yellow_leaf_curl_virus"
+  },
+  "Tomato___Tomato_mosaic_virus": {
+   "plant": "tomato",
+   "disease": "mosaic_virus"
+  },
+  "Tomato___healthy": {
+   "plant": "tomato",
+   "disease": "healthy"
+  },
+  "Orange___healthy": {
+   "plant": "orange",
+   "disease": "healthy"
+  },
+  "Squash___healthy": {
+   "plant": "squash",
+   "disease": "healthy"
+  },
+  "Rice___healthy": {
+   "plant": "rice",
+   "disease": "healthy"
+  },
+  "Rice___Bacterial_leaf_blight": {
+   "plant": "rice",
+   "disease": "bacterial_leaf_blight"
+  },
+  "Rice___Leaf_blast": {
+   "plant": "rice",
+   "disease": "blast"
+  },
+  "Rice___Brown_spot": {
+   "plant": "rice",
+   "disease": "brown_spot"
+  },
+  "Rice___Tungro": {
+   "plant": "rice",
+   "disease": "tungro"
+  },
+  "Rice___Sheath_blight": {
+   "plant": "rice",
+   "disease": "sheath_blight"
+  },
+  "Wheat___healthy": {
+   "plant": "wheat",
+   "disease": "healthy"
+  },
+  "Wheat___Rust": {
+   "plant": "wheat",
+   "disease": "leaf_rust"
+  },
+  "Wheat___Leaf_blight": {
+   "plant": "wheat",
+   "disease": "leaf_blight"
+  },
+  "Wheat___Blast": {
+   "plant": "wheat",
+   "disease": "blast"
+  },
+  "Cotton___healthy": {
+   "plant": "cotton",
+   "disease": "healthy"
+  },
+  "Cotton___Bacterial_blight": {
+   "plant": "cotton",
+   "disease": "bacterial_blight"
+  },
+  "Cotton___Leaf_curl_virus": {
+   "plant": "cotton",
+   "disease": "leaf_curl_virus"
+  },
+  "Cotton___Fusarium_wilt": {
+   "plant": "cotton",
+   "disease": "fusarium_wilt"
+  },
+  "Sugarcane___healthy": {
+   "plant": "sugarcane",
+   "disease": "healthy"
+  },
+  "Sugarcane___Rust": {
+   "plant": "sugarcane",
+   "disease": "rust"
+  },
+  "Sugarcane___Yellow_leaf": {
+   "plant": "sugarcane",
+   "disease": "yellow_leaf"
+  },
+  "Sugarcane___Red_rot": {
+   "plant": "sugarcane",
+   "disease": "red_rot"
+  },
+  "Sugarcane___Mosaic": {
+   "plant": "sugarcane",
+   "disease": "mosaic"
+  },
+  "Chilli___healthy": {
+   "plant": "chilli",
+   "disease": "healthy"
+  },
+  "Chilli___Leaf_curl": {
+   "plant": "chilli",
+   "disease": "leaf_curl"
+  },
+  "Chilli___Cercospora_leaf_spot": {
+   "plant": "chilli",
+   "disease": "leaf_spot"
+  },
+  "Chilli___Anthracnose": {
+   "plant": "chilli",
+   "disease": "anthracnose"
+  },
+  "Mango___healthy": {
+   "plant": "mango",
+   "disease": "healthy"
+  },
+  "Mango___Anthracnose": {
+   "plant": "mango",
+   "disease": "anthracnose"
+  },
+  "Mango___Gall_midge": {
+   "plant": "mango",
+   "disease": "gall_midge"
+  },
+  "Mango___Bacterial_canker": {
+   "plant": "mango",
+   "disease": "bacterial_canker"
+  },
+  "Mango___Die_back": {
+   "plant": "mango",
+   "disease": "die_back"
+  }
+ }
+}

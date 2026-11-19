@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5132a70f51fe6cb4ea3c7d283552eb79, type: 3}
+  m_Name: TreatmentPlan_Wheat_LeafBlight
+  m_EditorClassIdentifier: 
+  treatmentId: wheat_leaf_blight_treatment
+  planName: "Wheat \u2014 Leaf Blight (Spot Blotch)"
+  steps:
+  - {fileID: 11400000, guid: 5fe55b8dd7de68b448c646ab6e1e1042, type: 2}
+  - {fileID: 11400000, guid: 76540a523269ddd48b8b2f6fda8c6853, type: 2}
+  - {fileID: 11400000, guid: 3d16f57031c549c488b2b070a566f5cc, type: 2}
+  residualSeverityFloor: 0.15
+  residualDamageFloor: 0.1
+  disclaimer: Educational guidance only. Treatment does not guarantee recovery. Consult
+    a local agricultural extension service for field decisions.

@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_SoybeanDownyMildew
+  m_EditorClassIdentifier: 
+  diseaseId: downy_mildew
+  diseaseName: Downy Mildew
+  aiLabelAliases:
+  - soybean_downy_mildew
+  - soybean downy mildew
+  pathogenType: 6
+  pathogen: Peronospora manshurica
+  affectedPart: 0
+  sources:
+  - 'PlantSeg (Wei et al. 2024, CC BY 4.0) class: soybean downy mildew'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: A water-mould disease of soybean leaves, pods and seed.
+  causes: Spores survive in residue and on seed; cool, humid weather lets them infect.
+  effectOnPlant: Usually minor; seed can be infected.
+  untreatedOutcome: Heavy infection causes early leaf drop.
+  symptoms:
+  - Pale yellow-green spots on the upper leaf
+  - Grey to purple tufts of spores underneath
+  - Spots turn brown with yellow margins
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  - yellowing
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: 7070fa671024f9842aa1dc4e3407f725, type: 2}
+  preventionPlan: {fileID: 11400000, guid: 87acf10187e7dd64bb27c6bbb942971f, type: 2}
+  simulationProfile: {fileID: 11400000, guid: f0b68cf58c32e8b4781ecc57c345687a, type: 2}
+  lifecycleStages:
+  - Spores survive in residue and seed.
+  - Cool, humid weather lets them infect.
+  - Pale spots form with grey tufts underneath.
+  - Pods and seed can be infected.
+  conditionFactors:
+  - Cool, humid weather.
+  - Residue on the surface.
+  - Infected seed.
+  - Susceptible varieties.
+  referencePhotos:
+  - {fileID: 2800000, guid: 14ead12295825ed4ba47f7c61a468be5, type: 3}
+  lesionLabel: Pale spot
+  haloLabel: Brown edge
+  areaLabel: Yellowing leaf

@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5132a70f51fe6cb4ea3c7d283552eb79, type: 3}
+  m_Name: TreatmentPlan_Raspberry_LeafSpot
+  m_EditorClassIdentifier: 
+  treatmentId: raspberry_leaf_spot_treatment
+  planName: "Raspberry \u2014 Leaf Spot"
+  steps:
+  - {fileID: 11400000, guid: 8ed92b6f62d38d249a3e56f71d0c6360, type: 2}
+  - {fileID: 11400000, guid: 950c7bed1c3e72b4d83b9929802cc790, type: 2}
+  - {fileID: 11400000, guid: b0dc41d87dc970e43a04023cfc4b7d79, type: 2}
+  residualSeverityFloor: 0.15
+  residualDamageFloor: 0.1
+  disclaimer: Educational guidance only. Treatment does not guarantee recovery. Consult
+    a local agricultural extension service for field decisions.

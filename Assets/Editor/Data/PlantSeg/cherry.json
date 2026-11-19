@@ -1,0 +1,134 @@
+{
+ "plantId": "cherry",
+ "plantName": "Cherry",
+ "scientificName": "",
+ "description": "",
+ "diseases": [
+  {
+   "id": "leaf_spot",
+   "name": "Cherry Leaf Spot",
+   "type": "Fungal",
+   "part": "Leaf",
+   "pathogen": "Blumeriella jaapii",
+   "labels": [
+    "cherry leaf spot"
+   ],
+   "description": "A fungal disease of cherry leaves that causes spotting, yellowing and early leaf fall.",
+   "causes": "Spores from last year's fallen leaves are splashed onto young leaves in wet spring and summer weather.",
+   "symptoms": [
+    "Small purple to red-brown spots on the upper leaf",
+    "White to pink spore masses under the spots in wet weather",
+    "Spotted leaves turn yellow and drop"
+   ],
+   "effect": "Trees lose many leaves by midsummer, so fruit ripens poorly.",
+   "untreated": "Repeated early leaf loss weakens trees and makes them prone to winter injury.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Clear fallen leaves",
+     "instruction": "Rake up and remove or bury fallen leaves in autumn.",
+     "rationale": "The fungus overwinters in the leaf litter.",
+     "mode": "GrabAndRemove",
+     "days": 2,
+     "effect": "Remove",
+     "chemical": false
+    },
+    {
+     "title": "Open up the canopy",
+     "instruction": "Prune so leaves dry quickly after rain.",
+     "rationale": "Spores need wet leaves to infect.",
+     "mode": "AdjustSetting",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Protective fungicide from petal fall",
+     "instruction": "Spray a registered product on the label's schedule while wet weather lasts.",
+     "rationale": "Protects new leaves through the infection period.",
+     "mode": "SprayApply",
+     "days": 3,
+     "effect": "Protect",
+     "chemical": true
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropHygiene",
+     "title": "Remove or shred fallen leaves",
+     "detail": "Breaks the yearly cycle."
+    },
+    {
+     "category": "AirCirculation",
+     "title": "Prune for airflow",
+     "detail": "Leaves dry faster."
+    },
+    {
+     "category": "Monitoring",
+     "title": "Check leaves after spring rain",
+     "detail": "Early spots mean the season's infections have started."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_SmallSpots",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.4,
+     0.12,
+     0.2
+    ],
+    "halo": [
+     0.62,
+     0.3,
+     0.3
+    ],
+    "yellow": [
+     0.86,
+     0.8,
+     0.3
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.9,
+    "wilting": 0.4,
+    "damage": 0.7,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Purple spot",
+   "haloLabel": "Red margin",
+   "areaLabel": "Yellowing leaf",
+   "lifecycle": [
+    "The fungus overwinters in fallen leaves.",
+    "Spring rain splashes spores onto young leaves.",
+    "Purple spots appear; spores form underneath.",
+    "Leaves yellow and drop, and new spores spread."
+   ],
+   "conditions": [
+    "Wet spring and summer.",
+    "Fallen leaves left under the tree.",
+    "A dense canopy.",
+    "Susceptible sour and sweet cherries."
+   ],
+   "photos": [
+    "cherry_leaf_spot_1"
+   ],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: cherry leaf spot",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  }
+ ],
+ "aliases": [
+  {
+   "disease": "powdery_mildew",
+   "labels": [
+    "cherry powdery mildew",
+    "Cherry_(including_sour)___Powdery_mildew"
+   ]
+  }
+ ],
+ "healthyLabels": [
+  "Cherry leaf",
+  "Cherry_(including_sour)___healthy"
+ ]
+}

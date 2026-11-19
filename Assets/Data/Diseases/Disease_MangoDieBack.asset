@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_MangoDieBack
+  m_EditorClassIdentifier: 
+  diseaseId: die_back
+  diseaseName: Die Back
+  aiLabelAliases:
+  - mango_die_back
+  - Die Back
+  - mango die back
+  - Mango___Die_back
+  pathogenType: 0
+  pathogen: Lasiodiplodia theobromae
+  affectedPart: 0
+  sources:
+  - 'MangoLeafBD (Mendeley Data) class: Die Back, mango die back'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: A fungal disease that kills mango twigs and branches from the tip
+    downward.
+  causes: The fungus enters through wounds and stressed tissue; drought, sun scald
+    and damage favour it.
+  effectOnPlant: Branches die and the crown thins.
+  untreatedOutcome: Severe die back can kill large limbs or young trees.
+  symptoms:
+  - Leaves at the shoot tips turn brown and dry, starting from the edges
+  - Twigs die back from the tip; the bark darkens
+  - Gum oozes from cracks in the bark
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  - yellowing
+  - wilting
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: 147268ecc84674c42a8b1e0b28041acf, type: 2}
+  preventionPlan: {fileID: 11400000, guid: 2d09d99984627474288501c1d17ca135, type: 2}
+  simulationProfile: {fileID: 11400000, guid: 1fdcd6e9245b73745b29646adf32a17e, type: 2}
+  lifecycleStages:
+  - The fungus lives on dead wood.
+  - It enters through wounds and stressed twigs.
+  - Shoot tips brown and dry.
+  - The die back moves down the branch.
+  conditionFactors:
+  - Drought stress.
+  - Wounds and sun scald.
+  - Dead wood in the tree.
+  - Hot weather.
+  referencePhotos: []
+  lesionLabel: Dry margin
+  haloLabel: Brown edge
+  areaLabel: Dying shoot

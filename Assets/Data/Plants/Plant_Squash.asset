@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5b7af7f939da314084e91933dca2790, type: 3}
+  m_Name: Plant_Squash
+  m_EditorClassIdentifier: 
+  plantId: squash
+  plantName: Squash
+  description: Cucurbita pepo (zucchini and other summer squash).
+  scientificName: Cucurbita pepo
+  healthyModel: {fileID: 0}
+  leafPrefab: {fileID: 0}
+  thumbnail: {fileID: 0}
+  species: {fileID: 11400000, guid: 4f18c761ff562b84c8bb24e32c64bdf4, type: 2}
+  features:
+  - {fileID: 11400000, guid: e003f3da852d56644be19f05a32c1ffc, type: 2}
+  - {fileID: 11400000, guid: 3453cfa66f7c33147a75d377fe66120e, type: 2}
+  - {fileID: 11400000, guid: 384e23ede7d0591438f622176646940f, type: 2}
+  - {fileID: 11400000, guid: 427819c8c06b57045929d881917ce5ae, type: 2}
+  diseases:
+  - {fileID: 11400000, guid: 6429ce91e786f4c498006c9ff90cbee5, type: 2}
+  - {fileID: 11400000, guid: 3faac1eaf5ccdb64a8ca8749bbc2afd6, type: 2}
+  - {fileID: 11400000, guid: e3f24b41fa0b2b643865f629d5774974, type: 2}
+  - {fileID: 11400000, guid: 500a09edfc46b694fb05b4afdb476af8, type: 2}

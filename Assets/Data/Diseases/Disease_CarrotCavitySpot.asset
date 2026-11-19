@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_CarrotCavitySpot
+  m_EditorClassIdentifier: 
+  diseaseId: cavity_spot
+  diseaseName: Cavity Spot
+  aiLabelAliases:
+  - carrot_cavity_spot
+  - carrot cavity spot
+  pathogenType: 6
+  pathogen: Pythium violae and P. sulcatum
+  affectedPart: 3
+  sources:
+  - 'PlantSeg (Wei et al. 2024, CC BY 4.0) class: carrot cavity spot'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: A soil-borne disease that pits the carrot root with small sunken lesions.
+  causes: Pythium water moulds in the soil infect the root, especially in wet, compacted
+    soils; it builds up with frequent carrot crops.
+  effectOnPlant: Pitted roots cannot be sold fresh.
+  untreatedOutcome: Losses grow the longer roots stay in the ground.
+  symptoms:
+  - Small, sunken, elliptical lesions across the root
+  - Lesions grey to brown; the skin over them may crack
+  - No symptoms on the leaves
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: 414dcee523720e94ca0ae109a181bd14, type: 2}
+  preventionPlan: {fileID: 11400000, guid: aea7c43136449fc4db4af19ef4f46482, type: 2}
+  simulationProfile: {fileID: 11400000, guid: 44356f9428097154db32b6c4bee9c5a0, type: 2}
+  lifecycleStages:
+  - The water moulds live in the soil.
+  - In wet soil they infect the root.
+  - Small sunken lesions form across the root.
+  - They build up with frequent carrot crops.
+  conditionFactors:
+  - Wet, compacted soil.
+  - Frequent carrot crops.
+  - Late harvest.
+  - Soil pH above 7.
+  referencePhotos: []
+  lesionLabel: Sunken pit
+  haloLabel: Brown edge
+  areaLabel: Pitted root

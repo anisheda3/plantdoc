@@ -1,0 +1,445 @@
+{
+ "plantId": "raspberry",
+ "plantName": "Raspberry",
+ "scientificName": "",
+ "description": "",
+ "diseases": [
+  {
+   "id": "fire_blight",
+   "name": "Fire Blight",
+   "type": "Bacterial",
+   "part": "Leaf",
+   "pathogen": "Erwinia amylovora",
+   "labels": [
+    "raspberry fire blight"
+   ],
+   "description": "A bacterial disease that blackens raspberry shoot tips and leaves, as if scorched by fire.",
+   "causes": "Bacteria spread by rain, insects and pruning tools in warm, humid weather, entering through flowers and wounds.",
+   "symptoms": [
+    "Shoot tips wilt, blacken and bend over like a shepherd's crook",
+    "Leaves turn brown-black but stay on the cane",
+    "Fruit stays small, dry and hard"
+   ],
+   "effect": "Blighted shoots and their fruit are lost.",
+   "untreated": "Infection can move down the cane.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Cut out blighted shoots",
+     "instruction": "Cut 15-20 cm below the damage in dry weather and remove the prunings.",
+     "rationale": "Removes the bacteria before they spread.",
+     "mode": "TapRegion",
+     "days": 2,
+     "effect": "Remove",
+     "chemical": false
+    },
+    {
+     "title": "Disinfect pruning tools",
+     "instruction": "Wipe tools with disinfectant between cuts.",
+     "rationale": "Tools carry the bacteria.",
+     "mode": "AdjustSetting",
+     "days": 1,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Avoid lush growth",
+     "instruction": "Do not over-feed with nitrogen.",
+     "rationale": "Soft shoots are most susceptible.",
+     "mode": "Informational",
+     "days": 2,
+     "effect": "Small",
+     "chemical": false
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropHygiene",
+     "title": "Prune only in dry weather",
+     "detail": "Wet cuts spread the bacteria."
+    },
+    {
+     "category": "Monitoring",
+     "title": "Check shoot tips in warm, wet weather",
+     "detail": "Act at the first wilt."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_MarginScorch",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.16,
+     0.12,
+     0.1
+    ],
+    "halo": [
+     0.32,
+     0.22,
+     0.14
+    ],
+    "yellow": [
+     0.7,
+     0.62,
+     0.32
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.3,
+    "wilting": 0.6,
+    "damage": 0.7,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Blackened leaf",
+   "haloLabel": "Scorched edge",
+   "areaLabel": "Blighted shoot",
+   "lifecycle": [
+    "Bacteria survive in cankers on host plants.",
+    "Rain and insects carry them to flowers and shoots.",
+    "Shoot tips blacken and bend over.",
+    "Ooze from the shoots spreads them further."
+   ],
+   "conditions": [
+    "Warm, humid weather.",
+    "Hail or pruning wounds.",
+    "Lush growth.",
+    "Apple or pear trees with fire blight nearby."
+   ],
+   "photos": [
+    "raspberry_fire_blight_1"
+   ],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: raspberry fire blight",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "gray_mold",
+   "name": "Gray Mold",
+   "type": "Fungal",
+   "part": "Fruit",
+   "pathogen": "Botrytis cinerea",
+   "labels": [
+    "raspberry gray mold"
+   ],
+   "description": "Grey mould of raspberry fruit, the main cause of rotting berries.",
+   "causes": "The fungus lives on dead plant material; its spores infect flowers in wet weather and the berries rot as they ripen.",
+   "symptoms": [
+    "Soft, light-brown rot on the berries",
+    "Grey, fuzzy mould covering the fruit",
+    "Rot spreads quickly between touching berries"
+   ],
+   "effect": "Fruit rots on the cane and soon after picking.",
+   "untreated": "Most of a wet season's crop can be lost.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Remove mouldy berries",
+     "instruction": "Pick off mouldy berries when the plants are dry and take them away.",
+     "rationale": "Fewer spores are left to spread.",
+     "mode": "GrabAndRemove",
+     "days": 1,
+     "effect": "Remove",
+     "chemical": false
+    },
+    {
+     "title": "Pick often and cool the fruit",
+     "instruction": "Pick every day or two and chill the berries.",
+     "rationale": "Ripe fruit is most at risk.",
+     "mode": "AdjustSetting",
+     "days": 1,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Protective spray",
+     "instruction": "Spray a registered fungicide at flowering on the label's schedule.",
+     "rationale": "Protects healthy growth; it cannot cure what is already infected.",
+     "mode": "SprayApply",
+     "days": 3,
+     "effect": "Protect",
+     "chemical": true
+    }
+   ],
+   "prevention": [
+    {
+     "category": "AirCirculation",
+     "title": "Thin canes and keep rows narrow",
+     "detail": "Berries dry faster."
+    },
+    {
+     "category": "WaterManagement",
+     "title": "Water at the base",
+     "detail": "Wet fruit rots."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_FruitRot",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.56,
+     0.54,
+     0.52
+    ],
+    "halo": [
+     0.46,
+     0.34,
+     0.3
+    ],
+    "yellow": [
+     0.78,
+     0.72,
+     0.4
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.0,
+    "wilting": 0.0,
+    "damage": 0.6,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Grey mould",
+   "haloLabel": "Soft rot",
+   "areaLabel": "Rotting berry",
+   "lifecycle": [
+    "The fungus lives on dead plant material.",
+    "Spores infect the flowers in wet weather.",
+    "The berries rot as they ripen.",
+    "Grey spores spread to neighbouring fruit."
+   ],
+   "conditions": [
+    "Wet weather at flowering and harvest.",
+    "Dense rows.",
+    "Overripe fruit.",
+    "Overhead watering."
+   ],
+   "photos": [
+    "raspberry_gray_mold_1"
+   ],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: raspberry gray mold",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "leaf_spot",
+   "name": "Leaf Spot",
+   "type": "Fungal",
+   "part": "Leaf",
+   "pathogen": "Sphaerulina rubi (syn. Septoria rubi)",
+   "labels": [
+    "raspberry leaf spot"
+   ],
+   "description": "A fungal leaf spot of raspberries and blackberries.",
+   "causes": "Spores from infected leaves and canes spread by rain splash in warm, wet weather.",
+   "symptoms": [
+    "Small, round purple-brown spots",
+    "Spot centres turn grey-white",
+    "Heavily spotted leaves yellow and drop"
+   ],
+   "effect": "Leaf loss weakens the canes for next season.",
+   "untreated": "Cane growth and yield decline.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Remove spotted leaves",
+     "instruction": "Pick off spotted leaves when the plants are dry and take them away.",
+     "rationale": "Fewer spores are left to spread.",
+     "mode": "TapRegion",
+     "days": 2,
+     "effect": "Remove",
+     "chemical": false
+    },
+    {
+     "title": "Thin the canes",
+     "instruction": "Remove weak and old canes after harvest.",
+     "rationale": "Better air flow.",
+     "mode": "AdjustSetting",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Protective spray",
+     "instruction": "Spray a registered fungicide on the label's schedule.",
+     "rationale": "Protects healthy growth; it cannot cure what is already infected.",
+     "mode": "SprayApply",
+     "days": 3,
+     "effect": "Protect",
+     "chemical": true
+    }
+   ],
+   "prevention": [
+    {
+     "category": "AirCirculation",
+     "title": "Keep rows narrow",
+     "detail": "Leaves dry faster."
+    },
+    {
+     "category": "CropHygiene",
+     "title": "Remove old canes and fallen leaves",
+     "detail": "They carry the fungus."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_SmallSpots",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.7,
+     0.66,
+     0.62
+    ],
+    "halo": [
+     0.42,
+     0.18,
+     0.22
+    ],
+    "yellow": [
+     0.84,
+     0.78,
+     0.32
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.6,
+    "wilting": 0.4,
+    "damage": 0.5,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Grey-centred spot",
+   "haloLabel": "Purple ring",
+   "areaLabel": "Yellowing leaf",
+   "lifecycle": [
+    "The fungus overwinters on leaves and canes.",
+    "Rain splashes spores onto new leaves.",
+    "Purple spots with pale centres form.",
+    "Leaves drop early."
+   ],
+   "conditions": [
+    "Warm, wet weather.",
+    "Crowded canes.",
+    "Overhead watering.",
+    "Old canes left in the row."
+   ],
+   "photos": [
+    "raspberry_leaf_spot_1"
+   ],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: raspberry leaf spot",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "yellow_rust",
+   "name": "Yellow Rust",
+   "type": "Fungal",
+   "part": "Leaf",
+   "pathogen": "Phragmidium rubi-idaei",
+   "labels": [
+    "raspberry yellow rust"
+   ],
+   "description": "A rust fungus of raspberry leaves and canes.",
+   "causes": "Spores overwinter on fallen leaves and canes and infect new leaves in spring; summer spores spread in humid weather.",
+   "symptoms": [
+    "Small yellow spots on the upper leaf",
+    "Bright yellow-orange pustules on the underside",
+    "Pustules turn black late in the season; leaves drop"
+   ],
+   "effect": "Leaves fall early, weakening the canes.",
+   "untreated": "Severe years reduce the next crop.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Remove rusted leaves",
+     "instruction": "Pick off rusted leaves when the plants are dry and take them away.",
+     "rationale": "Fewer spores are left to spread.",
+     "mode": "TapRegion",
+     "days": 2,
+     "effect": "Remove",
+     "chemical": false
+    },
+    {
+     "title": "Remove old fruited canes",
+     "instruction": "Cut out fruited canes after harvest.",
+     "rationale": "They carry the fungus over winter.",
+     "mode": "TapRegion",
+     "days": 2,
+     "effect": "Remove",
+     "chemical": false
+    },
+    {
+     "title": "Protective spray",
+     "instruction": "Spray a registered fungicide on the label's schedule.",
+     "rationale": "Protects healthy growth; it cannot cure what is already infected.",
+     "mode": "SprayApply",
+     "days": 3,
+     "effect": "Protect",
+     "chemical": true
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropHygiene",
+     "title": "Clear fallen leaves in autumn",
+     "detail": "Breaks the cycle."
+    },
+    {
+     "category": "CropManagement",
+     "title": "Grow resistant varieties",
+     "detail": "Varieties differ a lot."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_Pustule",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.9,
+     0.66,
+     0.16
+    ],
+    "halo": [
+     0.86,
+     0.8,
+     0.3
+    ],
+    "yellow": [
+     0.86,
+     0.8,
+     0.32
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.6,
+    "wilting": 0.4,
+    "damage": 0.4,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Yellow pustule",
+   "haloLabel": "Pale spot",
+   "areaLabel": "Rusted leaf",
+   "lifecycle": [
+    "Spores overwinter on leaves and canes.",
+    "In spring they infect new leaves.",
+    "Orange pustules form underneath.",
+    "Black winter spores form in autumn."
+   ],
+   "conditions": [
+    "Humid weather.",
+    "Fallen leaves left.",
+    "Dense canes.",
+    "Susceptible varieties."
+   ],
+   "photos": [
+    "raspberry_yellow_rust_1"
+   ],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: raspberry yellow rust",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  }
+ ],
+ "aliases": [],
+ "healthyLabels": [
+  "Raspberry leaf",
+  "Raspberry___healthy"
+ ]
+}

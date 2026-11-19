@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_CornGrayLeafSpot
+  m_EditorClassIdentifier: 
+  diseaseId: gray_leaf_spot
+  diseaseName: Gray Leaf Spot
+  aiLabelAliases:
+  - Corn___Cercospora_leaf_spot Gray_leaf_spot
+  - corn_gray_leaf_spot
+  - corn gray leaf spot
+  - Corn Gray leaf spot
+  - Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot
+  pathogenType: 0
+  pathogen: 
+  affectedPart: 0
+  sources: []
+  description: A fungal disease (Cercospora zeae-maydis) of maize leaves.
+  causes: Warm, very humid weather with long dew periods; the fungus survives on
+    maize residue left on the surface.
+  effectOnPlant: Dead leaf area cuts the sugar supply to the ear.
+  untreatedOutcome: Severe epidemics cause early death of leaves, stalk rot and yield
+    loss.
+  symptoms:
+  - Narrow, rectangular grey-tan lesions
+  - Lesions run between and stop at the veins
+  - Lesions join and whole leaves die
+  supportingFeatureIds:
+  - leaf_spots
+  - yellowing
+  - leaf_color
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: b9362c7ee1dd9a240ab97e6b35ae7ff1, type: 2}
+  preventionPlan: {fileID: 11400000, guid: 393eb286e07c8a74ea3317035b8bc110, type: 2}
+  simulationProfile: {fileID: 11400000, guid: d0d919714aded684b8097998e2e5755c, type: 2}
+  lifecycleStages:
+  - The fungus survives on maize residue on the surface.
+  - Spores splash and blow onto lower leaves in humid weather.
+  - Narrow rectangular grey lesions form between the veins.
+  - Lesions join and the infection climbs the plant.
+  conditionFactors:
+  - Warm, very humid weather.
+  - Long dew periods.
+  - Maize residue on the surface.
+  - Susceptible hybrids.
+  referencePhotos:
+  - {fileID: 2800000, guid: 04899a1163ebb38479ba646d2c360d47, type: 3}
+  lesionLabel: Rectangular lesion
+  haloLabel: Vein-bounded edge
+  areaLabel: Dead leaf area

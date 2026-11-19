@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_TomatoMosaicVirus
+  m_EditorClassIdentifier: 
+  diseaseId: mosaic_virus
+  diseaseName: Mosaic Virus
+  aiLabelAliases:
+  - Tomato___Tomato_mosaic_virus
+  - tomato_mosaic_virus
+  - tomato mosaic virus
+  - Tomato leaf mosaic virus
+  pathogenType: 2
+  pathogen: 
+  affectedPart: 0
+  sources: []
+  description: Tomato mosaic virus (ToMV), a very stable virus spread on hands, tools
+    and seed.
+  causes: Handling infected then healthy plants; infected seed; the virus survives
+    for a long time in plant debris.
+  effectOnPlant: Infected plants grow poorly and yield less.
+  untreatedOutcome: There is no cure; the virus spreads easily to the rest of the
+    crop.
+  symptoms:
+  - Light and dark green mottling (mosaic)
+  - Distorted, sometimes fern-like leaves
+  - Uneven ripening of fruit
+  supportingFeatureIds:
+  - leaf_spots
+  - yellowing
+  - leaf_color
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: 7d8fe685f0895934781cb0a48f91fa6d, type: 2}
+  preventionPlan: {fileID: 11400000, guid: b8da2497a1b6f354da8dec8ed797c4a7, type: 2}
+  simulationProfile: {fileID: 11400000, guid: f05ed94694cdbb7479434b286b9cfd3c, type: 2}
+  lifecycleStages:
+  - The virus survives in seed and plant debris for a long time.
+  - It spreads on hands, tools and clothing.
+  - Leaves show a light and dark green mosaic and may distort.
+  - Every handling can carry it to the next plant.
+  conditionFactors:
+  - Handling plants without washing.
+  - Infected seed.
+  - Debris from earlier crops.
+  - Susceptible varieties.
+  referencePhotos:
+  - {fileID: 2800000, guid: bb40fe118f0e6354e89240268fb79de9, type: 3}
+  lesionLabel: Light green patch
+  haloLabel: Dark green patch
+  areaLabel: Mottled leaf

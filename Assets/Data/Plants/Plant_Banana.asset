@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5b7af7f939da314084e91933dca2790, type: 3}
+  m_Name: Plant_Banana
+  m_EditorClassIdentifier: 
+  plantId: banana
+  plantName: Banana
+  description: 'Musa acuminata: a giant herb whose ''trunk'' is a pseudostem of leaf
+    sheaths.'
+  scientificName: Musa acuminata (AAA group, e.g. Cavendish)
+  healthyModel: {fileID: 0}
+  leafPrefab: {fileID: 0}
+  thumbnail: {fileID: 0}
+  species: {fileID: 11400000, guid: bbc6aff13d87a7b408c1601d30d1cff1, type: 2}
+  features:
+  - {fileID: 11400000, guid: e003f3da852d56644be19f05a32c1ffc, type: 2}
+  - {fileID: 11400000, guid: 3453cfa66f7c33147a75d377fe66120e, type: 2}
+  - {fileID: 11400000, guid: 384e23ede7d0591438f622176646940f, type: 2}
+  - {fileID: 11400000, guid: 427819c8c06b57045929d881917ce5ae, type: 2}
+  diseases:
+  - {fileID: 11400000, guid: c6e6bcd469034894eab39ac6f04508f5, type: 2}
+  - {fileID: 11400000, guid: 7a949c2535be9b640a44444dd85fcbb5, type: 2}
+  - {fileID: 11400000, guid: 5a46587f16e8d0b419851cda7612b9f7, type: 2}
+  - {fileID: 11400000, guid: 0eb58270f95ee0146be4adb4ca78257d, type: 2}
+  - {fileID: 11400000, guid: 6c75de3fbc6e76e45a46e27781f7146e, type: 2}
+  - {fileID: 11400000, guid: 53869187052c2344c99ca919c25e5571, type: 2}

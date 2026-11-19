@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_CucumberPowderyMildew
+  m_EditorClassIdentifier: 
+  diseaseId: powdery_mildew
+  diseaseName: Powdery Mildew
+  aiLabelAliases:
+  - cucumber_powdery_mildew
+  - cucumber powdery mildew
+  pathogenType: 0
+  pathogen: Podosphaera xanthii (and Golovinomyces orontii)
+  affectedPart: 0
+  sources:
+  - 'PlantSeg (Wei et al. 2024, CC BY 4.0) class: cucumber powdery mildew'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: A fungal disease that coats cucumber leaves with white powder.
+  causes: Spores blow in on the wind; warm days, shade and dense plants favour it,
+    and the leaves need not be wet.
+  effectOnPlant: Fewer leaves means smaller, poorer fruit.
+  untreatedOutcome: Plants decline early.
+  symptoms:
+  - White, powdery spots on both sides of the leaves
+  - Spots spread to cover the leaf
+  - Leaves yellow, brown and die
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  - yellowing
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: 074c0f15e26a23c4d9fc562d9eb9e927, type: 2}
+  preventionPlan: {fileID: 11400000, guid: 69f6377376b64c14d89865bb67f30351, type: 2}
+  simulationProfile: {fileID: 11400000, guid: ca4ec1e632112a34a9634ee73eb699ad, type: 2}
+  lifecycleStages:
+  - Spores blow in from other cucurbits.
+  - They infect without leaf wetness.
+  - White powdery spots spread.
+  - Leaves yellow and die.
+  conditionFactors:
+  - Warm days, cool nights.
+  - Shade.
+  - Dense plants.
+  - Older leaves later in the season.
+  referencePhotos: []
+  lesionLabel: White spot
+  haloLabel: Pale patch
+  areaLabel: Powdery area

@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5b7af7f939da314084e91933dca2790, type: 3}
+  m_Name: Plant_Bellpepper
+  m_EditorClassIdentifier: 
+  plantId: pepper
+  plantName: Bell pepper
+  description: Capsicum annuum (bell and chilli peppers).
+  scientificName: Capsicum annuum
+  healthyModel: {fileID: 0}
+  leafPrefab: {fileID: 0}
+  thumbnail: {fileID: 0}
+  species: {fileID: 11400000, guid: 509eb01de2189ef448fc8f1d493f3809, type: 2}
+  features:
+  - {fileID: 11400000, guid: e003f3da852d56644be19f05a32c1ffc, type: 2}
+  - {fileID: 11400000, guid: 3453cfa66f7c33147a75d377fe66120e, type: 2}
+  - {fileID: 11400000, guid: 384e23ede7d0591438f622176646940f, type: 2}
+  - {fileID: 11400000, guid: 427819c8c06b57045929d881917ce5ae, type: 2}
+  diseases:
+  - {fileID: 11400000, guid: 304aaf5288750ca458c81c60a5c5084c, type: 2}
+  - {fileID: 11400000, guid: 9cd8cee3ae0aace4fa61ae8cbeb5c5fd, type: 2}
+  - {fileID: 11400000, guid: 3ca777d070460be458f10f7da14c017f, type: 2}
+  - {fileID: 11400000, guid: 9b9b8bab35da5274a812e7afa473436b, type: 2}

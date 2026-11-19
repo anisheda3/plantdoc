@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5b7af7f939da314084e91933dca2790, type: 3}
+  m_Name: Plant_Cucumber
+  m_EditorClassIdentifier: 
+  plantId: cucumber
+  plantName: Cucumber
+  description: 'Cucumis sativus: a climbing, tendrilled annual.'
+  scientificName: Cucumis sativus
+  healthyModel: {fileID: 0}
+  leafPrefab: {fileID: 0}
+  thumbnail: {fileID: 0}
+  species: {fileID: 11400000, guid: 430febbe1829a0148abbcc4cba48611e, type: 2}
+  features:
+  - {fileID: 11400000, guid: e003f3da852d56644be19f05a32c1ffc, type: 2}
+  - {fileID: 11400000, guid: 3453cfa66f7c33147a75d377fe66120e, type: 2}
+  - {fileID: 11400000, guid: 384e23ede7d0591438f622176646940f, type: 2}
+  - {fileID: 11400000, guid: 427819c8c06b57045929d881917ce5ae, type: 2}
+  diseases:
+  - {fileID: 11400000, guid: 6e93928201951d34abc6fe00703ae0ae, type: 2}
+  - {fileID: 11400000, guid: 7e7fb9ebcf619b64a8cc8dc50cedafcd, type: 2}
+  - {fileID: 11400000, guid: 7d7444d6cc3af5948aa8159412cd27a0, type: 2}

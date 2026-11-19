@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_GrapeBlackRot
+  m_EditorClassIdentifier: 
+  diseaseId: black_rot
+  diseaseName: Black Rot
+  aiLabelAliases:
+  - Grape___Black_rot
+  - grape_black_rot
+  - grape black rot
+  - grape leaf black rot
+  pathogenType: 0
+  pathogen: 
+  affectedPart: 0
+  sources: []
+  description: A fungal disease (Guignardia bidwellii) of grape leaves, shoots and
+    berries.
+  causes: Warm, wet spring and early summer weather; spores come from mummified berries
+    and old canes.
+  effectOnPlant: Leaf spots are minor; infected berries are lost.
+  untreatedOutcome: Whole bunches can be destroyed in a wet year.
+  symptoms:
+  - Small round tan spots with dark brown borders
+  - Tiny black dots in the spots
+  - Berries rot, then shrivel into hard black mummies
+  supportingFeatureIds:
+  - leaf_spots
+  - yellowing
+  - leaf_color
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: b2c54ec83d0ecbf49bfe2ae97ce0a254, type: 2}
+  preventionPlan: {fileID: 11400000, guid: 327ba10b20a00e949a5fa6c54f94b1ae, type: 2}
+  simulationProfile: {fileID: 11400000, guid: 959b90de927331743826c83b02ec3124, type: 2}
+  lifecycleStages:
+  - The fungus overwinters in mummified berries and old canes.
+  - Spring rain releases spores onto young leaves and shoots.
+  - Tan spots with dark borders and black dots appear.
+  - Berries rot and become mummies for next year.
+  conditionFactors:
+  - Warm, wet spring weather.
+  - Mummies left in the vineyard.
+  - A dense canopy.
+  - Flowering to young-berry stage.
+  referencePhotos:
+  - {fileID: 2800000, guid: d7f9ac3e06adf79448790feb2fefd2a4, type: 3}
+  lesionLabel: Tan spot
+  haloLabel: Dark border
+  areaLabel: Spotted leaf

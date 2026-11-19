@@ -1,0 +1,118 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bdf586ed54df4c4bb04bad3c2a44bdc, type: 3}
+  m_Name: Species_Potato
+  m_EditorClassIdentifier: 
+  speciesId: potato
+  displayName: Potato
+  archetype: 0
+  seed: 23
+  height: 0.62
+  inPot: 0
+  potColor: {r: 0.72, g: 0.38, b: 0.24, a: 1}
+  rootCount: 10
+  rootSpread: 0.26
+  rootRadius: 0.007
+  rootTint: {r: 1, g: 1, b: 1, a: 1}
+  moundRadius: 0.1
+  moundHeight: 0.04
+  rootHairs: 1
+  rootNodules: 0
+  braceRoots: 0
+  mainStems: 5
+  stemSplay: 13
+  sideBranches: 0
+  firstLeafHeight: 0.16
+  stemRadius: 0.009
+  stemColor: {r: 0.62, g: 0.75, b: 0.5, a: 1}
+  stemLean: 0.05
+  crownHeight: 0
+  woodyStems: 0
+  oppositeLeaves: 0
+  stalkShare: 0.86
+  grassTassel: 0
+  leafAtlas: {fileID: 2800000, guid: 8ee59b223775d8e43a5159139da0e832, type: 3}
+  leafRects:
+  - serializedVersion: 2
+    x: 0.005859375
+    y: 0.02238806
+    width: 0.2368164
+    height: 0.95522386
+  - serializedVersion: 2
+    x: 0.25439453
+    y: 0.02238806
+    width: 0.2133789
+    height: 0.95522386
+  - serializedVersion: 2
+    x: 0.4794922
+    y: 0.02238806
+    width: 0.23730469
+    height: 0.95522386
+  - serializedVersion: 2
+    x: 0.7285156
+    y: 0.02238806
+    width: 0.23779297
+    height: 0.95522386
+  leafAspects:
+  - 0.9472656
+  - 0.8535156
+  - 0.94921875
+  - 0.9511719
+  leafFold: 0.05
+  leafForm: 0
+  leafCount: 52
+  leafSize: {x: 0.22, y: 0.16}
+  leafletPairs: 3
+  interjectedLeaflets: 2
+  trifoliateRachis: 0
+  heroLeaf: 0
+  petioleLength: 0.2
+  petioleRise: 1
+  petioleInset: 0
+  bladeLift: 0
+  strapSpread: 0
+  strapArch: 1
+  leafWidth: 0.62
+  serration: 0
+  teeth: 0
+  leafDroop: 0.08
+  leafTint: {r: 0.92, g: 0.96, b: 0.9, a: 1}
+  flowerCount: 4
+  flowerRadius: 0.014
+  flowerColor: {r: 0.97, g: 0.96, b: 0.98, a: 1}
+  flowerForm: 3
+  flowerPetals: 5
+  flowerThroat: {r: 0.9, g: 0.92, b: 0.62, a: 1}
+  flowerCentre: {r: 0.98, g: 0.74, b: 0.14, a: 1}
+  flowerCone: 0.65
+  flowerCluster: 6
+  flowerNod: 55
+  flowerZone: {x: 0.62, y: 0.95}
+  flowerSpike: 0
+  fruit: 0
+  fruitColors:
+  - {r: 0.86, g: 0.17, b: 0.1, a: 1}
+  - {r: 0.42, g: 0.62, b: 0.22, a: 1}
+  fruitCount: 0
+  fruitDisplayScale: 1
+  fruitCluster: 1
+  fruitRadius: 0.05
+  trunkHeight: 0.55
+  trunkRadius: 0.04
+  trunkCount: 1
+  trunkSplay: 12
+  branchLevels: 2
+  branchesPerLevel: 4
+  canopyRadius: 0.45
+  leavesPerTip: 8
+  canopyLeafScale: 1
+  barkColor: {r: 0.36, g: 0.27, b: 0.2, a: 1}

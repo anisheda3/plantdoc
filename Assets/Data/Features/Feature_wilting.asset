@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 112c58a7a6fb7424c85fbf06b7e51d4f, type: 3}
+  m_Name: Feature_wilting
+  m_EditorClassIdentifier: 
+  featureId: wilting
+  displayName: Wilting
+  source: 0
+  optimalValue: 0.05
+  tolerance: 0.1
+  higherIsBetter: 0
+  meaning: Degree of drooping or loss of turgor.
+  whyItMatters: Wilting suggests impaired water transport, root problems or advanced
+    infection.
+  overlayColor: {r: 0.6, g: 0.45, b: 0.25, a: 1}

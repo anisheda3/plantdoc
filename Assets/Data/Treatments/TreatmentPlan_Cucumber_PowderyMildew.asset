@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5132a70f51fe6cb4ea3c7d283552eb79, type: 3}
+  m_Name: TreatmentPlan_Cucumber_PowderyMildew
+  m_EditorClassIdentifier: 
+  treatmentId: cucumber_powdery_mildew_treatment
+  planName: "Cucumber \u2014 Powdery Mildew"
+  steps:
+  - {fileID: 11400000, guid: a1c448cd353802b41bebe390d2b99242, type: 2}
+  - {fileID: 11400000, guid: 043c25b56eff50b4a9f636ff7b10efbe, type: 2}
+  - {fileID: 11400000, guid: d79a2eb118426f345b99760b4e6523b6, type: 2}
+  residualSeverityFloor: 0.15
+  residualDamageFloor: 0.1
+  disclaimer: Educational guidance only. Treatment does not guarantee recovery. Consult
+    a local agricultural extension service for field decisions.

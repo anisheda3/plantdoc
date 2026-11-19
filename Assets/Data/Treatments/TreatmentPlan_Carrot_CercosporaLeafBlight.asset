@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5132a70f51fe6cb4ea3c7d283552eb79, type: 3}
+  m_Name: TreatmentPlan_Carrot_CercosporaLeafBlight
+  m_EditorClassIdentifier: 
+  treatmentId: carrot_cercospora_leaf_blight_treatment
+  planName: "Carrot \u2014 Cercospora Leaf Blight"
+  steps:
+  - {fileID: 11400000, guid: 2072ea709d1c41449ad8a854ab023029, type: 2}
+  - {fileID: 11400000, guid: 60dea5639ec878144b0e66dc5cacb95b, type: 2}
+  - {fileID: 11400000, guid: e66955234c1d1ca40ac095dca84b7312, type: 2}
+  residualSeverityFloor: 0.15
+  residualDamageFloor: 0.1
+  disclaimer: Educational guidance only. Treatment does not guarantee recovery. Consult
+    a local agricultural extension service for field decisions.

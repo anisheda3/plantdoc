@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5132a70f51fe6cb4ea3c7d283552eb79, type: 3}
+  m_Name: TreatmentPlan_Mango_BacterialCanker
+  m_EditorClassIdentifier: 
+  treatmentId: mango_bacterial_canker_treatment
+  planName: "Mango \u2014 Bacterial Canker (Black Spot)"
+  steps:
+  - {fileID: 11400000, guid: f43c16ba27f4de64b9832a24b90febb7, type: 2}
+  - {fileID: 11400000, guid: 6d15617fa377c3e47902760a5790b29a, type: 2}
+  - {fileID: 11400000, guid: 5eea93818f9afe246a49a4ab81658f18, type: 2}
+  residualSeverityFloor: 0.15
+  residualDamageFloor: 0.1
+  disclaimer: Educational guidance only. Treatment does not guarantee recovery. Consult
+    a local agricultural extension service for field decisions.

@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_MangoSootyMould
+  m_EditorClassIdentifier: 
+  diseaseId: sooty_mould
+  diseaseName: Sooty Mould
+  aiLabelAliases:
+  - mango_sooty_mould
+  - Sooty Mould
+  - mango sooty mould
+  pathogenType: 0
+  pathogen: Capnodium and related sooty moulds (growing on insect honeydew)
+  affectedPart: 0
+  sources:
+  - 'MangoLeafBD (Mendeley Data) class: Sooty Mould, mango sooty mould'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: A black, soot-like coating of fungi growing on the honeydew of sap-sucking
+    insects.
+  causes: Mango hoppers, scale insects and mealybugs drop sticky honeydew on the
+    leaves; sooty moulds grow on it.
+  effectOnPlant: The coating shades the leaves and reduces photosynthesis.
+  untreatedOutcome: Heavy coating weakens the tree and soils the fruit.
+  symptoms:
+  - Black, papery or velvety coating on the upper leaf
+  - The coating can be rubbed or peeled off
+  - Sticky leaves; hoppers, scales or mealybugs nearby
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: 6acd56ef82a8066489536f042f2330db, type: 2}
+  preventionPlan: {fileID: 11400000, guid: 8402b70df3ed1eb46a7acf690477f0fd, type: 2}
+  simulationProfile: {fileID: 11400000, guid: b4dea01d53f207844a7efad41582eda7, type: 2}
+  lifecycleStages:
+  - Sap-sucking insects feed on the tree.
+  - They drop sticky honeydew on the leaves.
+  - Sooty moulds grow on the honeydew.
+  - A black coating shades the leaves.
+  conditionFactors:
+  - Hoppers, scales or mealybugs.
+  - Ants tending them.
+  - Dense, shaded crowns.
+  - Little rain to wash leaves.
+  referencePhotos:
+  - {fileID: 2800000, guid: 46562d0b051bbee48b882f0b1d321d42, type: 3}
+  lesionLabel: Black coating
+  haloLabel: Sooty edge
+  areaLabel: Coated leaf

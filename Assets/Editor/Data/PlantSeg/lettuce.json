@@ -1,0 +1,226 @@
+{
+ "plantId": "lettuce",
+ "plantName": "Lettuce",
+ "scientificName": "Lactuca sativa",
+ "description": "Lactuca sativa: a rosette of tender leaves.",
+ "diseases": [
+  {
+   "id": "downy_mildew",
+   "name": "Downy Mildew",
+   "type": "Oomycete",
+   "part": "Leaf",
+   "pathogen": "Bremia lactucae",
+   "labels": [
+    "lettuce downy mildew"
+   ],
+   "description": "The most important leaf disease of lettuce: pale, angular patches with white spores underneath.",
+   "causes": "Spores spread by wind; cool, moist weather with long leaf wetness lets them infect.",
+   "symptoms": [
+    "Pale green to yellow angular patches bounded by veins",
+    "White, fluffy spores on the underside",
+    "Patches turn brown; outer leaves die"
+   ],
+   "effect": "Spotted leaves must be trimmed; heads may be unsaleable.",
+   "untreated": "Rots can follow in storage.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Remove affected outer leaves",
+     "instruction": "Pick off affected outer leaves when the plants are dry and take them away.",
+     "rationale": "Fewer spores are left to spread.",
+     "mode": "TapRegion",
+     "days": 2,
+     "effect": "Remove",
+     "chemical": false
+    },
+    {
+     "title": "Reduce leaf wetness",
+     "instruction": "Water in the morning; improve airflow.",
+     "rationale": "Spores need wet leaves.",
+     "mode": "AdjustSetting",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Protective spray",
+     "instruction": "Spray a registered product for downy mildew on the label's schedule.",
+     "rationale": "Protects healthy growth; it cannot cure what is already infected.",
+     "mode": "SprayApply",
+     "days": 3,
+     "effect": "Protect",
+     "chemical": true
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropManagement",
+     "title": "Grow resistant varieties",
+     "detail": "Check the resistance codes."
+    },
+    {
+     "category": "AirCirculation",
+     "title": "Space plants",
+     "detail": "Faster drying."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_Angular",
+    "yellowMask": "T_YellowMask_Angular",
+    "lesion": [
+     0.56,
+     0.48,
+     0.28
+    ],
+    "halo": [
+     0.86,
+     0.84,
+     0.44
+    ],
+    "yellow": [
+     0.88,
+     0.86,
+     0.44
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.8,
+    "wilting": 0.4,
+    "damage": 0.5,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Angular patch",
+   "haloLabel": "Brown edge",
+   "areaLabel": "Yellow patch",
+   "lifecycle": [
+    "Spores blow in from infected lettuce.",
+    "Cool, moist weather lets them infect.",
+    "Pale angular patches form.",
+    "White spores underneath spread it."
+   ],
+   "conditions": [
+    "Cool (10-20 °C), moist weather.",
+    "Long leaf wetness.",
+    "Overhead watering.",
+    "Susceptible varieties."
+   ],
+   "photos": [
+    "lettuce_downy_mildew_1"
+   ],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: lettuce downy mildew",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "mosaic_virus",
+   "name": "Lettuce Mosaic",
+   "type": "Viral",
+   "part": "Leaf",
+   "pathogen": "Lettuce mosaic virus (LMV, a potyvirus)",
+   "labels": [
+    "lettuce mosaic virus"
+   ],
+   "description": "A virus disease that mottles and distorts lettuce and stops heads forming.",
+   "causes": "Carried in seed and spread by aphids from infected plants.",
+   "symptoms": [
+    "Light and dark green mottling on the leaves",
+    "Leaves distorted and puckered, with clear veins",
+    "Plants stunted; heads fail to form"
+   ],
+   "effect": "Plants are unsaleable.",
+   "untreated": "Infected seed spreads it to new plantings.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Remove infected plants",
+     "instruction": "Pull out mottled plants early.",
+     "rationale": "Fewer sources for aphids.",
+     "mode": "GrabAndRemove",
+     "days": 1,
+     "effect": "Rogue",
+     "chemical": false
+    },
+    {
+     "title": "Control weeds and aphids",
+     "instruction": "Keep weeds down nearby.",
+     "rationale": "Hosts for aphids and the virus.",
+     "mode": "AdjustSetting",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Use tested seed next time",
+     "instruction": "Buy LMV-tested seed.",
+     "rationale": "The main control.",
+     "mode": "Informational",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropManagement",
+     "title": "Sow LMV-tested seed",
+     "detail": "Seed is the main source."
+    },
+    {
+     "category": "CropHygiene",
+     "title": "Remove old lettuce crops promptly",
+     "detail": "They host the virus."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_Interveinal",
+    "yellowMask": "T_YellowMask_Mottle",
+    "lesion": [
+     0.78,
+     0.82,
+     0.42
+    ],
+    "halo": [
+     0.4,
+     0.52,
+     0.22
+    ],
+    "yellow": [
+     0.86,
+     0.86,
+     0.44
+    ],
+    "lesions": 0.6,
+    "yellowing": 0.8,
+    "wilting": 0.2,
+    "damage": 0.3,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Mottled patch",
+   "haloLabel": "Puckered area",
+   "areaLabel": "Mottled leaf",
+   "lifecycle": [
+    "Infected seed gives infected seedlings.",
+    "Aphids spread the virus.",
+    "Leaves mottle and pucker.",
+    "Heads fail to form."
+   ],
+   "conditions": [
+    "Infected seed.",
+    "Aphids.",
+    "Old lettuce crops nearby.",
+    "Weeds."
+   ],
+   "photos": [
+    "lettuce_mosaic_virus_1"
+   ],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: lettuce mosaic virus",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  }
+ ],
+ "aliases": [],
+ "healthyLabels": []
+}

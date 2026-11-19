@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5b7af7f939da314084e91933dca2790, type: 3}
+  m_Name: Plant_Wheat
+  m_EditorClassIdentifier: 
+  plantId: wheat
+  plantName: Wheat
+  description: Triticum aestivum (bread wheat).
+  scientificName: Triticum aestivum
+  healthyModel: {fileID: 0}
+  leafPrefab: {fileID: 0}
+  thumbnail: {fileID: 0}
+  species: {fileID: 11400000, guid: c9dea2def58339049944e5680666ee91, type: 2}
+  features:
+  - {fileID: 11400000, guid: e003f3da852d56644be19f05a32c1ffc, type: 2}
+  - {fileID: 11400000, guid: 3453cfa66f7c33147a75d377fe66120e, type: 2}
+  - {fileID: 11400000, guid: 384e23ede7d0591438f622176646940f, type: 2}
+  - {fileID: 11400000, guid: 427819c8c06b57045929d881917ce5ae, type: 2}
+  diseases:
+  - {fileID: 11400000, guid: 16027972951c53d48bfff5f7ecd212dd, type: 2}
+  - {fileID: 11400000, guid: d84eee1b19c947f41b2901725c515dbe, type: 2}
+  - {fileID: 11400000, guid: f3f84e53c2856fb46aba5f7a729cddaf, type: 2}
+  - {fileID: 11400000, guid: f0b7c9abe1ee7814ca59d2e10682b5a4, type: 2}
+  - {fileID: 11400000, guid: 5fdd3d81c7782114cad63a85dc6eed1f, type: 2}
+  - {fileID: 11400000, guid: 39f7875e4940a74449152a9c774bea89, type: 2}
+  - {fileID: 11400000, guid: 63ac03efbbee6e844b5cff0dfcd44de2, type: 2}
+  - {fileID: 11400000, guid: a4d9d770b2aaa3d45896812f05f78cd3, type: 2}
+  - {fileID: 11400000, guid: 0efa60ba80972504ca541bf6f94ac4f2, type: 2}
+  - {fileID: 11400000, guid: 2208e06f9d1341b49ac55fa38a6e1c74, type: 2}

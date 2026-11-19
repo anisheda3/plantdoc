@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_SquashBacterialWilt
+  m_EditorClassIdentifier: 
+  diseaseId: bacterial_wilt
+  diseaseName: Bacterial Wilt
+  aiLabelAliases:
+  - squash_bacterial_wilt
+  - zucchini bacterial wilt
+  pathogenType: 1
+  pathogen: Erwinia tracheiphila
+  affectedPart: 4
+  sources:
+  - 'PlantSeg (Wei et al. 2024, CC BY 4.0) class: zucchini bacterial wilt'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: A bacterial disease that blocks the water vessels of squash and cucumber,
+    so the plant wilts and dies.
+  causes: Striped and spotted cucumber beetles carry the bacteria in their gut and
+    infect plants as they feed.
+  effectOnPlant: Wilted plants die within one to two weeks.
+  untreatedOutcome: Beetles keep spreading the bacteria to the rest of the planting.
+  symptoms:
+  - Single leaves wilt and look dull green
+  - Whole runners, then the plant, wilt and do not recover overnight
+  - Cut stems ooze sticky threads when pulled apart
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  - yellowing
+  - wilting
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: da97571d8a54f9f4780e5476e4c60efb, type: 2}
+  preventionPlan: {fileID: 11400000, guid: 21f1a7313ecb38445a054d9117faf1c0, type: 2}
+  simulationProfile: {fileID: 11400000, guid: 140cf5a64bfc6b64abfdde88e06a3683, type: 2}
+  lifecycleStages:
+  - The bacteria overwinter inside cucumber beetles.
+  - Feeding beetles infect the leaves.
+  - Bacteria fill the water vessels.
+  - Leaves, then the whole plant, wilt and die.
+  conditionFactors:
+  - Cucumber beetles present.
+  - Young plants.
+  - Warm weather.
+  - No row covers.
+  referencePhotos:
+  - {fileID: 2800000, guid: 13e6c3740239a96429ac81fb99be7ecb, type: 3}
+  lesionLabel: Dull leaf
+  haloLabel: Wilting edge
+  areaLabel: Wilted plant

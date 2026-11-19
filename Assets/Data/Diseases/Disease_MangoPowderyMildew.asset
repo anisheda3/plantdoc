@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_MangoPowderyMildew
+  m_EditorClassIdentifier: 
+  diseaseId: powdery_mildew
+  diseaseName: Powdery Mildew
+  aiLabelAliases:
+  - mango_powdery_mildew
+  - Powdery Mildew
+  - mango powdery mildew
+  pathogenType: 0
+  pathogen: Erysiphe quercicola (syn. Oidium mangiferae)
+  affectedPart: 0
+  sources:
+  - 'MangoLeafBD (Mendeley Data) class: Powdery Mildew, mango powdery mildew'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: A fungal disease that coats mango flowers, young fruit and leaves
+    with white powder.
+  causes: Spores blow on the wind; cool nights and dry, mild days at flowering favour
+    it.
+  effectOnPlant: Flowers and young fruit drop, so the crop is small.
+  untreatedOutcome: Severe attacks at flowering can wipe out the crop.
+  symptoms:
+  - White powdery patches on young leaves, often on the underside
+  - Flower panicles covered in white powder, then brown and dry
+  - Young fruit drops
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: 07997ae0c4c73424a8f761696403a095, type: 2}
+  preventionPlan: {fileID: 11400000, guid: 3683adbfcc3a06b4d8552c2ea6d1180e, type: 2}
+  simulationProfile: {fileID: 11400000, guid: 1cb18c769cd06ac49955cf8210c760a7, type: 2}
+  lifecycleStages:
+  - The fungus survives on old leaves.
+  - Spores blow onto young leaves and flowers.
+  - White powder covers them.
+  - Flowers and young fruit drop.
+  conditionFactors:
+  - Cool nights, mild days.
+  - Flowering season.
+  - Dense canopies.
+  - Susceptible varieties.
+  referencePhotos:
+  - {fileID: 2800000, guid: 27aef85f6b4918f4c85a998769370701, type: 3}
+  lesionLabel: White patch
+  haloLabel: Pale area
+  areaLabel: Powdery leaf

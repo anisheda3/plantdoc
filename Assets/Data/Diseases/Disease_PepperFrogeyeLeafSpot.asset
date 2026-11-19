@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_PepperFrogeyeLeafSpot
+  m_EditorClassIdentifier: 
+  diseaseId: frogeye_leaf_spot
+  diseaseName: Frogeye Leaf Spot
+  aiLabelAliases:
+  - pepper_frogeye_leaf_spot
+  - bell pepper frogeye leaf spot
+  pathogenType: 0
+  pathogen: Cercospora capsici
+  affectedPart: 0
+  sources:
+  - 'PlantSeg (Wei et al. 2024, CC BY 4.0) class: bell pepper frogeye leaf spot'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: A fungal leaf spot of pepper with pale-centred, dark-ringed spots.
+  causes: Spores survive on infected debris and seed and spread by wind and rain
+    splash in warm, humid weather.
+  effectOnPlant: Leaf drop exposes fruit to sunscald and reduces yield.
+  untreatedOutcome: Severe spotting defoliates plants.
+  symptoms:
+  - Round spots with light grey centres
+  - A dark brown ring round each spot (the 'frog eye')
+  - Spotted leaves yellow and drop
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  - yellowing
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: ea2c668c07963684f9124c92d28b3992, type: 2}
+  preventionPlan: {fileID: 11400000, guid: 35de23af7827b834b8d42da9ad59a262, type: 2}
+  simulationProfile: {fileID: 11400000, guid: c506b34179d2f9641ab90a09702535fc, type: 2}
+  lifecycleStages:
+  - The fungus survives on debris and seed.
+  - Wind and splash carry spores to leaves.
+  - Grey-centred spots with dark rings form.
+  - Leaves drop and spores spread.
+  conditionFactors:
+  - Warm, humid weather.
+  - Overhead watering.
+  - Debris from the last crop.
+  - Dense planting.
+  referencePhotos:
+  - {fileID: 2800000, guid: cb1149271149e5a40a41523d1e531bae, type: 3}
+  lesionLabel: Grey centre
+  haloLabel: Dark ring
+  areaLabel: Yellowing leaf

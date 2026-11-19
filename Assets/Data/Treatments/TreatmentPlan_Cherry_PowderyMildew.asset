@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5132a70f51fe6cb4ea3c7d283552eb79, type: 3}
+  m_Name: TreatmentPlan_Cherry_PowderyMildew
+  m_EditorClassIdentifier: 
+  treatmentId: cherry_powdery_mildew_treatment
+  planName: "Cherry \u2014 Powdery Mildew"
+  steps:
+  - {fileID: 11400000, guid: b2256be1e7c96444286e3cf475699365, type: 2}
+  - {fileID: 11400000, guid: b81f4b57d55766049b10c0f8d3d74363, type: 2}
+  - {fileID: 11400000, guid: df8048d96f2e3a3428dcccafc520f51d, type: 2}
+  residualSeverityFloor: 0.12
+  residualDamageFloor: 0.06
+  disclaimer: Educational guidance only. Treatment does not guarantee recovery. Consult
+    a local agricultural extension service for field decisions.

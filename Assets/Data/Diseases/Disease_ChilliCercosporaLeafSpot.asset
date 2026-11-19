@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_ChilliCercosporaLeafSpot
+  m_EditorClassIdentifier: 
+  diseaseId: leaf_spot
+  diseaseName: Cercospora Leaf Spot
+  aiLabelAliases:
+  - chilli_leaf_spot
+  - leaf spot
+  - Cercospora Leaf Spot
+  - chilli leaf spot
+  - Chilli___Cercospora_leaf_spot
+  pathogenType: 0
+  pathogen: Cercospora capsici
+  affectedPart: 0
+  sources:
+  - 'chili v2 (Roboflow) / Chilli Leaf Disease Dataset (Mendeley Data) class: leaf
+    spot, Cercospora Leaf Spot, chilli leaf spot'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: A fungal leaf spot of chilli with pale-centred, dark-ringed 'frog-eye'
+    spots.
+  causes: Spores survive on debris and seed and spread by wind and rain in warm,
+    humid weather.
+  effectOnPlant: Leaf drop exposes fruit to sunscald and cuts yield.
+  untreatedOutcome: Severe spotting defoliates plants.
+  symptoms:
+  - Round spots with light grey centres
+  - A dark brown ring round each spot
+  - Spotted leaves yellow and drop
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  - yellowing
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: 4ba7c3d74c1c2f7488e5ce174cd199a4, type: 2}
+  preventionPlan: {fileID: 11400000, guid: b9a45374ba7358142aca9d845c8f388b, type: 2}
+  simulationProfile: {fileID: 11400000, guid: 56b9902e67cb48d4392a2efe66992be9, type: 2}
+  lifecycleStages:
+  - The fungus survives on debris and seed.
+  - Wind and splash carry spores to leaves.
+  - Grey-centred spots with dark rings form.
+  - Leaves drop and spores spread.
+  conditionFactors:
+  - Warm, humid weather.
+  - Overhead watering.
+  - Debris from the last crop.
+  - Dense planting.
+  referencePhotos:
+  - {fileID: 2800000, guid: 81a3865334bb0d64e880bb35ece69cef, type: 3}
+  lesionLabel: Grey centre
+  haloLabel: Dark ring
+  areaLabel: Yellowing leaf

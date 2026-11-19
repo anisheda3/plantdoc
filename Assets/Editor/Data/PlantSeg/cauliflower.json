@@ -1,0 +1,224 @@
+{
+ "plantId": "cauliflower",
+ "plantName": "Cauliflower",
+ "scientificName": "Brassica oleracea var. botrytis",
+ "description": "Brassica oleracea var. botrytis: grown for its white curd.",
+ "diseases": [
+  {
+   "id": "alternaria_leaf_spot",
+   "name": "Alternaria Leaf Spot",
+   "type": "Fungal",
+   "part": "Leaf",
+   "pathogen": "Alternaria brassicicola and A. brassicae",
+   "labels": [
+    "cauliflower alternaria leaf spot"
+   ],
+   "description": "A fungal leaf spot of cauliflower and other brassicas with dark, target-like spots.",
+   "causes": "Spores survive on brassica debris and seed and spread by wind and rain in warm, wet weather.",
+   "symptoms": [
+    "Round brown to black spots with concentric rings",
+    "A yellow halo round the spots",
+    "Dark spots on heads and stems too"
+   ],
+   "effect": "Spotted outer leaves and blemished heads reduce quality.",
+   "untreated": "Severe spotting reaches the harvested part.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Remove spotted outer leaves",
+     "instruction": "Pick off spotted outer leaves when the plants are dry and take them away.",
+     "rationale": "Fewer spores are left to spread.",
+     "mode": "TapRegion",
+     "days": 2,
+     "effect": "Remove",
+     "chemical": false
+    },
+    {
+     "title": "Water at the base",
+     "instruction": "Avoid wetting the leaves.",
+     "rationale": "Spores need wet leaves.",
+     "mode": "AdjustSetting",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Protective spray",
+     "instruction": "Spray a registered fungicide on the label's schedule.",
+     "rationale": "Protects healthy growth; it cannot cure what is already infected.",
+     "mode": "SprayApply",
+     "days": 3,
+     "effect": "Protect",
+     "chemical": true
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropManagement",
+     "title": "Rotate away from brassicas for 3 years",
+     "detail": "Debris carries the fungus."
+    },
+    {
+     "category": "CropManagement",
+     "title": "Use clean, treated seed",
+     "detail": "Seed carries it."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_EarlyBlight",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.24,
+     0.2,
+     0.14
+    ],
+    "halo": [
+     0.8,
+     0.76,
+     0.3
+    ],
+    "yellow": [
+     0.84,
+     0.8,
+     0.34
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.6,
+    "wilting": 0.4,
+    "damage": 0.6,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Target spot",
+   "haloLabel": "Yellow halo",
+   "areaLabel": "Spotted leaf",
+   "lifecycle": [
+    "The fungus survives on debris and seed.",
+    "Wind and rain carry spores to leaves.",
+    "Dark ringed spots with halos form.",
+    "Spots reach the heads in wet weather."
+   ],
+   "conditions": [
+    "Warm, wet weather.",
+    "Brassica debris.",
+    "Overhead watering.",
+    "Infected seed."
+   ],
+   "photos": [
+    "cauliflower_alternaria_leaf_spot_1"
+   ],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: cauliflower alternaria leaf spot",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "bacterial_soft_rot",
+   "name": "Bacterial Soft Rot",
+   "type": "Bacterial",
+   "part": "Head",
+   "pathogen": "Pectobacterium carotovorum (and related species)",
+   "labels": [
+    "cauliflower bacterial soft rot"
+   ],
+   "description": "A bacterial rot that turns parts of the cauliflower curd soft, slimy and foul-smelling.",
+   "causes": "Soil bacteria enter the curd through wounds, insect damage and frost cracks, especially when water sits on the head in warm weather.",
+   "symptoms": [
+    "Water-soaked, tan patches on the curd",
+    "The patches turn soft, slimy and brown",
+    "A strong rotten smell"
+   ],
+   "effect": "Rotted heads are lost, in the field and in storage.",
+   "untreated": "The rot spreads to neighbouring heads in wet weather.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Remove rotting heads",
+     "instruction": "Cut out and remove rotting heads at once.",
+     "rationale": "They ooze bacteria onto the soil and tools.",
+     "mode": "GrabAndRemove",
+     "days": 1,
+     "effect": "Remove",
+     "chemical": false
+    },
+    {
+     "title": "Keep heads dry",
+     "instruction": "Water at the base and improve drainage.",
+     "rationale": "Water on the curd lets the bacteria in.",
+     "mode": "AdjustSetting",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Harvest with care",
+     "instruction": "Avoid bruising heads; cool them quickly.",
+     "rationale": "Wounds start the rot.",
+     "mode": "Informational",
+     "days": 1,
+     "effect": "Small",
+     "chemical": false
+    }
+   ],
+   "prevention": [
+    {
+     "category": "WaterManagement",
+     "title": "Avoid overhead watering near harvest",
+     "detail": "Keeps curds dry."
+    },
+    {
+     "category": "CropManagement",
+     "title": "Control caterpillars and slugs",
+     "detail": "Their wounds let bacteria in."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_FruitRot",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.56,
+     0.46,
+     0.28
+    ],
+    "halo": [
+     0.7,
+     0.62,
+     0.42
+    ],
+    "yellow": [
+     0.8,
+     0.74,
+     0.46
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.0,
+    "wilting": 0.2,
+    "damage": 0.6,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Slimy patch",
+   "haloLabel": "Water-soaked edge",
+   "areaLabel": "Rotting curd",
+   "lifecycle": [
+    "Soil bacteria splash onto the plant.",
+    "They enter through wounds in the curd.",
+    "Water-soaked patches go soft and slimy.",
+    "Ooze spreads them to other heads."
+   ],
+   "conditions": [
+    "Warm, wet weather.",
+    "Water sitting on the curd.",
+    "Insect and frost wounds.",
+    "Poor drainage."
+   ],
+   "photos": [],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: cauliflower bacterial soft rot",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  }
+ ],
+ "aliases": [],
+ "healthyLabels": []
+}

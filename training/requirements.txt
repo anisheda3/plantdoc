@@ -1,0 +1,19 @@
+# PyTorch is installed separately by setup_env.ps1 from the CUDA 12.8 index
+# (RTX 50-series / Blackwell GPUs need torch >= 2.7 built for cu128).
+timm>=1.0.15
+albumentations>=2.0.5,<3
+opencv-python-headless>=4.10
+numpy>=2.0
+pandas>=2.2
+pillow>=10.4
+pyyaml>=6.0
+imagehash>=4.3
+scikit-learn>=1.5
+tqdm>=4.66
+requests>=2.32
+pyarrow>=17.0        # Plant Pathology 2021 ships as parquet
+py7zr>=0.22          # Taiwan / PlantVillage archives are .7z
+tensorboard>=2.17
+onnx>=1.17
+onnxscript>=0.1      # needed by newer torch.onnx exporters
+onnxruntime>=1.19

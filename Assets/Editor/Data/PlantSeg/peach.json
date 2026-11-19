@@ -1,0 +1,568 @@
+{
+ "plantId": "peach",
+ "plantName": "Peach",
+ "scientificName": "",
+ "description": "",
+ "diseases": [
+  {
+   "id": "anthracnose",
+   "name": "Anthracnose",
+   "type": "Fungal",
+   "part": "Fruit",
+   "pathogen": "Colletotrichum spp.",
+   "labels": [
+    "peach anthracnose"
+   ],
+   "description": "A fungal fruit rot of peach that is worst in warm, wet weather near harvest.",
+   "causes": "Spores spread by rain splash from infected fruit and nearby hosts; warm, humid weather favours it.",
+   "symptoms": [
+    "Round, sunken, tan to brown spots on the fruit",
+    "Rings of orange-pink spore masses in the spots",
+    "Fruit rots and mummifies"
+   ],
+   "effect": "Infected fruit is lost, before or after harvest.",
+   "untreated": "Mummified fruit carries the fungus to next season.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Remove rotting fruit",
+     "instruction": "Pick off and remove spotted fruit and mummies.",
+     "rationale": "Each rotting fruit releases masses of spores.",
+     "mode": "GrabAndRemove",
+     "days": 2,
+     "effect": "Remove",
+     "chemical": false
+    },
+    {
+     "title": "Harvest promptly and cool the fruit",
+     "instruction": "Pick at maturity and keep the fruit cool.",
+     "rationale": "Rot develops fast in warm fruit.",
+     "mode": "AdjustSetting",
+     "days": 1,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Protective fungicide before harvest",
+     "instruction": "Spray a registered product on the label's schedule in wet weather.",
+     "rationale": "Protects ripening fruit.",
+     "mode": "SprayApply",
+     "days": 3,
+     "effect": "Protect",
+     "chemical": true
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropHygiene",
+     "title": "Remove mummies and dropped fruit",
+     "detail": "They carry the fungus over."
+    },
+    {
+     "category": "AirCirculation",
+     "title": "Prune for airflow",
+     "detail": "Fruit dries faster."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_FruitRot",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.52,
+     0.34,
+     0.18
+    ],
+    "halo": [
+     0.92,
+     0.56,
+     0.36
+    ],
+    "yellow": [
+     0.8,
+     0.7,
+     0.4
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.1,
+    "wilting": 0.0,
+    "damage": 0.5,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Sunken spot",
+   "haloLabel": "Spore rings",
+   "areaLabel": "Rotting fruit",
+   "lifecycle": [
+    "The fungus survives on mummies and twigs.",
+    "Rain splashes spores onto the fruit.",
+    "Sunken spots with spore rings form as fruit ripens.",
+    "Rotting fruit spreads it to its neighbours."
+   ],
+   "conditions": [
+    "Warm, wet weather.",
+    "Fruit near harvest.",
+    "Mummies left in the tree.",
+    "Wounds on the fruit."
+   ],
+   "photos": [],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: peach anthracnose",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "brown_rot",
+   "name": "Brown Rot",
+   "type": "Fungal",
+   "part": "Fruit",
+   "pathogen": "Monilinia fructicola (and M. laxa)",
+   "labels": [
+    "peach brown rot"
+   ],
+   "description": "A fungal disease of stone fruit that blights blossoms and rots the fruit.",
+   "causes": "Spores from mummified fruit and twig cankers infect blossoms in wet spring weather and ripening fruit near harvest, often through wounds.",
+   "symptoms": [
+    "Soft, light-brown rot spreading fast over the fruit",
+    "Tufts of grey-tan spores on the rot",
+    "Fruit shrivels into a dry mummy"
+   ],
+   "effect": "Rotted fruit is lost, on the tree and in storage.",
+   "untreated": "Mummies and cankers start next year's infections.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Remove rotting fruit and mummies",
+     "instruction": "Pick off rotting fruit and all mummies, also from the ground.",
+     "rationale": "They are the main spore source.",
+     "mode": "GrabAndRemove",
+     "days": 2,
+     "effect": "Remove",
+     "chemical": false
+    },
+    {
+     "title": "Prune out blighted twigs",
+     "instruction": "Cut out twigs with cankers well below the damage.",
+     "rationale": "Cankers release spores for years.",
+     "mode": "TapRegion",
+     "days": 2,
+     "effect": "Remove",
+     "chemical": false
+    },
+    {
+     "title": "Fungicide at bloom and before harvest",
+     "instruction": "Spray a registered product at the label's timings.",
+     "rationale": "Blossoms and ripening fruit are the vulnerable stages.",
+     "mode": "SprayApply",
+     "days": 3,
+     "effect": "Protect",
+     "chemical": true
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropHygiene",
+     "title": "Clear all mummies in winter",
+     "detail": "Breaks the cycle."
+    },
+    {
+     "category": "CropManagement",
+     "title": "Control fruit-wounding insects",
+     "detail": "Wounds let the fungus in."
+    },
+    {
+     "category": "AirCirculation",
+     "title": "Thin fruit and prune",
+     "detail": "Touching fruit passes the rot along."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_FruitRot",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.46,
+     0.3,
+     0.16
+    ],
+    "halo": [
+     0.72,
+     0.66,
+     0.56
+    ],
+    "yellow": [
+     0.8,
+     0.7,
+     0.4
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.1,
+    "wilting": 0.0,
+    "damage": 0.6,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Brown rot",
+   "haloLabel": "Spore tufts",
+   "areaLabel": "Rotting fruit",
+   "lifecycle": [
+    "The fungus overwinters in mummies and cankers.",
+    "Spring spores blight the blossoms.",
+    "Near harvest, spores infect ripening fruit.",
+    "Rotting fruit shrivels into new mummies."
+   ],
+   "conditions": [
+    "Wet weather at bloom and harvest.",
+    "Mummies left on or under the tree.",
+    "Insect and hail wounds.",
+    "Crowded fruit."
+   ],
+   "photos": [
+    "peach_brown_rot_1"
+   ],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: peach brown rot",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "leaf_curl",
+   "name": "Peach Leaf Curl",
+   "type": "Fungal",
+   "part": "Leaf",
+   "pathogen": "Taphrina deformans",
+   "labels": [
+    "peach leaf curl"
+   ],
+   "description": "A fungal disease that thickens, puckers and reddens peach leaves in spring.",
+   "causes": "Spores on the bark and buds infect the leaves as the buds open in cool, wet spring weather.",
+   "symptoms": [
+    "Thick, puckered, curled leaves",
+    "Red to purple colour on the puckered areas",
+    "Leaves turn powdery grey-white, then drop"
+   ],
+   "effect": "The tree loses its first leaves and must regrow them, which weakens it.",
+   "untreated": "Several years of heavy curl weaken the tree and cut the crop.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Remove curled leaves",
+     "instruction": "Pick off and remove curled leaves where practical.",
+     "rationale": "Reduces spores for next season (the tree regrows leaves).",
+     "mode": "TapRegion",
+     "days": 2,
+     "effect": "Remove",
+     "chemical": false
+    },
+    {
+     "title": "Feed and water the tree",
+     "instruction": "Water in dry spells and feed lightly to support the new leaves.",
+     "rationale": "The second flush of leaves is not infected.",
+     "mode": "AdjustSetting",
+     "days": 3,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Spray before bud swell next year",
+     "instruction": "Apply a registered fungicide at leaf fall or before the buds swell, following the label.",
+     "rationale": "Spraying after the leaves curl does not help.",
+     "mode": "SprayApply",
+     "days": 4,
+     "effect": "Protect",
+     "chemical": true
+    }
+   ],
+   "prevention": [
+    {
+     "category": "Monitoring",
+     "title": "Spray at the right time",
+     "detail": "Only sprays before bud swell work."
+    },
+    {
+     "category": "EnvironmentalManagement",
+     "title": "Shelter from rain in spring",
+     "detail": "Wall-trained trees can be covered."
+    },
+    {
+     "category": "CropManagement",
+     "title": "Grow resistant varieties",
+     "detail": "Some peaches are much less affected."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_Blister",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.78,
+     0.28,
+     0.34
+    ],
+    "halo": [
+     0.86,
+     0.56,
+     0.44
+    ],
+    "yellow": [
+     0.84,
+     0.78,
+     0.4
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.4,
+    "wilting": 0.3,
+    "damage": 0.6,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Red blister",
+   "haloLabel": "Puckered area",
+   "areaLabel": "Curled leaf",
+   "lifecycle": [
+    "Spores overwinter on bark and bud scales.",
+    "Cool, wet weather at bud break lets them infect.",
+    "Leaves thicken, pucker and turn red.",
+    "A grey bloom of new spores forms before the leaves drop."
+   ],
+   "conditions": [
+    "Cool (10-21 °C), wet spring.",
+    "Rain at bud break.",
+    "No dormant spray.",
+    "Susceptible varieties."
+   ],
+   "photos": [
+    "peach_leaf_curl_1"
+   ],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: peach leaf curl",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "rust",
+   "name": "Peach Rust",
+   "type": "Fungal",
+   "part": "Leaf",
+   "pathogen": "Tranzschelia discolor",
+   "labels": [
+    "peach rust"
+   ],
+   "description": "A rust fungus of peach and other stone fruit leaves.",
+   "causes": "Spores blow in or survive in twig cankers; long leaf wetness in warm weather lets them infect.",
+   "symptoms": [
+    "Small, angular yellow spots on the upper leaf",
+    "Rusty brown powdery pustules underneath",
+    "Leaves yellow and drop late in the season"
+   ],
+   "effect": "Early leaf fall weakens the tree for next year.",
+   "untreated": "Repeated defoliation reduces vigour and fruit size.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Clear fallen leaves",
+     "instruction": "Rake and remove leaves in autumn.",
+     "rationale": "Reduces spores near the tree.",
+     "mode": "GrabAndRemove",
+     "days": 2,
+     "effect": "Remove",
+     "chemical": false
+    },
+    {
+     "title": "Prune out cankered twigs",
+     "instruction": "Remove twigs with rust cankers in spring.",
+     "rationale": "Cankers start early infections.",
+     "mode": "TapRegion",
+     "days": 2,
+     "effect": "Remove",
+     "chemical": false
+    },
+    {
+     "title": "Fungicide when rust appears early",
+     "instruction": "Spray a registered product following the label.",
+     "rationale": "Protects leaves until harvest.",
+     "mode": "SprayApply",
+     "days": 3,
+     "effect": "Protect",
+     "chemical": true
+    }
+   ],
+   "prevention": [
+    {
+     "category": "AirCirculation",
+     "title": "Prune for airflow",
+     "detail": "Shorter leaf wetness."
+    },
+    {
+     "category": "Monitoring",
+     "title": "Check leaf undersides in summer",
+     "detail": "Early pustules are the signal."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_Angular",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.7,
+     0.4,
+     0.14
+    ],
+    "halo": [
+     0.86,
+     0.8,
+     0.32
+    ],
+    "yellow": [
+     0.86,
+     0.78,
+     0.3
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.8,
+    "wilting": 0.4,
+    "damage": 0.5,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Yellow spot",
+   "haloLabel": "Rust pustule",
+   "areaLabel": "Yellowing leaf",
+   "lifecycle": [
+    "Spores survive in twig cankers or blow in.",
+    "Wet, warm weather lets them infect leaves.",
+    "Yellow spots form, with rust pustules beneath.",
+    "New spores spread through the tree."
+   ],
+   "conditions": [
+    "Warm, humid weather.",
+    "Long leaf wetness.",
+    "Twig cankers.",
+    "Late summer."
+   ],
+   "photos": [
+    "peach_rust_1"
+   ],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: peach rust",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "scab",
+   "name": "Peach Scab",
+   "type": "Fungal",
+   "part": "Fruit",
+   "pathogen": "Cladosporium carpophilum (Venturia carpophila)",
+   "labels": [
+    "peach scab"
+   ],
+   "description": "A fungal disease that freckles peach fruit with dark spots.",
+   "causes": "Spores from twig lesions infect young fruit in warm, wet weather after petal fall; spots appear weeks later.",
+   "symptoms": [
+    "Small olive-green to black spots on the fruit, near the stem end",
+    "Spots join into dark blotches",
+    "Fruit skin cracks over the blotches"
+   ],
+   "effect": "Fruit is blemished and may crack and rot.",
+   "untreated": "Twig lesions carry the fungus to next year.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Prune out infected twigs",
+     "instruction": "Remove twigs with scab lesions in winter.",
+     "rationale": "They are the spore source.",
+     "mode": "TapRegion",
+     "days": 2,
+     "effect": "Remove",
+     "chemical": false
+    },
+    {
+     "title": "Open the canopy",
+     "instruction": "Prune so fruit dries quickly.",
+     "rationale": "Spores need wet fruit.",
+     "mode": "AdjustSetting",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Fungicide from petal fall",
+     "instruction": "Spray a registered product on the label's schedule.",
+     "rationale": "Young fruit is infected in the first weeks.",
+     "mode": "SprayApply",
+     "days": 3,
+     "effect": "Protect",
+     "chemical": true
+    }
+   ],
+   "prevention": [
+    {
+     "category": "AirCirculation",
+     "title": "Prune every year",
+     "detail": "Faster drying."
+    },
+    {
+     "category": "CropHygiene",
+     "title": "Remove infected twigs",
+     "detail": "Breaks the cycle."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_SmallSpots",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.26,
+     0.26,
+     0.14
+    ],
+    "halo": [
+     0.4,
+     0.38,
+     0.22
+    ],
+    "yellow": [
+     0.8,
+     0.7,
+     0.4
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.0,
+    "wilting": 0.0,
+    "damage": 0.3,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Scab spot",
+   "haloLabel": "Dark blotch",
+   "areaLabel": "Freckled fruit",
+   "lifecycle": [
+    "The fungus overwinters in twig lesions.",
+    "Spring rain spreads spores to young fruit.",
+    "Spots appear about 6 weeks later.",
+    "Spots join and the skin cracks."
+   ],
+   "conditions": [
+    "Warm, wet weather after petal fall.",
+    "Low, humid sites.",
+    "Unpruned trees.",
+    "Twig lesions left in the tree."
+   ],
+   "photos": [
+    "peach_scab_1"
+   ],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: peach scab",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  }
+ ],
+ "aliases": [
+  {
+   "disease": "bacterial_spot",
+   "labels": [
+    "Peach___Bacterial_spot"
+   ]
+  }
+ ],
+ "healthyLabels": [
+  "Peach leaf",
+  "Peach___healthy"
+ ]
+}

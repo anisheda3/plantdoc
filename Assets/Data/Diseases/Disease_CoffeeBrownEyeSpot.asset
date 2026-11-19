@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_CoffeeBrownEyeSpot
+  m_EditorClassIdentifier: 
+  diseaseId: brown_eye_spot
+  diseaseName: Brown Eye Spot
+  aiLabelAliases:
+  - coffee_brown_eye_spot
+  - coffee brown eye spot
+  pathogenType: 0
+  pathogen: Cercospora coffeicola
+  affectedPart: 0
+  sources:
+  - 'PlantSeg (Wei et al. 2024, CC BY 4.0) class: coffee brown eye spot'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: A fungal leaf spot of coffee with round brown spots and pale centres,
+    like eyes.
+  causes: Spores spread by wind and rain; worse on stressed, under-fed bushes and
+    seedlings in full sun.
+  effectOnPlant: Leaf loss weakens the bush.
+  untreatedOutcome: Seedlings in nurseries can be badly affected.
+  symptoms:
+  - Round brown spots with a grey-white centre
+  - A yellow halo round each spot
+  - Spotted leaves drop early
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  - yellowing
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: 5270eb3ef26ab864b86a7e43dc7d26f0, type: 2}
+  preventionPlan: {fileID: 11400000, guid: 7c4da546fc460b94f9b1f3355f7cf518, type: 2}
+  simulationProfile: {fileID: 11400000, guid: cd16f462f335dae46802bca619fd423e, type: 2}
+  lifecycleStages:
+  - Spores come from spotted leaves.
+  - Wind and rain spread them.
+  - Round brown spots with pale centres form.
+  - Leaves drop early.
+  conditionFactors:
+  - Full sun.
+  - Poor nutrition.
+  - Humid weather.
+  - Nursery seedlings.
+  referencePhotos:
+  - {fileID: 2800000, guid: d11c3ec5ca2288b4b8957d8bb6087211, type: 3}
+  lesionLabel: Brown spot
+  haloLabel: Yellow halo
+  areaLabel: Spotted leaf

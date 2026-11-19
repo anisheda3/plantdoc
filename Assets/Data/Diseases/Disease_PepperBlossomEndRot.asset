@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_PepperBlossomEndRot
+  m_EditorClassIdentifier: 
+  diseaseId: blossom_end_rot
+  diseaseName: Blossom End Rot
+  aiLabelAliases:
+  - pepper_blossom_end_rot
+  - bell pepper blossom end rot
+  pathogenType: 4
+  pathogen: Calcium shortage in the growing fruit (uneven watering)
+  affectedPart: 1
+  sources:
+  - 'PlantSeg (Wei et al. 2024, CC BY 4.0) class: bell pepper blossom end rot'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: 'A disorder, not an infection: the end of the fruit away from the
+    stalk dies because too little calcium reaches it while it grows.'
+  causes: Uneven watering (dry spells then heavy watering), drought, root damage
+    or too much nitrogen keep calcium from reaching the fruit; it is rarely a lack
+    of calcium in the soil.
+  effectOnPlant: Affected fruit is spoiled; later fruit is fine once watering is
+    even.
+  untreatedOutcome: Fruit keeps being lost while watering stays uneven.
+  symptoms:
+  - Water-soaked patch at the blossom end of the fruit
+  - The patch turns sunken, tan to black and leathery
+  - Moulds may grow on the dead patch
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: 704487c785c1d0c449e1f521b444423f, type: 2}
+  preventionPlan: {fileID: 11400000, guid: 57bf8a50a6255b44092637b57bd78110, type: 2}
+  simulationProfile: {fileID: 11400000, guid: 37f8580fe8d43b74f9f5e31f4e3eec5f, type: 2}
+  lifecycleStages:
+  - Fruit grows fast in warm weather.
+  - Uneven water slows calcium reaching its far end.
+  - 'Cells there die: a water-soaked patch appears.'
+  - The patch sinks and turns dark and leathery.
+  conditionFactors:
+  - Uneven watering.
+  - Hot, dry spells.
+  - Heavy nitrogen feeding.
+  - Root damage.
+  referencePhotos:
+  - {fileID: 2800000, guid: 255b613542572be40b290ecd0bdb9916, type: 3}
+  lesionLabel: Dark patch
+  haloLabel: Water-soaked edge
+  areaLabel: Affected fruit

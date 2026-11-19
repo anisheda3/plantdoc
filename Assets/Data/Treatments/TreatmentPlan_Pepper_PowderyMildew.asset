@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5132a70f51fe6cb4ea3c7d283552eb79, type: 3}
+  m_Name: TreatmentPlan_Pepper_PowderyMildew
+  m_EditorClassIdentifier: 
+  treatmentId: pepper_powdery_mildew_treatment
+  planName: "Pepper \u2014 Powdery Mildew"
+  steps:
+  - {fileID: 11400000, guid: ecb6785c9922c8c4284b06852fcdd38e, type: 2}
+  - {fileID: 11400000, guid: 8b62a1bd6ff456b4580128ad2e4977f9, type: 2}
+  - {fileID: 11400000, guid: 4768b3c212e55324aa11c30474ebfe71, type: 2}
+  residualSeverityFloor: 0.12
+  residualDamageFloor: 0.06
+  disclaimer: Educational guidance only. Treatment does not guarantee recovery. Consult
+    a local agricultural extension service for field decisions.

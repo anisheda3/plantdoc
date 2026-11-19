@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5132a70f51fe6cb4ea3c7d283552eb79, type: 3}
+  m_Name: TreatmentPlan_Pepper_BacterialSpot
+  m_EditorClassIdentifier: 
+  treatmentId: pepper_bacterial_spot_treatment
+  planName: "Pepper \u2014 Bacterial Spot"
+  steps:
+  - {fileID: 11400000, guid: 59afe876fb510254aa32838e69169340, type: 2}
+  - {fileID: 11400000, guid: 7258475c6c8d5f54cba9da451bfad13e, type: 2}
+  - {fileID: 11400000, guid: b5295e28654150f45a5f27abad3b7b4b, type: 2}
+  residualSeverityFloor: 0.18
+  residualDamageFloor: 0.12
+  disclaimer: Educational guidance only. Treatment does not guarantee recovery. Consult
+    a local agricultural extension service for field decisions.

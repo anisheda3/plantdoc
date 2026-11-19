@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5132a70f51fe6cb4ea3c7d283552eb79, type: 3}
+  m_Name: TreatmentPlan_TomatoLateBlight
+  m_EditorClassIdentifier: 
+  treatmentId: tomato_late_blight_treatment
+  planName: "Tomato \u2014 Late Blight"
+  steps:
+  - {fileID: 11400000, guid: 2afaf8c0f96775a47bddf9264807dc32, type: 2}
+  - {fileID: 11400000, guid: 3245112bcf56ac14e8f001d60c60cdec, type: 2}
+  - {fileID: 11400000, guid: 2de5a98f95146614cb5ff42a4976ee22, type: 2}
+  residualSeverityFloor: 0.2
+  residualDamageFloor: 0.15
+  disclaimer: Educational guidance only. Treatment does not guarantee recovery. Consult
+    a local agricultural extension service for field decisions.

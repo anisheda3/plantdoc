@@ -1,0 +1,334 @@
+{
+ "plantId": "broccoli",
+ "plantName": "Broccoli",
+ "scientificName": "Brassica oleracea var. italica",
+ "description": "Brassica oleracea var. italica: grown for its green flower head.",
+ "diseases": [
+  {
+   "id": "alternaria_leaf_spot",
+   "name": "Alternaria Leaf Spot",
+   "type": "Fungal",
+   "part": "Leaf",
+   "pathogen": "Alternaria brassicicola and A. brassicae",
+   "labels": [
+    "broccoli alternaria leaf spot"
+   ],
+   "description": "A fungal leaf spot of broccoli and other brassicas with dark, target-like spots.",
+   "causes": "Spores survive on brassica debris and seed and spread by wind and rain in warm, wet weather.",
+   "symptoms": [
+    "Round brown to black spots with concentric rings",
+    "A yellow halo round the spots",
+    "Dark spots on heads and stems too"
+   ],
+   "effect": "Spotted outer leaves and blemished heads reduce quality.",
+   "untreated": "Severe spotting reaches the harvested part.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Remove spotted outer leaves",
+     "instruction": "Pick off spotted outer leaves when the plants are dry and take them away.",
+     "rationale": "Fewer spores are left to spread.",
+     "mode": "TapRegion",
+     "days": 2,
+     "effect": "Remove",
+     "chemical": false
+    },
+    {
+     "title": "Water at the base",
+     "instruction": "Avoid wetting the leaves.",
+     "rationale": "Spores need wet leaves.",
+     "mode": "AdjustSetting",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Protective spray",
+     "instruction": "Spray a registered fungicide on the label's schedule.",
+     "rationale": "Protects healthy growth; it cannot cure what is already infected.",
+     "mode": "SprayApply",
+     "days": 3,
+     "effect": "Protect",
+     "chemical": true
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropManagement",
+     "title": "Rotate away from brassicas for 3 years",
+     "detail": "Debris carries the fungus."
+    },
+    {
+     "category": "CropManagement",
+     "title": "Use clean, treated seed",
+     "detail": "Seed carries it."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_EarlyBlight",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.24,
+     0.2,
+     0.14
+    ],
+    "halo": [
+     0.8,
+     0.76,
+     0.3
+    ],
+    "yellow": [
+     0.84,
+     0.8,
+     0.34
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.6,
+    "wilting": 0.4,
+    "damage": 0.6,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Target spot",
+   "haloLabel": "Yellow halo",
+   "areaLabel": "Spotted leaf",
+   "lifecycle": [
+    "The fungus survives on debris and seed.",
+    "Wind and rain carry spores to leaves.",
+    "Dark ringed spots with halos form.",
+    "Spots reach the heads in wet weather."
+   ],
+   "conditions": [
+    "Warm, wet weather.",
+    "Brassica debris.",
+    "Overhead watering.",
+    "Infected seed."
+   ],
+   "photos": [
+    "broccoli_alternaria_leaf_spot_1"
+   ],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: broccoli alternaria leaf spot",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "downy_mildew",
+   "name": "Downy Mildew",
+   "type": "Oomycete",
+   "part": "Leaf",
+   "pathogen": "Hyaloperonospora brassicae",
+   "labels": [
+    "broccoli downy mildew"
+   ],
+   "description": "A water-mould disease of broccoli and other brassicas, worst in cool, damp weather.",
+   "causes": "Spores spread by wind and splash from infected plants and debris; cool nights with leaf wetness let them infect.",
+   "symptoms": [
+    "Yellow, angular patches on the upper leaf",
+    "White to grey downy growth underneath",
+    "Patches turn brown; heads may be discoloured inside"
+   ],
+   "effect": "Spotted leaves and heads lose quality.",
+   "untreated": "Seedlings can be killed.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Remove affected leaves",
+     "instruction": "Pick off affected leaves when the plants are dry and take them away.",
+     "rationale": "Fewer spores are left to spread.",
+     "mode": "TapRegion",
+     "days": 2,
+     "effect": "Remove",
+     "chemical": false
+    },
+    {
+     "title": "Improve airflow",
+     "instruction": "Space plants and avoid evening watering.",
+     "rationale": "Leaves dry faster.",
+     "mode": "AdjustSetting",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Protective spray",
+     "instruction": "Spray a registered fungicide on the label's schedule.",
+     "rationale": "Protects healthy growth; it cannot cure what is already infected.",
+     "mode": "SprayApply",
+     "days": 3,
+     "effect": "Protect",
+     "chemical": true
+    }
+   ],
+   "prevention": [
+    {
+     "category": "AirCirculation",
+     "title": "Space plants widely",
+     "detail": "Less humidity."
+    },
+    {
+     "category": "CropManagement",
+     "title": "Grow tolerant varieties",
+     "detail": "Some resist it."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_Angular",
+    "yellowMask": "T_YellowMask_Angular",
+    "lesion": [
+     0.56,
+     0.44,
+     0.24
+    ],
+    "halo": [
+     0.84,
+     0.8,
+     0.36
+    ],
+    "yellow": [
+     0.86,
+     0.82,
+     0.38
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.8,
+    "wilting": 0.4,
+    "damage": 0.5,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Angular patch",
+   "haloLabel": "Brown edge",
+   "areaLabel": "Yellow patch",
+   "lifecycle": [
+    "Spores come from infected plants and debris.",
+    "Cool, damp nights let them infect.",
+    "Yellow angular patches form, white down underneath.",
+    "Spores spread to neighbours."
+   ],
+   "conditions": [
+    "Cool (10-15 °C), damp weather.",
+    "Long leaf wetness.",
+    "Crowded seedlings.",
+    "Brassica debris."
+   ],
+   "photos": [
+    "broccoli_downy_mildew_1"
+   ],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: broccoli downy mildew",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "ring_spot",
+   "name": "Ring Spot",
+   "type": "Fungal",
+   "part": "Leaf",
+   "pathogen": "Mycosphaerella brassicicola",
+   "labels": [
+    "broccoli ring spot"
+   ],
+   "description": "A fungal leaf spot of brassicas with grey spots full of tiny black dots in rings.",
+   "causes": "Spores from brassica debris spread by wind and rain in cool, wet weather.",
+   "symptoms": [
+    "Round grey to brown spots, 3-20 mm, with a green-yellow border",
+    "Tiny black dots arranged in rings within the spots",
+    "Spotted leaves yellow and drop"
+   ],
+   "effect": "Outer leaves die early; spots can mark the harvested part.",
+   "untreated": "Heavy spotting lowers yield and quality.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Remove spotted leaves",
+     "instruction": "Pick off spotted leaves when the plants are dry and take them away.",
+     "rationale": "Fewer spores are left to spread.",
+     "mode": "TapRegion",
+     "days": 2,
+     "effect": "Remove",
+     "chemical": false
+    },
+    {
+     "title": "Clear brassica debris",
+     "instruction": "Remove or bury old crop remains.",
+     "rationale": "The fungus survives on them.",
+     "mode": "GrabAndRemove",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Protective spray",
+     "instruction": "Spray a registered fungicide on the label's schedule.",
+     "rationale": "Protects healthy growth; it cannot cure what is already infected.",
+     "mode": "SprayApply",
+     "days": 3,
+     "effect": "Protect",
+     "chemical": true
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropManagement",
+     "title": "Rotate away from brassicas",
+     "detail": "Three years if possible."
+    },
+    {
+     "category": "CropHygiene",
+     "title": "Remove crop debris",
+     "detail": "Breaks the cycle."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_EarlyBlight",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.56,
+     0.54,
+     0.5
+    ],
+    "halo": [
+     0.7,
+     0.74,
+     0.4
+    ],
+    "yellow": [
+     0.84,
+     0.8,
+     0.34
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.5,
+    "wilting": 0.4,
+    "damage": 0.5,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Grey spot",
+   "haloLabel": "Ring of dots",
+   "areaLabel": "Spotted leaf",
+   "lifecycle": [
+    "The fungus survives on brassica debris.",
+    "Cool, wet weather spreads spores.",
+    "Grey spots with rings of black dots form.",
+    "Spores spread to new leaves."
+   ],
+   "conditions": [
+    "Cool, wet weather.",
+    "Brassica debris.",
+    "Long leaf wetness.",
+    "Overwintered crops."
+   ],
+   "photos": [
+    "broccoli_ring_spot_1"
+   ],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: broccoli ring spot",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  }
+ ],
+ "aliases": [],
+ "healthyLabels": []
+}

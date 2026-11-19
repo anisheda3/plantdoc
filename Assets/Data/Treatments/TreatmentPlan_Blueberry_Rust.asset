@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5132a70f51fe6cb4ea3c7d283552eb79, type: 3}
+  m_Name: TreatmentPlan_Blueberry_Rust
+  m_EditorClassIdentifier: 
+  treatmentId: blueberry_rust_treatment
+  planName: "Blueberry \u2014 Blueberry Leaf Rust"
+  steps:
+  - {fileID: 11400000, guid: 4bc81d48fa58ae541823dadc70191400, type: 2}
+  - {fileID: 11400000, guid: 6b445df97db484c4c9b528e6ed2bcc17, type: 2}
+  - {fileID: 11400000, guid: 6a304c24372e8ad43a9a20c107609a69, type: 2}
+  residualSeverityFloor: 0.15
+  residualDamageFloor: 0.1
+  disclaimer: Educational guidance only. Treatment does not guarantee recovery. Consult
+    a local agricultural extension service for field decisions.

@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_WheatLooseSmut
+  m_EditorClassIdentifier: 
+  diseaseId: loose_smut
+  diseaseName: Loose Smut
+  aiLabelAliases:
+  - wheat_loose_smut
+  - wheat loose smut
+  pathogenType: 0
+  pathogen: Ustilago tritici
+  affectedPart: 2
+  sources:
+  - 'PlantSeg (Wei et al. 2024, CC BY 4.0) class: wheat loose smut'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: A seed-borne fungal disease that replaces the wheat head with a mass
+    of black spores.
+  causes: The fungus lives inside the seed embryo; infected seed grows into plants
+    whose heads are spore masses that infect neighbouring flowers.
+  effectOnPlant: Infected heads produce no grain.
+  untreatedOutcome: Spores infect neighbouring flowers, so next year's seed is infected.
+  symptoms:
+  - Heads emerge as masses of olive-black spores instead of grain
+  - Spores blow away, leaving a bare stalk (rachis)
+  - Infected heads emerge a little earlier and taller
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: cba913a8fe45f204cbfda27451957908, type: 2}
+  preventionPlan: {fileID: 11400000, guid: 433687065d9ce22468fa9b1a41e6f893, type: 2}
+  simulationProfile: {fileID: 11400000, guid: 4b9e458de78378544962236a926795ff, type: 2}
+  lifecycleStages:
+  - The fungus waits inside the seed.
+  - It grows up with the plant.
+  - Heads emerge as black spore masses.
+  - Spores infect neighbouring flowers' seed.
+  conditionFactors:
+  - Infected seed.
+  - Humid weather at flowering.
+  - Saved seed.
+  - Susceptible varieties.
+  referencePhotos: []
+  lesionLabel: Black spores
+  haloLabel: Bare rachis
+  areaLabel: Smutted head

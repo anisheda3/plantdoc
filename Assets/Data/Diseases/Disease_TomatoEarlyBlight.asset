@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_TomatoEarlyBlight
+  m_EditorClassIdentifier: 
+  diseaseId: early_blight
+  diseaseName: Early Blight
+  aiLabelAliases:
+  - Tomato___Early_blight
+  - tomato_early_blight
+  - tomato early blight
+  - Tomato Early blight leaf
+  pathogenType: 0
+  pathogen: 
+  affectedPart: 0
+  sources: []
+  description: A common fungal leaf disease of tomato and potato caused by Alternaria
+    species.
+  causes: Warm, humid conditions with extended leaf wetness; inoculum surviving on
+    crop residue and soil.
+  effectOnPlant: Lesions destroy photosynthetic tissue and cause leaves to yellow
+    and drop, weakening the plant.
+  untreatedOutcome: Severe defoliation can expose fruit to sunscald and substantially
+    reduce yield.
+  symptoms:
+  - Dark spots with concentric rings
+  - Yellow halo around lesions
+  - Lower/older leaves affected first
+  - Progressive defoliation
+  supportingFeatureIds:
+  - leaf_spots
+  - yellowing
+  - leaf_color
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: 3599a079963a30f498b68448c124ae96, type: 2}
+  preventionPlan: {fileID: 11400000, guid: 5ca0afc8658d0d344bf3a40d99d647c2, type: 2}
+  simulationProfile: {fileID: 11400000, guid: e85f7aaecec23be4fbf23458223c25dc, type: 2}
+  lifecycleStages:
+  - Spores survive on crop debris and in the soil between seasons.
+  - Wind and splashing water carry them to the lower, older leaves.
+  - Dark spots with rings and yellow halos appear within days in warm, damp weather.
+  - Spots join, leaves yellow and drop, and new spores spread to nearby plants.
+  conditionFactors:
+  - "Warm days, roughly 24\u201329 \xB0C, with humid nights."
+  - Leaves staying wet from dew, rain or overhead watering.
+  - Older or stressed plants, especially those short of nitrogen.
+  - Plants close together, or infected debris left on the ground.
+  referencePhotos:
+  - {fileID: 2800000, guid: 29686357ddfbc1c4db6421456db4291a, type: 3}
+  - {fileID: 2800000, guid: b46d51fbfe07b3c4da39da023748d0de, type: 3}
+  - {fileID: 2800000, guid: e484e6845b1bcfb4197cba1bb01c21f3, type: 3}
+  lesionLabel: Ringed lesion
+  haloLabel: Yellow halo
+  areaLabel: Yellowing leaf

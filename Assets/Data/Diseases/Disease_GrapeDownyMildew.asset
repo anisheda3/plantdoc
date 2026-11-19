@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_GrapeDownyMildew
+  m_EditorClassIdentifier: 
+  diseaseId: downy_mildew
+  diseaseName: Downy Mildew
+  aiLabelAliases:
+  - grape_downy_mildew
+  - grape downy mildew
+  pathogenType: 6
+  pathogen: Plasmopara viticola
+  affectedPart: 0
+  sources:
+  - 'PlantSeg (Wei et al. 2024, CC BY 4.0) class: grape downy mildew'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: A water-mould disease of grapevine leaves, shoots and young berries.
+  causes: 'Warm, wet weather: rain splashes spores from the soil and leaf litter
+    onto leaves, which must stay wet for hours to be infected.'
+  effectOnPlant: Infected leaves die and fall, and berry bunches can be lost.
+  untreatedOutcome: Severe years strip vines of leaves, so fruit and wood ripen poorly.
+  symptoms:
+  - Yellow, oily-looking spots on the upper leaf
+  - White downy growth under the spots in humid nights
+  - Spots turn brown; young berries go grey and shrivel
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  - yellowing
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: f49b37c22921b064bb271c6d2054fed4, type: 2}
+  preventionPlan: {fileID: 11400000, guid: f012ae09e58d0dd42990dbaa2f764a15, type: 2}
+  simulationProfile: {fileID: 11400000, guid: d2ee7709d4f25484f8828df3c39dc171, type: 2}
+  lifecycleStages:
+  - Spores survive in leaf litter and soil.
+  - Rain splashes them onto wet leaves.
+  - Oily yellow spots appear, white down forms underneath.
+  - New spores spread on wind and rain to leaves and berries.
+  conditionFactors:
+  - "Warm (about 18-25 \xB0C), wet weather."
+  - Leaves wet for several hours.
+  - Humid nights.
+  - Dense canopies.
+  referencePhotos:
+  - {fileID: 2800000, guid: ba97bbc730285184ba90bd5f1b6ec5fd, type: 3}
+  lesionLabel: Oil spot
+  haloLabel: Browning edge
+  areaLabel: Yellow patch

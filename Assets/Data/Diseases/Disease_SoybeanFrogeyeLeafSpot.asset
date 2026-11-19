@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_SoybeanFrogeyeLeafSpot
+  m_EditorClassIdentifier: 
+  diseaseId: frogeye_leaf_spot
+  diseaseName: Frogeye Leaf Spot
+  aiLabelAliases:
+  - soybean_frogeye_leaf_spot
+  - soybean frog eye leaf spot
+  pathogenType: 0
+  pathogen: Cercospora sojina
+  affectedPart: 0
+  sources:
+  - 'PlantSeg (Wei et al. 2024, CC BY 4.0) class: soybean frog eye leaf spot'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: A fungal leaf spot of soybean with round, grey spots ringed in red-purple.
+  causes: Spores survive on residue and seed; warm, humid weather spreads them by
+    wind and rain.
+  effectOnPlant: Spots reduce the leaf area; leaves can drop.
+  untreatedOutcome: Severe infection reduces yield; fungicide resistance is common.
+  symptoms:
+  - Round spots, 1-5 mm, with grey to tan centres
+  - A dark red-purple ring round each spot
+  - Spots on the upper, younger leaves
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: a92b6b17a88206e49ac19d07b190f2af, type: 2}
+  preventionPlan: {fileID: 11400000, guid: 9b8ba6213b667aa469e2da21425c9422, type: 2}
+  simulationProfile: {fileID: 11400000, guid: b218c934febbce94d8d4202928ba4a2b, type: 2}
+  lifecycleStages:
+  - The fungus survives on residue and seed.
+  - Warm, humid weather spreads spores.
+  - Grey spots with purple rings form.
+  - Spots join and leaves drop.
+  conditionFactors:
+  - Warm, humid weather.
+  - Continuous soybean.
+  - Residue on the surface.
+  - Susceptible varieties.
+  referencePhotos:
+  - {fileID: 2800000, guid: 5037cd1d631de8745a13852b2cd46cf2, type: 3}
+  lesionLabel: Grey centre
+  haloLabel: Purple ring
+  areaLabel: Spotted leaf

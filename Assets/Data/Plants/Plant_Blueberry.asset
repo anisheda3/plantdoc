@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5b7af7f939da314084e91933dca2790, type: 3}
+  m_Name: Plant_Blueberry
+  m_EditorClassIdentifier: 
+  plantId: blueberry
+  plantName: Blueberry
+  description: Vaccinium corymbosum (highbush blueberry).
+  scientificName: Vaccinium corymbosum
+  healthyModel: {fileID: 0}
+  leafPrefab: {fileID: 0}
+  thumbnail: {fileID: 0}
+  species: {fileID: 11400000, guid: 5f8e0bd4f1a0c51478e1232c70cc0bc3, type: 2}
+  features:
+  - {fileID: 11400000, guid: e003f3da852d56644be19f05a32c1ffc, type: 2}
+  - {fileID: 11400000, guid: 3453cfa66f7c33147a75d377fe66120e, type: 2}
+  - {fileID: 11400000, guid: 384e23ede7d0591438f622176646940f, type: 2}
+  - {fileID: 11400000, guid: 427819c8c06b57045929d881917ce5ae, type: 2}
+  diseases:
+  - {fileID: 11400000, guid: 55f261a76ff806e45b4267443d4b0ac3, type: 2}
+  - {fileID: 11400000, guid: 0816ba684eb7cfa4a86b6fec6c146510, type: 2}
+  - {fileID: 11400000, guid: 49af019d7f757bb4899eddfbcd0f8971, type: 2}
+  - {fileID: 11400000, guid: 2467cb1389f6ae84dbff18ccecbbf3ba, type: 2}
+  - {fileID: 11400000, guid: 479f40a342ce5ff4a888e91ef3f3ed28, type: 2}

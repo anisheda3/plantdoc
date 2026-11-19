@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_RiceSheathBlight
+  m_EditorClassIdentifier: 
+  diseaseId: sheath_blight
+  diseaseName: Sheath Blight
+  aiLabelAliases:
+  - rice_sheath_blight
+  - rice sheath blight
+  - Rice___Sheath_blight
+  pathogenType: 0
+  pathogen: Rhizoctonia solani
+  affectedPart: 0
+  sources:
+  - 'PlantSeg (Wei et al. 2024, CC BY 4.0) class: rice sheath blight'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: A soil-borne fungal disease of rice leaf sheaths, worst in dense,
+    heavily fertilised crops.
+  causes: Fungal resting bodies float on the flood water and infect the sheaths at
+    the water line; it climbs in warm, humid weather.
+  effectOnPlant: Lodging and poor grain fill.
+  untreatedOutcome: Yield losses in dense, high-nitrogen crops.
+  symptoms:
+  - Oval, grey-green, water-soaked lesions on the sheaths near the water
+  - Lesions bleach with brown borders, like snakeskin
+  - Spreads up the plant; leaves die
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  - yellowing
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: 9a853cf01cd1f5e4bb8beafd2b29cb02, type: 2}
+  preventionPlan: {fileID: 11400000, guid: 6fd344c692c00ad49a49a28f7474ae01, type: 2}
+  simulationProfile: {fileID: 11400000, guid: 2c1749c56ba5c014097aa54da7803191, type: 2}
+  lifecycleStages:
+  - Resting bodies float on the flood water.
+  - They infect the sheaths at the water line.
+  - Snakeskin lesions climb the plant.
+  - New resting bodies drop into the field.
+  conditionFactors:
+  - "Warm (28-32 \xB0C), humid weather."
+  - Dense planting.
+  - High nitrogen.
+  - Infested fields.
+  referencePhotos: []
+  lesionLabel: Bleached lesion
+  haloLabel: Brown border
+  areaLabel: Blighted sheath

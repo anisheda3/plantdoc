@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_CornCommonSmut
+  m_EditorClassIdentifier: 
+  diseaseId: smut
+  diseaseName: Common Smut
+  aiLabelAliases:
+  - corn_smut
+  - corn smut
+  pathogenType: 0
+  pathogen: Ustilago maydis
+  affectedPart: 2
+  sources:
+  - 'PlantSeg (Wei et al. 2024, CC BY 4.0) class: corn smut'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: A fungal disease that turns parts of the ear, tassel or stalk into
+    swollen galls full of black spores.
+  causes: Spores survive in the soil for years and infect young, growing tissue,
+    mostly through wounds from hail, insects or cultivation.
+  effectOnPlant: Infected ears are lost; the rest of the plant is usually fine.
+  untreatedOutcome: Spores from burst galls add to the soil supply for years.
+  symptoms:
+  - Silvery-white, swollen galls on the ear, tassel or stalk
+  - Galls darken and burst, releasing black powdery spores
+  - Kernels replaced by galls on infected ears
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: 798cfdcc886518142862b2b6148d9a39, type: 2}
+  preventionPlan: {fileID: 11400000, guid: 2c31b463018d04d4aa81cc853de848d3, type: 2}
+  simulationProfile: {fileID: 11400000, guid: b50e926cc64a32a4087799450f8dd49a, type: 2}
+  lifecycleStages:
+  - Spores survive in the soil and on debris.
+  - They blow or splash onto young ears, tassels and stalks.
+  - Infected tissue swells into silvery galls.
+  - Galls burst and release black spores.
+  conditionFactors:
+  - Wounds from hail, insects or tools.
+  - Hot, dry weather followed by rain.
+  - Heavy nitrogen.
+  - Susceptible sweet corn.
+  referencePhotos:
+  - {fileID: 2800000, guid: 9360d45190d0ed64aae79348189b18b0, type: 3}
+  lesionLabel: Smut gall
+  haloLabel: Black spores
+  areaLabel: Infected ear

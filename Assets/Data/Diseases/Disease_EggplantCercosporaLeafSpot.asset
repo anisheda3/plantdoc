@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_EggplantCercosporaLeafSpot
+  m_EditorClassIdentifier: 
+  diseaseId: cercospora_leaf_spot
+  diseaseName: Cercospora Leaf Spot
+  aiLabelAliases:
+  - eggplant_cercospora_leaf_spot
+  - eggplant cercospora leaf spot
+  pathogenType: 0
+  pathogen: Cercospora melongenae
+  affectedPart: 0
+  sources:
+  - 'PlantSeg (Wei et al. 2024, CC BY 4.0) class: eggplant cercospora leaf spot'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: A fungal leaf spot of eggplant with angular, yellow-edged spots.
+  causes: Spores survive on debris and spread by wind and rain in warm, humid weather.
+  effectOnPlant: Leaf loss lowers yield and exposes fruit to sun.
+  untreatedOutcome: Severe spotting defoliates plants.
+  symptoms:
+  - Small, angular to round yellow spots
+  - Spots turn brown with a grey centre
+  - Leaves yellow and drop
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  - yellowing
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: e9352b6e13b1b3d4490e3ecf55532ac5, type: 2}
+  preventionPlan: {fileID: 11400000, guid: fa645f6752cdc2b42a81bd18594987ef, type: 2}
+  simulationProfile: {fileID: 11400000, guid: a19ca194bcf1a2246807603e8bb0db0b, type: 2}
+  lifecycleStages:
+  - The fungus survives on debris.
+  - Warm, humid weather spreads spores.
+  - Angular yellow spots turn brown.
+  - Leaves yellow and drop.
+  conditionFactors:
+  - Warm, humid weather.
+  - Overhead watering.
+  - Debris left in the field.
+  - Dense planting.
+  referencePhotos:
+  - {fileID: 2800000, guid: 6522161d535df324cb41ec9c9b477d29, type: 3}
+  lesionLabel: Brown spot
+  haloLabel: Yellow edge
+  areaLabel: Yellowing leaf

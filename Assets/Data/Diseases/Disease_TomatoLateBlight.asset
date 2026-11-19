@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_TomatoLateBlight
+  m_EditorClassIdentifier: 
+  diseaseId: late_blight
+  diseaseName: Late Blight
+  aiLabelAliases:
+  - Tomato___Late_blight
+  - tomato_late_blight
+  - tomato late blight
+  - Tomato leaf late blight
+  pathogenType: 0
+  pathogen: 
+  affectedPart: 0
+  sources: []
+  description: A destructive oomycete disease (Phytophthora infestans) of tomato
+    and potato.
+  causes: Cool, wet, humid weather; airborne sporangia from nearby infected plants
+    or residue.
+  effectOnPlant: Destroys foliage and fruit very rapidly under favourable weather.
+  untreatedOutcome: Whole plantings can be lost within days under sustained cool,
+    wet conditions.
+  symptoms:
+  - Large greasy grey-green blotches
+  - White fuzzy growth on leaf undersides in humid conditions
+  - Rapid collapse of foliage
+  - Firm brown fruit lesions
+  supportingFeatureIds:
+  - leaf_spots
+  - wilting
+  - leaf_color
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: 30b8aa7890a571442a9dd63f8bf26df6, type: 2}
+  preventionPlan: {fileID: 11400000, guid: cf8200d1b013acf4abd9ff6a0d0fc1d3, type: 2}
+  simulationProfile: {fileID: 11400000, guid: e013921d02a3bd34595aed3b6262cb7a, type: 2}
+  lifecycleStages:
+  - Spores arrive on the wind or from infected tubers and volunteer plants.
+  - In cool, wet weather they land on leaves and infect within hours.
+  - Greasy grey-green blotches appear and may grow white fuzz underneath.
+  - The tissue collapses and releases more spores, so it can spread through a crop
+    in days.
+  conditionFactors:
+  - "Cool nights, roughly 10\u201316 \xB0C, with mild days."
+  - 'Leaves wet for many hours: fog, rain or heavy dew.'
+  - Infected plants, cull piles or volunteers nearby.
+  - A dense canopy that stays humid.
+  referencePhotos:
+  - {fileID: 2800000, guid: 159f37722d5481242b059ee340d76714, type: 3}
+  - {fileID: 2800000, guid: 8b1fa1e1c43e1fd4e81f1870d62a1eee, type: 3}
+  lesionLabel: Blighted patch
+  haloLabel: Pale edge
+  areaLabel: Collapsing tissue

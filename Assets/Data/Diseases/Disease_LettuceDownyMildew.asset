@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_LettuceDownyMildew
+  m_EditorClassIdentifier: 
+  diseaseId: downy_mildew
+  diseaseName: Downy Mildew
+  aiLabelAliases:
+  - lettuce_downy_mildew
+  - lettuce downy mildew
+  pathogenType: 6
+  pathogen: Bremia lactucae
+  affectedPart: 0
+  sources:
+  - 'PlantSeg (Wei et al. 2024, CC BY 4.0) class: lettuce downy mildew'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: 'The most important leaf disease of lettuce: pale, angular patches
+    with white spores underneath.'
+  causes: Spores spread by wind; cool, moist weather with long leaf wetness lets
+    them infect.
+  effectOnPlant: Spotted leaves must be trimmed; heads may be unsaleable.
+  untreatedOutcome: Rots can follow in storage.
+  symptoms:
+  - Pale green to yellow angular patches bounded by veins
+  - White, fluffy spores on the underside
+  - Patches turn brown; outer leaves die
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  - yellowing
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: ef6e710f5ae62474d85969a3bdf15009, type: 2}
+  preventionPlan: {fileID: 11400000, guid: 9cfabe0c32899e04789cfa77294a647f, type: 2}
+  simulationProfile: {fileID: 11400000, guid: b7351a2d8b5740b4d808f1f7b07d3b8d, type: 2}
+  lifecycleStages:
+  - Spores blow in from infected lettuce.
+  - Cool, moist weather lets them infect.
+  - Pale angular patches form.
+  - White spores underneath spread it.
+  conditionFactors:
+  - "Cool (10-20 \xB0C), moist weather."
+  - Long leaf wetness.
+  - Overhead watering.
+  - Susceptible varieties.
+  referencePhotos:
+  - {fileID: 2800000, guid: 9e71a03cecf77cd41bceda08b4af81b5, type: 3}
+  lesionLabel: Angular patch
+  haloLabel: Brown edge
+  areaLabel: Yellow patch

@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5132a70f51fe6cb4ea3c7d283552eb79, type: 3}
+  m_Name: TreatmentPlan_Tomato_SpiderMites
+  m_EditorClassIdentifier: 
+  treatmentId: tomato_spider_mites_treatment
+  planName: "Tomato \u2014 Spider Mites"
+  steps:
+  - {fileID: 11400000, guid: 5948daa7ab5d74442ac18781ef4b28e9, type: 2}
+  - {fileID: 11400000, guid: b31ccf0098c76c5428fb1756ee7f16b7, type: 2}
+  - {fileID: 11400000, guid: ad553bf51637dc644bc584228e1a1f51, type: 2}
+  residualSeverityFloor: 0.12
+  residualDamageFloor: 0.08
+  disclaimer: Educational guidance only. Treatment does not guarantee recovery. Consult
+    a local agricultural extension service for field decisions.

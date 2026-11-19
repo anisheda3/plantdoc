@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_CottonFusariumWilt
+  m_EditorClassIdentifier: 
+  diseaseId: fusarium_wilt
+  diseaseName: Fusarium Wilt
+  aiLabelAliases:
+  - cotton_fusarium_wilt
+  - Cotton___Fusarium_wilt
+  - cotton fusarium wilt
+  pathogenType: 0
+  pathogen: Fusarium oxysporum f. sp. vasinfectum
+  affectedPart: 4
+  sources:
+  - 'CropScan XR model class: Cotton___Fusarium_wilt, cotton fusarium wilt'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: A soil-borne fungal wilt of cotton that blocks the water vessels;
+    worst in sandy soils with root-knot nematodes.
+  causes: The fungus lives in the soil for years and enters through the roots, often
+    through nematode wounds; it spreads in soil, water and seed.
+  effectOnPlant: Plants are stunted and lose their leaves and bolls.
+  untreatedOutcome: Seedlings and young plants die; the soil stays infested for years.
+  symptoms:
+  - Leaves yellow and wilt, starting at the margins and lower leaves
+  - Leaves dry and fall; plants wilt in the heat of the day
+  - Brown streaks inside the stem when it is cut
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  - yellowing
+  - wilting
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: be7a82bb8f0dbd047af16eef38bd864d, type: 2}
+  preventionPlan: {fileID: 11400000, guid: 99c57ef4d362edc4ebeacaea9f1fc1ad, type: 2}
+  simulationProfile: {fileID: 11400000, guid: 0925aae09f7209145ab3407aba766bb1, type: 2}
+  lifecycleStages:
+  - The fungus lives in the soil for years.
+  - It enters the roots, often through nematode wounds.
+  - It blocks the water vessels.
+  - Leaves yellow and wilt; the plant may die.
+  conditionFactors:
+  - Infested soil.
+  - Root-knot nematodes.
+  - Sandy, acid soils low in potassium.
+  - Warm soil.
+  referencePhotos: []
+  lesionLabel: Brown margin
+  haloLabel: Yellow edge
+  areaLabel: Wilting leaves

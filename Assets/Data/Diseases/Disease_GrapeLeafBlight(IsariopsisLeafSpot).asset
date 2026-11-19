@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_GrapeLeafBlight(IsariopsisLeafSpot)
+  m_EditorClassIdentifier: 
+  diseaseId: leaf_blight
+  diseaseName: Leaf Blight (Isariopsis Leaf Spot)
+  aiLabelAliases:
+  - Grape___Leaf_blight_(Isariopsis_Leaf_Spot)
+  - grape_leaf_blight
+  - grape leaf spot
+  pathogenType: 0
+  pathogen: 
+  affectedPart: 0
+  sources: []
+  description: A fungal leaf spot of grapevine (Pseudocercospora vitis, also called
+    Isariopsis leaf spot).
+  causes: Warm, humid weather late in the season; spores survive on fallen leaves.
+  effectOnPlant: Leaf area is lost late in the season.
+  untreatedOutcome: Early leaf drop weakens the vine and ripening.
+  symptoms:
+  - Irregular dark red-brown spots
+  - Spots turn brown and dry, with a darker border
+  - Older leaves yellow and drop
+  supportingFeatureIds:
+  - leaf_spots
+  - yellowing
+  - leaf_color
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: b417d42ff910eed4bb7a15a53eb8e3d0, type: 2}
+  preventionPlan: {fileID: 11400000, guid: 309e1ef99d52b964dab84b48a2e748ae, type: 2}
+  simulationProfile: {fileID: 11400000, guid: 343eebf21ab9446499d9de5739a61584, type: 2}
+  lifecycleStages:
+  - The fungus survives on fallen leaves.
+  - Spores infect leaves in warm, humid weather.
+  - Irregular dark spots appear and dry out.
+  - Older leaves yellow and drop.
+  conditionFactors:
+  - Warm, humid weather.
+  - Late in the season.
+  - Fallen leaves left under the vines.
+  - A crowded canopy.
+  referencePhotos:
+  - {fileID: 2800000, guid: ea1fc65bc9bcd44459ac4feabc091662, type: 3}
+  lesionLabel: Dark spot
+  haloLabel: Brown edge
+  areaLabel: Yellowing leaf

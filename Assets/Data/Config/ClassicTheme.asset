@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96f51b3ae4edcc640850e5b57d112211, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  background: {r: 0.02745098, g: 0.06666667, b: 0.047058824, a: 0.9411765}
+  scrim: {r: 0.015686275, g: 0.043137256, b: 0.03137255, a: 0.54901963}
+  panel: {r: 0.05882353, g: 0.10980392, b: 0.08627451, a: 0.9490196}
+  panelRaised: {r: 0.105882354, g: 0.17254902, b: 0.14117648, a: 1}
+  panelSunken: {r: 0.03137255, g: 0.07058824, b: 0.05490196, a: 0.72156864}
+  divider: {r: 1, g: 1, b: 1, a: 0.09}
+  textPrimary: {r: 0.9490196, g: 0.9607843, b: 0.93333334, a: 1}
+  textSecondary: {r: 0.6627451, g: 0.7411765, b: 0.69411767, a: 1}
+  textTertiary: {r: 0.43529412, g: 0.52156866, b: 0.47843137, a: 1}
+  textOnAccent: {r: 0.023529412, g: 0.1254902, b: 0.07058824, a: 1}
+  accent: {r: 0.41960785, g: 0.8901961, b: 0.6039216, a: 1}
+  accentDim: {r: 0.18039216, g: 0.41960785, b: 0.2901961, a: 1}
+  accentSoft: {r: 0.41960785, g: 0.8901961, b: 0.6039216, a: 0.16078432}
+  warning: {r: 0.96862745, g: 0.77254903, b: 0.28235295, a: 1}
+  danger: {r: 1, g: 0.41960785, b: 0.36862746, a: 1}
+  info: {r: 0.4862745, g: 0.76862746, b: 1, a: 1}
+  demoBanner: {r: 0.96862745, g: 0.77254903, b: 0.28235295, a: 1}
+  fontRegular: {fileID: 11400000, guid: 9070c9262ef458e41a3618aa8e4feb88, type: 2}
+  fontMedium: {fileID: 11400000, guid: bb7c8cf1d1f475a489ad5e874a8962d8, type: 2}
+  fontSemiBold: {fileID: 11400000, guid: e5b21ee2adf4b764094c9e6d30118cda, type: 2}
+  fontBold: {fileID: 11400000, guid: 331df71a9757f2a40b99b0dd8b19f354, type: 2}
+  fontDisplay: 72
+  fontTitle: 50
+  fontHeading: 38
+  fontBody: 31
+  fontCaption: 25
+  fontOverline: 22
+  fontButton: 32
+  roundedSprite: {fileID: 21300000, guid: 2e9d2d42c05d0084bac5806cedaea889, type: 3}
+  outlineSprite: {fileID: 21300000, guid: cfa625b289a57894ba9dd20204322d0d, type: 3}
+  circleSprite: {fileID: 21300000, guid: 9fa437eea17317a479f3e7876cf4b04d, type: 3}
+  ringSprite: {fileID: 21300000, guid: 1eb6d67802046314fb555b5c5fcd2f6f, type: 3}
+  softShadowSprite: {fileID: 21300000, guid: 36b02283c75ff4d42a4bc88e0a6f13f6, type: 3}
+  leafSprite: {fileID: 21300000, guid: 2748e21b21cd93c4caff0798dd594b77, type: 3}
+  checkSprite: {fileID: 21300000, guid: ce844099129ff7544bf0d09236570a0e, type: 3}
+  gearSprite: {fileID: 21300000, guid: 7e6be033c56c8cc41a9125c35b7f7d9f, type: 3}
+  cornerSprite: {fileID: 21300000, guid: 72995cbda4bf5eb41b9d7815b9f86f2a, type: 3}
+  gradientSprite: {fileID: 21300000, guid: 3ac17de48a5c90d4cb56f6fc0ea563b2, type: 3}
+  cornerPadding: 44
+  sheetRadius: 56
+  cardRadius: 36
+  rowHeight: 132
+  buttonHeight: 128
+  chipHeight: 64

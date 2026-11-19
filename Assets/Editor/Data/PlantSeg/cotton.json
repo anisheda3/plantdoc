@@ -1,0 +1,337 @@
+{
+ "plantId": "cotton",
+ "plantName": "Cotton",
+ "scientificName": "Gossypium hirsutum",
+ "description": "Gossypium hirsutum (upland cotton): a shrubby annual with lobed leaves, cream flowers that turn pink, and bolls of white lint.",
+ "diseases": [
+  {
+   "id": "bacterial_blight",
+   "name": "Bacterial Blight (Angular Leaf Spot)",
+   "type": "Bacterial",
+   "part": "Leaf",
+   "pathogen": "Xanthomonas citri pv. malvacearum",
+   "labels": [
+    "Cotton___Bacterial_blight",
+    "cotton bacterial blight",
+    "angular leaf spot of cotton"
+   ],
+   "description": "A bacterial disease of cotton that spots the leaves, blackens the stems ('black arm') and rots the bolls.",
+   "causes": "The bacteria come in on seed and crop debris and spread by wind-driven rain, splash and overhead irrigation in warm, humid weather.",
+   "symptoms": [
+    "Small, water-soaked, angular spots between the leaf veins",
+    "Spots turn brown to black; leaves yellow and fall",
+    "Black, sunken lesions on stems and on the bolls"
+   ],
+   "effect": "Leaf loss and boll rot reduce yield and lint quality.",
+   "untreated": "In wet seasons it defoliates plants and rots many bolls.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Remove badly spotted leaves",
+     "instruction": "Pick off badly spotted leaves when the plants are dry and take them away.",
+     "rationale": "Fewer bacteria are left to splash onto healthy leaves.",
+     "mode": "TapRegion",
+     "days": 2,
+     "effect": "Remove",
+     "chemical": false
+    },
+    {
+     "title": "Avoid overhead irrigation",
+     "instruction": "Water in furrows or by drip, and keep out of the crop while it is wet.",
+     "rationale": "Splash and wet leaves spread the bacteria.",
+     "mode": "AdjustSetting",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Copper spray where advised",
+     "instruction": "Spray a registered copper product following the label.",
+     "rationale": "Protects new leaves; it cannot cure existing spots.",
+     "mode": "SprayApply",
+     "days": 3,
+     "effect": "Protect",
+     "chemical": true
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropManagement",
+     "title": "Sow acid-delinted or treated seed of resistant varieties",
+     "detail": "Seed carries the bacteria."
+    },
+    {
+     "category": "CropHygiene",
+     "title": "Plough in or remove crop debris",
+     "detail": "Debris carries it to the next crop."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_Angular",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.18,
+     0.14,
+     0.08
+    ],
+    "halo": [
+     0.62,
+     0.66,
+     0.34
+    ],
+    "yellow": [
+     0.84,
+     0.8,
+     0.34
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.5,
+    "wilting": 0.4,
+    "damage": 0.6,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Angular spot",
+   "haloLabel": "Water-soaked edge",
+   "areaLabel": "Spotted leaf",
+   "lifecycle": [
+    "Bacteria survive on seed and crop debris.",
+    "Rain splash carries them to the leaves.",
+    "They enter through pores and wounds; angular spots form.",
+    "Spots on stems and bolls spread it further."
+   ],
+   "conditions": [
+    "Warm, humid weather.",
+    "Wind-driven rain.",
+    "Overhead irrigation.",
+    "Infected seed."
+   ],
+   "photos": [],
+   "sources": [
+    "CropScan XR model class: Cotton___Bacterial_blight, cotton bacterial blight, angular leaf spot of cotton",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "leaf_curl_virus",
+   "name": "Cotton Leaf Curl Disease",
+   "type": "Viral",
+   "part": "Leaf",
+   "pathogen": "Cotton leaf curl virus complex (begomoviruses with betasatellite)",
+   "labels": [
+    "Cotton___Leaf_curl_virus",
+    "cotton leaf curl virus",
+    "cotton leaf curl"
+   ],
+   "description": "A whitefly-borne virus disease of cotton in South Asia and Africa: leaves curl, veins thicken and plants are stunted.",
+   "causes": "Whiteflies (Bemisia tabaci) carry the virus from infected cotton, weeds and other hosts as they feed.",
+   "symptoms": [
+    "Leaves curl upward or downward, cupped and crinkled",
+    "Veins on the underside thicken and darken, often with leaf-like outgrowths (enations)",
+    "Plants stunted, with few, small bolls"
+   ],
+   "effect": "Infected plants set few bolls.",
+   "untreated": "Early infection can make a whole field uneconomic.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Remove infected plants early",
+     "instruction": "Pull out curled, stunted plants and destroy them.",
+     "rationale": "Each one is a source for whiteflies.",
+     "mode": "GrabAndRemove",
+     "days": 1,
+     "effect": "Rogue",
+     "chemical": false
+    },
+    {
+     "title": "Keep whiteflies down",
+     "instruction": "Monitor with yellow sticky traps and use controls registered locally, following the label.",
+     "rationale": "Whiteflies spread the virus.",
+     "mode": "AdjustSetting",
+     "days": 3,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Clear weed hosts",
+     "instruction": "Remove weeds and volunteer cotton round the field.",
+     "rationale": "They harbour the virus and whiteflies.",
+     "mode": "Informational",
+     "days": 2,
+     "effect": "Small",
+     "chemical": false
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropManagement",
+     "title": "Grow tolerant varieties",
+     "detail": "The main protection."
+    },
+    {
+     "category": "CropManagement",
+     "title": "Sow at the advised time",
+     "detail": "Late sowing meets more whiteflies."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_Interveinal",
+    "yellowMask": "T_YellowMask_Mottle",
+    "lesion": [
+     0.42,
+     0.52,
+     0.24
+    ],
+    "halo": [
+     0.52,
+     0.62,
+     0.3
+    ],
+    "yellow": [
+     0.8,
+     0.82,
+     0.4
+    ],
+    "lesions": 0.5,
+    "yellowing": 0.5,
+    "wilting": 0.5,
+    "damage": 0.4,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Curled leaf",
+   "haloLabel": "Thickened vein",
+   "areaLabel": "Stunted growth",
+   "lifecycle": [
+    "Whiteflies pick up the virus from infected plants and weeds.",
+    "They carry it to healthy cotton.",
+    "New leaves curl and veins thicken.",
+    "Plants are stunted and set few bolls."
+   ],
+   "conditions": [
+    "Many whiteflies.",
+    "Infected cotton or weeds nearby.",
+    "Hot, dry weather.",
+    "Late sowing."
+   ],
+   "photos": [],
+   "sources": [
+    "CropScan XR model class: Cotton___Leaf_curl_virus, cotton leaf curl virus, cotton leaf curl",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "fusarium_wilt",
+   "name": "Fusarium Wilt",
+   "type": "Fungal",
+   "part": "WholePlant",
+   "pathogen": "Fusarium oxysporum f. sp. vasinfectum",
+   "labels": [
+    "Cotton___Fusarium_wilt",
+    "cotton fusarium wilt"
+   ],
+   "description": "A soil-borne fungal wilt of cotton that blocks the water vessels; worst in sandy soils with root-knot nematodes.",
+   "causes": "The fungus lives in the soil for years and enters through the roots, often through nematode wounds; it spreads in soil, water and seed.",
+   "symptoms": [
+    "Leaves yellow and wilt, starting at the margins and lower leaves",
+    "Leaves dry and fall; plants wilt in the heat of the day",
+    "Brown streaks inside the stem when it is cut"
+   ],
+   "effect": "Plants are stunted and lose their leaves and bolls.",
+   "untreated": "Seedlings and young plants die; the soil stays infested for years.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Confirm by cutting the stem",
+     "instruction": "Cut a wilted stem near the soil and look for brown streaks inside.",
+     "rationale": "Separates wilt from drought or root rot.",
+     "mode": "TapRegion",
+     "days": 1,
+     "effect": "Small",
+     "chemical": false
+    },
+    {
+     "title": "Remove dead plants",
+     "instruction": "Pull out and destroy dead plants with their roots.",
+     "rationale": "They release spores into the soil.",
+     "mode": "GrabAndRemove",
+     "days": 2,
+     "effect": "Rogue",
+     "chemical": false
+    },
+    {
+     "title": "Balance the soil",
+     "instruction": "Keep potassium up and manage root-knot nematodes as advised.",
+     "rationale": "Healthy roots and fewer nematode wounds slow the wilt.",
+     "mode": "AdjustSetting",
+     "days": 3,
+     "effect": "Cultural",
+     "chemical": false
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropManagement",
+     "title": "Grow resistant varieties",
+     "detail": "The main control."
+    },
+    {
+     "category": "CropManagement",
+     "title": "Rotate with non-host crops",
+     "detail": "Cereals lower the fungus and the nematodes."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_MarginScorch",
+    "yellowMask": "T_YellowMask_Margin",
+    "lesion": [
+     0.46,
+     0.34,
+     0.18
+    ],
+    "halo": [
+     0.8,
+     0.72,
+     0.26
+    ],
+    "yellow": [
+     0.88,
+     0.8,
+     0.28
+    ],
+    "lesions": 0.5,
+    "yellowing": 1.0,
+    "wilting": 1.0,
+    "damage": 0.7,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Brown margin",
+   "haloLabel": "Yellow edge",
+   "areaLabel": "Wilting leaves",
+   "lifecycle": [
+    "The fungus lives in the soil for years.",
+    "It enters the roots, often through nematode wounds.",
+    "It blocks the water vessels.",
+    "Leaves yellow and wilt; the plant may die."
+   ],
+   "conditions": [
+    "Infested soil.",
+    "Root-knot nematodes.",
+    "Sandy, acid soils low in potassium.",
+    "Warm soil."
+   ],
+   "photos": [],
+   "sources": [
+    "CropScan XR model class: Cotton___Fusarium_wilt, cotton fusarium wilt",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  }
+ ],
+ "aliases": [],
+ "healthyLabels": [
+  "Cotton___healthy",
+  "cotton healthy",
+  "fresh cotton leaf"
+ ]
+}

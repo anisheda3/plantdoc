@@ -1,0 +1,555 @@
+{
+ "plantId": "plum",
+ "plantName": "Plum",
+ "scientificName": "Prunus domestica",
+ "description": "Prunus domestica (European plum).",
+ "diseases": [
+  {
+   "id": "bacterial_spot",
+   "name": "Bacterial Spot",
+   "type": "Bacterial",
+   "part": "Leaf",
+   "pathogen": "Xanthomonas arboricola pv. pruni",
+   "labels": [
+    "plum bacterial spot"
+   ],
+   "description": "A bacterial disease of plum and other stone fruit leaves, twigs and fruit.",
+   "causes": "Bacteria overwinter in twig cankers and spread by wind-driven rain in warm, wet weather.",
+   "symptoms": [
+    "Small, angular, purple-brown spots on the leaves",
+    "Spot centres drop out, leaving shot holes",
+    "Sunken dark spots on fruit"
+   ],
+   "effect": "Leaves drop early and fruit is blemished.",
+   "untreated": "Repeated defoliation weakens trees.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Prune out cankered twigs",
+     "instruction": "Cut out twigs with dark cankers in dry weather.",
+     "rationale": "Cankers carry the bacteria.",
+     "mode": "TapRegion",
+     "days": 2,
+     "effect": "Remove",
+     "chemical": false
+    },
+    {
+     "title": "Keep trees vigorous",
+     "instruction": "Feed and water moderately.",
+     "rationale": "Stressed trees suffer more.",
+     "mode": "AdjustSetting",
+     "days": 3,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Copper spray where advised",
+     "instruction": "Spray a registered copper product following the label.",
+     "rationale": "Protects leaves and fruit.",
+     "mode": "SprayApply",
+     "days": 3,
+     "effect": "Protect",
+     "chemical": true
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropManagement",
+     "title": "Grow resistant varieties",
+     "detail": "Varieties differ."
+    },
+    {
+     "category": "EnvironmentalManagement",
+     "title": "Plant windbreaks",
+     "detail": "Wind-driven rain spreads it."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_Angular",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.3,
+     0.16,
+     0.18
+    ],
+    "halo": [
+     0.8,
+     0.76,
+     0.32
+    ],
+    "yellow": [
+     0.84,
+     0.78,
+     0.32
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.6,
+    "wilting": 0.4,
+    "damage": 0.6,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Angular spot",
+   "haloLabel": "Shot hole",
+   "areaLabel": "Yellowing leaf",
+   "lifecycle": [
+    "Bacteria overwinter in twig cankers.",
+    "Spring rain splashes them onto leaves.",
+    "Angular spots form and drop out.",
+    "Leaves yellow and fruit is spotted."
+   ],
+   "conditions": [
+    "Warm, wet, windy weather.",
+    "Sandy soils.",
+    "Susceptible varieties.",
+    "Storms in spring."
+   ],
+   "photos": [
+    "plum_bacterial_spot_1"
+   ],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: plum bacterial spot",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "brown_rot",
+   "name": "Brown Rot",
+   "type": "Fungal",
+   "part": "Fruit",
+   "pathogen": "Monilinia fructicola (and M. laxa)",
+   "labels": [
+    "plum brown rot"
+   ],
+   "description": "A fungal disease of stone fruit that blights blossoms and rots the fruit.",
+   "causes": "Spores from mummified fruit and twig cankers infect blossoms in wet spring weather and ripening fruit near harvest, often through wounds.",
+   "symptoms": [
+    "Soft, light-brown rot spreading fast over the fruit",
+    "Tufts of grey-tan spores on the rot",
+    "Fruit shrivels into a dry mummy"
+   ],
+   "effect": "Rotted fruit is lost, on the tree and in storage.",
+   "untreated": "Mummies and cankers start next year's infections.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Remove rotting fruit and mummies",
+     "instruction": "Pick off rotting fruit and all mummies, also from the ground.",
+     "rationale": "They are the main spore source.",
+     "mode": "GrabAndRemove",
+     "days": 2,
+     "effect": "Remove",
+     "chemical": false
+    },
+    {
+     "title": "Prune out blighted twigs",
+     "instruction": "Cut out twigs with cankers well below the damage.",
+     "rationale": "Cankers release spores for years.",
+     "mode": "TapRegion",
+     "days": 2,
+     "effect": "Remove",
+     "chemical": false
+    },
+    {
+     "title": "Fungicide at bloom and before harvest",
+     "instruction": "Spray a registered product at the label's timings.",
+     "rationale": "Blossoms and ripening fruit are the vulnerable stages.",
+     "mode": "SprayApply",
+     "days": 3,
+     "effect": "Protect",
+     "chemical": true
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropHygiene",
+     "title": "Clear all mummies in winter",
+     "detail": "Breaks the cycle."
+    },
+    {
+     "category": "CropManagement",
+     "title": "Control fruit-wounding insects",
+     "detail": "Wounds let the fungus in."
+    },
+    {
+     "category": "AirCirculation",
+     "title": "Thin fruit and prune",
+     "detail": "Touching fruit passes the rot along."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_FruitRot",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.46,
+     0.3,
+     0.16
+    ],
+    "halo": [
+     0.72,
+     0.66,
+     0.56
+    ],
+    "yellow": [
+     0.8,
+     0.7,
+     0.4
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.1,
+    "wilting": 0.0,
+    "damage": 0.6,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Brown rot",
+   "haloLabel": "Spore tufts",
+   "areaLabel": "Rotting fruit",
+   "lifecycle": [
+    "The fungus overwinters in mummies and cankers.",
+    "Spring spores blight the blossoms.",
+    "Near harvest, spores infect ripening fruit.",
+    "Rotting fruit shrivels into new mummies."
+   ],
+   "conditions": [
+    "Wet weather at bloom and harvest.",
+    "Mummies left on or under the tree.",
+    "Insect and hail wounds.",
+    "Crowded fruit."
+   ],
+   "photos": [
+    "plum_brown_rot_1"
+   ],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: plum brown rot",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "pocket_disease",
+   "name": "Plum Pocket",
+   "type": "Fungal",
+   "part": "Fruit",
+   "pathogen": "Taphrina pruni",
+   "labels": [
+    "plum pocket disease"
+   ],
+   "description": "A fungal disease that turns young plums into swollen, hollow, stoneless 'pockets'.",
+   "causes": "Spores on the bark and buds infect the flowers and young fruit in cool, wet spring weather.",
+   "symptoms": [
+    "Young fruit swells, elongates and becomes hollow and stoneless",
+    "Fruit turns pale, then grey-white with spores",
+    "Pockets shrivel, turn black and drop"
+   ],
+   "effect": "Affected fruit is lost.",
+   "untreated": "Losses can be heavy in wet springs.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Remove pocketed fruit",
+     "instruction": "Pick off pocketed fruit when the plants are dry and take them away.",
+     "rationale": "Fewer spores are left to spread.",
+     "mode": "GrabAndRemove",
+     "days": 2,
+     "effect": "Remove",
+     "chemical": false
+    },
+    {
+     "title": "Prune out affected shoots",
+     "instruction": "Remove twigs with pockets.",
+     "rationale": "Reduces spores on the tree.",
+     "mode": "TapRegion",
+     "days": 2,
+     "effect": "Remove",
+     "chemical": false
+    },
+    {
+     "title": "Dormant spray next winter",
+     "instruction": "Apply a registered fungicide before bud swell.",
+     "rationale": "Only a dormant spray prevents it.",
+     "mode": "SprayApply",
+     "days": 4,
+     "effect": "Protect",
+     "chemical": true
+    }
+   ],
+   "prevention": [
+    {
+     "category": "Monitoring",
+     "title": "Spray at the right time",
+     "detail": "Before bud swell."
+    },
+    {
+     "category": "CropHygiene",
+     "title": "Remove pockets",
+     "detail": "They release spores."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_Blister",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.8,
+     0.78,
+     0.66
+    ],
+    "halo": [
+     0.62,
+     0.62,
+     0.5
+    ],
+    "yellow": [
+     0.8,
+     0.7,
+     0.4
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.0,
+    "wilting": 0.0,
+    "damage": 0.5,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Pale pocket",
+   "haloLabel": "Grey bloom",
+   "areaLabel": "Deformed fruit",
+   "lifecycle": [
+    "Spores overwinter on bark and buds.",
+    "Cool, wet weather lets them infect the flowers.",
+    "Young fruit swells into hollow pockets.",
+    "Pockets grow a grey bloom of spores and drop."
+   ],
+   "conditions": [
+    "Cool, wet spring.",
+    "No dormant spray.",
+    "Susceptible varieties.",
+    "Wild plums nearby."
+   ],
+   "photos": [
+    "plum_pocket_disease_1"
+   ],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: plum pocket disease",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "plum_pox_virus",
+   "name": "Plum Pox (Sharka)",
+   "type": "Viral",
+   "part": "Leaf",
+   "pathogen": "Plum pox virus (PPV, a potyvirus)",
+   "labels": [
+    "plum pox virus"
+   ],
+   "description": "The most serious virus of plum and other stone fruit: pale rings on leaves and fruit, and fruit drops early.",
+   "causes": "Aphids spread it within an orchard; infected nursery trees and budwood spread it over long distances.",
+   "symptoms": [
+    "Pale green to yellow rings and vein patterns on spring leaves",
+    "Dark rings or bands on the fruit",
+    "Deformed, sour fruit that drops early"
+   ],
+   "effect": "Fruit is unsaleable and falls early.",
+   "untreated": "Infected trees stay infected; it is a quarantine disease in many countries.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Report suspected cases",
+     "instruction": "Plum pox is notifiable in many countries.",
+     "rationale": "Official control stops its spread.",
+     "mode": "Informational",
+     "days": 1,
+     "effect": "Small",
+     "chemical": false
+    },
+    {
+     "title": "Remove infected trees",
+     "instruction": "Remove confirmed trees with their roots.",
+     "rationale": "There is no cure.",
+     "mode": "GrabAndRemove",
+     "days": 3,
+     "effect": "Rogue",
+     "chemical": false
+    },
+    {
+     "title": "Control aphids",
+     "instruction": "Follow local advice on aphid control.",
+     "rationale": "Aphids spread it between trees.",
+     "mode": "AdjustSetting",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropManagement",
+     "title": "Plant certified virus-free trees",
+     "detail": "The main protection."
+    },
+    {
+     "category": "Monitoring",
+     "title": "Inspect trees each spring",
+     "detail": "Rings are clearest then."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_Interveinal",
+    "yellowMask": "T_YellowMask_Mottle",
+    "lesion": [
+     0.84,
+     0.82,
+     0.4
+    ],
+    "halo": [
+     0.56,
+     0.64,
+     0.3
+    ],
+    "yellow": [
+     0.86,
+     0.84,
+     0.4
+    ],
+    "lesions": 0.6,
+    "yellowing": 0.8,
+    "wilting": 0.1,
+    "damage": 0.3,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Pale ring",
+   "haloLabel": "Vein pattern",
+   "areaLabel": "Mottled leaf",
+   "lifecycle": [
+    "Aphids feed on an infected tree.",
+    "They carry the virus to nearby trees.",
+    "Pale rings form on spring leaves.",
+    "Fruit is ringed, deformed and drops."
+   ],
+   "conditions": [
+    "Aphids.",
+    "Infected nursery stock.",
+    "Infected trees nearby.",
+    "Susceptible varieties."
+   ],
+   "photos": [
+    "plum_plum_pox_virus_1"
+   ],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: plum pox virus",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "rust",
+   "name": "Plum Rust",
+   "type": "Fungal",
+   "part": "Leaf",
+   "pathogen": "Tranzschelia discolor",
+   "labels": [
+    "plum rust"
+   ],
+   "description": "A rust fungus of plum and other stone fruit leaves.",
+   "causes": "Spores blow in or survive in twig cankers; long leaf wetness in warm weather lets them infect.",
+   "symptoms": [
+    "Small, angular yellow spots on the upper leaf",
+    "Rusty brown powdery pustules underneath",
+    "Leaves yellow and drop late in the season"
+   ],
+   "effect": "Early leaf fall weakens the tree for next year.",
+   "untreated": "Repeated defoliation reduces vigour and fruit size.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Clear fallen leaves",
+     "instruction": "Rake and remove leaves in autumn.",
+     "rationale": "Reduces spores near the tree.",
+     "mode": "GrabAndRemove",
+     "days": 2,
+     "effect": "Remove",
+     "chemical": false
+    },
+    {
+     "title": "Prune out cankered twigs",
+     "instruction": "Remove twigs with rust cankers in spring.",
+     "rationale": "Cankers start early infections.",
+     "mode": "TapRegion",
+     "days": 2,
+     "effect": "Remove",
+     "chemical": false
+    },
+    {
+     "title": "Fungicide when rust appears early",
+     "instruction": "Spray a registered product following the label.",
+     "rationale": "Protects leaves until harvest.",
+     "mode": "SprayApply",
+     "days": 3,
+     "effect": "Protect",
+     "chemical": true
+    }
+   ],
+   "prevention": [
+    {
+     "category": "AirCirculation",
+     "title": "Prune for airflow",
+     "detail": "Shorter leaf wetness."
+    },
+    {
+     "category": "Monitoring",
+     "title": "Check leaf undersides in summer",
+     "detail": "Early pustules are the signal."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_Angular",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.7,
+     0.4,
+     0.14
+    ],
+    "halo": [
+     0.86,
+     0.8,
+     0.32
+    ],
+    "yellow": [
+     0.86,
+     0.78,
+     0.3
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.8,
+    "wilting": 0.4,
+    "damage": 0.5,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Yellow spot",
+   "haloLabel": "Rust pustule",
+   "areaLabel": "Yellowing leaf",
+   "lifecycle": [
+    "Spores survive in twig cankers or blow in.",
+    "Wet, warm weather lets them infect leaves.",
+    "Yellow spots form, with rust pustules beneath.",
+    "New spores spread through the tree."
+   ],
+   "conditions": [
+    "Warm, humid weather.",
+    "Long leaf wetness.",
+    "Twig cankers.",
+    "Late summer."
+   ],
+   "photos": [
+    "plum_rust_1"
+   ],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: plum rust",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  }
+ ],
+ "aliases": [],
+ "healthyLabels": []
+}

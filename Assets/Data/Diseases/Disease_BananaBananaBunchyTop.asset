@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_BananaBananaBunchyTop
+  m_EditorClassIdentifier: 
+  diseaseId: bunchy_top
+  diseaseName: Banana Bunchy Top
+  aiLabelAliases:
+  - banana_bunchy_top
+  - banana bunchy top
+  pathogenType: 2
+  pathogen: Banana bunchy top virus (BBTV, a babuvirus)
+  affectedPart: 4
+  sources:
+  - 'PlantSeg (Wei et al. 2024, CC BY 4.0) class: banana bunchy top'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: A virus disease that stunts banana plants into a bunched rosette of
+    narrow, upright leaves.
+  causes: The banana aphid (Pentalonia nigronervosa) carries the virus; infected
+    suckers and planting material carry it farther.
+  effectOnPlant: Infected plants produce little or no fruit.
+  untreatedOutcome: Without removal, the virus spreads through the plantation.
+  symptoms:
+  - Dark green dots and dashes ('Morse code') along the leaf veins and midrib
+  - New leaves narrow, short, upright and bunched at the top
+  - Yellow, wavy leaf margins; no bunch, or a small one
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  - yellowing
+  - wilting
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: 80e6ff80fbd9b0545b755084f80142bc, type: 2}
+  preventionPlan: {fileID: 11400000, guid: ca6d3ecd55026c349800e9cf434e375b, type: 2}
+  simulationProfile: {fileID: 11400000, guid: 51caa1e2cc7886a47bf419e55ebd783f, type: 2}
+  lifecycleStages:
+  - Banana aphids feed on an infected plant.
+  - They carry the virus to healthy plants.
+  - Dark green dashes appear along the veins.
+  - New leaves bunch at the top; no fruit forms.
+  conditionFactors:
+  - Banana aphids.
+  - Infected suckers planted.
+  - Infected plants left in the field.
+  - No monitoring.
+  referencePhotos:
+  - {fileID: 2800000, guid: df735ec4aee49604fa8ce4660e572a73, type: 3}
+  lesionLabel: Green dashes
+  haloLabel: Yellow margin
+  areaLabel: Bunched leaves

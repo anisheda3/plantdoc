@@ -1,0 +1,150 @@
+{
+ "plantId": "corn",
+ "plantName": "Corn",
+ "scientificName": "",
+ "description": "",
+ "diseases": [
+  {
+   "id": "smut",
+   "name": "Common Smut",
+   "type": "Fungal",
+   "part": "Head",
+   "pathogen": "Ustilago maydis",
+   "labels": [
+    "corn smut"
+   ],
+   "description": "A fungal disease that turns parts of the ear, tassel or stalk into swollen galls full of black spores.",
+   "causes": "Spores survive in the soil for years and infect young, growing tissue, mostly through wounds from hail, insects or cultivation.",
+   "symptoms": [
+    "Silvery-white, swollen galls on the ear, tassel or stalk",
+    "Galls darken and burst, releasing black powdery spores",
+    "Kernels replaced by galls on infected ears"
+   ],
+   "effect": "Infected ears are lost; the rest of the plant is usually fine.",
+   "untreated": "Spores from burst galls add to the soil supply for years.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Cut out galls before they burst",
+     "instruction": "Remove galls while they are still white and firm, bag them and take them away.",
+     "rationale": "Fewer spores reach the soil.",
+     "mode": "GrabAndRemove",
+     "days": 1,
+     "effect": "Remove",
+     "chemical": false
+    },
+    {
+     "title": "Avoid wounding plants",
+     "instruction": "Take care when weeding and control ear-feeding insects.",
+     "rationale": "Most infections start at wounds.",
+     "mode": "AdjustSetting",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Balance the fertiliser",
+     "instruction": "Avoid heavy nitrogen and manure on the field.",
+     "rationale": "Lush, soft growth is more easily infected.",
+     "mode": "Informational",
+     "days": 2,
+     "effect": "Small",
+     "chemical": false
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropManagement",
+     "title": "Grow tolerant hybrids",
+     "detail": "Sweet corn varieties differ a lot in how often they get smut."
+    },
+    {
+     "category": "CropHygiene",
+     "title": "Remove galls every season",
+     "detail": "Spores last for years in the soil."
+    },
+    {
+     "category": "CropManagement",
+     "title": "Rotate fields",
+     "detail": "Fewer spores where maize was not grown recently."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_FruitRot",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.8,
+     0.8,
+     0.82
+    ],
+    "halo": [
+     0.18,
+     0.16,
+     0.2
+    ],
+    "yellow": [
+     0.8,
+     0.76,
+     0.4
+    ],
+    "lesions": 0.8,
+    "yellowing": 0.1,
+    "wilting": 0.0,
+    "damage": 0.5,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Smut gall",
+   "haloLabel": "Black spores",
+   "areaLabel": "Infected ear",
+   "lifecycle": [
+    "Spores survive in the soil and on debris.",
+    "They blow or splash onto young ears, tassels and stalks.",
+    "Infected tissue swells into silvery galls.",
+    "Galls burst and release black spores."
+   ],
+   "conditions": [
+    "Wounds from hail, insects or tools.",
+    "Hot, dry weather followed by rain.",
+    "Heavy nitrogen.",
+    "Susceptible sweet corn."
+   ],
+   "photos": [
+    "corn_smut_1"
+   ],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: corn smut",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  }
+ ],
+ "aliases": [
+  {
+   "disease": "gray_leaf_spot",
+   "labels": [
+    "corn gray leaf spot",
+    "Corn Gray leaf spot",
+    "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot"
+   ]
+  },
+  {
+   "disease": "northern_leaf_blight",
+   "labels": [
+    "corn northern leaf blight",
+    "Corn leaf blight",
+    "Corn_(maize)___Northern_Leaf_Blight"
+   ]
+  },
+  {
+   "disease": "common_rust",
+   "labels": [
+    "corn rust",
+    "Corn rust leaf",
+    "Corn_(maize)___Common_rust_"
+   ]
+  }
+ ],
+ "healthyLabels": [
+  "Corn_(maize)___healthy"
+ ]
+}

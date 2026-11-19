@@ -1,0 +1,145 @@
+{
+ "plantId": "apple",
+ "plantName": "Apple",
+ "scientificName": "",
+ "description": "",
+ "diseases": [
+  {
+   "id": "mosaic_virus",
+   "name": "Apple Mosaic",
+   "type": "Viral",
+   "part": "Leaf",
+   "pathogen": "Apple mosaic virus (ApMV, an ilarvirus)",
+   "labels": [
+    "apple mosaic virus"
+   ],
+   "description": "A virus disease of apple that marks the leaves with pale yellow to cream patches and bands.",
+   "causes": "The virus is carried in the tree's sap and spreads through grafting and budding with infected wood; no insect spreads it.",
+   "symptoms": [
+    "Pale yellow to cream spots, blotches or bands, often along the veins",
+    "Most visible on spring leaves",
+    "Some leaves scorch and drop in hot weather"
+   ],
+   "effect": "Infected trees grow and crop somewhat less; the marks do not spread to healthy trees in the orchard.",
+   "untreated": "The tree stays infected for life; yields of sensitive varieties fall over the years.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Confirm the pattern",
+     "instruction": "Compare the marks with reference photos and ask for a lab test if unsure.",
+     "rationale": "Nutrient problems and sprays can cause similar marks.",
+     "mode": "Informational",
+     "days": 1,
+     "effect": "Small",
+     "chemical": false
+    },
+    {
+     "title": "Do not propagate from it",
+     "instruction": "Never take budwood or grafts from this tree.",
+     "rationale": "Grafting is how the virus spreads.",
+     "mode": "AdjustSetting",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Replace badly affected young trees",
+     "instruction": "Remove young trees that are heavily marked and slow-growing, and replant with certified stock.",
+     "rationale": "There is no cure; a healthy tree recovers the yield.",
+     "mode": "GrabAndRemove",
+     "days": 3,
+     "effect": "Rogue",
+     "chemical": false
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropManagement",
+     "title": "Plant certified virus-tested trees",
+     "detail": "Clean nursery stock is the only real control."
+    },
+    {
+     "category": "CropHygiene",
+     "title": "Use clean budwood and rootstocks",
+     "detail": "Graft only from tested trees."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_Interveinal",
+    "yellowMask": "T_YellowMask_Mottle",
+    "lesion": [
+     0.86,
+     0.8,
+     0.46
+    ],
+    "halo": [
+     0.9,
+     0.86,
+     0.56
+    ],
+    "yellow": [
+     0.88,
+     0.84,
+     0.52
+    ],
+    "lesions": 0.7,
+    "yellowing": 0.8,
+    "wilting": 0.1,
+    "damage": 0.2,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Cream patch",
+   "haloLabel": "Vein band",
+   "areaLabel": "Mottled leaf",
+   "lifecycle": [
+    "The virus lives in the tree's sap.",
+    "It passes to new trees through grafted buds and rootstocks.",
+    "Spring leaves show cream spots and vein bands.",
+    "Every tree grafted from it is infected too."
+   ],
+   "conditions": [
+    "Uncertified nursery trees.",
+    "Grafting from unknown trees.",
+    "Cool spring weather (marks show best).",
+    "Sensitive varieties."
+   ],
+   "photos": [
+    "apple_mosaic_virus_1"
+   ],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: apple mosaic virus",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  }
+ ],
+ "aliases": [
+  {
+   "disease": "apple_scab",
+   "labels": [
+    "apple scab",
+    "Apple Scab Leaf",
+    "Apple___Apple_scab"
+   ]
+  },
+  {
+   "disease": "cedar_apple_rust",
+   "labels": [
+    "apple rust",
+    "Apple rust leaf",
+    "Apple___Cedar_apple_rust"
+   ]
+  },
+  {
+   "disease": "black_rot",
+   "labels": [
+    "apple black rot",
+    "Apple___Black_rot"
+   ]
+  }
+ ],
+ "healthyLabels": [
+  "Apple leaf",
+  "Apple___healthy"
+ ]
+}

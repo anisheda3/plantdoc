@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_RaspberryLeafSpot
+  m_EditorClassIdentifier: 
+  diseaseId: leaf_spot
+  diseaseName: Leaf Spot
+  aiLabelAliases:
+  - raspberry_leaf_spot
+  - raspberry leaf spot
+  pathogenType: 0
+  pathogen: Sphaerulina rubi (syn. Septoria rubi)
+  affectedPart: 0
+  sources:
+  - 'PlantSeg (Wei et al. 2024, CC BY 4.0) class: raspberry leaf spot'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: A fungal leaf spot of raspberries and blackberries.
+  causes: Spores from infected leaves and canes spread by rain splash in warm, wet
+    weather.
+  effectOnPlant: Leaf loss weakens the canes for next season.
+  untreatedOutcome: Cane growth and yield decline.
+  symptoms:
+  - Small, round purple-brown spots
+  - Spot centres turn grey-white
+  - Heavily spotted leaves yellow and drop
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  - yellowing
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: 329f2e4369f6b9340934010a69e430ab, type: 2}
+  preventionPlan: {fileID: 11400000, guid: e407ee8a420c1b1468694b2405d53af0, type: 2}
+  simulationProfile: {fileID: 11400000, guid: 364b5e8a9e3b52c41843cf767d580473, type: 2}
+  lifecycleStages:
+  - The fungus overwinters on leaves and canes.
+  - Rain splashes spores onto new leaves.
+  - Purple spots with pale centres form.
+  - Leaves drop early.
+  conditionFactors:
+  - Warm, wet weather.
+  - Crowded canes.
+  - Overhead watering.
+  - Old canes left in the row.
+  referencePhotos:
+  - {fileID: 2800000, guid: 2d6bdeb68d9adbd4caa67f2be9e94267, type: 3}
+  lesionLabel: Grey-centred spot
+  haloLabel: Purple ring
+  areaLabel: Yellowing leaf

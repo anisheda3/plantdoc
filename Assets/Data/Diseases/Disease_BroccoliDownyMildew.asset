@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_BroccoliDownyMildew
+  m_EditorClassIdentifier: 
+  diseaseId: downy_mildew
+  diseaseName: Downy Mildew
+  aiLabelAliases:
+  - broccoli_downy_mildew
+  - broccoli downy mildew
+  pathogenType: 6
+  pathogen: Hyaloperonospora brassicae
+  affectedPart: 0
+  sources:
+  - 'PlantSeg (Wei et al. 2024, CC BY 4.0) class: broccoli downy mildew'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: A water-mould disease of broccoli and other brassicas, worst in cool,
+    damp weather.
+  causes: Spores spread by wind and splash from infected plants and debris; cool
+    nights with leaf wetness let them infect.
+  effectOnPlant: Spotted leaves and heads lose quality.
+  untreatedOutcome: Seedlings can be killed.
+  symptoms:
+  - Yellow, angular patches on the upper leaf
+  - White to grey downy growth underneath
+  - Patches turn brown; heads may be discoloured inside
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  - yellowing
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: 18742149001233d4aa6106f643138d71, type: 2}
+  preventionPlan: {fileID: 11400000, guid: c1132a82d7fb150488c4e51b0bfc770f, type: 2}
+  simulationProfile: {fileID: 11400000, guid: 20fa7839a5e0fa44ba5656a3064f24d2, type: 2}
+  lifecycleStages:
+  - Spores come from infected plants and debris.
+  - Cool, damp nights let them infect.
+  - Yellow angular patches form, white down underneath.
+  - Spores spread to neighbours.
+  conditionFactors:
+  - "Cool (10-15 \xB0C), damp weather."
+  - Long leaf wetness.
+  - Crowded seedlings.
+  - Brassica debris.
+  referencePhotos:
+  - {fileID: 2800000, guid: 87a0b10344c7e2743a03716f39e39eb7, type: 3}
+  lesionLabel: Angular patch
+  haloLabel: Brown edge
+  areaLabel: Yellow patch

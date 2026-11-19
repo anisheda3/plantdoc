@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_PeachPeachScab
+  m_EditorClassIdentifier: 
+  diseaseId: scab
+  diseaseName: Peach Scab
+  aiLabelAliases:
+  - peach_scab
+  - peach scab
+  pathogenType: 0
+  pathogen: Cladosporium carpophilum (Venturia carpophila)
+  affectedPart: 1
+  sources:
+  - 'PlantSeg (Wei et al. 2024, CC BY 4.0) class: peach scab'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: A fungal disease that freckles peach fruit with dark spots.
+  causes: Spores from twig lesions infect young fruit in warm, wet weather after
+    petal fall; spots appear weeks later.
+  effectOnPlant: Fruit is blemished and may crack and rot.
+  untreatedOutcome: Twig lesions carry the fungus to next year.
+  symptoms:
+  - Small olive-green to black spots on the fruit, near the stem end
+  - Spots join into dark blotches
+  - Fruit skin cracks over the blotches
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: bd595113e9455c54db2a80a800cce891, type: 2}
+  preventionPlan: {fileID: 11400000, guid: 033b673252b257e4a80baae11dc2e7bb, type: 2}
+  simulationProfile: {fileID: 11400000, guid: fe4181521291f5041a702a87536a53c9, type: 2}
+  lifecycleStages:
+  - The fungus overwinters in twig lesions.
+  - Spring rain spreads spores to young fruit.
+  - Spots appear about 6 weeks later.
+  - Spots join and the skin cracks.
+  conditionFactors:
+  - Warm, wet weather after petal fall.
+  - Low, humid sites.
+  - Unpruned trees.
+  - Twig lesions left in the tree.
+  referencePhotos:
+  - {fileID: 2800000, guid: 841d63970eccc554a9193f5178b8f55b, type: 3}
+  lesionLabel: Scab spot
+  haloLabel: Dark blotch
+  areaLabel: Freckled fruit

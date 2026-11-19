@@ -1,0 +1,332 @@
+{
+ "plantId": "cucumber",
+ "plantName": "Cucumber",
+ "scientificName": "Cucumis sativus",
+ "description": "Cucumis sativus: a climbing, tendrilled annual.",
+ "diseases": [
+  {
+   "id": "angular_leaf_spot",
+   "name": "Angular Leaf Spot",
+   "type": "Bacterial",
+   "part": "Leaf",
+   "pathogen": "Pseudomonas syringae pv. lachrymans",
+   "labels": [
+    "cucumber angular leaf spot"
+   ],
+   "description": "A bacterial leaf spot of cucumber with angular, vein-bounded spots that tear out.",
+   "causes": "Bacteria come in on seed and spread by rain splash, handling and insects in warm, wet weather.",
+   "symptoms": [
+    "Small, water-soaked, angular spots bounded by the veins",
+    "A milky ooze on the spots in humid mornings",
+    "Spots dry, turn tan and fall out, leaving ragged holes"
+   ],
+   "effect": "Leaves are ragged; fruit can be spotted and rot.",
+   "untreated": "Heavy infection defoliates plants.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Remove spotted leaves",
+     "instruction": "Pick off spotted leaves when the plants are dry and take them away.",
+     "rationale": "Fewer spores are left to spread.",
+     "mode": "TapRegion",
+     "days": 2,
+     "effect": "Remove",
+     "chemical": false
+    },
+    {
+     "title": "Stay out of wet plants",
+     "instruction": "Do not handle plants while wet.",
+     "rationale": "Spreads the bacteria.",
+     "mode": "AdjustSetting",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Copper spray where advised",
+     "instruction": "Spray a registered copper product following the label.",
+     "rationale": "Slows spread.",
+     "mode": "SprayApply",
+     "days": 3,
+     "effect": "Protect",
+     "chemical": true
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropManagement",
+     "title": "Use clean seed and rotate",
+     "detail": "Seed and debris carry it."
+    },
+    {
+     "category": "WaterManagement",
+     "title": "Use drip irrigation",
+     "detail": "Less splash."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_Angular",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.62,
+     0.56,
+     0.4
+    ],
+    "halo": [
+     0.8,
+     0.8,
+     0.42
+    ],
+    "yellow": [
+     0.84,
+     0.82,
+     0.38
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.5,
+    "wilting": 0.4,
+    "damage": 0.7,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Angular spot",
+   "haloLabel": "Water-soaked edge",
+   "areaLabel": "Ragged leaf",
+   "lifecycle": [
+    "Bacteria come in on seed or debris.",
+    "Rain and handling spread them.",
+    "Angular water-soaked spots form.",
+    "Spots dry and tear out."
+   ],
+   "conditions": [
+    "Warm, wet weather.",
+    "Overhead irrigation.",
+    "Infected seed.",
+    "Handling wet plants."
+   ],
+   "photos": [
+    "cucumber_angular_leaf_spot_1"
+   ],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: cucumber angular leaf spot",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "bacterial_wilt",
+   "name": "Bacterial Wilt",
+   "type": "Bacterial",
+   "part": "WholePlant",
+   "pathogen": "Erwinia tracheiphila",
+   "labels": [
+    "cucumber bacterial wilt"
+   ],
+   "description": "A bacterial disease that blocks the water vessels of cucumber, so the vines wilt and die.",
+   "causes": "Striped and spotted cucumber beetles carry the bacteria in their gut and infect plants as they feed.",
+   "symptoms": [
+    "Single leaves wilt and look dull green",
+    "Whole runners, then the plant, wilt and do not recover overnight",
+    "Cut stems ooze sticky threads when pulled apart"
+   ],
+   "effect": "Wilted plants die within one to two weeks.",
+   "untreated": "Beetles keep spreading the bacteria to the rest of the planting.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Remove wilted plants",
+     "instruction": "Pull out and remove wilted plants at once.",
+     "rationale": "They are a source for the beetles.",
+     "mode": "GrabAndRemove",
+     "days": 1,
+     "effect": "Rogue",
+     "chemical": false
+    },
+    {
+     "title": "Control cucumber beetles",
+     "instruction": "Check plants daily, hand-pick or use netting, and use controls registered locally.",
+     "rationale": "No beetles, no spread.",
+     "mode": "AdjustSetting",
+     "days": 3,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Cover young plants",
+     "instruction": "Use insect netting until flowering (open it for pollinators).",
+     "rationale": "Young plants are most at risk.",
+     "mode": "AdjustSetting",
+     "days": 3,
+     "effect": "Small",
+     "chemical": false
+    }
+   ],
+   "prevention": [
+    {
+     "category": "Monitoring",
+     "title": "Look for beetles from planting",
+     "detail": "Early control matters most."
+    },
+    {
+     "category": "EnvironmentalManagement",
+     "title": "Use row covers early",
+     "detail": "Keeps beetles off seedlings."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_MarginScorch",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.42,
+     0.44,
+     0.24
+    ],
+    "halo": [
+     0.54,
+     0.56,
+     0.3
+    ],
+    "yellow": [
+     0.7,
+     0.7,
+     0.36
+    ],
+    "lesions": 0.4,
+    "yellowing": 0.5,
+    "wilting": 1.0,
+    "damage": 0.6,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Dull leaf",
+   "haloLabel": "Wilting edge",
+   "areaLabel": "Wilted plant",
+   "lifecycle": [
+    "The bacteria overwinter inside cucumber beetles.",
+    "Feeding beetles infect the leaves.",
+    "Bacteria fill the water vessels.",
+    "Leaves, then the whole plant, wilt and die."
+   ],
+   "conditions": [
+    "Cucumber beetles present.",
+    "Young plants.",
+    "Warm weather.",
+    "No row covers."
+   ],
+   "photos": [
+    "cucumber_bacterial_wilt_1"
+   ],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: cucumber bacterial wilt",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "powdery_mildew",
+   "name": "Powdery Mildew",
+   "type": "Fungal",
+   "part": "Leaf",
+   "pathogen": "Podosphaera xanthii (and Golovinomyces orontii)",
+   "labels": [
+    "cucumber powdery mildew"
+   ],
+   "description": "A fungal disease that coats cucumber leaves with white powder.",
+   "causes": "Spores blow in on the wind; warm days, shade and dense plants favour it, and the leaves need not be wet.",
+   "symptoms": [
+    "White, powdery spots on both sides of the leaves",
+    "Spots spread to cover the leaf",
+    "Leaves yellow, brown and die"
+   ],
+   "effect": "Fewer leaves means smaller, poorer fruit.",
+   "untreated": "Plants decline early.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Remove the worst leaves",
+     "instruction": "Pick off the worst leaves when the plants are dry and take them away.",
+     "rationale": "Fewer spores are left to spread.",
+     "mode": "TapRegion",
+     "days": 2,
+     "effect": "Remove",
+     "chemical": false
+    },
+    {
+     "title": "Improve airflow and light",
+     "instruction": "Space and train the plants.",
+     "rationale": "Shade and still air favour it.",
+     "mode": "AdjustSetting",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Protective spray",
+     "instruction": "Spray sulphur or another registered product on the label's schedule.",
+     "rationale": "Protects healthy growth; it cannot cure what is already infected.",
+     "mode": "SprayApply",
+     "days": 3,
+     "effect": "Protect",
+     "chemical": true
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropManagement",
+     "title": "Grow resistant varieties",
+     "detail": "Widely available."
+    },
+    {
+     "category": "AirCirculation",
+     "title": "Space plants",
+     "detail": "Less humidity."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_Colony",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.9,
+     0.9,
+     0.88
+    ],
+    "halo": [
+     0.8,
+     0.84,
+     0.66
+    ],
+    "yellow": [
+     0.84,
+     0.82,
+     0.48
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.5,
+    "wilting": 0.4,
+    "damage": 0.4,
+    "seconds": 7.0
+   },
+   "lesionLabel": "White spot",
+   "haloLabel": "Pale patch",
+   "areaLabel": "Powdery area",
+   "lifecycle": [
+    "Spores blow in from other cucurbits.",
+    "They infect without leaf wetness.",
+    "White powdery spots spread.",
+    "Leaves yellow and die."
+   ],
+   "conditions": [
+    "Warm days, cool nights.",
+    "Shade.",
+    "Dense plants.",
+    "Older leaves later in the season."
+   ],
+   "photos": [],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: cucumber powdery mildew",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  }
+ ],
+ "aliases": [],
+ "healthyLabels": []
+}

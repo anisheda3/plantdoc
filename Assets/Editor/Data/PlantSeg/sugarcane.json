@@ -1,0 +1,470 @@
+{
+ "plantId": "sugarcane",
+ "plantName": "Sugarcane",
+ "scientificName": "Saccharum officinarum (and hybrids)",
+ "description": "Saccharum officinarum: a tall, clumping grass grown for the sugar in its canes.",
+ "diseases": [
+  {
+   "id": "mosaic",
+   "name": "Sugarcane Mosaic",
+   "type": "Viral",
+   "part": "Leaf",
+   "pathogen": "Sugarcane mosaic virus (SCMV) and related potyviruses",
+   "labels": [
+    "Mosaic",
+    "sugarcane mosaic"
+   ],
+   "description": "A virus disease that mottles sugarcane leaves with pale green streaks.",
+   "causes": "Aphids spread the virus; infected seed cane (setts) carries it into new fields.",
+   "symptoms": [
+    "Pale green to yellow streaks and patches between darker green areas",
+    "Most visible at the base of young leaves",
+    "Stunted canes in severe cases"
+   ],
+   "effect": "Growth and sugar yield fall.",
+   "untreated": "Infected setts carry it into every new planting.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Remove infected stools early",
+     "instruction": "Dig out mottled plants in young crops.",
+     "rationale": "Fewer sources for aphids.",
+     "mode": "GrabAndRemove",
+     "days": 2,
+     "effect": "Rogue",
+     "chemical": false
+    },
+    {
+     "title": "Use healthy seed cane",
+     "instruction": "Plant setts from disease-free nurseries.",
+     "rationale": "The main source of the virus.",
+     "mode": "Informational",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Control grass weeds",
+     "instruction": "Remove grass weeds round the field.",
+     "rationale": "They host the virus and aphids.",
+     "mode": "AdjustSetting",
+     "days": 2,
+     "effect": "Small",
+     "chemical": false
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropManagement",
+     "title": "Grow resistant varieties",
+     "detail": "The main control."
+    },
+    {
+     "category": "CropManagement",
+     "title": "Plant clean seed cane",
+     "detail": "From certified nurseries."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_Streak",
+    "yellowMask": "T_YellowMask_Mottle",
+    "lesion": [
+     0.78,
+     0.82,
+     0.42
+    ],
+    "halo": [
+     0.4,
+     0.56,
+     0.24
+    ],
+    "yellow": [
+     0.86,
+     0.86,
+     0.44
+    ],
+    "lesions": 0.6,
+    "yellowing": 0.8,
+    "wilting": 0.1,
+    "damage": 0.3,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Pale streak",
+   "haloLabel": "Green island",
+   "areaLabel": "Mottled leaf",
+   "lifecycle": [
+    "Infected setts give infected shoots.",
+    "Aphids carry the virus to nearby plants.",
+    "Pale streaks appear on young leaves.",
+    "Infected canes are used as seed and spread it on."
+   ],
+   "conditions": [
+    "Infected seed cane.",
+    "Aphids.",
+    "Grass weeds.",
+    "Susceptible varieties."
+   ],
+   "photos": [
+    "sugarcane_mosaic_1"
+   ],
+   "sources": [
+    "Sugarcane Leaf Disease Dataset (Mendeley Data) class: Mosaic, sugarcane mosaic",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "red_rot",
+   "name": "Red Rot",
+   "type": "Fungal",
+   "part": "Leaf",
+   "pathogen": "Colletotrichum falcatum",
+   "labels": [
+    "RedRot",
+    "Red Rot",
+    "sugarcane red rot"
+   ],
+   "description": "The most destructive fungal disease of sugarcane: it rots the inside of the cane red and marks the leaf midribs.",
+   "causes": "Spores spread in infected setts, by rain and irrigation water, and through borer holes; waterlogging and susceptible varieties favour it.",
+   "symptoms": [
+    "Long, blood-red lesions along the leaf midrib, later with straw-coloured centres",
+    "Upper leaves yellow and dry from the tips",
+    "Split canes are red inside with white patches and smell sour"
+   ],
+   "effect": "Infected canes dry out and lose their sugar.",
+   "untreated": "Whole fields can be lost with susceptible varieties.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Remove and destroy affected clumps",
+     "instruction": "Dig out infected clumps with their roots and burn or bury them.",
+     "rationale": "They release masses of spores.",
+     "mode": "GrabAndRemove",
+     "days": 2,
+     "effect": "Rogue",
+     "chemical": false
+    },
+    {
+     "title": "Improve drainage",
+     "instruction": "Avoid waterlogging and don't let water run from infected plots.",
+     "rationale": "Water spreads the spores.",
+     "mode": "AdjustSetting",
+     "days": 3,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Plant treated, healthy setts of a resistant variety",
+     "instruction": "Use resistant varieties and treated seed cane next time.",
+     "rationale": "The main controls.",
+     "mode": "Informational",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropManagement",
+     "title": "Grow resistant varieties",
+     "detail": "Essential where red rot occurs."
+    },
+    {
+     "category": "CropHygiene",
+     "title": "Do not ratoon infected fields",
+     "detail": "Rotate instead."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_Cigar",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.62,
+     0.12,
+     0.1
+    ],
+    "halo": [
+     0.82,
+     0.7,
+     0.44
+    ],
+    "yellow": [
+     0.84,
+     0.78,
+     0.36
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.7,
+    "wilting": 0.4,
+    "damage": 0.6,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Red midrib lesion",
+   "haloLabel": "Straw centre",
+   "areaLabel": "Drying leaf",
+   "lifecycle": [
+    "The fungus comes in on infected setts.",
+    "Spores spread by water and wind.",
+    "Red lesions form on the midribs; canes rot inside.",
+    "Canes dry; spores spread to new plantings."
+   ],
+   "conditions": [
+    "Infected seed cane.",
+    "Waterlogging.",
+    "Borer damage.",
+    "Susceptible varieties."
+   ],
+   "photos": [],
+   "sources": [
+    "Sugarcane Leaf Disease Dataset (Mendeley Data) class: RedRot, Red Rot, sugarcane red rot",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "rust",
+   "name": "Sugarcane Rust",
+   "type": "Fungal",
+   "part": "Leaf",
+   "pathogen": "Puccinia melanocephala (brown rust) and P. kuehnii (orange rust)",
+   "labels": [
+    "Rust",
+    "sugarcane rust"
+   ],
+   "description": "Rust fungi that streak sugarcane leaves with brown or orange pustules.",
+   "causes": "Spores blow on the wind; warm, humid weather with dew favours infection.",
+   "symptoms": [
+    "Small, elongated yellow flecks on both leaf sides",
+    "Flecks grow into brown or orange-brown pustules along the veins",
+    "Pustules merge and leaves dry early"
+   ],
+   "effect": "Leaf area falls, reducing growth and sugar.",
+   "untreated": "Severe rust can cut yields of susceptible varieties sharply.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Scout the leaves",
+     "instruction": "Check how many leaves carry pustules.",
+     "rationale": "Most varieties tolerate light rust.",
+     "mode": "TapRegion",
+     "days": 1,
+     "effect": "Small",
+     "chemical": false
+    },
+    {
+     "title": "Protective spray",
+     "instruction": "Spray a registered fungicide on susceptible varieties on the label's schedule.",
+     "rationale": "Protects healthy growth; it cannot cure what is already infected.",
+     "mode": "SprayApply",
+     "days": 3,
+     "effect": "Protect",
+     "chemical": true
+    },
+    {
+     "title": "Plan resistant varieties",
+     "instruction": "Choose rust-resistant varieties next planting.",
+     "rationale": "The main control.",
+     "mode": "Informational",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropManagement",
+     "title": "Grow resistant varieties",
+     "detail": "The main control."
+    },
+    {
+     "category": "Monitoring",
+     "title": "Scout in warm, humid weather",
+     "detail": "Rust builds fast."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_StripeRows",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.62,
+     0.34,
+     0.14
+    ],
+    "halo": [
+     0.84,
+     0.78,
+     0.34
+    ],
+    "yellow": [
+     0.84,
+     0.78,
+     0.34
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.5,
+    "wilting": 0.4,
+    "damage": 0.5,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Rust pustule",
+   "haloLabel": "Yellow fleck",
+   "areaLabel": "Rusted leaf",
+   "lifecycle": [
+    "Spores blow in on the wind.",
+    "Dew lets them infect.",
+    "Yellow flecks become rust pustules along the veins.",
+    "New spores spread across the field."
+   ],
+   "conditions": [
+    "Warm, humid weather.",
+    "Long dew.",
+    "Dense crops.",
+    "Susceptible varieties."
+   ],
+   "photos": [],
+   "sources": [
+    "Sugarcane Leaf Disease Dataset (Mendeley Data) class: Rust, sugarcane rust",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "yellow_leaf",
+   "name": "Yellow Leaf Disease",
+   "type": "Viral",
+   "part": "Leaf",
+   "pathogen": "Sugarcane yellow leaf virus (SCYLV, a polerovirus)",
+   "labels": [
+    "Yellow",
+    "sugarcane yellow leaf"
+   ],
+   "description": "A virus disease that yellows the midrib of sugarcane leaves and stunts the canes.",
+   "causes": "Aphids (the sugarcane aphid) spread the virus; infected seed cane carries it to new fields.",
+   "symptoms": [
+    "Bright yellow midrib on the underside of older leaves",
+    "Yellowing spreads into the blade from the midrib",
+    "Leaves dry from the tip; canes short and thin"
+   ],
+   "effect": "Cane and sugar yields fall.",
+   "untreated": "Losses grow in ratoon crops.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Mark yellowed stools",
+     "instruction": "Note where plants with yellow midribs are.",
+     "rationale": "Shows how widespread it is.",
+     "mode": "TapRegion",
+     "days": 1,
+     "effect": "Small",
+     "chemical": false
+    },
+    {
+     "title": "Use virus-free seed cane",
+     "instruction": "Plant tissue-culture or certified setts next time.",
+     "rationale": "Breaks the chain of infected seed.",
+     "mode": "Informational",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Control aphids where advised",
+     "instruction": "Follow local advice on aphid control.",
+     "rationale": "Aphids spread the virus.",
+     "mode": "AdjustSetting",
+     "days": 2,
+     "effect": "Small",
+     "chemical": false
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropManagement",
+     "title": "Plant virus-free seed cane",
+     "detail": "The main control."
+    },
+    {
+     "category": "CropManagement",
+     "title": "Grow tolerant varieties",
+     "detail": "Varieties differ."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_Streak",
+    "yellowMask": "T_YellowMask_Margin",
+    "lesion": [
+     0.86,
+     0.8,
+     0.3
+    ],
+    "halo": [
+     0.8,
+     0.76,
+     0.34
+    ],
+    "yellow": [
+     0.9,
+     0.86,
+     0.32
+    ],
+    "lesions": 0.5,
+    "yellowing": 1.0,
+    "wilting": 0.2,
+    "damage": 0.4,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Yellow midrib",
+   "haloLabel": "Yellowing blade",
+   "areaLabel": "Yellow leaf",
+   "lifecycle": [
+    "Aphids feed on an infected plant.",
+    "They carry the virus to healthy canes.",
+    "Midribs of older leaves turn yellow.",
+    "Infected seed cane spreads it to new fields."
+   ],
+   "conditions": [
+    "Sugarcane aphids.",
+    "Infected seed cane.",
+    "Ratoon crops.",
+    "Susceptible varieties."
+   ],
+   "photos": [],
+   "sources": [
+    "Sugarcane Leaf Disease Dataset (Mendeley Data) class: Yellow, sugarcane yellow leaf",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  }
+ ],
+ "aliases": [
+  {
+   "disease": "rust",
+   "labels": [
+    "Sugarcane___Rust"
+   ]
+  },
+  {
+   "disease": "yellow_leaf",
+   "labels": [
+    "Sugarcane___Yellow_leaf"
+   ]
+  },
+  {
+   "disease": "red_rot",
+   "labels": [
+    "Sugarcane___Red_rot"
+   ]
+  },
+  {
+   "disease": "mosaic",
+   "labels": [
+    "Sugarcane___Mosaic"
+   ]
+  }
+ ],
+ "healthyLabels": [
+  "Healthy",
+  "sugarcane healthy",
+  "Sugarcane___healthy"
+ ]
+}

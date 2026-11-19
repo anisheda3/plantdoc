@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_EggplantPhomopsisBlightandFruitRot
+  m_EditorClassIdentifier: 
+  diseaseId: phomopsis_fruit_rot
+  diseaseName: Phomopsis Blight and Fruit Rot
+  aiLabelAliases:
+  - eggplant_phomopsis_fruit_rot
+  - eggplant phomopsis fruit rot
+  pathogenType: 0
+  pathogen: Diaporthe vexans (syn. Phomopsis vexans)
+  affectedPart: 1
+  sources:
+  - 'PlantSeg (Wei et al. 2024, CC BY 4.0) class: eggplant phomopsis fruit rot'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: A fungal disease of eggplant that rots the fruit and spots the leaves
+    and stems.
+  causes: Spores come in on seed and debris and spread by rain splash in hot, wet
+    weather.
+  effectOnPlant: Rotting fruit is lost, in the field and after harvest.
+  untreatedOutcome: Can destroy a large part of the crop.
+  symptoms:
+  - Pale, sunken, soft spots on the fruit
+  - Spots enlarge with rings of tiny black dots (spore bodies)
+  - Round grey-brown leaf spots; stem cankers
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: 8284b25b0089534449d90611b06e3014, type: 2}
+  preventionPlan: {fileID: 11400000, guid: ef1a87a8e5cfbc745add59774c458314, type: 2}
+  simulationProfile: {fileID: 11400000, guid: 1b7e8d7be56808f4486221d1809ad5fc, type: 2}
+  lifecycleStages:
+  - The fungus comes in on seed and debris.
+  - Rain splashes spores onto fruit and leaves.
+  - Pale sunken spots form on the fruit.
+  - Rings of black spore bodies spread it on.
+  conditionFactors:
+  - "Hot (29-32 \xB0C), wet weather."
+  - Overhead watering.
+  - Infected seed.
+  - Debris in the field.
+  referencePhotos: []
+  lesionLabel: Sunken rot
+  haloLabel: Black dots
+  areaLabel: Rotting fruit

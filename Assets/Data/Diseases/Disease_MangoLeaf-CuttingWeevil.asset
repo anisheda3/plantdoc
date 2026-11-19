@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_MangoLeaf-CuttingWeevil
+  m_EditorClassIdentifier: 
+  diseaseId: cutting_weevil
+  diseaseName: Leaf-Cutting Weevil
+  aiLabelAliases:
+  - mango_cutting_weevil
+  - Cutting Weevil
+  - mango cutting weevil
+  pathogenType: 3
+  pathogen: Deporaus marginatus (mango leaf-cutting weevil)
+  affectedPart: 0
+  sources:
+  - 'MangoLeafBD (Mendeley Data) class: Cutting Weevil, mango cutting weevil'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: A small weevil that lays eggs in young mango leaves and then cuts
+    the leaves off near their base.
+  causes: Adult weevils are active on new, tender flushes; the females cut the leaves
+    so the egg-bearing pieces fall to the ground.
+  effectOnPlant: New flushes lose their leaves, delaying growth.
+  untreatedOutcome: Young trees in nurseries can be stripped of new leaves.
+  symptoms:
+  - Young leaves cut straight across near the leaf base
+  - Cut leaf pieces lying under the tree
+  - Flushes left with only stubs of leaves
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: 881656e4483188f4d8a822c7e0e8b344, type: 2}
+  preventionPlan: {fileID: 11400000, guid: 592f82e23ca190a4dbccca8dc2fb126a, type: 2}
+  simulationProfile: {fileID: 11400000, guid: 9b7d756ed5f7e3a44a8f287fe3c0d645, type: 2}
+  lifecycleStages:
+  - Adults feed on tender new leaves.
+  - Females lay eggs in the young leaves.
+  - They cut the leaves near the base.
+  - Larvae develop in the fallen pieces.
+  conditionFactors:
+  - Tender new flushes.
+  - Fallen leaf pieces left under trees.
+  - Nurseries.
+  - Warm, humid season.
+  referencePhotos: []
+  lesionLabel: Cut edge
+  haloLabel: Brown margin
+  areaLabel: Damaged leaf

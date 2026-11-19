@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_RiceRiceBlast
+  m_EditorClassIdentifier: 
+  diseaseId: blast
+  diseaseName: Rice Blast
+  aiLabelAliases:
+  - rice_blast
+  - rice blast
+  - Rice___Leaf_blast
+  pathogenType: 0
+  pathogen: Pyricularia oryzae (Magnaporthe oryzae)
+  affectedPart: 0
+  sources:
+  - 'PlantSeg (Wei et al. 2024, CC BY 4.0) class: rice blast'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: 'The most damaging disease of rice: diamond-shaped leaf lesions and
+    broken necks of the panicle.'
+  causes: Spores spread by wind; long dew, cool nights and high nitrogen favour it.
+  effectOnPlant: Leaf blast kills seedlings; neck blast empties the panicles.
+  untreatedOutcome: Can destroy most of a crop.
+  symptoms:
+  - Diamond-shaped lesions with grey centres and brown borders
+  - Lesions merge and leaves die
+  - 'Neck rot: the panicle base turns black and breaks'
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  - yellowing
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: 68c7b7bd8afc5b444997c1ad90a7ec65, type: 2}
+  preventionPlan: {fileID: 11400000, guid: 550299aedd0052c4d85e734c0b8acce3, type: 2}
+  simulationProfile: {fileID: 11400000, guid: af3d97c5d5917094189685f495dcb3a2, type: 2}
+  lifecycleStages:
+  - Spores blow from infected rice.
+  - Long dew lets them infect.
+  - Diamond-shaped lesions form on the leaves.
+  - Spores spread to the panicle necks.
+  conditionFactors:
+  - Long dew periods.
+  - Cool nights.
+  - High nitrogen.
+  - Upland or drained fields.
+  referencePhotos:
+  - {fileID: 2800000, guid: 7fc5eca43ce270b4a9f478f419370bbd, type: 3}
+  lesionLabel: Diamond lesion
+  haloLabel: Brown border
+  areaLabel: Blasted leaf

@@ -1,0 +1,549 @@
+{
+ "plantId": "blueberry",
+ "plantName": "Blueberry",
+ "scientificName": "",
+ "description": "",
+ "diseases": [
+  {
+   "id": "anthracnose",
+   "name": "Anthracnose Fruit Rot",
+   "type": "Fungal",
+   "part": "Fruit",
+   "pathogen": "Colletotrichum fioriniae (and C. acutatum)",
+   "labels": [
+    "blueberry anthracnose"
+   ],
+   "description": "A fungal ripe rot of blueberries that shows as the fruit ripens or after picking.",
+   "causes": "The fungus overwinters on twigs and buds; rain splashes spores onto green berries, which stay symptomless until they ripen.",
+   "symptoms": [
+    "Sunken, softening berries at the blossom end",
+    "Orange to salmon spore masses on the berries",
+    "Berries shrivel; rot spreads in stored fruit"
+   ],
+   "effect": "Ripe fruit rots on the bush and in storage.",
+   "untreated": "Losses grow each wet year as the fungus builds up on the twigs.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Remove rotting berries",
+     "instruction": "Pick off rotting berries when the plants are dry and take them away.",
+     "rationale": "Fewer spores are left to spread.",
+     "mode": "GrabAndRemove",
+     "days": 2,
+     "effect": "Remove",
+     "chemical": false
+    },
+    {
+     "title": "Pick often and cool quickly",
+     "instruction": "Harvest ripe fruit promptly and chill it.",
+     "rationale": "Rot develops fast in warm, ripe fruit.",
+     "mode": "AdjustSetting",
+     "days": 1,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Protective spray",
+     "instruction": "Spray a registered fungicide on the label's schedule.",
+     "rationale": "Protects healthy growth; it cannot cure what is already infected.",
+     "mode": "SprayApply",
+     "days": 3,
+     "effect": "Protect",
+     "chemical": true
+    }
+   ],
+   "prevention": [
+    {
+     "category": "AirCirculation",
+     "title": "Prune out old canes",
+     "detail": "An open bush dries faster."
+    },
+    {
+     "category": "CropHygiene",
+     "title": "Remove dead twigs",
+     "detail": "The fungus overwinters on them."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_FruitRot",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.4,
+     0.26,
+     0.26
+    ],
+    "halo": [
+     0.92,
+     0.56,
+     0.42
+    ],
+    "yellow": [
+     0.8,
+     0.7,
+     0.4
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.0,
+    "wilting": 0.0,
+    "damage": 0.5,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Sunken berry",
+   "haloLabel": "Spore mass",
+   "areaLabel": "Rotting fruit",
+   "lifecycle": [
+    "Spores overwinter on twigs and buds.",
+    "Rain splashes them onto green berries.",
+    "Infection stays hidden until the fruit ripens.",
+    "Ripe berries soften and ooze orange spores."
+   ],
+   "conditions": [
+    "Warm, wet weather at harvest.",
+    "Infrequent picking.",
+    "Dense, unpruned bushes.",
+    "Susceptible varieties."
+   ],
+   "photos": [],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: blueberry anthracnose",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "botrytis_blight",
+   "name": "Botrytis Blight",
+   "type": "Fungal",
+   "part": "Fruit",
+   "pathogen": "Botrytis cinerea",
+   "labels": [
+    "blueberry botrytis blight"
+   ],
+   "description": "Grey mould of blueberry blossoms, young shoots and fruit.",
+   "causes": "Cool, wet weather at bloom; the fungus lives on dead plant matter and its spores are everywhere in the air.",
+   "symptoms": [
+    "Blossoms turn brown and stick together",
+    "Grey, fuzzy mould on blossoms and berries",
+    "Young shoot tips die back"
+   ],
+   "effect": "Blighted flowers set no fruit, and berries rot.",
+   "untreated": "Fruit is lost in wet springs and in storage.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Remove blighted blossoms and twigs",
+     "instruction": "Pick off blighted blossoms and twigs when the plants are dry and take them away.",
+     "rationale": "Fewer spores are left to spread.",
+     "mode": "TapRegion",
+     "days": 2,
+     "effect": "Remove",
+     "chemical": false
+    },
+    {
+     "title": "Improve air movement",
+     "instruction": "Prune to open the bush and control weeds round it.",
+     "rationale": "Grey mould needs still, humid air.",
+     "mode": "AdjustSetting",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Protective spray",
+     "instruction": "Spray a registered fungicide at bloom on the label's schedule.",
+     "rationale": "Protects healthy growth; it cannot cure what is already infected.",
+     "mode": "SprayApply",
+     "days": 3,
+     "effect": "Protect",
+     "chemical": true
+    }
+   ],
+   "prevention": [
+    {
+     "category": "AirCirculation",
+     "title": "Prune every winter",
+     "detail": "Faster drying at bloom."
+    },
+    {
+     "category": "CropManagement",
+     "title": "Avoid excess nitrogen",
+     "detail": "Soft growth is more easily infected."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_FruitRot",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.56,
+     0.54,
+     0.52
+    ],
+    "halo": [
+     0.4,
+     0.34,
+     0.3
+    ],
+    "yellow": [
+     0.78,
+     0.72,
+     0.4
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.1,
+    "wilting": 0.2,
+    "damage": 0.6,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Grey mould",
+   "haloLabel": "Brown blossom",
+   "areaLabel": "Blighted cluster",
+   "lifecycle": [
+    "The fungus lives on dead plant matter.",
+    "Spores land on blossoms in cool, wet weather.",
+    "Flowers brown and grow grey fuzz.",
+    "Mould spreads to fruit and shoots."
+   ],
+   "conditions": [
+    "Cool (15-20 °C), wet bloom.",
+    "Frost-damaged flowers.",
+    "Dense bushes.",
+    "Long wet spells."
+   ],
+   "photos": [],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: blueberry botrytis blight",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "mummy_berry",
+   "name": "Mummy Berry",
+   "type": "Fungal",
+   "part": "Fruit",
+   "pathogen": "Monilinia vaccinii-corymbosi",
+   "labels": [
+    "blueberry mummy berry"
+   ],
+   "description": "A fungal disease that withers shoots in spring and turns the berries into hard, grey 'mummies'.",
+   "causes": "Mummified berries on the ground grow small cup fungi in spring; their spores blight young shoots, which then infect the flowers.",
+   "symptoms": [
+    "Young leaves and shoots wilt and turn brown ('shoot strike')",
+    "Infected berries turn cream to pink, then shrivel",
+    "Hard, grey, pumpkin-shaped mummies drop to the ground"
+   ],
+   "effect": "Infected berries are lost.",
+   "untreated": "Mummies on the ground start the next spring's epidemic.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Pick up mummies",
+     "instruction": "Rake up or bury the fallen mummies before spring.",
+     "rationale": "Each mummy produces spores for the next season.",
+     "mode": "GrabAndRemove",
+     "days": 2,
+     "effect": "Remove",
+     "chemical": false
+    },
+    {
+     "title": "Cultivate or mulch under bushes",
+     "instruction": "Disturb the soil or add fresh mulch in early spring.",
+     "rationale": "Buries the mummies so the cup fungi cannot release spores.",
+     "mode": "AdjustSetting",
+     "days": 3,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Protective spray",
+     "instruction": "Spray a registered fungicide at bud break on the label's schedule.",
+     "rationale": "Protects healthy growth; it cannot cure what is already infected.",
+     "mode": "SprayApply",
+     "days": 3,
+     "effect": "Protect",
+     "chemical": true
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropHygiene",
+     "title": "Remove mummies every year",
+     "detail": "Breaks the cycle."
+    },
+    {
+     "category": "Monitoring",
+     "title": "Watch for shoot strike in spring",
+     "detail": "It shows the disease is present."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_FruitRot",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.7,
+     0.6,
+     0.56
+    ],
+    "halo": [
+     0.86,
+     0.66,
+     0.62
+    ],
+    "yellow": [
+     0.8,
+     0.7,
+     0.4
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.2,
+    "wilting": 0.3,
+    "damage": 0.6,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Mummified berry",
+   "haloLabel": "Pink berry",
+   "areaLabel": "Infected cluster",
+   "lifecycle": [
+    "Mummies on the ground grow cup fungi in spring.",
+    "Their spores blight young shoots.",
+    "Spores from the shoots infect the flowers.",
+    "Berries become mummies and drop."
+   ],
+   "conditions": [
+    "Wet springs.",
+    "Mummies left on the ground.",
+    "Bare soil under bushes.",
+    "Susceptible varieties."
+   ],
+   "photos": [
+    "blueberry_mummy_berry_1"
+   ],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: blueberry mummy berry",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "rust",
+   "name": "Blueberry Leaf Rust",
+   "type": "Fungal",
+   "part": "Leaf",
+   "pathogen": "Thekopsora minima (syn. Pucciniastrum vaccinii)",
+   "labels": [
+    "blueberry rust"
+   ],
+   "description": "A rust fungus of blueberry leaves; hemlock is its alternate host.",
+   "causes": "Spores blow from nearby hemlocks or infected bushes; warm, humid weather lets them infect.",
+   "symptoms": [
+    "Small yellow spots on the upper leaf, turning reddish-brown",
+    "Orange-yellow powdery pustules underneath",
+    "Early leaf drop late in the summer"
+   ],
+   "effect": "Bushes lose leaves early, so fewer flower buds form for next year.",
+   "untreated": "Repeated defoliation lowers yields.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Remove rusted leaves",
+     "instruction": "Pick off rusted leaves when the plants are dry and take them away.",
+     "rationale": "Fewer spores are left to spread.",
+     "mode": "TapRegion",
+     "days": 2,
+     "effect": "Remove",
+     "chemical": false
+    },
+    {
+     "title": "Open the bush",
+     "instruction": "Prune for airflow.",
+     "rationale": "Leaves dry faster.",
+     "mode": "AdjustSetting",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Protective spray",
+     "instruction": "Spray a registered fungicide on the label's schedule.",
+     "rationale": "Protects healthy growth; it cannot cure what is already infected.",
+     "mode": "SprayApply",
+     "days": 3,
+     "effect": "Protect",
+     "chemical": true
+    }
+   ],
+   "prevention": [
+    {
+     "category": "EnvironmentalManagement",
+     "title": "Keep away from hemlocks",
+     "detail": "Hemlock is the alternate host."
+    },
+    {
+     "category": "Monitoring",
+     "title": "Check leaf undersides in summer",
+     "detail": "Pustules appear there first."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_Pustule",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.8,
+     0.52,
+     0.12
+    ],
+    "halo": [
+     0.62,
+     0.3,
+     0.2
+    ],
+    "yellow": [
+     0.86,
+     0.78,
+     0.3
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.7,
+    "wilting": 0.4,
+    "damage": 0.4,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Rust pustule",
+   "haloLabel": "Red-brown spot",
+   "areaLabel": "Yellowing leaf",
+   "lifecycle": [
+    "Spores blow from hemlocks or infected bushes.",
+    "They infect leaves in warm, humid weather.",
+    "Yellow spots form, with orange pustules underneath.",
+    "New spores spread from bush to bush."
+   ],
+   "conditions": [
+    "Warm, humid summers.",
+    "Hemlocks nearby.",
+    "Dense plantings.",
+    "Susceptible varieties."
+   ],
+   "photos": [
+    "blueberry_rust_1"
+   ],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: blueberry rust",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "scorch",
+   "name": "Blueberry Scorch",
+   "type": "Viral",
+   "part": "Leaf",
+   "pathogen": "Blueberry scorch virus (BlScV, a carlavirus)",
+   "labels": [
+    "blueberry scorch"
+   ],
+   "description": "A virus disease that blights blossoms and scorches the leaf edges of highbush blueberry.",
+   "causes": "Aphids carry the virus from infected bushes; it also travels in infected cuttings.",
+   "symptoms": [
+    "Blossoms and young leaves die suddenly at flowering",
+    "Brown, scorched leaf margins",
+    "Some varieties only show yellowing or red leaf edges"
+   ],
+   "effect": "Fruit set fails on affected branches.",
+   "untreated": "Infected bushes decline over a few years; the virus spreads along the row.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Mark and test the bush",
+     "instruction": "Mark bushes with blossom blight and have a sample tested.",
+     "rationale": "Frost and other diseases look similar.",
+     "mode": "Informational",
+     "days": 1,
+     "effect": "Small",
+     "chemical": false
+    },
+    {
+     "title": "Remove infected bushes",
+     "instruction": "Pull out confirmed bushes with their roots.",
+     "rationale": "There is no cure.",
+     "mode": "GrabAndRemove",
+     "days": 3,
+     "effect": "Rogue",
+     "chemical": false
+    },
+    {
+     "title": "Control aphids",
+     "instruction": "Keep aphid numbers low as advised locally.",
+     "rationale": "Aphids spread it.",
+     "mode": "AdjustSetting",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropManagement",
+     "title": "Plant certified virus-tested stock",
+     "detail": "Most outbreaks start with infected plants."
+    },
+    {
+     "category": "Monitoring",
+     "title": "Check at every bloom",
+     "detail": "Blossom blight is the clearest sign."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_MarginScorch",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.42,
+     0.26,
+     0.16
+    ],
+    "halo": [
+     0.66,
+     0.3,
+     0.22
+    ],
+    "yellow": [
+     0.84,
+     0.76,
+     0.32
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.6,
+    "wilting": 0.3,
+    "damage": 0.6,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Scorched edge",
+   "haloLabel": "Red margin",
+   "areaLabel": "Blighted shoot",
+   "lifecycle": [
+    "Aphids feed on an infected bush.",
+    "They carry the virus to healthy bushes.",
+    "At bloom, flowers and young leaves die back.",
+    "Leaf edges scorch; the bush declines."
+   ],
+   "conditions": [
+    "Aphids.",
+    "Infected bushes nearby.",
+    "Uncertified plants.",
+    "Sensitive varieties."
+   ],
+   "photos": [
+    "blueberry_scorch_1"
+   ],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: blueberry scorch",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  }
+ ],
+ "aliases": [],
+ "healthyLabels": [
+  "Blueberry leaf",
+  "Blueberry___healthy"
+ ]
+}

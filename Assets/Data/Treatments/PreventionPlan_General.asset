@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5089f68aca984594ca14f61c1675569f, type: 3}
+  m_Name: PreventionPlan_General
+  m_EditorClassIdentifier: 
+  preventionId: general_prevention
+  measures:
+  - category: 1
+    title: Water the soil, not the leaves
+    detail: Water at the base early in the day so foliage dries quickly. Most leaf
+      diseases need a film of water to infect.
+  - category: 2
+    title: Give plants room to breathe
+    detail: Space, stake and lightly prune so air moves through the canopy and leaves
+      dry after rain or dew.
+  - category: 3
+    title: Check lower leaves weekly
+    detail: Problems usually start low and small. Catching the first spots makes
+      treatment far easier and often unnecessary.
+  - category: 0
+    title: Clear fallen leaves and debris
+    detail: Many pathogens survive on dead plant material. Removing it breaks the
+      cycle between seasons.

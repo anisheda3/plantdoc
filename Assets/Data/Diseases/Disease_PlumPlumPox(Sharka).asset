@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_PlumPlumPox(Sharka)
+  m_EditorClassIdentifier: 
+  diseaseId: plum_pox_virus
+  diseaseName: Plum Pox (Sharka)
+  aiLabelAliases:
+  - plum_plum_pox_virus
+  - plum pox virus
+  pathogenType: 2
+  pathogen: Plum pox virus (PPV, a potyvirus)
+  affectedPart: 0
+  sources:
+  - 'PlantSeg (Wei et al. 2024, CC BY 4.0) class: plum pox virus'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: 'The most serious virus of plum and other stone fruit: pale rings
+    on leaves and fruit, and fruit drops early.'
+  causes: Aphids spread it within an orchard; infected nursery trees and budwood
+    spread it over long distances.
+  effectOnPlant: Fruit is unsaleable and falls early.
+  untreatedOutcome: Infected trees stay infected; it is a quarantine disease in many
+    countries.
+  symptoms:
+  - Pale green to yellow rings and vein patterns on spring leaves
+  - Dark rings or bands on the fruit
+  - Deformed, sour fruit that drops early
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  - yellowing
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: 77c9c9ea2a3c93b44a5d29cd2435d294, type: 2}
+  preventionPlan: {fileID: 11400000, guid: 7074b41f9bbb9ac42a7cfcd9289719f2, type: 2}
+  simulationProfile: {fileID: 11400000, guid: fbf03d1ae65ad8a43ba6afcc4ace85ab, type: 2}
+  lifecycleStages:
+  - Aphids feed on an infected tree.
+  - They carry the virus to nearby trees.
+  - Pale rings form on spring leaves.
+  - Fruit is ringed, deformed and drops.
+  conditionFactors:
+  - Aphids.
+  - Infected nursery stock.
+  - Infected trees nearby.
+  - Susceptible varieties.
+  referencePhotos:
+  - {fileID: 2800000, guid: 0f5967c5576d6c14db0315cabcdbe730, type: 3}
+  lesionLabel: Pale ring
+  haloLabel: Vein pattern
+  areaLabel: Mottled leaf

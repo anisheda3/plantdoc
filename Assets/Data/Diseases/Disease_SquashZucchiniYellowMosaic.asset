@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_SquashZucchiniYellowMosaic
+  m_EditorClassIdentifier: 
+  diseaseId: yellow_mosaic_virus
+  diseaseName: Zucchini Yellow Mosaic
+  aiLabelAliases:
+  - squash_yellow_mosaic_virus
+  - zucchini yellow mosaic virus
+  pathogenType: 2
+  pathogen: Zucchini yellow mosaic virus (ZYMV, a potyvirus)
+  affectedPart: 0
+  sources:
+  - 'PlantSeg (Wei et al. 2024, CC BY 4.0) class: zucchini yellow mosaic virus'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: A virus disease of squash and other cucurbits that mottles and deforms
+    the leaves and fruit.
+  causes: Aphids pick up the virus while probing infected plants and pass it on within
+    minutes.
+  effectOnPlant: Infected plants grow little and their fruit cannot be sold.
+  untreatedOutcome: Early infection can wipe out a planting.
+  symptoms:
+  - Bright yellow and green mosaic on young leaves
+  - Leaves narrow, blistered and distorted
+  - Knobbly, deformed, mottled fruit
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  - yellowing
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: a4920b2b7e46a9b4ca483ec35e8b9b03, type: 2}
+  preventionPlan: {fileID: 11400000, guid: 7856d7fd3963119428aecd87e437351f, type: 2}
+  simulationProfile: {fileID: 11400000, guid: a59439330b2206045a7f2829134709cf, type: 2}
+  lifecycleStages:
+  - Aphids carry the virus from infected plants.
+  - A short probe on a leaf passes it on.
+  - Young leaves mottle and distort.
+  - Fruit is knobbly and mottled.
+  conditionFactors:
+  - Many aphids.
+  - Infected cucurbits or weeds nearby.
+  - Young plants.
+  - Susceptible varieties.
+  referencePhotos:
+  - {fileID: 2800000, guid: 7572993a3086540419e95e289267557f, type: 3}
+  lesionLabel: Yellow mosaic
+  haloLabel: Blistered area
+  areaLabel: Distorted leaf

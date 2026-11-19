@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_BeanBeanRust
+  m_EditorClassIdentifier: 
+  diseaseId: rust
+  diseaseName: Bean Rust
+  aiLabelAliases:
+  - bean_rust
+  - bean rust
+  pathogenType: 0
+  pathogen: Uromyces appendiculatus
+  affectedPart: 0
+  sources:
+  - 'PlantSeg (Wei et al. 2024, CC BY 4.0) class: bean rust'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: A rust fungus of bean leaves.
+  causes: Spores blow in on the wind or survive on old bean debris; leaves wet for
+    10+ hours in mild weather get infected.
+  effectOnPlant: Leaf loss reduces pod fill.
+  untreatedOutcome: Severe early rust can cut yield substantially.
+  symptoms:
+  - Small white flecks that become rusty red-brown pustules
+  - Pustules often ringed by a yellow halo
+  - Heavily infected leaves yellow and drop
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  - yellowing
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: cfef03c8131f64e4ab24f7db6cf85a4b, type: 2}
+  preventionPlan: {fileID: 11400000, guid: 70baeddc853425146a89cbad89df623c, type: 2}
+  simulationProfile: {fileID: 11400000, guid: 999bbac9fd3c1fe48be599cdafee2d12, type: 2}
+  lifecycleStages:
+  - Spores survive on debris or blow in.
+  - Long dew lets them infect.
+  - Rusty pustules break through.
+  - New spores spread every 10-15 days.
+  conditionFactors:
+  - "Mild (17-27 \xB0C) weather."
+  - Long dew.
+  - Bean debris nearby.
+  - Susceptible varieties.
+  referencePhotos:
+  - {fileID: 2800000, guid: 6bc52b9ac324f10489fe8b30b52619fd, type: 3}
+  lesionLabel: Rust pustule
+  haloLabel: Yellow halo
+  areaLabel: Rusted leaf

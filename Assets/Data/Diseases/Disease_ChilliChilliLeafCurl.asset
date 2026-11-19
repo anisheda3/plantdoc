@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_ChilliChilliLeafCurl
+  m_EditorClassIdentifier: 
+  diseaseId: leaf_curl
+  diseaseName: Chilli Leaf Curl
+  aiLabelAliases:
+  - chilli_leaf_curl
+  - leaf curl
+  - Leaf Curl Disease
+  - chilli leaf curl
+  - Chilli___Leaf_curl
+  pathogenType: 2
+  pathogen: Chilli leaf curl virus and other begomoviruses
+  affectedPart: 0
+  sources:
+  - 'chili v2 (Roboflow) / Chilli Leaf Disease Dataset (Mendeley Data) class: leaf
+    curl, Leaf Curl Disease, chilli leaf curl'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: 'The most damaging virus disease of chilli: leaves curl, pucker and
+    shrink, and the plant stops growing.'
+  causes: Whiteflies (Bemisia tabaci) carry the virus from infected plants and weeds
+    as they feed.
+  effectOnPlant: Infected plants yield little.
+  untreatedOutcome: Early infection can make a whole planting worthless.
+  symptoms:
+  - Leaves curl upward and inward, puckered and thickened
+  - Young leaves small, pale and crowded at the tips
+  - Plants stunted, with few flowers and fruit
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  - yellowing
+  - wilting
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: bc0483174f86dd94c9098237e5e2e02c, type: 2}
+  preventionPlan: {fileID: 11400000, guid: b03e47ab237f65e4baa339062cb751a1, type: 2}
+  simulationProfile: {fileID: 11400000, guid: 6256e1c8178028443b07327157eeeae3, type: 2}
+  lifecycleStages:
+  - Whiteflies pick up the virus from infected plants.
+  - They carry it to healthy plants.
+  - New leaves curl, pucker and shrink.
+  - The plant stops growing and sets little fruit.
+  conditionFactors:
+  - Many whiteflies.
+  - Infected plants or weeds nearby.
+  - Warm, dry weather.
+  - Unprotected seedlings.
+  referencePhotos:
+  - {fileID: 2800000, guid: 11de92e18dd48aa41a78a5ea79a8a82d, type: 3}
+  lesionLabel: Curled leaf
+  haloLabel: Puckered area
+  areaLabel: Stunted growth

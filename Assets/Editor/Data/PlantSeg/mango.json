@@ -1,0 +1,798 @@
+{
+ "plantId": "mango",
+ "plantName": "Mango",
+ "scientificName": "Mangifera indica",
+ "description": "Mangifera indica: an evergreen tropical fruit tree.",
+ "diseases": [
+  {
+   "id": "anthracnose",
+   "name": "Anthracnose",
+   "type": "Fungal",
+   "part": "Leaf",
+   "pathogen": "Colletotrichum gloeosporioides (and related species)",
+   "labels": [
+    "Anthracnose",
+    "mango anthracnose"
+   ],
+   "description": "The most important disease of mango: dark spots on young leaves, blackened flowers and rotting fruit.",
+   "causes": "Spores from infected leaves, twigs and old flower stalks spread by rain splash; wet weather at flushing and flowering favours it.",
+   "symptoms": [
+    "Small dark brown to black spots on young leaves, often with a yellow edge",
+    "Spots join; leaf tissue dries and may fall out",
+    "Black, withered flower panicles; sunken black spots on ripening fruit"
+   ],
+   "effect": "Leaf spotting, flower loss and fruit rot reduce the crop.",
+   "untreated": "Repeated years of blossom blight can cut yields heavily.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Remove spotted leaves, dead twigs and old flower stalks",
+     "instruction": "Pick off spotted leaves, dead twigs and old flower stalks when the plants are dry and take them away.",
+     "rationale": "Fewer spores are left to spread.",
+     "mode": "TapRegion",
+     "days": 2,
+     "effect": "Remove",
+     "chemical": false
+    },
+    {
+     "title": "Prune to open the canopy",
+     "instruction": "Thin the crown after harvest so it dries quickly.",
+     "rationale": "Spores need wet leaves and flowers.",
+     "mode": "AdjustSetting",
+     "days": 3,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Protective spray",
+     "instruction": "Spray a registered fungicide at flushing and flowering on the label's schedule.",
+     "rationale": "Protects healthy growth; it cannot cure what is already infected.",
+     "mode": "SprayApply",
+     "days": 3,
+     "effect": "Protect",
+     "chemical": true
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropHygiene",
+     "title": "Remove fallen leaves and dead wood",
+     "detail": "They carry the fungus."
+    },
+    {
+     "category": "Monitoring",
+     "title": "Watch flushes and flowers in wet weather",
+     "detail": "That is when infection happens."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_SmallSpots",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.16,
+     0.12,
+     0.08
+    ],
+    "halo": [
+     0.84,
+     0.78,
+     0.3
+    ],
+    "yellow": [
+     0.84,
+     0.78,
+     0.32
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.5,
+    "wilting": 0.4,
+    "damage": 0.7,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Black spot",
+   "haloLabel": "Yellow edge",
+   "areaLabel": "Spotted leaf",
+   "lifecycle": [
+    "The fungus lives on leaves, twigs and old flower stalks.",
+    "Rain splashes spores onto new flushes and flowers.",
+    "Dark spots form on leaves; flowers blacken.",
+    "Fruit is infected and rots as it ripens."
+   ],
+   "conditions": [
+    "Rain at flushing and flowering.",
+    "High humidity.",
+    "Dense crowns.",
+    "Susceptible varieties."
+   ],
+   "photos": [
+    "mango_anthracnose_1"
+   ],
+   "sources": [
+    "MangoLeafBD (Mendeley Data) class: Anthracnose, mango anthracnose",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "bacterial_canker",
+   "name": "Bacterial Canker (Black Spot)",
+   "type": "Bacterial",
+   "part": "Leaf",
+   "pathogen": "Xanthomonas citri pv. mangiferaeindicae",
+   "labels": [
+    "Bacterial Canker",
+    "mango bacterial canker"
+   ],
+   "description": "A bacterial disease of mango leaves, twigs and fruit with raised, angular black spots.",
+   "causes": "Bacteria survive in leaf and twig lesions and spread by wind-driven rain, especially through wounds.",
+   "symptoms": [
+    "Small, water-soaked, angular spots limited by the veins",
+    "Spots turn raised, black and cracked, often with a yellow halo",
+    "Black, star-shaped cracks on fruit that ooze in wet weather"
+   ],
+   "effect": "Spotted leaves drop; fruit is blemished and may rot.",
+   "untreated": "Severe outbreaks defoliate trees and spoil most fruit.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Remove infected twigs and leaves",
+     "instruction": "Pick off infected twigs and leaves when the plants are dry and take them away.",
+     "rationale": "Fewer spores are left to spread.",
+     "mode": "TapRegion",
+     "days": 2,
+     "effect": "Remove",
+     "chemical": false
+    },
+    {
+     "title": "Plant windbreaks",
+     "instruction": "Shelter the orchard from strong wind.",
+     "rationale": "Wind-driven rain spreads the bacteria and wounds the leaves.",
+     "mode": "AdjustSetting",
+     "days": 3,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Copper spray where advised",
+     "instruction": "Spray a registered copper product following the label.",
+     "rationale": "Protects new growth.",
+     "mode": "SprayApply",
+     "days": 3,
+     "effect": "Protect",
+     "chemical": true
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropManagement",
+     "title": "Plant clean nursery stock",
+     "detail": "Infected seedlings bring it in."
+    },
+    {
+     "category": "EnvironmentalManagement",
+     "title": "Use windbreaks",
+     "detail": "Less spread and fewer wounds."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_Angular",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.1,
+     0.08,
+     0.06
+    ],
+    "halo": [
+     0.8,
+     0.78,
+     0.32
+    ],
+    "yellow": [
+     0.84,
+     0.8,
+     0.34
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.5,
+    "wilting": 0.4,
+    "damage": 0.6,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Black spot",
+   "haloLabel": "Yellow halo",
+   "areaLabel": "Spotted leaf",
+   "lifecycle": [
+    "Bacteria survive in leaf and twig lesions.",
+    "Wind-driven rain carries them to new leaves.",
+    "Angular water-soaked spots turn black and raised.",
+    "Fruit gets cracked black spots."
+   ],
+   "conditions": [
+    "Wind-driven rain.",
+    "Wounds.",
+    "Warm, wet weather.",
+    "Infected nursery trees."
+   ],
+   "photos": [
+    "mango_bacterial_canker_1"
+   ],
+   "sources": [
+    "MangoLeafBD (Mendeley Data) class: Bacterial Canker, mango bacterial canker",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "cutting_weevil",
+   "name": "Leaf-Cutting Weevil",
+   "type": "Pest",
+   "part": "Leaf",
+   "pathogen": "Deporaus marginatus (mango leaf-cutting weevil)",
+   "labels": [
+    "Cutting Weevil",
+    "mango cutting weevil"
+   ],
+   "description": "A small weevil that lays eggs in young mango leaves and then cuts the leaves off near their base.",
+   "causes": "Adult weevils are active on new, tender flushes; the females cut the leaves so the egg-bearing pieces fall to the ground.",
+   "symptoms": [
+    "Young leaves cut straight across near the leaf base",
+    "Cut leaf pieces lying under the tree",
+    "Flushes left with only stubs of leaves"
+   ],
+   "effect": "New flushes lose their leaves, delaying growth.",
+   "untreated": "Young trees in nurseries can be stripped of new leaves.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Collect fallen leaf pieces",
+     "instruction": "Gather and destroy the cut leaf pieces under the tree.",
+     "rationale": "They hold the weevil's eggs and larvae.",
+     "mode": "GrabAndRemove",
+     "days": 1,
+     "effect": "Remove",
+     "chemical": false
+    },
+    {
+     "title": "Watch new flushes",
+     "instruction": "Check tender flushes for weevils in the morning.",
+     "rationale": "Damage happens on young leaves.",
+     "mode": "TapRegion",
+     "days": 2,
+     "effect": "Small",
+     "chemical": false
+    },
+    {
+     "title": "Control on severe attack",
+     "instruction": "Use a control registered locally, following the label.",
+     "rationale": "Protects the next flush.",
+     "mode": "SprayApply",
+     "days": 3,
+     "effect": "Protect",
+     "chemical": true
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropHygiene",
+     "title": "Destroy fallen cut leaves",
+     "detail": "Breaks the life cycle."
+    },
+    {
+     "category": "Monitoring",
+     "title": "Inspect flushes",
+     "detail": "Act early in nurseries."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_MarginScorch",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.7,
+     0.62,
+     0.44
+    ],
+    "halo": [
+     0.62,
+     0.52,
+     0.34
+    ],
+    "yellow": [
+     0.8,
+     0.74,
+     0.4
+    ],
+    "lesions": 0.6,
+    "yellowing": 0.2,
+    "wilting": 0.1,
+    "damage": 0.8,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Cut edge",
+   "haloLabel": "Brown margin",
+   "areaLabel": "Damaged leaf",
+   "lifecycle": [
+    "Adults feed on tender new leaves.",
+    "Females lay eggs in the young leaves.",
+    "They cut the leaves near the base.",
+    "Larvae develop in the fallen pieces."
+   ],
+   "conditions": [
+    "Tender new flushes.",
+    "Fallen leaf pieces left under trees.",
+    "Nurseries.",
+    "Warm, humid season."
+   ],
+   "photos": [],
+   "sources": [
+    "MangoLeafBD (Mendeley Data) class: Cutting Weevil, mango cutting weevil",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "die_back",
+   "name": "Die Back",
+   "type": "Fungal",
+   "part": "Leaf",
+   "pathogen": "Lasiodiplodia theobromae",
+   "labels": [
+    "Die Back",
+    "mango die back"
+   ],
+   "description": "A fungal disease that kills mango twigs and branches from the tip downward.",
+   "causes": "The fungus enters through wounds and stressed tissue; drought, sun scald and damage favour it.",
+   "symptoms": [
+    "Leaves at the shoot tips turn brown and dry, starting from the edges",
+    "Twigs die back from the tip; the bark darkens",
+    "Gum oozes from cracks in the bark"
+   ],
+   "effect": "Branches die and the crown thins.",
+   "untreated": "Severe die back can kill large limbs or young trees.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Prune out dead twigs",
+     "instruction": "Cut 10-15 cm below the dead part into healthy wood and remove the prunings.",
+     "rationale": "The fungus spreads down the twig.",
+     "mode": "TapRegion",
+     "days": 2,
+     "effect": "Remove",
+     "chemical": false
+    },
+    {
+     "title": "Seal and protect cuts",
+     "instruction": "Treat large cuts as advised locally.",
+     "rationale": "Wounds let the fungus in.",
+     "mode": "AdjustSetting",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Water and feed the tree",
+     "instruction": "Reduce drought stress.",
+     "rationale": "Stressed trees die back more.",
+     "mode": "Informational",
+     "days": 3,
+     "effect": "Small",
+     "chemical": false
+    }
+   ],
+   "prevention": [
+    {
+     "category": "WaterManagement",
+     "title": "Avoid drought stress",
+     "detail": "A key trigger."
+    },
+    {
+     "category": "CropHygiene",
+     "title": "Remove dead wood",
+     "detail": "It harbours the fungus."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_MarginScorch",
+    "yellowMask": "T_YellowMask_Margin",
+    "lesion": [
+     0.42,
+     0.28,
+     0.16
+    ],
+    "halo": [
+     0.7,
+     0.56,
+     0.3
+    ],
+    "yellow": [
+     0.84,
+     0.74,
+     0.32
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.7,
+    "wilting": 0.5,
+    "damage": 0.7,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Dry margin",
+   "haloLabel": "Brown edge",
+   "areaLabel": "Dying shoot",
+   "lifecycle": [
+    "The fungus lives on dead wood.",
+    "It enters through wounds and stressed twigs.",
+    "Shoot tips brown and dry.",
+    "The die back moves down the branch."
+   ],
+   "conditions": [
+    "Drought stress.",
+    "Wounds and sun scald.",
+    "Dead wood in the tree.",
+    "Hot weather."
+   ],
+   "photos": [],
+   "sources": [
+    "MangoLeafBD (Mendeley Data) class: Die Back, mango die back",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "gall_midge",
+   "name": "Gall Midge",
+   "type": "Pest",
+   "part": "Leaf",
+   "pathogen": "Procontarinia spp. (mango gall midges)",
+   "labels": [
+    "Gall Midge",
+    "mango gall midge"
+   ],
+   "description": "Tiny flies whose larvae form small raised galls on mango leaves.",
+   "causes": "Midges lay eggs in young leaves; each larva makes a small wart-like gall as it feeds.",
+   "symptoms": [
+    "Many small raised, wart-like galls on the leaf, 3-4 mm",
+    "Galls dark brown to black, sometimes with a pale halo",
+    "Heavily galled leaves curl and drop early"
+   ],
+   "effect": "Galled leaves photosynthesise less and drop.",
+   "untreated": "Heavy infestations weaken young trees and new flushes.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Remove heavily galled leaves",
+     "instruction": "Pick off heavily galled leaves when the plants are dry and take them away.",
+     "rationale": "Removes larvae before they drop to pupate.",
+     "mode": "TapRegion",
+     "days": 2,
+     "effect": "Remove",
+     "chemical": false
+    },
+    {
+     "title": "Disturb the soil under the tree",
+     "instruction": "Rake or till the soil under the crown.",
+     "rationale": "Larvae pupate in the soil.",
+     "mode": "AdjustSetting",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Control on new flushes if severe",
+     "instruction": "Use a control registered locally, following the label.",
+     "rationale": "Protects the young leaves.",
+     "mode": "SprayApply",
+     "days": 3,
+     "effect": "Protect",
+     "chemical": true
+    }
+   ],
+   "prevention": [
+    {
+     "category": "Monitoring",
+     "title": "Check new flushes",
+     "detail": "Galls start on young leaves."
+    },
+    {
+     "category": "CropHygiene",
+     "title": "Clear fallen leaves",
+     "detail": "Fewer pupae."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_SmallSpots",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.22,
+     0.14,
+     0.1
+    ],
+    "halo": [
+     0.78,
+     0.74,
+     0.4
+    ],
+    "yellow": [
+     0.82,
+     0.76,
+     0.36
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.3,
+    "wilting": 0.4,
+    "damage": 0.5,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Leaf gall",
+   "haloLabel": "Pale halo",
+   "areaLabel": "Galled leaf",
+   "lifecycle": [
+    "Midges lay eggs in young leaves.",
+    "Larvae feed inside, forming galls.",
+    "Mature larvae drop to the soil.",
+    "They pupate and emerge for the next flush."
+   ],
+   "conditions": [
+    "Frequent new flushes.",
+    "Humid weather.",
+    "Undisturbed soil under trees.",
+    "Susceptible varieties."
+   ],
+   "photos": [
+    "mango_gall_midge_1"
+   ],
+   "sources": [
+    "MangoLeafBD (Mendeley Data) class: Gall Midge, mango gall midge",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "powdery_mildew",
+   "name": "Powdery Mildew",
+   "type": "Fungal",
+   "part": "Leaf",
+   "pathogen": "Erysiphe quercicola (syn. Oidium mangiferae)",
+   "labels": [
+    "Powdery Mildew",
+    "mango powdery mildew"
+   ],
+   "description": "A fungal disease that coats mango flowers, young fruit and leaves with white powder.",
+   "causes": "Spores blow on the wind; cool nights and dry, mild days at flowering favour it.",
+   "symptoms": [
+    "White powdery patches on young leaves, often on the underside",
+    "Flower panicles covered in white powder, then brown and dry",
+    "Young fruit drops"
+   ],
+   "effect": "Flowers and young fruit drop, so the crop is small.",
+   "untreated": "Severe attacks at flowering can wipe out the crop.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Remove badly mildewed panicles and leaves",
+     "instruction": "Pick off badly mildewed panicles and leaves when the plants are dry and take them away.",
+     "rationale": "Fewer spores are left to spread.",
+     "mode": "TapRegion",
+     "days": 2,
+     "effect": "Remove",
+     "chemical": false
+    },
+    {
+     "title": "Open the canopy",
+     "instruction": "Prune for airflow and light.",
+     "rationale": "Shade and still air favour mildew.",
+     "mode": "AdjustSetting",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Protective spray",
+     "instruction": "Spray sulphur or another registered fungicide at flowering on the label's schedule.",
+     "rationale": "Protects healthy growth; it cannot cure what is already infected.",
+     "mode": "SprayApply",
+     "days": 3,
+     "effect": "Protect",
+     "chemical": true
+    }
+   ],
+   "prevention": [
+    {
+     "category": "Monitoring",
+     "title": "Watch flowering in cool weather",
+     "detail": "That is the danger period."
+    },
+    {
+     "category": "AirCirculation",
+     "title": "Prune after harvest",
+     "detail": "Better airflow."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_Colony",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.9,
+     0.9,
+     0.88
+    ],
+    "halo": [
+     0.8,
+     0.84,
+     0.66
+    ],
+    "yellow": [
+     0.84,
+     0.82,
+     0.48
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.4,
+    "wilting": 0.4,
+    "damage": 0.4,
+    "seconds": 7.0
+   },
+   "lesionLabel": "White patch",
+   "haloLabel": "Pale area",
+   "areaLabel": "Powdery leaf",
+   "lifecycle": [
+    "The fungus survives on old leaves.",
+    "Spores blow onto young leaves and flowers.",
+    "White powder covers them.",
+    "Flowers and young fruit drop."
+   ],
+   "conditions": [
+    "Cool nights, mild days.",
+    "Flowering season.",
+    "Dense canopies.",
+    "Susceptible varieties."
+   ],
+   "photos": [
+    "mango_powdery_mildew_1"
+   ],
+   "sources": [
+    "MangoLeafBD (Mendeley Data) class: Powdery Mildew, mango powdery mildew",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "sooty_mould",
+   "name": "Sooty Mould",
+   "type": "Fungal",
+   "part": "Leaf",
+   "pathogen": "Capnodium and related sooty moulds (growing on insect honeydew)",
+   "labels": [
+    "Sooty Mould",
+    "mango sooty mould"
+   ],
+   "description": "A black, soot-like coating of fungi growing on the honeydew of sap-sucking insects.",
+   "causes": "Mango hoppers, scale insects and mealybugs drop sticky honeydew on the leaves; sooty moulds grow on it.",
+   "symptoms": [
+    "Black, papery or velvety coating on the upper leaf",
+    "The coating can be rubbed or peeled off",
+    "Sticky leaves; hoppers, scales or mealybugs nearby"
+   ],
+   "effect": "The coating shades the leaves and reduces photosynthesis.",
+   "untreated": "Heavy coating weakens the tree and soils the fruit.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Control the sap-sucking insects",
+     "instruction": "Deal with hoppers, scales or mealybugs as advised locally.",
+     "rationale": "No honeydew, no sooty mould.",
+     "mode": "AdjustSetting",
+     "days": 3,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Wash the coating off",
+     "instruction": "Spray water (with a mild soap where advised) on badly coated leaves.",
+     "rationale": "Restores light to the leaves.",
+     "mode": "SprayApply",
+     "days": 2,
+     "effect": "Remove",
+     "chemical": false
+    },
+    {
+     "title": "Control ants",
+     "instruction": "Keep ants off the tree.",
+     "rationale": "Ants protect the insects that make honeydew.",
+     "mode": "Informational",
+     "days": 2,
+     "effect": "Small",
+     "chemical": false
+    }
+   ],
+   "prevention": [
+    {
+     "category": "Monitoring",
+     "title": "Check for hoppers and scale",
+     "detail": "They cause it."
+    },
+    {
+     "category": "AirCirculation",
+     "title": "Prune dense crowns",
+     "detail": "Fewer insects."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_Colony",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.08,
+     0.08,
+     0.08
+    ],
+    "halo": [
+     0.2,
+     0.2,
+     0.18
+    ],
+    "yellow": [
+     0.7,
+     0.66,
+     0.4
+    ],
+    "lesions": 1.0,
+    "yellowing": 0.2,
+    "wilting": 0.4,
+    "damage": 0.3,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Black coating",
+   "haloLabel": "Sooty edge",
+   "areaLabel": "Coated leaf",
+   "lifecycle": [
+    "Sap-sucking insects feed on the tree.",
+    "They drop sticky honeydew on the leaves.",
+    "Sooty moulds grow on the honeydew.",
+    "A black coating shades the leaves."
+   ],
+   "conditions": [
+    "Hoppers, scales or mealybugs.",
+    "Ants tending them.",
+    "Dense, shaded crowns.",
+    "Little rain to wash leaves."
+   ],
+   "photos": [
+    "mango_sooty_mould_1"
+   ],
+   "sources": [
+    "MangoLeafBD (Mendeley Data) class: Sooty Mould, mango sooty mould",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  }
+ ],
+ "aliases": [
+  {
+   "disease": "anthracnose",
+   "labels": [
+    "Mango___Anthracnose"
+   ]
+  },
+  {
+   "disease": "gall_midge",
+   "labels": [
+    "Mango___Gall_midge"
+   ]
+  },
+  {
+   "disease": "bacterial_canker",
+   "labels": [
+    "Mango___Bacterial_canker"
+   ]
+  },
+  {
+   "disease": "die_back",
+   "labels": [
+    "Mango___Die_back"
+   ]
+  }
+ ],
+ "healthyLabels": [
+  "Healthy",
+  "mango healthy",
+  "Mango___healthy"
+ ]
+}

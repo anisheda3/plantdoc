@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_CornCommonRust
+  m_EditorClassIdentifier: 
+  diseaseId: common_rust
+  diseaseName: Common Rust
+  aiLabelAliases:
+  - Corn___Common_rust
+  - corn_common_rust
+  - corn rust
+  - Corn rust leaf
+  - Corn_(maize)___Common_rust_
+  pathogenType: 0
+  pathogen: 
+  affectedPart: 0
+  sources: []
+  description: A rust fungus (Puccinia sorghi) of maize leaves.
+  causes: Spores blow in on the wind; cool to moderate temperatures and heavy dew
+    favour infection.
+  effectOnPlant: Heavy rusting reduces the green leaf area.
+  untreatedOutcome: Severe early rust on susceptible maize can reduce yield.
+  symptoms:
+  - Small cinnamon-brown powdery pustules
+  - Pustules on both sides of the leaf
+  - Pustules turn dark brown-black late in the season
+  supportingFeatureIds:
+  - leaf_spots
+  - yellowing
+  - leaf_color
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: fd2964e48f8239647bdc36b059b645f8, type: 2}
+  preventionPlan: {fileID: 11400000, guid: bbe00629922be1e408a453c382d48bd2, type: 2}
+  simulationProfile: {fileID: 11400000, guid: 254d6f76de2637b459330d494da13b6c, type: 2}
+  lifecycleStages:
+  - Spores blow in on the wind each year.
+  - They infect leaves wet from dew.
+  - Cinnamon-brown pustules break through both leaf surfaces.
+  - Pustules release new spores that spread up the plant.
+  conditionFactors:
+  - Cool to moderate temperatures.
+  - Heavy dew.
+  - Susceptible varieties (often sweet corn).
+  - Early infection before tasselling.
+  referencePhotos:
+  - {fileID: 2800000, guid: 15383ab05262d1340b27737c14154ee9, type: 3}
+  lesionLabel: Rust pustule
+  haloLabel: Pale ring
+  areaLabel: Rusted leaf

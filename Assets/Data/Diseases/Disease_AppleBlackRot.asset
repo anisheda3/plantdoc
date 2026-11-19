@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_AppleBlackRot
+  m_EditorClassIdentifier: 
+  diseaseId: black_rot
+  diseaseName: Black Rot
+  aiLabelAliases:
+  - Apple___Black_rot
+  - apple_black_rot
+  - apple black rot
+  pathogenType: 0
+  pathogen: 
+  affectedPart: 0
+  sources: []
+  description: A fungal disease (Botryosphaeria obtusa) of apple leaves, fruit and
+    branches.
+  causes: Spores from cankers, dead wood and mummified fruit spread in warm, wet
+    weather.
+  effectOnPlant: Leaf spots cause some leaf drop; fruit rots on the tree.
+  untreatedOutcome: Cankers weaken branches, and rotting fruit is lost.
+  symptoms:
+  - '''Frog-eye'' leaf spots: brown centres with purple borders'
+  - Rotting fruit with dark rings
+  - Sunken cankers on branches
+  supportingFeatureIds:
+  - leaf_spots
+  - yellowing
+  - leaf_color
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: f83688a27914e594db8ad54957e48784, type: 2}
+  preventionPlan: {fileID: 11400000, guid: 36b91526b69bd8a42be69136873e53cb, type: 2}
+  simulationProfile: {fileID: 11400000, guid: 489f64e07c65a1149b9e5bfe9095bd77, type: 2}
+  lifecycleStages:
+  - The fungus lives in cankers, dead wood and mummified fruit.
+  - Spores are released in warm, wet weather.
+  - Leaves get brown spots with purple borders.
+  - Fruit rots and mummifies, carrying the fungus on.
+  conditionFactors:
+  - Warm, wet weather.
+  - Dead wood and cankers in the tree.
+  - Mummified fruit left on or under the tree.
+  - Wounded or stressed trees.
+  referencePhotos:
+  - {fileID: 2800000, guid: d313592f019b5ba468c9738340187b84, type: 3}
+  lesionLabel: Frog-eye spot
+  haloLabel: Purple border
+  areaLabel: Affected area

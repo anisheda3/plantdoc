@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5132a70f51fe6cb4ea3c7d283552eb79, type: 3}
+  m_Name: TreatmentPlan_Squash_YellowMosaicVirus
+  m_EditorClassIdentifier: 
+  treatmentId: squash_yellow_mosaic_virus_treatment
+  planName: "Squash \u2014 Zucchini Yellow Mosaic"
+  steps:
+  - {fileID: 11400000, guid: 418f0616e73875a46aa22136521538e4, type: 2}
+  - {fileID: 11400000, guid: b2b246993fa779c44a86393bdd644f48, type: 2}
+  - {fileID: 11400000, guid: c4c3a6d07cef4834a94c4a0132ebf930, type: 2}
+  residualSeverityFloor: 0.15
+  residualDamageFloor: 0.1
+  disclaimer: Educational guidance only. Treatment does not guarantee recovery. Consult
+    a local agricultural extension service for field decisions.

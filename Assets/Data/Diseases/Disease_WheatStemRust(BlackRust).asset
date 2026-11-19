@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_WheatStemRust(BlackRust)
+  m_EditorClassIdentifier: 
+  diseaseId: stem_rust
+  diseaseName: Stem Rust (Black Rust)
+  aiLabelAliases:
+  - wheat_stem_rust
+  - wheat stem rust
+  pathogenType: 0
+  pathogen: Puccinia graminis f. sp. tritici
+  affectedPart: 0
+  sources:
+  - 'PlantSeg (Wei et al. 2024, CC BY 4.0) class: wheat stem rust'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: A rust fungus of wheat stems and leaves; strains such as Ug99 can
+    destroy crops.
+  causes: Spores blow long distances on the wind; dew on the leaves lets them infect,
+    and new spores form within one to two weeks.
+  effectOnPlant: Rusted leaves lose their green area, so grain fill suffers.
+  untreatedOutcome: Severe epidemics can cut yield heavily.
+  symptoms:
+  - Elongated, brick-red pustules on stems, sheaths and leaves
+  - Pustules tear the surface and look ragged
+  - Pustules turn black late in the season
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  - yellowing
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: dcaa0adc3f391fc458e3d8af7ff096cd, type: 2}
+  preventionPlan: {fileID: 11400000, guid: 4d1c73ca0b6a7a24fb8ba51dd55bea47, type: 2}
+  simulationProfile: {fileID: 11400000, guid: 74e5a422e09fd294cbb93a456bea49e4, type: 2}
+  lifecycleStages:
+  - Spores blow in or survive on volunteers.
+  - Dew lets them infect.
+  - Pustules break through.
+  - New spores spread every one to two weeks.
+  conditionFactors:
+  - Mild to warm weather.
+  - Long dew.
+  - Volunteer wheat nearby.
+  - Susceptible varieties.
+  referencePhotos:
+  - {fileID: 2800000, guid: 20d452717213617449fcba8a57c6e0c8, type: 3}
+  lesionLabel: Rust pustule
+  haloLabel: Yellow halo
+  areaLabel: Rusted leaf

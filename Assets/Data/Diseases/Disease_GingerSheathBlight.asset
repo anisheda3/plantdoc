@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_GingerSheathBlight
+  m_EditorClassIdentifier: 
+  diseaseId: sheath_blight
+  diseaseName: Sheath Blight
+  aiLabelAliases:
+  - ginger_sheath_blight
+  - ginger sheath blight
+  pathogenType: 0
+  pathogen: Rhizoctonia solani
+  affectedPart: 0
+  sources:
+  - 'PlantSeg (Wei et al. 2024, CC BY 4.0) class: ginger sheath blight'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: A soil-borne fungal blight of the leaf sheaths and leaves of ginger.
+  causes: The fungus lives in the soil and infects the lower sheaths in warm, humid
+    weather, especially in dense, wet plantings.
+  effectOnPlant: Shoots die back, reducing rhizome yield.
+  untreatedOutcome: Spreads through dense, wet plantings.
+  symptoms:
+  - Water-soaked, grey-green lesions on the lower leaf sheaths
+  - Lesions become large, irregular and bleached with brown edges
+  - Leaves above the lesions yellow and dry
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  - yellowing
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: b94a98a13862e7b4290dd425f63ac983, type: 2}
+  preventionPlan: {fileID: 11400000, guid: e397654d8afd2e64a8ba48b378602cf1, type: 2}
+  simulationProfile: {fileID: 11400000, guid: 7e0223678ffa2ea4bbc9b4c075ec0ede, type: 2}
+  lifecycleStages:
+  - The fungus survives in soil.
+  - It infects the lower sheaths in humid weather.
+  - Bleached lesions spread upward.
+  - Leaves yellow and shoots die.
+  conditionFactors:
+  - Warm, humid weather.
+  - Waterlogged soil.
+  - Dense planting.
+  - Infested soil.
+  referencePhotos: []
+  lesionLabel: Bleached lesion
+  haloLabel: Brown edge
+  areaLabel: Blighted shoot

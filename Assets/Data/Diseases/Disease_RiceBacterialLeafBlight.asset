@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_RiceBacterialLeafBlight
+  m_EditorClassIdentifier: 
+  diseaseId: bacterial_leaf_blight
+  diseaseName: Bacterial Leaf Blight
+  aiLabelAliases:
+  - rice_bacterial_leaf_blight
+  - Rice___Bacterial_leaf_blight
+  - rice bacterial leaf blight
+  - Bacterial leaf blight
+  pathogenType: 1
+  pathogen: Xanthomonas oryzae pv. oryzae
+  affectedPart: 0
+  sources:
+  - 'CropScan XR model class: Rice___Bacterial_leaf_blight, rice bacterial leaf blight,
+    Bacterial leaf blight'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: 'One of the most serious rice diseases: leaves yellow and dry from
+    the tips and edges.'
+  causes: Bacteria enter through leaf pores and wounds and spread in irrigation water,
+    rain and wind; storms and heavy nitrogen favour it.
+  effectOnPlant: Dried leaves cut grain fill; seedlings can wilt (kresek).
+  untreatedOutcome: Epidemics after storms can halve yields.
+  symptoms:
+  - Water-soaked to yellow stripes along the leaf edges, starting at the tip
+  - Stripes turn straw-white with a wavy edge
+  - Milky drops of bacterial ooze on young lesions in the morning
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  - yellowing
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: b190bca11b91c6948b25776bffb25db0, type: 2}
+  preventionPlan: {fileID: 11400000, guid: df61b73e11cee634b910ec610906d2d4, type: 2}
+  simulationProfile: {fileID: 11400000, guid: 07bd84b04a17de64da708ad26477ee93, type: 2}
+  lifecycleStages:
+  - Bacteria survive in stubble, straw and weeds.
+  - Water and wind carry them to leaves.
+  - They enter through pores and wounds at the leaf edge.
+  - Stripes spread down from the tip and ooze spreads it.
+  conditionFactors:
+  - Storms and flooding.
+  - Heavy nitrogen.
+  - Warm, humid weather.
+  - Susceptible varieties.
+  referencePhotos:
+  - {fileID: 2800000, guid: 0e2b0fa19889c97449885b70697b25d3, type: 3}
+  lesionLabel: Straw-white stripe
+  haloLabel: Yellow edge
+  areaLabel: Blighted leaf

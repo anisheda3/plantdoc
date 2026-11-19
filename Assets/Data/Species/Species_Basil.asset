@@ -1,0 +1,112 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bdf586ed54df4c4bb04bad3c2a44bdc, type: 3}
+  m_Name: Species_Basil
+  m_EditorClassIdentifier: 
+  speciesId: basil
+  displayName: Basil
+  archetype: 0
+  seed: 223
+  height: 0.45
+  inPot: 0
+  potColor: {r: 0.72, g: 0.38, b: 0.24, a: 1}
+  rootCount: 10
+  rootSpread: 0.14
+  rootRadius: 0.004
+  rootTint: {r: 1, g: 1, b: 1, a: 1}
+  moundRadius: 0.07
+  moundHeight: 0.03
+  rootHairs: 1
+  rootNodules: 0
+  braceRoots: 0
+  mainStems: 3
+  stemSplay: 22
+  sideBranches: 5
+  firstLeafHeight: 0.05
+  stemRadius: 0.005
+  stemColor: {r: 0.5, g: 0.62, b: 0.32, a: 1}
+  stemLean: 0.04
+  crownHeight: 0
+  woodyStems: 0
+  oppositeLeaves: 1
+  stalkShare: 0.86
+  grassTassel: 0
+  leafAtlas: {fileID: 2800000, guid: 3abf78ebbadf4d249bd358e34e18a632, type: 3}
+  leafRects:
+  - serializedVersion: 2
+    x: 0.005859375
+    y: 0.02238806
+    width: 0.23339844
+    height: 0.95522386
+  - serializedVersion: 2
+    x: 0.25097656
+    y: 0.02238806
+    width: 0.21923828
+    height: 0.95522386
+  - serializedVersion: 2
+    x: 0.4819336
+    y: 0.02238806
+    width: 0.20996094
+    height: 0.95522386
+  leafAspects:
+  - 0.93359375
+  - 0.8769531
+  - 0.83984375
+  leafFold: 0.08
+  leafForm: 1
+  leafCount: 80
+  leafSize: {x: 0.085, y: 0.055}
+  leafletPairs: 3
+  interjectedLeaflets: 0
+  trifoliateRachis: 0
+  heroLeaf: 0
+  petioleLength: 0.3
+  petioleRise: 1
+  petioleInset: 0
+  bladeLift: 0
+  strapSpread: 0
+  strapArch: 1
+  leafWidth: 0.5
+  serration: 0.07
+  teeth: 8
+  leafDroop: 0.08
+  leafTint: {r: 0.86, g: 1, b: 0.8, a: 1}
+  flowerCount: 4
+  flowerRadius: 0.004
+  flowerColor: {r: 0.97, g: 0.96, b: 0.95, a: 1}
+  flowerForm: 2
+  flowerPetals: 5
+  flowerThroat: {r: 0.94, g: 0.92, b: 0.9, a: 1}
+  flowerCentre: {r: 0.92, g: 0.9, b: 0.78, a: 1}
+  flowerCone: 0
+  flowerCluster: 10
+  flowerNod: 70
+  flowerZone: {x: 0.96, y: 1}
+  flowerSpike: 1
+  fruit: 0
+  fruitColors:
+  - {r: 0.86, g: 0.17, b: 0.1, a: 1}
+  - {r: 0.42, g: 0.62, b: 0.22, a: 1}
+  fruitCount: 0
+  fruitDisplayScale: 1
+  fruitCluster: 1
+  fruitRadius: 0.05
+  trunkHeight: 0.55
+  trunkRadius: 0.04
+  trunkCount: 1
+  trunkSplay: 12
+  branchLevels: 2
+  branchesPerLevel: 4
+  canopyRadius: 0.45
+  leavesPerTip: 8
+  canopyLeafScale: 1
+  barkColor: {r: 0.36, g: 0.27, b: 0.2, a: 1}

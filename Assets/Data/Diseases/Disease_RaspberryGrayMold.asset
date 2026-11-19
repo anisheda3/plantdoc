@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_RaspberryGrayMold
+  m_EditorClassIdentifier: 
+  diseaseId: gray_mold
+  diseaseName: Gray Mold
+  aiLabelAliases:
+  - raspberry_gray_mold
+  - raspberry gray mold
+  pathogenType: 0
+  pathogen: Botrytis cinerea
+  affectedPart: 1
+  sources:
+  - 'PlantSeg (Wei et al. 2024, CC BY 4.0) class: raspberry gray mold'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: Grey mould of raspberry fruit, the main cause of rotting berries.
+  causes: The fungus lives on dead plant material; its spores infect flowers in wet
+    weather and the berries rot as they ripen.
+  effectOnPlant: Fruit rots on the cane and soon after picking.
+  untreatedOutcome: Most of a wet season's crop can be lost.
+  symptoms:
+  - Soft, light-brown rot on the berries
+  - Grey, fuzzy mould covering the fruit
+  - Rot spreads quickly between touching berries
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: fa7dc00b69499504281a0f40a6220f57, type: 2}
+  preventionPlan: {fileID: 11400000, guid: af6376785ec555049bc54389ae37667f, type: 2}
+  simulationProfile: {fileID: 11400000, guid: 0a002d67ed16ea148b3a1baeeccec0c6, type: 2}
+  lifecycleStages:
+  - The fungus lives on dead plant material.
+  - Spores infect the flowers in wet weather.
+  - The berries rot as they ripen.
+  - Grey spores spread to neighbouring fruit.
+  conditionFactors:
+  - Wet weather at flowering and harvest.
+  - Dense rows.
+  - Overripe fruit.
+  - Overhead watering.
+  referencePhotos:
+  - {fileID: 2800000, guid: 1af4f61b7c2ef2b4d9b4365811897b78, type: 3}
+  lesionLabel: Grey mould
+  haloLabel: Soft rot
+  areaLabel: Rotting berry

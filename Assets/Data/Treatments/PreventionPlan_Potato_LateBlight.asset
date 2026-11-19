@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5089f68aca984594ca14f61c1675569f, type: 3}
+  m_Name: PreventionPlan_Potato_LateBlight
+  m_EditorClassIdentifier: 
+  preventionId: potato_late_blight_prevention
+  measures:
+  - category: 0
+    title: Destroy cull piles and volunteers
+    detail: Late blight survives on leftover tubers and self-sown plants.
+  - category: 5
+    title: Plant certified seed tubers
+    detail: Infected seed is a common way blight arrives.
+  - category: 3
+    title: Watch blight alerts
+    detail: Risk rises sharply in cool, wet spells; act before symptoms show.

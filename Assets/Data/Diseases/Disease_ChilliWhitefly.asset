@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_ChilliWhitefly
+  m_EditorClassIdentifier: 
+  diseaseId: whitefly
+  diseaseName: Whitefly
+  aiLabelAliases:
+  - chilli_whitefly
+  - whitefly
+  - chilli whitefly
+  pathogenType: 3
+  pathogen: Bemisia tabaci (silverleaf whitefly)
+  affectedPart: 0
+  sources:
+  - 'chili v2 (Roboflow) / Chilli Leaf Disease Dataset (Mendeley Data) class: whitefly,
+    chilli whitefly'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: Tiny white sap-sucking insects under chilli leaves; they also spread
+    leaf curl virus.
+  causes: Whiteflies breed fast in warm, dry weather and fly between crops and weeds.
+  effectOnPlant: Feeding weakens plants; honeydew and sooty mould soil the leaves.
+  untreatedOutcome: They spread leaf curl virus, which is worse than the feeding.
+  symptoms:
+  - Clouds of tiny white insects fly up when the plant is shaken
+  - Yellow speckling and yellowing of the leaves
+  - Sticky honeydew and black sooty mould on lower leaves
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  - yellowing
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: f591e4766901d7042a30b7814931c4e4, type: 2}
+  preventionPlan: {fileID: 11400000, guid: 60948054d4bda1c4899cbb8b3b971868, type: 2}
+  simulationProfile: {fileID: 11400000, guid: 1d1f38b787a1c3e40b8dd807d22cee53, type: 2}
+  lifecycleStages:
+  - Whiteflies fly in from weeds and other crops.
+  - They feed and lay eggs under the leaves.
+  - Leaves speckle yellow; honeydew collects.
+  - Numbers explode in warm, dry weather.
+  conditionFactors:
+  - Warm, dry weather.
+  - Weeds and old crops nearby.
+  - Protected cropping.
+  - Sprays that kill natural enemies.
+  referencePhotos:
+  - {fileID: 2800000, guid: cf35cc388dc91aa4a9cc6501a4291d96, type: 3}
+  lesionLabel: Yellow speckle
+  haloLabel: Pale area
+  areaLabel: Yellowing leaf

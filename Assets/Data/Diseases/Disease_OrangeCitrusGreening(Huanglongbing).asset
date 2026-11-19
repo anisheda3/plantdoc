@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_OrangeCitrusGreening(Huanglongbing)
+  m_EditorClassIdentifier: 
+  diseaseId: citrus_greening
+  diseaseName: Citrus Greening (Huanglongbing)
+  aiLabelAliases:
+  - Orange___Haunglongbing_(Citrus_greening)
+  - orange_citrus_greening
+  - citrus greening disease
+  pathogenType: 1
+  pathogen: 
+  affectedPart: 0
+  sources: []
+  description: A bacterial disease (Candidatus Liberibacter asiaticus) of citrus,
+    spread by the Asian citrus psyllid.
+  causes: Psyllids that fed on an infected tree carry the bacteria to healthy ones;
+    infected budwood also spreads it.
+  effectOnPlant: The bacteria block the tree's food-conducting tissue; roots and
+    canopy decline.
+  untreatedOutcome: 'There is no cure: infected trees decline and become unproductive.'
+  symptoms:
+  - Blotchy yellow mottling, different on each side of the midrib
+  - Yellow shoots
+  - Small, lopsided, bitter fruit that stays partly green
+  - Twig dieback
+  supportingFeatureIds:
+  - leaf_spots
+  - yellowing
+  - leaf_color
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: fb7dccaa999da8b47b527cfa9a9259b1, type: 2}
+  preventionPlan: {fileID: 11400000, guid: 0b26291d27d40c2479be63bfe2078a55, type: 2}
+  simulationProfile: {fileID: 11400000, guid: debd78553ad4f9844b82304aaf18485f, type: 2}
+  lifecycleStages:
+  - Psyllids pick up the bacteria feeding on infected trees.
+  - They carry them to new shoots of healthy trees.
+  - The bacteria spread through the tree's food-conducting tissue.
+  - Leaves mottle, fruit is poor and the tree declines.
+  conditionFactors:
+  - Asian citrus psyllids present.
+  - Infected trees nearby.
+  - New flushes of growth (psyllids feed on them).
+  - Uncertified nursery trees.
+  referencePhotos:
+  - {fileID: 2800000, guid: a4ceea1774b6cc446a57aa9613b3fd31, type: 3}
+  lesionLabel: Yellow blotch
+  haloLabel: Green island
+  areaLabel: Mottled leaf

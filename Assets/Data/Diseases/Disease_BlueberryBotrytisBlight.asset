@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_BlueberryBotrytisBlight
+  m_EditorClassIdentifier: 
+  diseaseId: botrytis_blight
+  diseaseName: Botrytis Blight
+  aiLabelAliases:
+  - blueberry_botrytis_blight
+  - blueberry botrytis blight
+  pathogenType: 0
+  pathogen: Botrytis cinerea
+  affectedPart: 1
+  sources:
+  - 'PlantSeg (Wei et al. 2024, CC BY 4.0) class: blueberry botrytis blight'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: Grey mould of blueberry blossoms, young shoots and fruit.
+  causes: Cool, wet weather at bloom; the fungus lives on dead plant matter and its
+    spores are everywhere in the air.
+  effectOnPlant: Blighted flowers set no fruit, and berries rot.
+  untreatedOutcome: Fruit is lost in wet springs and in storage.
+  symptoms:
+  - Blossoms turn brown and stick together
+  - Grey, fuzzy mould on blossoms and berries
+  - Young shoot tips die back
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: a5590fc91f9b11546abd639ba95143ff, type: 2}
+  preventionPlan: {fileID: 11400000, guid: e3c2c8a7c0a542c45996db9bd92ae84c, type: 2}
+  simulationProfile: {fileID: 11400000, guid: 5b874eb618e0bce4faf73be1ac617359, type: 2}
+  lifecycleStages:
+  - The fungus lives on dead plant matter.
+  - Spores land on blossoms in cool, wet weather.
+  - Flowers brown and grow grey fuzz.
+  - Mould spreads to fruit and shoots.
+  conditionFactors:
+  - "Cool (15-20 \xB0C), wet bloom."
+  - Frost-damaged flowers.
+  - Dense bushes.
+  - Long wet spells.
+  referencePhotos: []
+  lesionLabel: Grey mould
+  haloLabel: Brown blossom
+  areaLabel: Blighted cluster

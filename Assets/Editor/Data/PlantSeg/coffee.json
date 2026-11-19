@@ -1,0 +1,440 @@
+{
+ "plantId": "coffee",
+ "plantName": "Coffee",
+ "scientificName": "Coffea arabica",
+ "description": "Coffea arabica: an evergreen shrub grown for its seeds (beans).",
+ "diseases": [
+  {
+   "id": "berry_blotch",
+   "name": "Berry Blotch",
+   "type": "Fungal",
+   "part": "Fruit",
+   "pathogen": "Cercospora coffeicola",
+   "labels": [
+    "coffee berry blotch"
+   ],
+   "description": "The berry phase of brown eye spot: dark, sunken blotches on coffee cherries.",
+   "causes": "Spores spread by wind and rain; stressed, poorly fed bushes in full sun are most affected.",
+   "symptoms": [
+    "Brown, sunken blotches on the cherries, often on the sunny side",
+    "Blotches turn dark and dry the pulp",
+    "Affected cherries ripen early or drop"
+   ],
+   "effect": "Berries lose quality and the beans can be damaged.",
+   "untreated": "Losses rise on stressed, under-fed bushes.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Remove blotched cherries",
+     "instruction": "Pick off blotched cherries when the plants are dry and take them away.",
+     "rationale": "Fewer spores are left to spread.",
+     "mode": "GrabAndRemove",
+     "days": 2,
+     "effect": "Remove",
+     "chemical": false
+    },
+    {
+     "title": "Feed and shade the bushes",
+     "instruction": "Apply balanced fertiliser and keep some shade.",
+     "rationale": "Well-fed, shaded bushes resist it.",
+     "mode": "AdjustSetting",
+     "days": 3,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Protective spray",
+     "instruction": "Spray a registered fungicide on the label's schedule.",
+     "rationale": "Protects healthy growth; it cannot cure what is already infected.",
+     "mode": "SprayApply",
+     "days": 3,
+     "effect": "Protect",
+     "chemical": true
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropManagement",
+     "title": "Balanced nutrition, especially nitrogen",
+     "detail": "Deficient bushes are most affected."
+    },
+    {
+     "category": "EnvironmentalManagement",
+     "title": "Grow under light shade",
+     "detail": "Reduces stress."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_FruitRot",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.3,
+     0.2,
+     0.14
+    ],
+    "halo": [
+     0.56,
+     0.36,
+     0.2
+    ],
+    "yellow": [
+     0.8,
+     0.7,
+     0.4
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.0,
+    "wilting": 0.0,
+    "damage": 0.5,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Dark blotch",
+   "haloLabel": "Sunken edge",
+   "areaLabel": "Blotched cherry",
+   "lifecycle": [
+    "Spores come from leaf and berry spots.",
+    "Wind and rain carry them to the cherries.",
+    "Sunken brown blotches form.",
+    "Cherries dry or drop early."
+   ],
+   "conditions": [
+    "Full sun.",
+    "Poor nutrition.",
+    "Wet weather at berry development.",
+    "Stressed bushes."
+   ],
+   "photos": [
+    "coffee_berry_blotch_1"
+   ],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: coffee berry blotch",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "black_rot",
+   "name": "Black Rot (Koleroga)",
+   "type": "Fungal",
+   "part": "Leaf",
+   "pathogen": "Ceratobasidium noxium (syn. Corticium koleroga)",
+   "labels": [
+    "coffee black rot"
+   ],
+   "description": "A fungal disease of coffee in very wet, shaded plantations: leaves blacken and hang from the branches on fungal threads.",
+   "causes": "Spreads in long rainy spells under heavy shade; fungal threads grow along the twigs from infected leaves.",
+   "symptoms": [
+    "Leaves turn dark brown to black and rot",
+    "Dead leaves hang from the twigs on white fungal threads",
+    "Young berries blacken and drop"
+   ],
+   "effect": "Branches lose their leaves and berries.",
+   "untreated": "Severe in monsoon areas with heavy shade.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Remove blackened leaves and twigs",
+     "instruction": "Pick off blackened leaves and twigs when the plants are dry and take them away.",
+     "rationale": "Removes the fungal threads.",
+     "mode": "TapRegion",
+     "days": 2,
+     "effect": "Remove",
+     "chemical": false
+    },
+    {
+     "title": "Thin the shade and prune",
+     "instruction": "Open up the shade trees and the bush before the monsoon.",
+     "rationale": "Airflow dries the canopy.",
+     "mode": "AdjustSetting",
+     "days": 3,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Protective spray",
+     "instruction": "Spray a registered copper product before the monsoon on the label's schedule.",
+     "rationale": "Protects healthy growth; it cannot cure what is already infected.",
+     "mode": "SprayApply",
+     "days": 3,
+     "effect": "Protect",
+     "chemical": true
+    }
+   ],
+   "prevention": [
+    {
+     "category": "AirCirculation",
+     "title": "Regulate shade",
+     "detail": "Not too dense in the rainy season."
+    },
+    {
+     "category": "CropHygiene",
+     "title": "Remove infected twigs",
+     "detail": "Fungal threads persist on them."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_LateBlight",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.1,
+     0.08,
+     0.06
+    ],
+    "halo": [
+     0.3,
+     0.22,
+     0.14
+    ],
+    "yellow": [
+     0.7,
+     0.62,
+     0.3
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.3,
+    "wilting": 0.5,
+    "damage": 0.8,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Black rot",
+   "haloLabel": "Brown edge",
+   "areaLabel": "Rotting leaf",
+   "lifecycle": [
+    "The fungus survives on infected twigs.",
+    "In long rains its threads grow onto leaves.",
+    "Leaves blacken and rot.",
+    "Dead leaves hang on threads and spread it."
+   ],
+   "conditions": [
+    "Monsoon rains.",
+    "Heavy shade.",
+    "High humidity.",
+    "Unpruned bushes."
+   ],
+   "photos": [],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: coffee black rot",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "brown_eye_spot",
+   "name": "Brown Eye Spot",
+   "type": "Fungal",
+   "part": "Leaf",
+   "pathogen": "Cercospora coffeicola",
+   "labels": [
+    "coffee brown eye spot"
+   ],
+   "description": "A fungal leaf spot of coffee with round brown spots and pale centres, like eyes.",
+   "causes": "Spores spread by wind and rain; worse on stressed, under-fed bushes and seedlings in full sun.",
+   "symptoms": [
+    "Round brown spots with a grey-white centre",
+    "A yellow halo round each spot",
+    "Spotted leaves drop early"
+   ],
+   "effect": "Leaf loss weakens the bush.",
+   "untreated": "Seedlings in nurseries can be badly affected.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Remove spotted leaves",
+     "instruction": "Pick off spotted leaves when the plants are dry and take them away.",
+     "rationale": "Fewer spores are left to spread.",
+     "mode": "TapRegion",
+     "days": 2,
+     "effect": "Remove",
+     "chemical": false
+    },
+    {
+     "title": "Feed and shade",
+     "instruction": "Correct nutrition and give light shade.",
+     "rationale": "Stressed bushes are most affected.",
+     "mode": "AdjustSetting",
+     "days": 3,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Protective spray",
+     "instruction": "Spray a registered fungicide on the label's schedule.",
+     "rationale": "Protects healthy growth; it cannot cure what is already infected.",
+     "mode": "SprayApply",
+     "days": 3,
+     "effect": "Protect",
+     "chemical": true
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropManagement",
+     "title": "Balanced fertiliser",
+     "detail": "Especially nitrogen and potassium."
+    },
+    {
+     "category": "EnvironmentalManagement",
+     "title": "Shade nursery seedlings",
+     "detail": "Sun stress invites it."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_EarlyBlight",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.46,
+     0.3,
+     0.16
+    ],
+    "halo": [
+     0.86,
+     0.8,
+     0.3
+    ],
+    "yellow": [
+     0.86,
+     0.8,
+     0.32
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.6,
+    "wilting": 0.4,
+    "damage": 0.5,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Brown spot",
+   "haloLabel": "Yellow halo",
+   "areaLabel": "Spotted leaf",
+   "lifecycle": [
+    "Spores come from spotted leaves.",
+    "Wind and rain spread them.",
+    "Round brown spots with pale centres form.",
+    "Leaves drop early."
+   ],
+   "conditions": [
+    "Full sun.",
+    "Poor nutrition.",
+    "Humid weather.",
+    "Nursery seedlings."
+   ],
+   "photos": [
+    "coffee_brown_eye_spot_1"
+   ],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: coffee brown eye spot",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "leaf_rust",
+   "name": "Coffee Leaf Rust",
+   "type": "Fungal",
+   "part": "Leaf",
+   "pathogen": "Hemileia vastatrix",
+   "labels": [
+    "coffee leaf rust"
+   ],
+   "description": "The most important disease of Arabica coffee: orange powdery rust under the leaves and heavy leaf loss.",
+   "causes": "Spores spread by wind, rain and people; they need liquid water on the leaf to infect, at 21-25 °C.",
+   "symptoms": [
+    "Small pale yellow spots on the upper leaf",
+    "Orange-yellow powdery spores on the underside",
+    "Spots merge; leaves drop, leaving bare branches"
+   ],
+   "effect": "Leaf loss cuts the next year's crop.",
+   "untreated": "Severe epidemics have devastated coffee regions.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Remove badly rusted leaves",
+     "instruction": "Pick off badly rusted leaves when the plants are dry and take them away.",
+     "rationale": "Fewer spores are left to spread.",
+     "mode": "TapRegion",
+     "days": 2,
+     "effect": "Remove",
+     "chemical": false
+    },
+    {
+     "title": "Protective spray",
+     "instruction": "Spray a registered fungicide (copper or systemic) on the local programme on the label's schedule.",
+     "rationale": "Protects healthy growth; it cannot cure what is already infected.",
+     "mode": "SprayApply",
+     "days": 3,
+     "effect": "Protect",
+     "chemical": true
+    },
+    {
+     "title": "Plan resistant varieties",
+     "instruction": "Replant with rust-resistant varieties where possible.",
+     "rationale": "The most durable control.",
+     "mode": "Informational",
+     "days": 3,
+     "effect": "Cultural",
+     "chemical": false
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropManagement",
+     "title": "Grow resistant varieties",
+     "detail": "Many exist."
+    },
+    {
+     "category": "CropManagement",
+     "title": "Balanced nutrition and pruning",
+     "detail": "Healthy bushes tolerate rust better."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_Pustule",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.94,
+     0.58,
+     0.1
+    ],
+    "halo": [
+     0.88,
+     0.8,
+     0.32
+    ],
+    "yellow": [
+     0.88,
+     0.8,
+     0.3
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.7,
+    "wilting": 0.4,
+    "damage": 0.6,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Orange spores",
+   "haloLabel": "Yellow spot",
+   "areaLabel": "Rusted leaf",
+   "lifecycle": [
+    "Spores land on wet leaves.",
+    "They infect through the pores underneath.",
+    "Yellow spots form, orange spores below.",
+    "Wind and rain spread new spores."
+   ],
+   "conditions": [
+    "Rainy season.",
+    "21-25 °C.",
+    "Heavy fruit load.",
+    "Susceptible Arabica varieties."
+   ],
+   "photos": [
+    "coffee_leaf_rust_1"
+   ],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: coffee leaf rust",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  }
+ ],
+ "aliases": [],
+ "healthyLabels": []
+}

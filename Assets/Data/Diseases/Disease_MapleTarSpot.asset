@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_MapleTarSpot
+  m_EditorClassIdentifier: 
+  diseaseId: tar_spot
+  diseaseName: Tar Spot
+  aiLabelAliases:
+  - maple_tar_spot
+  - maple tar spot
+  pathogenType: 0
+  pathogen: Rhytisma acerinum
+  affectedPart: 0
+  sources:
+  - 'PlantSeg (Wei et al. 2024, CC BY 4.0) class: maple tar spot'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: A fungal leaf disease of maples that leaves raised black spots like
+    drops of tar.
+  causes: Spores from last year's fallen leaves are released in spring and infect
+    the new leaves in wet weather.
+  effectOnPlant: Mostly cosmetic; trees are rarely harmed.
+  untreatedOutcome: Heavy years cause some early leaf fall.
+  symptoms:
+  - Yellow-green spots appear in early summer
+  - Raised, glossy black 'tar' spots, 1-2 cm, form in late summer
+  - A yellow margin round the spots; some early leaf drop
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: a5f73af8b5e29f44a8ff1da340ce443a, type: 2}
+  preventionPlan: {fileID: 11400000, guid: da3fb4ccabab1204589e9204018a4797, type: 2}
+  simulationProfile: {fileID: 11400000, guid: e1840bb2630f41f45a612f1dd3f946e3, type: 2}
+  lifecycleStages:
+  - The fungus overwinters in fallen leaves.
+  - In spring, spores infect new leaves.
+  - Yellow-green spots appear in summer.
+  - Black tar spots form and fall with the leaves.
+  conditionFactors:
+  - Wet springs.
+  - Fallen leaves left under the tree.
+  - Sheltered, humid sites.
+  - Sycamore and Norway maple.
+  referencePhotos:
+  - {fileID: 2800000, guid: f7bad7cd17b4595429c2315b77cb82ff, type: 3}
+  lesionLabel: Tar spot
+  haloLabel: Yellow margin
+  areaLabel: Spotted leaf

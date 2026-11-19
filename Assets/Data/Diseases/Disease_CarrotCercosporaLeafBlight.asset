@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_CarrotCercosporaLeafBlight
+  m_EditorClassIdentifier: 
+  diseaseId: cercospora_leaf_blight
+  diseaseName: Cercospora Leaf Blight
+  aiLabelAliases:
+  - carrot_cercospora_leaf_blight
+  - carrot cercospora leaf blight
+  pathogenType: 0
+  pathogen: Cercospora carotae
+  affectedPart: 0
+  sources:
+  - 'PlantSeg (Wei et al. 2024, CC BY 4.0) class: carrot cercospora leaf blight'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: A fungal leaf blight of carrot, often on younger leaves and leaf edges.
+  causes: Spores survive on debris and seed and spread by wind and splash in warm,
+    humid weather.
+  effectOnPlant: Leaf loss weakens the tops.
+  untreatedOutcome: Yield falls when foliage dies early.
+  symptoms:
+  - Small tan spots with dark borders on the leaflets
+  - Leaflet edges curl up
+  - Spots join and leaves die
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  - yellowing
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: 739046a24ee9cba4ead4f75bd2c9e0fe, type: 2}
+  preventionPlan: {fileID: 11400000, guid: 7ee839af43307394dad8042812ea4498, type: 2}
+  simulationProfile: {fileID: 11400000, guid: 6a2bee6dd819f56479e6384eeed59b07, type: 2}
+  lifecycleStages:
+  - The fungus survives on debris and seed.
+  - Spores spread in warm, humid weather.
+  - Tan spots with dark borders form.
+  - Leaflets curl and die.
+  conditionFactors:
+  - Warm, humid weather.
+  - Long dew.
+  - Carrot debris.
+  - Infected seed.
+  referencePhotos: []
+  lesionLabel: Tan spot
+  haloLabel: Dark border
+  areaLabel: Curled leaf

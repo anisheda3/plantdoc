@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_SoybeanBrownSpot
+  m_EditorClassIdentifier: 
+  diseaseId: brown_spot
+  diseaseName: Brown Spot
+  aiLabelAliases:
+  - soybean_brown_spot
+  - soybean brown spot
+  pathogenType: 0
+  pathogen: Septoria glycines
+  affectedPart: 0
+  sources:
+  - 'PlantSeg (Wei et al. 2024, CC BY 4.0) class: soybean brown spot'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: 'Septoria brown spot: the most common leaf spot of soybean, starting
+    on the lower leaves.'
+  causes: The fungus survives on residue; rain splashes spores onto the lowest leaves
+    in warm, wet weather.
+  effectOnPlant: Lower leaves drop; yield effect is usually small.
+  untreatedOutcome: In wet seasons it climbs the plant and reduces yield.
+  symptoms:
+  - Small, irregular dark brown spots on lower leaves
+  - Leaf tissue round the spots turns yellow
+  - Spotted lower leaves drop early
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  - yellowing
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: d5ff968c20f60184f98bbc759c4b82bc, type: 2}
+  preventionPlan: {fileID: 11400000, guid: 1ea0fe7f7d078a34ea9e89effcf1912c, type: 2}
+  simulationProfile: {fileID: 11400000, guid: 8e07293fa3d322243b7eaf6e298300ec, type: 2}
+  lifecycleStages:
+  - The fungus overwinters on residue.
+  - Rain splashes spores to the lowest leaves.
+  - Brown spots with yellow surrounds form.
+  - It climbs the plant in wet weather.
+  conditionFactors:
+  - Warm, wet weather.
+  - Soybean residue.
+  - Continuous soybean.
+  - Early season.
+  referencePhotos:
+  - {fileID: 2800000, guid: 1e8f02413fd7c2843875227e8516fe1d, type: 3}
+  lesionLabel: Brown spot
+  haloLabel: Yellow edge
+  areaLabel: Yellowing leaf

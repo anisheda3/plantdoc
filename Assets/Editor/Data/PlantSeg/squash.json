@@ -1,0 +1,346 @@
+{
+ "plantId": "squash",
+ "plantName": "Squash",
+ "scientificName": "",
+ "description": "",
+ "diseases": [
+  {
+   "id": "bacterial_wilt",
+   "name": "Bacterial Wilt",
+   "type": "Bacterial",
+   "part": "WholePlant",
+   "pathogen": "Erwinia tracheiphila",
+   "labels": [
+    "zucchini bacterial wilt"
+   ],
+   "description": "A bacterial disease that blocks the water vessels of squash and cucumber, so the plant wilts and dies.",
+   "causes": "Striped and spotted cucumber beetles carry the bacteria in their gut and infect plants as they feed.",
+   "symptoms": [
+    "Single leaves wilt and look dull green",
+    "Whole runners, then the plant, wilt and do not recover overnight",
+    "Cut stems ooze sticky threads when pulled apart"
+   ],
+   "effect": "Wilted plants die within one to two weeks.",
+   "untreated": "Beetles keep spreading the bacteria to the rest of the planting.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Remove wilted plants",
+     "instruction": "Pull out and remove wilted plants at once.",
+     "rationale": "They are a source for the beetles.",
+     "mode": "GrabAndRemove",
+     "days": 1,
+     "effect": "Rogue",
+     "chemical": false
+    },
+    {
+     "title": "Control cucumber beetles",
+     "instruction": "Check plants daily, hand-pick or use netting, and use controls registered locally.",
+     "rationale": "No beetles, no spread.",
+     "mode": "AdjustSetting",
+     "days": 3,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Cover young plants",
+     "instruction": "Use insect netting until flowering (open it for pollinators).",
+     "rationale": "Young plants are most at risk.",
+     "mode": "AdjustSetting",
+     "days": 3,
+     "effect": "Small",
+     "chemical": false
+    }
+   ],
+   "prevention": [
+    {
+     "category": "Monitoring",
+     "title": "Look for beetles from planting",
+     "detail": "Early control matters most."
+    },
+    {
+     "category": "EnvironmentalManagement",
+     "title": "Use row covers early",
+     "detail": "Keeps beetles off seedlings."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_MarginScorch",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.42,
+     0.44,
+     0.24
+    ],
+    "halo": [
+     0.54,
+     0.56,
+     0.3
+    ],
+    "yellow": [
+     0.7,
+     0.7,
+     0.36
+    ],
+    "lesions": 0.4,
+    "yellowing": 0.5,
+    "wilting": 1.0,
+    "damage": 0.6,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Dull leaf",
+   "haloLabel": "Wilting edge",
+   "areaLabel": "Wilted plant",
+   "lifecycle": [
+    "The bacteria overwinter inside cucumber beetles.",
+    "Feeding beetles infect the leaves.",
+    "Bacteria fill the water vessels.",
+    "Leaves, then the whole plant, wilt and die."
+   ],
+   "conditions": [
+    "Cucumber beetles present.",
+    "Young plants.",
+    "Warm weather.",
+    "No row covers."
+   ],
+   "photos": [
+    "squash_bacterial_wilt_1"
+   ],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: zucchini bacterial wilt",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "downy_mildew",
+   "name": "Downy Mildew",
+   "type": "Oomycete",
+   "part": "Leaf",
+   "pathogen": "Pseudoperonospora cubensis",
+   "labels": [
+    "zucchini downy mildew"
+   ],
+   "description": "A water-mould disease of cucurbit leaves that spreads fast in humid weather.",
+   "causes": "Spores blow in on the wind from infected crops further south; leaf wetness and humid nights let them infect.",
+   "symptoms": [
+    "Angular yellow spots bounded by the leaf veins",
+    "Grey to purple downy growth under the spots",
+    "Spots turn brown and leaves die from the edges"
+   ],
+   "effect": "Leaves die quickly, so fruit is exposed and poorly filled.",
+   "untreated": "An unchecked epidemic can kill the leaves of a whole field within weeks.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Remove badly affected leaves",
+     "instruction": "Take off leaves covered with spots.",
+     "rationale": "Reduces spores on the plant.",
+     "mode": "TapRegion",
+     "days": 2,
+     "effect": "Remove",
+     "chemical": false
+    },
+    {
+     "title": "Keep leaves dry",
+     "instruction": "Water at the base in the morning, space plants.",
+     "rationale": "The mould needs wet leaves.",
+     "mode": "AdjustSetting",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Protective fungicide",
+     "instruction": "Spray a registered product for downy mildew following the label.",
+     "rationale": "Protects healthy leaves.",
+     "mode": "SprayApply",
+     "days": 3,
+     "effect": "Protect",
+     "chemical": true
+    }
+   ],
+   "prevention": [
+    {
+     "category": "Monitoring",
+     "title": "Follow disease forecasts",
+     "detail": "Spores travel long distances on the wind."
+    },
+    {
+     "category": "CropManagement",
+     "title": "Grow tolerant varieties",
+     "detail": "Some varieties hold up longer."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_Angular",
+    "yellowMask": "T_YellowMask_Angular",
+    "lesion": [
+     0.52,
+     0.4,
+     0.2
+    ],
+    "halo": [
+     0.84,
+     0.8,
+     0.36
+    ],
+    "yellow": [
+     0.86,
+     0.82,
+     0.38
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.9,
+    "wilting": 0.4,
+    "damage": 0.6,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Angular spot",
+   "haloLabel": "Brown edge",
+   "areaLabel": "Yellow patch",
+   "lifecycle": [
+    "Spores blow in from infected crops.",
+    "Humid nights let them infect wet leaves.",
+    "Angular yellow spots form, grey down underneath.",
+    "New spores spread on the wind."
+   ],
+   "conditions": [
+    "Humid nights.",
+    "Leaf wetness.",
+    "Cool to warm weather (15-22 °C).",
+    "Infected crops upwind."
+   ],
+   "photos": [
+    "squash_downy_mildew_1"
+   ],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: zucchini downy mildew",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "yellow_mosaic_virus",
+   "name": "Zucchini Yellow Mosaic",
+   "type": "Viral",
+   "part": "Leaf",
+   "pathogen": "Zucchini yellow mosaic virus (ZYMV, a potyvirus)",
+   "labels": [
+    "zucchini yellow mosaic virus"
+   ],
+   "description": "A virus disease of squash and other cucurbits that mottles and deforms the leaves and fruit.",
+   "causes": "Aphids pick up the virus while probing infected plants and pass it on within minutes.",
+   "symptoms": [
+    "Bright yellow and green mosaic on young leaves",
+    "Leaves narrow, blistered and distorted",
+    "Knobbly, deformed, mottled fruit"
+   ],
+   "effect": "Infected plants grow little and their fruit cannot be sold.",
+   "untreated": "Early infection can wipe out a planting.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Remove infected plants early",
+     "instruction": "Pull out mottled, stunted plants and remove them.",
+     "rationale": "Each one is a source for aphids.",
+     "mode": "GrabAndRemove",
+     "days": 1,
+     "effect": "Rogue",
+     "chemical": false
+    },
+    {
+     "title": "Keep aphids away",
+     "instruction": "Use reflective mulch or netting on young plants.",
+     "rationale": "Aphids spread the virus too fast for sprays to stop.",
+     "mode": "AdjustSetting",
+     "days": 3,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Control weeds",
+     "instruction": "Remove weeds round the planting.",
+     "rationale": "Weeds can host the virus and aphids.",
+     "mode": "Informational",
+     "days": 2,
+     "effect": "Small",
+     "chemical": false
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropManagement",
+     "title": "Grow resistant varieties",
+     "detail": "The most reliable control."
+    },
+    {
+     "category": "EnvironmentalManagement",
+     "title": "Use reflective mulch",
+     "detail": "Repels aphids early on."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_Interveinal",
+    "yellowMask": "T_YellowMask_Mottle",
+    "lesion": [
+     0.86,
+     0.84,
+     0.3
+    ],
+    "halo": [
+     0.4,
+     0.56,
+     0.22
+    ],
+    "yellow": [
+     0.9,
+     0.86,
+     0.3
+    ],
+    "lesions": 0.7,
+    "yellowing": 0.9,
+    "wilting": 0.2,
+    "damage": 0.4,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Yellow mosaic",
+   "haloLabel": "Blistered area",
+   "areaLabel": "Distorted leaf",
+   "lifecycle": [
+    "Aphids carry the virus from infected plants.",
+    "A short probe on a leaf passes it on.",
+    "Young leaves mottle and distort.",
+    "Fruit is knobbly and mottled."
+   ],
+   "conditions": [
+    "Many aphids.",
+    "Infected cucurbits or weeds nearby.",
+    "Young plants.",
+    "Susceptible varieties."
+   ],
+   "photos": [
+    "squash_yellow_mosaic_virus_1"
+   ],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: zucchini yellow mosaic virus",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  }
+ ],
+ "aliases": [
+  {
+   "disease": "powdery_mildew",
+   "labels": [
+    "squash powdery mildew",
+    "zucchini powdery mildew",
+    "Squash Powdery mildew leaf",
+    "Squash___Powdery_mildew"
+   ]
+  }
+ ],
+ "healthyLabels": [
+  "Squash___healthy"
+ ]
+}

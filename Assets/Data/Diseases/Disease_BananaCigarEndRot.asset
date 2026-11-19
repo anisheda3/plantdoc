@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_BananaCigarEndRot
+  m_EditorClassIdentifier: 
+  diseaseId: cigar_end_rot
+  diseaseName: Cigar End Rot
+  aiLabelAliases:
+  - banana_cigar_end_rot
+  - banana cigar end rot
+  pathogenType: 0
+  pathogen: Trachysphaera fructigena and Verticillium theobromae
+  affectedPart: 1
+  sources:
+  - 'PlantSeg (Wei et al. 2024, CC BY 4.0) class: banana cigar end rot'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: A fungal rot that turns the flower end of banana fingers dry and ashen,
+    like the burnt end of a cigar.
+  causes: Spores infect the dying flower parts at the finger tips in wet weather,
+    and the rot spreads into the fruit.
+  effectOnPlant: Affected fingers are unsaleable.
+  untreatedOutcome: Many fingers of a bunch can be affected in wet seasons.
+  symptoms:
+  - Dark, dry rot at the tip of the finger
+  - Grey-white powdery fungus on the rotted end, like cigar ash
+  - The rot spreads slowly back along the finger
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: bb0ad5379e2556b438347eb4fca3ae7c, type: 2}
+  preventionPlan: {fileID: 11400000, guid: d412cedb97bc34144adb4a6f9bfd66c8, type: 2}
+  simulationProfile: {fileID: 11400000, guid: c91494c42e705114c8c18640322c4358, type: 2}
+  lifecycleStages:
+  - Spores land on dying flower parts.
+  - They infect the tip of the finger.
+  - A dry, dark rot forms at the tip.
+  - Grey 'ash' spores form on the rot.
+  conditionFactors:
+  - Wet, humid weather.
+  - Flower parts left on the fingers.
+  - No bunch covers.
+  - Shaded plantations.
+  referencePhotos: []
+  lesionLabel: Rotted tip
+  haloLabel: Ash-grey fungus
+  areaLabel: Affected finger

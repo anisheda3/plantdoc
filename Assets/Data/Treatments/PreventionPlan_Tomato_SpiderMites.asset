@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5089f68aca984594ca14f61c1675569f, type: 3}
+  m_Name: PreventionPlan_Tomato_SpiderMites
+  m_EditorClassIdentifier: 
+  preventionId: tomato_spider_mites_prevention
+  measures:
+  - category: 1
+    title: Avoid drought stress
+    detail: Water-stressed plants suffer most.
+  - category: 3
+    title: Check leaf undersides in hot weather
+    detail: Look for stippling and webbing every few days.
+  - category: 4
+    title: Protect natural enemies
+    detail: Avoid broad-spectrum sprays that kill predatory mites.

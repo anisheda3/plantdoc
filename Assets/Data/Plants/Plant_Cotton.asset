@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5b7af7f939da314084e91933dca2790, type: 3}
+  m_Name: Plant_Cotton
+  m_EditorClassIdentifier: 
+  plantId: cotton
+  plantName: Cotton
+  description: 'Gossypium hirsutum (upland cotton): a shrubby annual with lobed leaves,
+    cream flowers that turn pink, and bolls of white lint.'
+  scientificName: Gossypium hirsutum
+  healthyModel: {fileID: 0}
+  leafPrefab: {fileID: 0}
+  thumbnail: {fileID: 0}
+  species: {fileID: 11400000, guid: 4d72a2799aab6b948ba9e48b45253e04, type: 2}
+  features:
+  - {fileID: 11400000, guid: e003f3da852d56644be19f05a32c1ffc, type: 2}
+  - {fileID: 11400000, guid: 3453cfa66f7c33147a75d377fe66120e, type: 2}
+  - {fileID: 11400000, guid: 384e23ede7d0591438f622176646940f, type: 2}
+  - {fileID: 11400000, guid: 427819c8c06b57045929d881917ce5ae, type: 2}
+  diseases:
+  - {fileID: 11400000, guid: 56652590a627edb4cb4b07cbe97f4005, type: 2}
+  - {fileID: 11400000, guid: 96609d7a532d7e14aa0c0ff75154b098, type: 2}
+  - {fileID: 11400000, guid: d56180cbc3b9df74a94efa8a9d8ea3f4, type: 2}

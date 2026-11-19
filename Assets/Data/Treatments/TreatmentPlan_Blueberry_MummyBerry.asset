@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5132a70f51fe6cb4ea3c7d283552eb79, type: 3}
+  m_Name: TreatmentPlan_Blueberry_MummyBerry
+  m_EditorClassIdentifier: 
+  treatmentId: blueberry_mummy_berry_treatment
+  planName: "Blueberry \u2014 Mummy Berry"
+  steps:
+  - {fileID: 11400000, guid: 6eb9d291cc7ac054f8018a103793e4cf, type: 2}
+  - {fileID: 11400000, guid: 10de5c62cf90a604f9958bbf624c5838, type: 2}
+  - {fileID: 11400000, guid: f7e89f0487aa8514d9c39b182a319fab, type: 2}
+  residualSeverityFloor: 0.15
+  residualDamageFloor: 0.1
+  disclaimer: Educational guidance only. Treatment does not guarantee recovery. Consult
+    a local agricultural extension service for field decisions.

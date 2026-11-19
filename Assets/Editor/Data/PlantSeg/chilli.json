@@ -1,0 +1,581 @@
+{
+ "plantId": "chilli",
+ "plantName": "Chilli",
+ "scientificName": "Capsicum annuum (hot pepper)",
+ "description": "Capsicum annuum, hot types: a bushy plant with slender, pungent fruit.",
+ "diseases": [
+  {
+   "id": "leaf_curl",
+   "name": "Chilli Leaf Curl",
+   "type": "Viral",
+   "part": "Leaf",
+   "pathogen": "Chilli leaf curl virus and other begomoviruses",
+   "labels": [
+    "leaf curl",
+    "Leaf Curl Disease",
+    "chilli leaf curl"
+   ],
+   "description": "The most damaging virus disease of chilli: leaves curl, pucker and shrink, and the plant stops growing.",
+   "causes": "Whiteflies (Bemisia tabaci) carry the virus from infected plants and weeds as they feed.",
+   "symptoms": [
+    "Leaves curl upward and inward, puckered and thickened",
+    "Young leaves small, pale and crowded at the tips",
+    "Plants stunted, with few flowers and fruit"
+   ],
+   "effect": "Infected plants yield little.",
+   "untreated": "Early infection can make a whole planting worthless.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Remove infected plants early",
+     "instruction": "Pull out curled, stunted plants and bag them.",
+     "rationale": "Each one is a source for whiteflies.",
+     "mode": "GrabAndRemove",
+     "days": 1,
+     "effect": "Rogue",
+     "chemical": false
+    },
+    {
+     "title": "Keep whiteflies off",
+     "instruction": "Use insect netting on seedlings, yellow sticky traps, and controls registered locally.",
+     "rationale": "Whiteflies spread the virus.",
+     "mode": "AdjustSetting",
+     "days": 3,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Remove weed hosts",
+     "instruction": "Clear weeds round the planting.",
+     "rationale": "Weeds harbour the virus and whiteflies.",
+     "mode": "Informational",
+     "days": 2,
+     "effect": "Small",
+     "chemical": false
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropManagement",
+     "title": "Grow tolerant varieties",
+     "detail": "The best protection."
+    },
+    {
+     "category": "EnvironmentalManagement",
+     "title": "Raise seedlings under netting",
+     "detail": "Early infection is the most damaging."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_Interveinal",
+    "yellowMask": "T_YellowMask_Mottle",
+    "lesion": [
+     0.8,
+     0.82,
+     0.4
+    ],
+    "halo": [
+     0.5,
+     0.62,
+     0.28
+    ],
+    "yellow": [
+     0.86,
+     0.84,
+     0.4
+    ],
+    "lesions": 0.6,
+    "yellowing": 0.7,
+    "wilting": 0.5,
+    "damage": 0.4,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Curled leaf",
+   "haloLabel": "Puckered area",
+   "areaLabel": "Stunted growth",
+   "lifecycle": [
+    "Whiteflies pick up the virus from infected plants.",
+    "They carry it to healthy plants.",
+    "New leaves curl, pucker and shrink.",
+    "The plant stops growing and sets little fruit."
+   ],
+   "conditions": [
+    "Many whiteflies.",
+    "Infected plants or weeds nearby.",
+    "Warm, dry weather.",
+    "Unprotected seedlings."
+   ],
+   "photos": [
+    "chilli_leaf_curl_1"
+   ],
+   "sources": [
+    "chili v2 (Roboflow) / Chilli Leaf Disease Dataset (Mendeley Data) class: leaf curl, Leaf Curl Disease, chilli leaf curl",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "anthracnose",
+   "name": "Anthracnose (Fruit Rot)",
+   "type": "Fungal",
+   "part": "Fruit",
+   "pathogen": "Colletotrichum capsici and C. gloeosporioides",
+   "labels": [
+    "Anthracnose",
+    "chilli anthracnose"
+   ],
+   "description": "A fungal rot of chilli fruit, also called die back when it kills the shoot tips.",
+   "causes": "Spores come in on seed and debris and spread by rain splash in warm, wet weather, mostly on ripening fruit.",
+   "symptoms": [
+    "Round, sunken, water-soaked spots on ripening fruit",
+    "Concentric rings of dark dots or orange spore masses in the spots",
+    "Shoot tips die back from the top"
+   ],
+   "effect": "Rotting fruit is lost before and after harvest.",
+   "untreated": "Can destroy much of a crop in wet seasons.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Remove rotting fruit and dead shoot tips",
+     "instruction": "Pick off rotting fruit and dead shoot tips when the plants are dry and take them away.",
+     "rationale": "Fewer spores are left to spread.",
+     "mode": "GrabAndRemove",
+     "days": 1,
+     "effect": "Remove",
+     "chemical": false
+    },
+    {
+     "title": "Stop overhead watering",
+     "instruction": "Use drip irrigation and mulch.",
+     "rationale": "Splash spreads the spores.",
+     "mode": "AdjustSetting",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Protective spray",
+     "instruction": "Spray a registered fungicide from fruit set on the label's schedule.",
+     "rationale": "Protects healthy growth; it cannot cure what is already infected.",
+     "mode": "SprayApply",
+     "days": 3,
+     "effect": "Protect",
+     "chemical": true
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropManagement",
+     "title": "Use clean, treated seed",
+     "detail": "Seed carries the fungus."
+    },
+    {
+     "category": "CropHygiene",
+     "title": "Remove crop debris",
+     "detail": "Rotate away from chilli for 2-3 years."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_FruitRot",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.3,
+     0.18,
+     0.1
+    ],
+    "halo": [
+     0.86,
+     0.52,
+     0.3
+    ],
+    "yellow": [
+     0.8,
+     0.7,
+     0.4
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.1,
+    "wilting": 0.0,
+    "damage": 0.5,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Sunken spot",
+   "haloLabel": "Spore rings",
+   "areaLabel": "Rotting fruit",
+   "lifecycle": [
+    "The fungus survives on seed and debris.",
+    "Rain splashes spores onto ripening fruit.",
+    "Sunken spots with rings of spores form.",
+    "Rotting fruit spreads it to its neighbours."
+   ],
+   "conditions": [
+    "Warm, wet weather.",
+    "Ripening fruit.",
+    "Overhead watering.",
+    "Infected seed."
+   ],
+   "photos": [
+    "chilli_anthracnose_1"
+   ],
+   "sources": [
+    "chili v2 (Roboflow) / Chilli Leaf Disease Dataset (Mendeley Data) class: Anthracnose, chilli anthracnose",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "leaf_spot",
+   "name": "Cercospora Leaf Spot",
+   "type": "Fungal",
+   "part": "Leaf",
+   "pathogen": "Cercospora capsici",
+   "labels": [
+    "leaf spot",
+    "Cercospora Leaf Spot",
+    "chilli leaf spot"
+   ],
+   "description": "A fungal leaf spot of chilli with pale-centred, dark-ringed 'frog-eye' spots.",
+   "causes": "Spores survive on debris and seed and spread by wind and rain in warm, humid weather.",
+   "symptoms": [
+    "Round spots with light grey centres",
+    "A dark brown ring round each spot",
+    "Spotted leaves yellow and drop"
+   ],
+   "effect": "Leaf drop exposes fruit to sunscald and cuts yield.",
+   "untreated": "Severe spotting defoliates plants.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Remove spotted leaves",
+     "instruction": "Pick off spotted leaves when the plants are dry and take them away.",
+     "rationale": "Fewer spores are left to spread.",
+     "mode": "TapRegion",
+     "days": 2,
+     "effect": "Remove",
+     "chemical": false
+    },
+    {
+     "title": "Water at the base",
+     "instruction": "Keep the leaves dry.",
+     "rationale": "Spores need wet leaves.",
+     "mode": "AdjustSetting",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Protective spray",
+     "instruction": "Spray a registered fungicide on the label's schedule.",
+     "rationale": "Protects healthy growth; it cannot cure what is already infected.",
+     "mode": "SprayApply",
+     "days": 3,
+     "effect": "Protect",
+     "chemical": true
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropHygiene",
+     "title": "Remove crop debris",
+     "detail": "The fungus survives on it."
+    },
+    {
+     "category": "CropManagement",
+     "title": "Rotate crops",
+     "detail": "Two years away from chilli and pepper."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_EarlyBlight",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.7,
+     0.66,
+     0.58
+    ],
+    "halo": [
+     0.3,
+     0.2,
+     0.12
+    ],
+    "yellow": [
+     0.84,
+     0.78,
+     0.34
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.6,
+    "wilting": 0.4,
+    "damage": 0.6,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Grey centre",
+   "haloLabel": "Dark ring",
+   "areaLabel": "Yellowing leaf",
+   "lifecycle": [
+    "The fungus survives on debris and seed.",
+    "Wind and splash carry spores to leaves.",
+    "Grey-centred spots with dark rings form.",
+    "Leaves drop and spores spread."
+   ],
+   "conditions": [
+    "Warm, humid weather.",
+    "Overhead watering.",
+    "Debris from the last crop.",
+    "Dense planting."
+   ],
+   "photos": [
+    "chilli_leaf_spot_1"
+   ],
+   "sources": [
+    "chili v2 (Roboflow) / Chilli Leaf Disease Dataset (Mendeley Data) class: leaf spot, Cercospora Leaf Spot, chilli leaf spot",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "powdery_mildew",
+   "name": "Powdery Mildew",
+   "type": "Fungal",
+   "part": "Leaf",
+   "pathogen": "Leveillula taurica",
+   "labels": [
+    "powdery mildew",
+    "chilli powdery mildew"
+   ],
+   "description": "A powdery mildew that grows inside chilli leaves: white powder underneath, yellow patches on top.",
+   "causes": "Spores blow on the wind; warm days, cool nights and dry leaves favour it.",
+   "symptoms": [
+    "Pale yellow patches on the upper leaf",
+    "White to grey powdery growth on the underside",
+    "Leaves drop, leaving fruit exposed"
+   ],
+   "effect": "Heavy leaf drop cuts yield and causes sunscald.",
+   "untreated": "Severe attacks defoliate plants.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Remove badly affected leaves",
+     "instruction": "Pick off badly affected leaves when the plants are dry and take them away.",
+     "rationale": "Fewer spores are left to spread.",
+     "mode": "TapRegion",
+     "days": 2,
+     "effect": "Remove",
+     "chemical": false
+    },
+    {
+     "title": "Improve airflow",
+     "instruction": "Space plants and remove weeds.",
+     "rationale": "Shade and still air favour mildew.",
+     "mode": "AdjustSetting",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Protective spray",
+     "instruction": "Spray sulphur or another registered fungicide on the label's schedule.",
+     "rationale": "Protects healthy growth; it cannot cure what is already infected.",
+     "mode": "SprayApply",
+     "days": 3,
+     "effect": "Protect",
+     "chemical": true
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropManagement",
+     "title": "Grow tolerant varieties",
+     "detail": "Varieties differ."
+    },
+    {
+     "category": "Monitoring",
+     "title": "Check leaf undersides",
+     "detail": "The powder starts there."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_Colony",
+    "yellowMask": "T_YellowMask_Angular",
+    "lesion": [
+     0.88,
+     0.89,
+     0.86
+    ],
+    "halo": [
+     0.82,
+     0.82,
+     0.5
+    ],
+    "yellow": [
+     0.86,
+     0.84,
+     0.44
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.8,
+    "wilting": 0.4,
+    "damage": 0.4,
+    "seconds": 7.0
+   },
+   "lesionLabel": "White patch",
+   "haloLabel": "Yellow patch",
+   "areaLabel": "Powdery area",
+   "lifecycle": [
+    "Spores blow in from infected plants.",
+    "They infect the leaves from below.",
+    "Yellow patches show on top, white powder under.",
+    "Leaves drop as it spreads."
+   ],
+   "conditions": [
+    "Warm days, cool nights.",
+    "Dry leaves.",
+    "Dense planting.",
+    "Older plants."
+   ],
+   "photos": [
+    "chilli_powdery_mildew_1"
+   ],
+   "sources": [
+    "chili v2 (Roboflow) / Chilli Leaf Disease Dataset (Mendeley Data) class: powdery mildew, chilli powdery mildew",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "whitefly",
+   "name": "Whitefly",
+   "type": "Pest",
+   "part": "Leaf",
+   "pathogen": "Bemisia tabaci (silverleaf whitefly)",
+   "labels": [
+    "whitefly",
+    "chilli whitefly"
+   ],
+   "description": "Tiny white sap-sucking insects under chilli leaves; they also spread leaf curl virus.",
+   "causes": "Whiteflies breed fast in warm, dry weather and fly between crops and weeds.",
+   "symptoms": [
+    "Clouds of tiny white insects fly up when the plant is shaken",
+    "Yellow speckling and yellowing of the leaves",
+    "Sticky honeydew and black sooty mould on lower leaves"
+   ],
+   "effect": "Feeding weakens plants; honeydew and sooty mould soil the leaves.",
+   "untreated": "They spread leaf curl virus, which is worse than the feeding.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Check leaf undersides",
+     "instruction": "Count whiteflies and nymphs under the leaves.",
+     "rationale": "Shows how heavy the infestation is.",
+     "mode": "TapRegion",
+     "days": 1,
+     "effect": "Small",
+     "chemical": false
+    },
+    {
+     "title": "Use yellow sticky traps",
+     "instruction": "Hang traps among the plants.",
+     "rationale": "Catches adults and shows numbers.",
+     "mode": "AdjustSetting",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Control if numbers are high",
+     "instruction": "Use a control registered locally (soap or oil sprays where advised), following the label.",
+     "rationale": "Reduces feeding and virus spread.",
+     "mode": "SprayApply",
+     "days": 3,
+     "effect": "Protect",
+     "chemical": true
+    }
+   ],
+   "prevention": [
+    {
+     "category": "EnvironmentalManagement",
+     "title": "Raise seedlings under netting",
+     "detail": "Keeps whiteflies off young plants."
+    },
+    {
+     "category": "CropHygiene",
+     "title": "Remove weeds and old crops",
+     "detail": "They host whiteflies."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_Pustule",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.92,
+     0.9,
+     0.72
+    ],
+    "halo": [
+     0.86,
+     0.84,
+     0.48
+    ],
+    "yellow": [
+     0.86,
+     0.84,
+     0.4
+    ],
+    "lesions": 0.7,
+    "yellowing": 0.8,
+    "wilting": 0.2,
+    "damage": 0.3,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Yellow speckle",
+   "haloLabel": "Pale area",
+   "areaLabel": "Yellowing leaf",
+   "lifecycle": [
+    "Whiteflies fly in from weeds and other crops.",
+    "They feed and lay eggs under the leaves.",
+    "Leaves speckle yellow; honeydew collects.",
+    "Numbers explode in warm, dry weather."
+   ],
+   "conditions": [
+    "Warm, dry weather.",
+    "Weeds and old crops nearby.",
+    "Protected cropping.",
+    "Sprays that kill natural enemies."
+   ],
+   "photos": [
+    "chilli_whitefly_1"
+   ],
+   "sources": [
+    "chili v2 (Roboflow) / Chilli Leaf Disease Dataset (Mendeley Data) class: whitefly, chilli whitefly",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  }
+ ],
+ "aliases": [
+  {
+   "disease": "leaf_curl",
+   "labels": [
+    "Chilli___Leaf_curl"
+   ]
+  },
+  {
+   "disease": "leaf_spot",
+   "labels": [
+    "Chilli___Cercospora_leaf_spot"
+   ]
+  },
+  {
+   "disease": "anthracnose",
+   "labels": [
+    "Chilli___Anthracnose"
+   ]
+  }
+ ],
+ "healthyLabels": [
+  "healthy",
+  "Fresh Leaf",
+  "chilli healthy",
+  "Chilli___healthy"
+ ]
+}

@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_SugarcaneRedRot
+  m_EditorClassIdentifier: 
+  diseaseId: red_rot
+  diseaseName: Red Rot
+  aiLabelAliases:
+  - sugarcane_red_rot
+  - RedRot
+  - Red Rot
+  - sugarcane red rot
+  - Sugarcane___Red_rot
+  pathogenType: 0
+  pathogen: Colletotrichum falcatum
+  affectedPart: 0
+  sources:
+  - 'Sugarcane Leaf Disease Dataset (Mendeley Data) class: RedRot, Red Rot, sugarcane
+    red rot'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: 'The most destructive fungal disease of sugarcane: it rots the inside
+    of the cane red and marks the leaf midribs.'
+  causes: Spores spread in infected setts, by rain and irrigation water, and through
+    borer holes; waterlogging and susceptible varieties favour it.
+  effectOnPlant: Infected canes dry out and lose their sugar.
+  untreatedOutcome: Whole fields can be lost with susceptible varieties.
+  symptoms:
+  - Long, blood-red lesions along the leaf midrib, later with straw-coloured centres
+  - Upper leaves yellow and dry from the tips
+  - Split canes are red inside with white patches and smell sour
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  - yellowing
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: 206181aaae4a11147b6052437491a5be, type: 2}
+  preventionPlan: {fileID: 11400000, guid: 606dd0bcc056895458956e6e4a5185f1, type: 2}
+  simulationProfile: {fileID: 11400000, guid: 8f2dfb106809e2e48b0d5678b61aaa3a, type: 2}
+  lifecycleStages:
+  - The fungus comes in on infected setts.
+  - Spores spread by water and wind.
+  - Red lesions form on the midribs; canes rot inside.
+  - Canes dry; spores spread to new plantings.
+  conditionFactors:
+  - Infected seed cane.
+  - Waterlogging.
+  - Borer damage.
+  - Susceptible varieties.
+  referencePhotos: []
+  lesionLabel: Red midrib lesion
+  haloLabel: Straw centre
+  areaLabel: Drying leaf

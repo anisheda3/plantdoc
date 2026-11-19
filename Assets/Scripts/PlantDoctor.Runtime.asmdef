@@ -1,0 +1,32 @@
+{
+  "name": "PlantDoctor.Runtime",
+  "rootNamespace": "PlantDoctor",
+  "references": [
+    "Unity.TextMeshPro",
+    "UnityEngine.UI",
+    "Unity.InputSystem",
+    "Unity.XR.ARFoundation",
+    "Unity.XR.ARSubsystems",
+    "Unity.XR.CoreUtils"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [
+    {
+      "name": "com.unity.xr.arfoundation",
+      "expression": "5.0.0",
+      "define": "PLANTDOCTOR_AR_FOUNDATION"
+    },
+    {
+      "name": "com.unity.xr.interaction.toolkit",
+      "expression": "2.3.0",
+      "define": "PLANTDOCTOR_XRI"
+    }
+  ],
+  "noEngineReferences": false
+}

@@ -1,0 +1,330 @@
+{
+ "plantId": "carrot",
+ "plantName": "Carrot",
+ "scientificName": "Daucus carota subsp. sativus",
+ "description": "Daucus carota subsp. sativus: grown for its orange taproot.",
+ "diseases": [
+  {
+   "id": "alternaria_leaf_blight",
+   "name": "Alternaria Leaf Blight",
+   "type": "Fungal",
+   "part": "Leaf",
+   "pathogen": "Alternaria dauci",
+   "labels": [
+    "carrot alternaria leaf blight"
+   ],
+   "description": "A fungal blight of carrot leaves, starting on the older leaves.",
+   "causes": "Spores survive on carrot debris and seed and spread by wind and rain in warm, wet weather.",
+   "symptoms": [
+    "Dark brown to black spots on the leaflet edges",
+    "Spots surrounded by yellow tissue",
+    "Leaflets shrivel; the whole top can die"
+   ],
+   "effect": "Weak tops break when harvesting by machine; roots stay small.",
+   "untreated": "Severe blight kills the foliage and cuts yield.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Remove blighted leaves",
+     "instruction": "Pick off blighted leaves when the plants are dry and take them away.",
+     "rationale": "Fewer spores are left to spread.",
+     "mode": "TapRegion",
+     "days": 2,
+     "effect": "Remove",
+     "chemical": false
+    },
+    {
+     "title": "Water in the morning, at the base",
+     "instruction": "Keep the tops dry.",
+     "rationale": "Spores need wet leaves.",
+     "mode": "AdjustSetting",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Protective spray",
+     "instruction": "Spray a registered fungicide on the label's schedule.",
+     "rationale": "Protects healthy growth; it cannot cure what is already infected.",
+     "mode": "SprayApply",
+     "days": 3,
+     "effect": "Protect",
+     "chemical": true
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropManagement",
+     "title": "Rotate away from carrots for 2-3 years",
+     "detail": "Debris carries the fungus."
+    },
+    {
+     "category": "CropManagement",
+     "title": "Use clean seed",
+     "detail": "Seed carries it."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_SmallSpots",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.16,
+     0.12,
+     0.08
+    ],
+    "halo": [
+     0.8,
+     0.74,
+     0.3
+    ],
+    "yellow": [
+     0.84,
+     0.78,
+     0.32
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.7,
+    "wilting": 0.4,
+    "damage": 0.7,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Black spot",
+   "haloLabel": "Yellow edge",
+   "areaLabel": "Blighted leaf",
+   "lifecycle": [
+    "The fungus survives on debris and seed.",
+    "Wind and rain carry spores to old leaves.",
+    "Dark spots with yellow surrounds form.",
+    "Leaflets shrivel and the top blights."
+   ],
+   "conditions": [
+    "Warm, wet weather.",
+    "Long leaf wetness.",
+    "Carrot debris.",
+    "Older crops."
+   ],
+   "photos": [
+    "carrot_alternaria_leaf_blight_1"
+   ],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: carrot alternaria leaf blight",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "cavity_spot",
+   "name": "Cavity Spot",
+   "type": "Oomycete",
+   "part": "Root",
+   "pathogen": "Pythium violae and P. sulcatum",
+   "labels": [
+    "carrot cavity spot"
+   ],
+   "description": "A soil-borne disease that pits the carrot root with small sunken lesions.",
+   "causes": "Pythium water moulds in the soil infect the root, especially in wet, compacted soils; it builds up with frequent carrot crops.",
+   "symptoms": [
+    "Small, sunken, elliptical lesions across the root",
+    "Lesions grey to brown; the skin over them may crack",
+    "No symptoms on the leaves"
+   ],
+   "effect": "Pitted roots cannot be sold fresh.",
+   "untreated": "Losses grow the longer roots stay in the ground.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Lift the crop on time",
+     "instruction": "Harvest promptly once roots size up.",
+     "rationale": "Lesions keep developing while roots stay in the soil.",
+     "mode": "Informational",
+     "days": 1,
+     "effect": "Small",
+     "chemical": false
+    },
+    {
+     "title": "Improve drainage",
+     "instruction": "Avoid waterlogging and compaction.",
+     "rationale": "Wet soil favours the water moulds.",
+     "mode": "AdjustSetting",
+     "days": 3,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Rotate fields",
+     "instruction": "Leave several years between carrot crops.",
+     "rationale": "The water moulds build up in the soil.",
+     "mode": "Informational",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropManagement",
+     "title": "Long rotations",
+     "detail": "Four or more years between carrots."
+    },
+    {
+     "category": "WaterManagement",
+     "title": "Avoid waterlogging",
+     "detail": "Drainage matters."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_SmallSpots",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.42,
+     0.32,
+     0.22
+    ],
+    "halo": [
+     0.62,
+     0.48,
+     0.3
+    ],
+    "yellow": [
+     0.8,
+     0.7,
+     0.4
+    ],
+    "lesions": 0.8,
+    "yellowing": 0.0,
+    "wilting": 0.0,
+    "damage": 0.3,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Sunken pit",
+   "haloLabel": "Brown edge",
+   "areaLabel": "Pitted root",
+   "lifecycle": [
+    "The water moulds live in the soil.",
+    "In wet soil they infect the root.",
+    "Small sunken lesions form across the root.",
+    "They build up with frequent carrot crops."
+   ],
+   "conditions": [
+    "Wet, compacted soil.",
+    "Frequent carrot crops.",
+    "Late harvest.",
+    "Soil pH above 7."
+   ],
+   "photos": [],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: carrot cavity spot",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "cercospora_leaf_blight",
+   "name": "Cercospora Leaf Blight",
+   "type": "Fungal",
+   "part": "Leaf",
+   "pathogen": "Cercospora carotae",
+   "labels": [
+    "carrot cercospora leaf blight"
+   ],
+   "description": "A fungal leaf blight of carrot, often on younger leaves and leaf edges.",
+   "causes": "Spores survive on debris and seed and spread by wind and splash in warm, humid weather.",
+   "symptoms": [
+    "Small tan spots with dark borders on the leaflets",
+    "Leaflet edges curl up",
+    "Spots join and leaves die"
+   ],
+   "effect": "Leaf loss weakens the tops.",
+   "untreated": "Yield falls when foliage dies early.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Remove blighted leaves",
+     "instruction": "Pick off blighted leaves when the plants are dry and take them away.",
+     "rationale": "Fewer spores are left to spread.",
+     "mode": "TapRegion",
+     "days": 2,
+     "effect": "Remove",
+     "chemical": false
+    },
+    {
+     "title": "Keep the tops dry",
+     "instruction": "Water early in the day, at the base.",
+     "rationale": "Spores need wet leaves.",
+     "mode": "AdjustSetting",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Protective spray",
+     "instruction": "Spray a registered fungicide on the label's schedule.",
+     "rationale": "Protects healthy growth; it cannot cure what is already infected.",
+     "mode": "SprayApply",
+     "days": 3,
+     "effect": "Protect",
+     "chemical": true
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropManagement",
+     "title": "Rotate crops",
+     "detail": "Two to three years."
+    },
+    {
+     "category": "CropHygiene",
+     "title": "Remove carrot debris",
+     "detail": "It carries the fungus."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_SmallSpots",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.66,
+     0.58,
+     0.4
+    ],
+    "halo": [
+     0.3,
+     0.22,
+     0.14
+    ],
+    "yellow": [
+     0.84,
+     0.78,
+     0.32
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.5,
+    "wilting": 0.4,
+    "damage": 0.6,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Tan spot",
+   "haloLabel": "Dark border",
+   "areaLabel": "Curled leaf",
+   "lifecycle": [
+    "The fungus survives on debris and seed.",
+    "Spores spread in warm, humid weather.",
+    "Tan spots with dark borders form.",
+    "Leaflets curl and die."
+   ],
+   "conditions": [
+    "Warm, humid weather.",
+    "Long dew.",
+    "Carrot debris.",
+    "Infected seed."
+   ],
+   "photos": [],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: carrot cercospora leaf blight",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  }
+ ],
+ "aliases": [],
+ "healthyLabels": []
+}

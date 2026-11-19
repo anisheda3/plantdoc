@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_CottonCottonLeafCurlDisease
+  m_EditorClassIdentifier: 
+  diseaseId: leaf_curl_virus
+  diseaseName: Cotton Leaf Curl Disease
+  aiLabelAliases:
+  - cotton_leaf_curl_virus
+  - Cotton___Leaf_curl_virus
+  - cotton leaf curl virus
+  - cotton leaf curl
+  pathogenType: 2
+  pathogen: Cotton leaf curl virus complex (begomoviruses with betasatellite)
+  affectedPart: 0
+  sources:
+  - 'CropScan XR model class: Cotton___Leaf_curl_virus, cotton leaf curl virus, cotton
+    leaf curl'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: 'A whitefly-borne virus disease of cotton in South Asia and Africa:
+    leaves curl, veins thicken and plants are stunted.'
+  causes: Whiteflies (Bemisia tabaci) carry the virus from infected cotton, weeds
+    and other hosts as they feed.
+  effectOnPlant: Infected plants set few bolls.
+  untreatedOutcome: Early infection can make a whole field uneconomic.
+  symptoms:
+  - Leaves curl upward or downward, cupped and crinkled
+  - Veins on the underside thicken and darken, often with leaf-like outgrowths (enations)
+  - Plants stunted, with few, small bolls
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  - yellowing
+  - wilting
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: 769e8aca9d6cdcd4fb312a0ca086f588, type: 2}
+  preventionPlan: {fileID: 11400000, guid: fb84c75be350d364d850157c8d39c585, type: 2}
+  simulationProfile: {fileID: 11400000, guid: 7d5769e630e0f6641b6ba75b674dc564, type: 2}
+  lifecycleStages:
+  - Whiteflies pick up the virus from infected plants and weeds.
+  - They carry it to healthy cotton.
+  - New leaves curl and veins thicken.
+  - Plants are stunted and set few bolls.
+  conditionFactors:
+  - Many whiteflies.
+  - Infected cotton or weeds nearby.
+  - Hot, dry weather.
+  - Late sowing.
+  referencePhotos: []
+  lesionLabel: Curled leaf
+  haloLabel: Thickened vein
+  areaLabel: Stunted growth

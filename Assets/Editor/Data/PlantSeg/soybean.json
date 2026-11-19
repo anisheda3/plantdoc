@@ -1,0 +1,661 @@
+{
+ "plantId": "soybean",
+ "plantName": "Soybean",
+ "scientificName": "",
+ "description": "",
+ "diseases": [
+  {
+   "id": "rust",
+   "name": "Soybean Rust",
+   "type": "Fungal",
+   "part": "Leaf",
+   "pathogen": "Phakopsora pachyrhizi",
+   "labels": [
+    "bean rust"
+   ],
+   "description": "Asian soybean rust: a fast-spreading rust fungus that can strip soybean fields of their leaves.",
+   "causes": "Spores blow long distances on the wind; leaf wetness of 6+ hours at 15-28 °C lets them infect. The fungus does not survive cold winters.",
+   "symptoms": [
+    "Small tan to red-brown spots, starting on the lower leaves",
+    "Volcano-shaped pustules on the underside releasing tan spores",
+    "Leaves yellow and drop early"
+   ],
+   "effect": "Rapid leaf loss cuts pod fill and yield.",
+   "untreated": "Unchecked epidemics can cause heavy yield losses.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Scout the lower leaves",
+     "instruction": "Check the undersides of lower leaves with a hand lens.",
+     "rationale": "Spots start low and small.",
+     "mode": "TapRegion",
+     "days": 1,
+     "effect": "Small",
+     "chemical": false
+    },
+    {
+     "title": "Protective spray",
+     "instruction": "Spray a registered fungicide as soon as rust is found on the label's schedule.",
+     "rationale": "Fungicides work best before much leaf area is lost.",
+     "mode": "SprayApply",
+     "days": 3,
+     "effect": "Protect",
+     "chemical": true
+    },
+    {
+     "title": "Follow regional warnings",
+     "instruction": "Track rust reports from your region.",
+     "rationale": "Spores arrive on the wind.",
+     "mode": "Informational",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    }
+   ],
+   "prevention": [
+    {
+     "category": "Monitoring",
+     "title": "Scout weekly from flowering",
+     "detail": "Early detection is key."
+    },
+    {
+     "category": "CropManagement",
+     "title": "Plant early-maturing varieties",
+     "detail": "They can escape late epidemics."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_Pustule",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.56,
+     0.36,
+     0.2
+    ],
+    "halo": [
+     0.7,
+     0.56,
+     0.32
+    ],
+    "yellow": [
+     0.86,
+     0.78,
+     0.3
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.8,
+    "wilting": 0.4,
+    "damage": 0.6,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Rust lesion",
+   "haloLabel": "Tan pustule",
+   "areaLabel": "Yellowing leaf",
+   "lifecycle": [
+    "Spores blow in from warmer regions.",
+    "They infect leaves wet for several hours.",
+    "Tan lesions with pustules form underneath.",
+    "Millions of new spores spread up the field."
+   ],
+   "conditions": [
+    "Long leaf wetness.",
+    "15-28 °C.",
+    "Spores arriving on the wind.",
+    "Dense canopy at flowering."
+   ],
+   "photos": [
+    "soybean_rust_1"
+   ],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: bean rust",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "bacterial_blight",
+   "name": "Bacterial Blight",
+   "type": "Bacterial",
+   "part": "Leaf",
+   "pathogen": "Pseudomonas savastanoi pv. glycinea",
+   "labels": [
+    "soybean bacterial blight"
+   ],
+   "description": "A bacterial leaf spot of soybean in cool, wet weather.",
+   "causes": "The bacteria survive in residue and seed and spread by wind-driven rain into the leaves.",
+   "symptoms": [
+    "Small angular, water-soaked spots",
+    "Spots turn dark brown with a yellow-green halo",
+    "Spots merge; dead tissue tears out, leaves look ragged"
+   ],
+   "effect": "Usually minor; severe cases reduce yield.",
+   "untreated": "Ragged leaves in cool, wet years.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Note the extent",
+     "instruction": "Check how much of the upper canopy is affected.",
+     "rationale": "Most outbreaks fade in warm weather.",
+     "mode": "TapRegion",
+     "days": 1,
+     "effect": "Small",
+     "chemical": false
+    },
+    {
+     "title": "Avoid working wet fields",
+     "instruction": "Stay out of the field while leaves are wet.",
+     "rationale": "Spreads the bacteria.",
+     "mode": "AdjustSetting",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Plan rotation and clean seed",
+     "instruction": "Rotate and use clean seed next season.",
+     "rationale": "Residue and seed carry the bacteria.",
+     "mode": "Informational",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropManagement",
+     "title": "Rotate crops",
+     "detail": "One year away from soybean."
+    },
+    {
+     "category": "CropManagement",
+     "title": "Use pathogen-free seed",
+     "detail": "Seed carries it."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_Angular",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.3,
+     0.2,
+     0.12
+    ],
+    "halo": [
+     0.78,
+     0.8,
+     0.36
+    ],
+    "yellow": [
+     0.8,
+     0.8,
+     0.36
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.5,
+    "wilting": 0.4,
+    "damage": 0.6,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Angular spot",
+   "haloLabel": "Yellow halo",
+   "areaLabel": "Ragged leaf",
+   "lifecycle": [
+    "Bacteria survive in residue and seed.",
+    "Wind-driven rain splashes them onto leaves.",
+    "Water-soaked spots turn brown with halos.",
+    "Dead tissue falls out."
+   ],
+   "conditions": [
+    "Cool, wet weather.",
+    "Wind-driven rain.",
+    "Infested residue.",
+    "Infected seed."
+   ],
+   "photos": [
+    "soybean_bacterial_blight_1"
+   ],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: soybean bacterial blight",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "brown_spot",
+   "name": "Brown Spot",
+   "type": "Fungal",
+   "part": "Leaf",
+   "pathogen": "Septoria glycines",
+   "labels": [
+    "soybean brown spot"
+   ],
+   "description": "Septoria brown spot: the most common leaf spot of soybean, starting on the lower leaves.",
+   "causes": "The fungus survives on residue; rain splashes spores onto the lowest leaves in warm, wet weather.",
+   "symptoms": [
+    "Small, irregular dark brown spots on lower leaves",
+    "Leaf tissue round the spots turns yellow",
+    "Spotted lower leaves drop early"
+   ],
+   "effect": "Lower leaves drop; yield effect is usually small.",
+   "untreated": "In wet seasons it climbs the plant and reduces yield.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Scout the lower canopy",
+     "instruction": "Check how far up the plant the spots reach.",
+     "rationale": "Only spread to the upper leaves matters.",
+     "mode": "TapRegion",
+     "days": 1,
+     "effect": "Small",
+     "chemical": false
+    },
+    {
+     "title": "Protective spray",
+     "instruction": "Spray a registered fungicide if spots climb past mid-canopy on the label's schedule.",
+     "rationale": "Protects healthy growth; it cannot cure what is already infected.",
+     "mode": "SprayApply",
+     "days": 3,
+     "effect": "Protect",
+     "chemical": true
+    },
+    {
+     "title": "Rotate next year",
+     "instruction": "Plant a non-host crop next.",
+     "rationale": "Residue keeps the fungus.",
+     "mode": "Informational",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropManagement",
+     "title": "Rotate crops",
+     "detail": "Reduces inoculum."
+    },
+    {
+     "category": "CropHygiene",
+     "title": "Manage residue",
+     "detail": "Bury or break down residue."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_SmallSpots",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.34,
+     0.22,
+     0.12
+    ],
+    "halo": [
+     0.62,
+     0.52,
+     0.26
+    ],
+    "yellow": [
+     0.84,
+     0.78,
+     0.3
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.8,
+    "wilting": 0.4,
+    "damage": 0.5,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Brown spot",
+   "haloLabel": "Yellow edge",
+   "areaLabel": "Yellowing leaf",
+   "lifecycle": [
+    "The fungus overwinters on residue.",
+    "Rain splashes spores to the lowest leaves.",
+    "Brown spots with yellow surrounds form.",
+    "It climbs the plant in wet weather."
+   ],
+   "conditions": [
+    "Warm, wet weather.",
+    "Soybean residue.",
+    "Continuous soybean.",
+    "Early season."
+   ],
+   "photos": [
+    "soybean_brown_spot_1"
+   ],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: soybean brown spot",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "downy_mildew",
+   "name": "Downy Mildew",
+   "type": "Oomycete",
+   "part": "Leaf",
+   "pathogen": "Peronospora manshurica",
+   "labels": [
+    "soybean downy mildew"
+   ],
+   "description": "A water-mould disease of soybean leaves, pods and seed.",
+   "causes": "Spores survive in residue and on seed; cool, humid weather lets them infect.",
+   "symptoms": [
+    "Pale yellow-green spots on the upper leaf",
+    "Grey to purple tufts of spores underneath",
+    "Spots turn brown with yellow margins"
+   ],
+   "effect": "Usually minor; seed can be infected.",
+   "untreated": "Heavy infection causes early leaf drop.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Scout the leaf undersides",
+     "instruction": "Look for grey tufts in the morning.",
+     "rationale": "Confirms the disease.",
+     "mode": "TapRegion",
+     "days": 1,
+     "effect": "Small",
+     "chemical": false
+    },
+    {
+     "title": "Plan resistant varieties",
+     "instruction": "Choose resistant varieties next season.",
+     "rationale": "The main control.",
+     "mode": "Informational",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Use treated, clean seed",
+     "instruction": "Use seed free of the disease.",
+     "rationale": "Seed carries it.",
+     "mode": "AdjustSetting",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropManagement",
+     "title": "Grow resistant varieties",
+     "detail": "Many are available."
+    },
+    {
+     "category": "CropManagement",
+     "title": "Rotate crops",
+     "detail": "Residue carries it."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_Colony",
+    "yellowMask": "T_YellowMask_Angular",
+    "lesion": [
+     0.7,
+     0.66,
+     0.4
+    ],
+    "halo": [
+     0.52,
+     0.44,
+     0.24
+    ],
+    "yellow": [
+     0.86,
+     0.84,
+     0.4
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.8,
+    "wilting": 0.4,
+    "damage": 0.4,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Pale spot",
+   "haloLabel": "Brown edge",
+   "areaLabel": "Yellowing leaf",
+   "lifecycle": [
+    "Spores survive in residue and seed.",
+    "Cool, humid weather lets them infect.",
+    "Pale spots form with grey tufts underneath.",
+    "Pods and seed can be infected."
+   ],
+   "conditions": [
+    "Cool, humid weather.",
+    "Residue on the surface.",
+    "Infected seed.",
+    "Susceptible varieties."
+   ],
+   "photos": [
+    "soybean_downy_mildew_1"
+   ],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: soybean downy mildew",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "frogeye_leaf_spot",
+   "name": "Frogeye Leaf Spot",
+   "type": "Fungal",
+   "part": "Leaf",
+   "pathogen": "Cercospora sojina",
+   "labels": [
+    "soybean frog eye leaf spot"
+   ],
+   "description": "A fungal leaf spot of soybean with round, grey spots ringed in red-purple.",
+   "causes": "Spores survive on residue and seed; warm, humid weather spreads them by wind and rain.",
+   "symptoms": [
+    "Round spots, 1-5 mm, with grey to tan centres",
+    "A dark red-purple ring round each spot",
+    "Spots on the upper, younger leaves"
+   ],
+   "effect": "Spots reduce the leaf area; leaves can drop.",
+   "untreated": "Severe infection reduces yield; fungicide resistance is common.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Scout the upper leaves",
+     "instruction": "Check new leaves from flowering.",
+     "rationale": "Spots appear on young leaves.",
+     "mode": "TapRegion",
+     "days": 1,
+     "effect": "Small",
+     "chemical": false
+    },
+    {
+     "title": "Protective spray",
+     "instruction": "Spray a registered fungicide (check local resistance reports) on the label's schedule.",
+     "rationale": "Protects healthy growth; it cannot cure what is already infected.",
+     "mode": "SprayApply",
+     "days": 3,
+     "effect": "Protect",
+     "chemical": true
+    },
+    {
+     "title": "Rotate and choose resistant varieties",
+     "instruction": "Plan both for next season.",
+     "rationale": "The most reliable controls.",
+     "mode": "Informational",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropManagement",
+     "title": "Grow resistant varieties",
+     "detail": "Effective and widely available."
+    },
+    {
+     "category": "CropManagement",
+     "title": "Rotate crops",
+     "detail": "Residue keeps the fungus."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_EarlyBlight",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.66,
+     0.62,
+     0.56
+    ],
+    "halo": [
+     0.4,
+     0.14,
+     0.22
+    ],
+    "yellow": [
+     0.84,
+     0.78,
+     0.32
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.4,
+    "wilting": 0.4,
+    "damage": 0.5,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Grey centre",
+   "haloLabel": "Purple ring",
+   "areaLabel": "Spotted leaf",
+   "lifecycle": [
+    "The fungus survives on residue and seed.",
+    "Warm, humid weather spreads spores.",
+    "Grey spots with purple rings form.",
+    "Spots join and leaves drop."
+   ],
+   "conditions": [
+    "Warm, humid weather.",
+    "Continuous soybean.",
+    "Residue on the surface.",
+    "Susceptible varieties."
+   ],
+   "photos": [
+    "soybean_frogeye_leaf_spot_1"
+   ],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: soybean frog eye leaf spot",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "mosaic",
+   "name": "Soybean Mosaic",
+   "type": "Viral",
+   "part": "Leaf",
+   "pathogen": "Soybean mosaic virus (SMV, a potyvirus)",
+   "labels": [
+    "soybean mosaic"
+   ],
+   "description": "A virus disease that mottles and puckers soybean leaves and mottles the seed.",
+   "causes": "Spread in infected seed and by aphids that pick it up from infected plants within seconds.",
+   "symptoms": [
+    "Light and dark green mosaic on young leaves",
+    "Leaves puckered, crinkled and curled down",
+    "Plants stunted; seed coats mottled brown"
+   ],
+   "effect": "Yield and seed quality fall.",
+   "untreated": "Infected seed carries it into the next crop.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Mark infected plants",
+     "instruction": "Note where mottled, stunted plants are.",
+     "rationale": "Shows how widespread it is.",
+     "mode": "TapRegion",
+     "days": 1,
+     "effect": "Small",
+     "chemical": false
+    },
+    {
+     "title": "Remove early infected plants in small plots",
+     "instruction": "Pull out mottled plants while they are few.",
+     "rationale": "Fewer sources for aphids.",
+     "mode": "GrabAndRemove",
+     "days": 2,
+     "effect": "Rogue",
+     "chemical": false
+    },
+    {
+     "title": "Use virus-free seed next time",
+     "instruction": "Buy certified seed or resistant varieties.",
+     "rationale": "Seed is where it starts.",
+     "mode": "Informational",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropManagement",
+     "title": "Plant certified, virus-free seed",
+     "detail": "The main control."
+    },
+    {
+     "category": "CropManagement",
+     "title": "Grow resistant varieties",
+     "detail": "Effective where available."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_Interveinal",
+    "yellowMask": "T_YellowMask_Mottle",
+    "lesion": [
+     0.7,
+     0.76,
+     0.34
+    ],
+    "halo": [
+     0.34,
+     0.46,
+     0.2
+    ],
+    "yellow": [
+     0.84,
+     0.84,
+     0.4
+    ],
+    "lesions": 0.6,
+    "yellowing": 0.8,
+    "wilting": 0.2,
+    "damage": 0.3,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Light green patch",
+   "haloLabel": "Puckered area",
+   "areaLabel": "Mottled leaf",
+   "lifecycle": [
+    "Infected seed gives infected seedlings.",
+    "Aphids carry the virus to nearby plants.",
+    "Young leaves mottle and pucker.",
+    "Seed from infected plants is mottled."
+   ],
+   "conditions": [
+    "Infected seed.",
+    "Many aphids.",
+    "Cool weather (symptoms show best).",
+    "Susceptible varieties."
+   ],
+   "photos": [
+    "soybean_mosaic_1"
+   ],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: soybean mosaic",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  }
+ ],
+ "aliases": [],
+ "healthyLabels": [
+  "Soyabean leaf",
+  "Soybean___healthy"
+ ]
+}

@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_CabbageDownyMildew
+  m_EditorClassIdentifier: 
+  diseaseId: downy_mildew
+  diseaseName: Downy Mildew
+  aiLabelAliases:
+  - cabbage_downy_mildew
+  - cabbage downy mildew
+  pathogenType: 6
+  pathogen: Hyaloperonospora brassicae
+  affectedPart: 0
+  sources:
+  - 'PlantSeg (Wei et al. 2024, CC BY 4.0) class: cabbage downy mildew'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: A water-mould disease of cabbage and other brassicas, worst in cool,
+    damp weather.
+  causes: Spores spread by wind and splash from infected plants and debris; cool
+    nights with leaf wetness let them infect.
+  effectOnPlant: Spotted leaves and heads lose quality.
+  untreatedOutcome: Seedlings can be killed.
+  symptoms:
+  - Yellow, angular patches on the upper leaf
+  - White to grey downy growth underneath
+  - Patches turn brown; heads may be discoloured inside
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  - yellowing
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: 3b0bcd23b0f24b74c8e0c9575c3dfacf, type: 2}
+  preventionPlan: {fileID: 11400000, guid: 2fa5384c796f8774fa366aeabcbc1ae4, type: 2}
+  simulationProfile: {fileID: 11400000, guid: cb9561449d2964449a1eb288c3ff77ee, type: 2}
+  lifecycleStages:
+  - Spores come from infected plants and debris.
+  - Cool, damp nights let them infect.
+  - Yellow angular patches form, white down underneath.
+  - Spores spread to neighbours.
+  conditionFactors:
+  - "Cool (10-15 \xB0C), damp weather."
+  - Long leaf wetness.
+  - Crowded seedlings.
+  - Brassica debris.
+  referencePhotos:
+  - {fileID: 2800000, guid: 4d590f7b7edd0fa428e090e15f3ce555, type: 3}
+  lesionLabel: Angular patch
+  haloLabel: Brown edge
+  areaLabel: Yellow patch

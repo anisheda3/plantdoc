@@ -1,0 +1,44 @@
+# Plant Doctor model - one file for a whole run. Paths are relative to training/.
+paths:
+  data: data                 # raw downloads, resized cache, manifest
+  runs: runs                 # checkpoints, TensorBoard logs, reports
+  server_models: ../server/models
+
+data:
+  cache_short_side: 384      # images are resized once to this (keeps training fast on a laptop CPU)
+  min_side: 128              # smaller originals are dropped
+  duplicate_distance: 6      # pHash Hamming distance: same photo -> keep one
+  group_distance: 12         # near-copies share a group and never straddle train/test
+  split: [0.70, 0.15, 0.15]  # train / val / test, by group, stratified by label
+  # Whole sources (or "source:regex" on the path) kept out of training as a
+  # never-seen-photographer test. (The memo picked GTLD, but its Mendeley record holds
+  # only 7 sample images, so these two field sets stand in.)
+  holdout: ["tomato_pakistan", "plantdoc:/test/"]
+  lab_batch_share: 0.20      # PlantVillage-style lab photos: at most this share of every batch
+  seed: 1234
+
+model:
+  backbone: efficientnet_b0  # fallback for phones: mobilenetv3_large_100
+  input_size: 224
+  dropout: 0.3
+
+train:
+  batch_size: 64
+  workers: 8                 # i7-13620H has 16 threads; drop to 4 if Windows runs out of memory
+  stage1_epochs: 3           # backbone frozen, heads only
+  stage1_lr: 1.0e-3
+  epochs: 30                 # stage 2, everything unfrozen
+  lr_heads: 3.0e-4
+  lr_backbone: 1.0e-4
+  weight_decay: 0.05
+  warmup_epochs: 1
+  label_smoothing: 0.1
+  ema_decay: 0.999
+  early_stop_patience: 6
+  degrade_prob: 0.20         # share of training images turned into bad photos for the quality head
+  loss_weights: {condition: 1.0, species: 0.5, signs: 0.3, severity: 0.5, quality: 0.3}
+
+export:
+  model_version: plantdoc-4species-1.0
+  opset: 17
+  quality_threshold: 0.6     # Gate 2: "good" must be at least this likely

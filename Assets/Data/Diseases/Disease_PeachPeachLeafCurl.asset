@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_PeachPeachLeafCurl
+  m_EditorClassIdentifier: 
+  diseaseId: leaf_curl
+  diseaseName: Peach Leaf Curl
+  aiLabelAliases:
+  - peach_leaf_curl
+  - peach leaf curl
+  pathogenType: 0
+  pathogen: Taphrina deformans
+  affectedPart: 0
+  sources:
+  - 'PlantSeg (Wei et al. 2024, CC BY 4.0) class: peach leaf curl'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: A fungal disease that thickens, puckers and reddens peach leaves in
+    spring.
+  causes: Spores on the bark and buds infect the leaves as the buds open in cool,
+    wet spring weather.
+  effectOnPlant: The tree loses its first leaves and must regrow them, which weakens
+    it.
+  untreatedOutcome: Several years of heavy curl weaken the tree and cut the crop.
+  symptoms:
+  - Thick, puckered, curled leaves
+  - Red to purple colour on the puckered areas
+  - Leaves turn powdery grey-white, then drop
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: e3feba6e01d75284a9def81e97159c56, type: 2}
+  preventionPlan: {fileID: 11400000, guid: a775e5bf0ffa8fc4babf864482ace3ec, type: 2}
+  simulationProfile: {fileID: 11400000, guid: 4ab4fcff7f71712499afccc6f6b4102e, type: 2}
+  lifecycleStages:
+  - Spores overwinter on bark and bud scales.
+  - Cool, wet weather at bud break lets them infect.
+  - Leaves thicken, pucker and turn red.
+  - A grey bloom of new spores forms before the leaves drop.
+  conditionFactors:
+  - "Cool (10-21 \xB0C), wet spring."
+  - Rain at bud break.
+  - No dormant spray.
+  - Susceptible varieties.
+  referencePhotos:
+  - {fileID: 2800000, guid: f56bce12f9a205c47bb82e02b22db524, type: 3}
+  lesionLabel: Red blister
+  haloLabel: Puckered area
+  areaLabel: Curled leaf

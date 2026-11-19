@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_CabbageBlackRot
+  m_EditorClassIdentifier: 
+  diseaseId: black_rot
+  diseaseName: Black Rot
+  aiLabelAliases:
+  - cabbage_black_rot
+  - cabbage black rot
+  pathogenType: 1
+  pathogen: Xanthomonas campestris pv. campestris
+  affectedPart: 0
+  sources:
+  - 'PlantSeg (Wei et al. 2024, CC BY 4.0) class: cabbage black rot'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: 'The most serious bacterial disease of cabbage and other brassicas:
+    V-shaped yellow lesions from the leaf edge with blackened veins.'
+  causes: Bacteria come in on seed and transplants and spread by rain splash, tools
+    and insects; they enter through the pores at the leaf edge.
+  effectOnPlant: Leaves die and heads are stunted and rot.
+  untreatedOutcome: Whole plantings can be lost in warm, wet seasons.
+  symptoms:
+  - Yellow, V-shaped lesions from the leaf margin, pointing to the midrib
+  - Veins in the lesions turn black
+  - Lesions brown and dry; the vascular ring in the stem blackens
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  - yellowing
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: bd6c864dcfaf5b44dbe3d87e053622b8, type: 2}
+  preventionPlan: {fileID: 11400000, guid: e8cb16d7baf23e947b58daa7504c7bad, type: 2}
+  simulationProfile: {fileID: 11400000, guid: 3df9768824280e24ab77f503a6777474, type: 2}
+  lifecycleStages:
+  - Bacteria come in on seed or transplants.
+  - Rain splash carries them to leaf edges.
+  - 'They enter the veins: yellow V-shaped lesions form.'
+  - Veins blacken and the infection moves into the stem.
+  conditionFactors:
+  - "Warm (25-30 \xB0C), wet weather."
+  - Infected seed.
+  - Wounds from insects and tools.
+  - Brassica weeds.
+  referencePhotos:
+  - {fileID: 2800000, guid: 89ae17ef47de9f943bc63e618d257efa, type: 3}
+  lesionLabel: Black vein
+  haloLabel: Yellow V
+  areaLabel: V-shaped lesion

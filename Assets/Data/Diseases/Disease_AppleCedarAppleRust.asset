@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_AppleCedarAppleRust
+  m_EditorClassIdentifier: 
+  diseaseId: cedar_apple_rust
+  diseaseName: Cedar Apple Rust
+  aiLabelAliases:
+  - Apple___Cedar_apple_rust
+  - Apple___Rust
+  - apple_rust
+  - rust
+  - apple rust
+  - Apple rust leaf
+  pathogenType: 0
+  pathogen: 
+  affectedPart: 0
+  sources: []
+  description: A rust fungus that alternates between apple trees and junipers (cedars).
+  causes: Spores blow in from galls on nearby junipers during wet spring weather.
+  effectOnPlant: Spotted leaves drop early; fruit can be spotted and deformed.
+  untreatedOutcome: Repeated defoliation weakens the tree.
+  symptoms:
+  - Bright orange-yellow spots
+  - Tiny black dots in the spots
+  - Tube-like growths under the leaf
+  supportingFeatureIds:
+  - leaf_spots
+  - yellowing
+  - leaf_color
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: d3c4e55ac5c7ee44a945232df9b3a0b2, type: 2}
+  preventionPlan: {fileID: 11400000, guid: 42cf881cb35bb6c4e928e8ddebdf7939, type: 2}
+  simulationProfile: {fileID: 11400000, guid: e81b4008d9f898f4e922c1728e9f0240, type: 2}
+  lifecycleStages:
+  - The fungus lives on nearby junipers or cedars, forming brown galls.
+  - In spring rain the galls swell into orange, jelly-like horns that release spores.
+  - Bright yellow-orange spots form on apple leaves in early summer.
+  - 'Late-summer spores return to the junipers: the cycle needs both plants.'
+  conditionFactors:
+  - Juniper or cedar trees growing nearby.
+  - Warm, wet spring weather.
+  - Leaves wet during the infection window.
+  - Susceptible apple varieties.
+  referencePhotos:
+  - {fileID: 2800000, guid: 2766dd017525da043a4763136dce20df, type: 3}
+  - {fileID: 2800000, guid: 528a11767d1d4764ab179e51d435c144, type: 3}
+  lesionLabel: Orange spot
+  haloLabel: Yellow ring
+  areaLabel: Affected area

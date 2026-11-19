@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5132a70f51fe6cb4ea3c7d283552eb79, type: 3}
+  m_Name: TreatmentPlan_Wheat_StemRust
+  m_EditorClassIdentifier: 
+  treatmentId: wheat_stem_rust_treatment
+  planName: "Wheat \u2014 Stem Rust (Black Rust)"
+  steps:
+  - {fileID: 11400000, guid: 32b17279a8c760445af93fdf72ff296c, type: 2}
+  - {fileID: 11400000, guid: 16b0b68ea8ef25442bea639d82b3aadc, type: 2}
+  - {fileID: 11400000, guid: 39898c07e5fecfc489d7f2e7282e6a55, type: 2}
+  residualSeverityFloor: 0.15
+  residualDamageFloor: 0.1
+  disclaimer: Educational guidance only. Treatment does not guarantee recovery. Consult
+    a local agricultural extension service for field decisions.

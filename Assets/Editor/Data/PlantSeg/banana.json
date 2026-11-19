@@ -1,0 +1,656 @@
+{
+ "plantId": "banana",
+ "plantName": "Banana",
+ "scientificName": "Musa acuminata (AAA group, e.g. Cavendish)",
+ "description": "Musa acuminata: a giant herb whose 'trunk' is a pseudostem of leaf sheaths.",
+ "diseases": [
+  {
+   "id": "anthracnose",
+   "name": "Anthracnose",
+   "type": "Fungal",
+   "part": "Fruit",
+   "pathogen": "Colletotrichum musae",
+   "labels": [
+    "banana anthracnose"
+   ],
+   "description": "A fungal rot of ripening banana fruit, mostly after harvest.",
+   "causes": "Spores from dead leaves and flower remains infect green fruit through wounds; the rot appears as the fruit ripens.",
+   "symptoms": [
+    "Dark brown to black, sunken spots on ripening fruit",
+    "Salmon-pink spore masses on the spots",
+    "Spots join; the rot reaches the pulp"
+   ],
+   "effect": "Fruit spoils quickly in ripening and storage.",
+   "untreated": "Losses rise with bruising and warm storage.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Remove dead leaves and flower remains near the bunch",
+     "instruction": "Pick off dead leaves and flower remains near the bunch when the plants are dry and take them away.",
+     "rationale": "They are the spore source.",
+     "mode": "TapRegion",
+     "days": 2,
+     "effect": "Remove",
+     "chemical": false
+    },
+    {
+     "title": "Handle fruit gently",
+     "instruction": "Avoid bruising at harvest and packing.",
+     "rationale": "Wounds let the fungus in.",
+     "mode": "AdjustSetting",
+     "days": 1,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Cool and clean the packing area",
+     "instruction": "Wash and cool fruit soon after harvest.",
+     "rationale": "Slows the rot.",
+     "mode": "Informational",
+     "days": 2,
+     "effect": "Small",
+     "chemical": false
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropHygiene",
+     "title": "Remove dead leaves and flower parts",
+     "detail": "Less inoculum."
+    },
+    {
+     "category": "CropManagement",
+     "title": "Bag bunches",
+     "detail": "Protects fruit from spores and bruising."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_FruitRot",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.18,
+     0.12,
+     0.08
+    ],
+    "halo": [
+     0.9,
+     0.58,
+     0.46
+    ],
+    "yellow": [
+     0.8,
+     0.7,
+     0.4
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.0,
+    "wilting": 0.0,
+    "damage": 0.5,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Black spot",
+   "haloLabel": "Pink spores",
+   "areaLabel": "Rotting fruit",
+   "lifecycle": [
+    "Spores live on dead leaves and flower parts.",
+    "They infect green fruit, often at wounds.",
+    "The infection waits until ripening.",
+    "Black, sunken spots spread over the fruit."
+   ],
+   "conditions": [
+    "Warm, humid weather.",
+    "Bruised fruit.",
+    "Dead leaves near the bunch.",
+    "Warm storage."
+   ],
+   "photos": [
+    "banana_anthracnose_1"
+   ],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: banana anthracnose",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "black_leaf_streak",
+   "name": "Black Leaf Streak (Black Sigatoka)",
+   "type": "Fungal",
+   "part": "Leaf",
+   "pathogen": "Pseudocercospora fijiensis",
+   "labels": [
+    "banana black leaf streak"
+   ],
+   "description": "The most damaging leaf disease of banana: streaks that merge and kill large areas of leaf.",
+   "causes": "Wind and rain spread spores from infected leaves; frequent rain and high humidity favour it.",
+   "symptoms": [
+    "Small red-brown streaks parallel to the leaf veins",
+    "Streaks widen into dark brown to black spots with grey centres",
+    "Spots merge and large areas of leaf die"
+   ],
+   "effect": "Plants lose leaves before the bunch fills; fruit is small and ripens early.",
+   "untreated": "Yield losses of 30-50% or more where it is not controlled.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Cut off badly affected leaves",
+     "instruction": "Remove leaves or leaf parts with dead areas and put them on the ground face down.",
+     "rationale": "Reduces spores in the plantation.",
+     "mode": "TapRegion",
+     "days": 2,
+     "effect": "Remove",
+     "chemical": false
+    },
+    {
+     "title": "Improve drainage and spacing",
+     "instruction": "Drain wet spots and remove excess suckers.",
+     "rationale": "Lower humidity in the canopy.",
+     "mode": "AdjustSetting",
+     "days": 3,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Protective spray",
+     "instruction": "Spray a registered fungicide on the local programme on the label's schedule.",
+     "rationale": "Protects healthy growth; it cannot cure what is already infected.",
+     "mode": "SprayApply",
+     "days": 3,
+     "effect": "Protect",
+     "chemical": true
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropHygiene",
+     "title": "De-leaf every week or two",
+     "detail": "Removes spore sources."
+    },
+    {
+     "category": "CropManagement",
+     "title": "Grow tolerant varieties",
+     "detail": "Some cultivars resist it."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_Streak",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.16,
+     0.12,
+     0.1
+    ],
+    "halo": [
+     0.52,
+     0.3,
+     0.16
+    ],
+    "yellow": [
+     0.82,
+     0.76,
+     0.3
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.6,
+    "wilting": 0.4,
+    "damage": 0.8,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Black streak",
+   "haloLabel": "Brown edge",
+   "areaLabel": "Dead leaf area",
+   "lifecycle": [
+    "Spores come from infected leaves.",
+    "Wind and rain carry them to young leaves.",
+    "Red-brown streaks form along the veins.",
+    "Streaks merge and kill the leaf."
+   ],
+   "conditions": [
+    "Frequent rain.",
+    "High humidity.",
+    "Dense plantings.",
+    "Susceptible Cavendish types."
+   ],
+   "photos": [
+    "banana_black_leaf_streak_1"
+   ],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: banana black leaf streak",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "bunchy_top",
+   "name": "Banana Bunchy Top",
+   "type": "Viral",
+   "part": "WholePlant",
+   "pathogen": "Banana bunchy top virus (BBTV, a babuvirus)",
+   "labels": [
+    "banana bunchy top"
+   ],
+   "description": "A virus disease that stunts banana plants into a bunched rosette of narrow, upright leaves.",
+   "causes": "The banana aphid (Pentalonia nigronervosa) carries the virus; infected suckers and planting material carry it farther.",
+   "symptoms": [
+    "Dark green dots and dashes ('Morse code') along the leaf veins and midrib",
+    "New leaves narrow, short, upright and bunched at the top",
+    "Yellow, wavy leaf margins; no bunch, or a small one"
+   ],
+   "effect": "Infected plants produce little or no fruit.",
+   "untreated": "Without removal, the virus spreads through the plantation.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Report and confirm",
+     "instruction": "Check whether bunchy top must be reported in your area.",
+     "rationale": "It is a regulated disease in many places.",
+     "mode": "Informational",
+     "days": 1,
+     "effect": "Small",
+     "chemical": false
+    },
+    {
+     "title": "Destroy infected plants and their suckers",
+     "instruction": "Kill the aphids on the plant first, then dig out the whole mat.",
+     "rationale": "Every sucker is infected.",
+     "mode": "GrabAndRemove",
+     "days": 3,
+     "effect": "Rogue",
+     "chemical": false
+    },
+    {
+     "title": "Replant with clean material",
+     "instruction": "Use certified, virus-free plants.",
+     "rationale": "Infected suckers spread it.",
+     "mode": "AdjustSetting",
+     "days": 3,
+     "effect": "Cultural",
+     "chemical": false
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropManagement",
+     "title": "Plant certified tissue-culture plants",
+     "detail": "The main protection."
+    },
+    {
+     "category": "Monitoring",
+     "title": "Inspect monthly",
+     "detail": "Remove new cases quickly."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_Streak",
+    "yellowMask": "T_YellowMask_Margin",
+    "lesion": [
+     0.12,
+     0.3,
+     0.14
+    ],
+    "halo": [
+     0.3,
+     0.44,
+     0.2
+    ],
+    "yellow": [
+     0.86,
+     0.82,
+     0.36
+    ],
+    "lesions": 0.6,
+    "yellowing": 0.7,
+    "wilting": 0.3,
+    "damage": 0.4,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Green dashes",
+   "haloLabel": "Yellow margin",
+   "areaLabel": "Bunched leaves",
+   "lifecycle": [
+    "Banana aphids feed on an infected plant.",
+    "They carry the virus to healthy plants.",
+    "Dark green dashes appear along the veins.",
+    "New leaves bunch at the top; no fruit forms."
+   ],
+   "conditions": [
+    "Banana aphids.",
+    "Infected suckers planted.",
+    "Infected plants left in the field.",
+    "No monitoring."
+   ],
+   "photos": [
+    "banana_bunchy_top_1"
+   ],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: banana bunchy top",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "cigar_end_rot",
+   "name": "Cigar End Rot",
+   "type": "Fungal",
+   "part": "Fruit",
+   "pathogen": "Trachysphaera fructigena and Verticillium theobromae",
+   "labels": [
+    "banana cigar end rot"
+   ],
+   "description": "A fungal rot that turns the flower end of banana fingers dry and ashen, like the burnt end of a cigar.",
+   "causes": "Spores infect the dying flower parts at the finger tips in wet weather, and the rot spreads into the fruit.",
+   "symptoms": [
+    "Dark, dry rot at the tip of the finger",
+    "Grey-white powdery fungus on the rotted end, like cigar ash",
+    "The rot spreads slowly back along the finger"
+   ],
+   "effect": "Affected fingers are unsaleable.",
+   "untreated": "Many fingers of a bunch can be affected in wet seasons.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Remove flower remains",
+     "instruction": "Take off the dead flower parts from young fingers.",
+     "rationale": "The fungus enters through them.",
+     "mode": "TapRegion",
+     "days": 2,
+     "effect": "Remove",
+     "chemical": false
+    },
+    {
+     "title": "Bag the bunches",
+     "instruction": "Cover young bunches with plastic sleeves.",
+     "rationale": "Keeps the tips dry.",
+     "mode": "AdjustSetting",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Remove the male bud",
+     "instruction": "Cut off the male bud after the last hand sets.",
+     "rationale": "Removes a spore source.",
+     "mode": "GrabAndRemove",
+     "days": 2,
+     "effect": "Small",
+     "chemical": false
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropHygiene",
+     "title": "Remove dead leaves and flower parts",
+     "detail": "Less inoculum."
+    },
+    {
+     "category": "AirCirculation",
+     "title": "Keep spacing open",
+     "detail": "Less humidity."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_EndRot",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.26,
+     0.22,
+     0.18
+    ],
+    "halo": [
+     0.78,
+     0.76,
+     0.72
+    ],
+    "yellow": [
+     0.8,
+     0.7,
+     0.4
+    ],
+    "lesions": 0.8,
+    "yellowing": 0.0,
+    "wilting": 0.0,
+    "damage": 0.4,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Rotted tip",
+   "haloLabel": "Ash-grey fungus",
+   "areaLabel": "Affected finger",
+   "lifecycle": [
+    "Spores land on dying flower parts.",
+    "They infect the tip of the finger.",
+    "A dry, dark rot forms at the tip.",
+    "Grey 'ash' spores form on the rot."
+   ],
+   "conditions": [
+    "Wet, humid weather.",
+    "Flower parts left on the fingers.",
+    "No bunch covers.",
+    "Shaded plantations."
+   ],
+   "photos": [],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: banana cigar end rot",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "cordana_leaf_spot",
+   "name": "Cordana Leaf Spot",
+   "type": "Fungal",
+   "part": "Leaf",
+   "pathogen": "Neocordana musae (syn. Cordana musae)",
+   "labels": [
+    "banana cordana leaf spot"
+   ],
+   "description": "A fungal leaf spot of banana with large, pale, oval spots ringed in yellow.",
+   "causes": "Spores spread by wind and rain from infected leaves; it often follows other leaf diseases and wounds.",
+   "symptoms": [
+    "Oval, pale brown spots with concentric zones",
+    "A dark border and a bright yellow halo round each spot",
+    "Spots often start at the leaf edge or along the midrib"
+   ],
+   "effect": "Reduces healthy leaf area; usually less damaging than Sigatoka.",
+   "untreated": "Many spots combine with other diseases to kill leaves early.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Remove badly spotted leaves",
+     "instruction": "Pick off badly spotted leaves when the plants are dry and take them away.",
+     "rationale": "Fewer spores in the plantation.",
+     "mode": "TapRegion",
+     "days": 2,
+     "effect": "Remove",
+     "chemical": false
+    },
+    {
+     "title": "Improve drainage and spacing",
+     "instruction": "Lower the humidity in the canopy.",
+     "rationale": "Spores need wet leaves.",
+     "mode": "AdjustSetting",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Protective spray",
+     "instruction": "Spray a registered fungicide if it spreads on the label's schedule.",
+     "rationale": "Protects healthy growth; it cannot cure what is already infected.",
+     "mode": "SprayApply",
+     "days": 3,
+     "effect": "Protect",
+     "chemical": true
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropHygiene",
+     "title": "Remove dead leaves",
+     "detail": "Less inoculum."
+    },
+    {
+     "category": "AirCirculation",
+     "title": "Thin suckers",
+     "detail": "Better airflow."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_EarlyBlight",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.6,
+     0.48,
+     0.3
+    ],
+    "halo": [
+     0.88,
+     0.82,
+     0.26
+    ],
+    "yellow": [
+     0.86,
+     0.8,
+     0.3
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.6,
+    "wilting": 0.4,
+    "damage": 0.6,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Oval spot",
+   "haloLabel": "Yellow halo",
+   "areaLabel": "Spotted leaf",
+   "lifecycle": [
+    "Spores come from infected leaves.",
+    "Wind and rain carry them to wet leaves.",
+    "Oval spots with yellow halos form.",
+    "Spots merge with other leaf damage."
+   ],
+   "conditions": [
+    "Wet, humid weather.",
+    "Wounded leaves.",
+    "Dense plantations.",
+    "Other leaf diseases present."
+   ],
+   "photos": [
+    "banana_cordana_leaf_spot_1"
+   ],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: banana cordana leaf spot",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "panama_disease",
+   "name": "Panama Disease (Fusarium Wilt)",
+   "type": "Fungal",
+   "part": "WholePlant",
+   "pathogen": "Fusarium oxysporum f. sp. cubense (incl. Tropical Race 4)",
+   "labels": [
+    "banana panama disease"
+   ],
+   "description": "A soil-borne fungal wilt that blocks the water vessels of banana plants; Tropical Race 4 also kills Cavendish.",
+   "causes": "The fungus lives in the soil for decades and enters through the roots; it spreads in soil on boots, tools, vehicles, water and infected planting material.",
+   "symptoms": [
+    "Older leaves yellow from the margins inward",
+    "Leaves collapse at the petiole and hang down round the pseudostem like a skirt",
+    "Brown to red-brown streaks inside the pseudostem"
+   ],
+   "effect": "Infected plants die without a bunch.",
+   "untreated": "The soil stays infested for decades; the disease spreads field to field.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Report and quarantine the spot",
+     "instruction": "Report suspected Panama disease and fence off the area.",
+     "rationale": "Tropical Race 4 is a quarantine disease in many countries.",
+     "mode": "Informational",
+     "days": 1,
+     "effect": "Small",
+     "chemical": false
+    },
+    {
+     "title": "Destroy infected plants on site",
+     "instruction": "Kill and leave plants in place as advised; do not move soil or plant material.",
+     "rationale": "Moving them spreads the fungus.",
+     "mode": "GrabAndRemove",
+     "days": 3,
+     "effect": "Rogue",
+     "chemical": false
+    },
+    {
+     "title": "Disinfect boots and tools",
+     "instruction": "Use foot baths and clean tools and vehicles.",
+     "rationale": "Soil carries the fungus.",
+     "mode": "AdjustSetting",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropManagement",
+     "title": "Plant clean tissue-culture plants",
+     "detail": "Infected suckers carry it."
+    },
+    {
+     "category": "CropHygiene",
+     "title": "Control movement of soil",
+     "detail": "Foot baths, clean vehicles."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_MarginScorch",
+    "yellowMask": "T_YellowMask_Margin",
+    "lesion": [
+     0.48,
+     0.34,
+     0.16
+    ],
+    "halo": [
+     0.82,
+     0.72,
+     0.24
+    ],
+    "yellow": [
+     0.88,
+     0.8,
+     0.26
+    ],
+    "lesions": 0.5,
+    "yellowing": 1.0,
+    "wilting": 1.0,
+    "damage": 0.7,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Brown margin",
+   "haloLabel": "Yellow edge",
+   "areaLabel": "Collapsed leaves",
+   "lifecycle": [
+    "The fungus lives in the soil for decades.",
+    "It enters through the roots.",
+    "It blocks the water vessels.",
+    "Leaves yellow, collapse and the plant dies."
+   ],
+   "conditions": [
+    "Infested soil.",
+    "Moving soil and plants.",
+    "Poor drainage.",
+    "Susceptible cultivars."
+   ],
+   "photos": [
+    "banana_panama_disease_1"
+   ],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: banana panama disease",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  }
+ ],
+ "aliases": [],
+ "healthyLabels": []
+}

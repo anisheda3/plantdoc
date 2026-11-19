@@ -1,0 +1,569 @@
+{
+ "plantId": "rice",
+ "plantName": "Rice",
+ "scientificName": "Oryza sativa",
+ "description": "Oryza sativa: a tillering grass grown in flooded fields.",
+ "diseases": [
+  {
+   "id": "blast",
+   "name": "Rice Blast",
+   "type": "Fungal",
+   "part": "Leaf",
+   "pathogen": "Pyricularia oryzae (Magnaporthe oryzae)",
+   "labels": [
+    "rice blast"
+   ],
+   "description": "The most damaging disease of rice: diamond-shaped leaf lesions and broken necks of the panicle.",
+   "causes": "Spores spread by wind; long dew, cool nights and high nitrogen favour it.",
+   "symptoms": [
+    "Diamond-shaped lesions with grey centres and brown borders",
+    "Lesions merge and leaves die",
+    "Neck rot: the panicle base turns black and breaks"
+   ],
+   "effect": "Leaf blast kills seedlings; neck blast empties the panicles.",
+   "untreated": "Can destroy most of a crop.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Scout leaves and necks",
+     "instruction": "Check for diamond lesions and blackened necks.",
+     "rationale": "Early detection allows control.",
+     "mode": "TapRegion",
+     "days": 1,
+     "effect": "Small",
+     "chemical": false
+    },
+    {
+     "title": "Protective spray",
+     "instruction": "Spray a registered fungicide at the advised growth stages on the label's schedule.",
+     "rationale": "Protects healthy growth; it cannot cure what is already infected.",
+     "mode": "SprayApply",
+     "days": 3,
+     "effect": "Protect",
+     "chemical": true
+    },
+    {
+     "title": "Cut back nitrogen",
+     "instruction": "Split the nitrogen and avoid heavy doses.",
+     "rationale": "Lush rice is more susceptible.",
+     "mode": "AdjustSetting",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropManagement",
+     "title": "Grow resistant varieties",
+     "detail": "The main control."
+    },
+    {
+     "category": "WaterManagement",
+     "title": "Keep the field flooded",
+     "detail": "Drought stress increases blast."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_Cigar",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.62,
+     0.6,
+     0.54
+    ],
+    "halo": [
+     0.42,
+     0.28,
+     0.16
+    ],
+    "yellow": [
+     0.84,
+     0.78,
+     0.34
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.5,
+    "wilting": 0.4,
+    "damage": 0.7,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Diamond lesion",
+   "haloLabel": "Brown border",
+   "areaLabel": "Blasted leaf",
+   "lifecycle": [
+    "Spores blow from infected rice.",
+    "Long dew lets them infect.",
+    "Diamond-shaped lesions form on the leaves.",
+    "Spores spread to the panicle necks."
+   ],
+   "conditions": [
+    "Long dew periods.",
+    "Cool nights.",
+    "High nitrogen.",
+    "Upland or drained fields."
+   ],
+   "photos": [
+    "rice_blast_1"
+   ],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: rice blast",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "sheath_blight",
+   "name": "Sheath Blight",
+   "type": "Fungal",
+   "part": "Leaf",
+   "pathogen": "Rhizoctonia solani",
+   "labels": [
+    "rice sheath blight"
+   ],
+   "description": "A soil-borne fungal disease of rice leaf sheaths, worst in dense, heavily fertilised crops.",
+   "causes": "Fungal resting bodies float on the flood water and infect the sheaths at the water line; it climbs in warm, humid weather.",
+   "symptoms": [
+    "Oval, grey-green, water-soaked lesions on the sheaths near the water",
+    "Lesions bleach with brown borders, like snakeskin",
+    "Spreads up the plant; leaves die"
+   ],
+   "effect": "Lodging and poor grain fill.",
+   "untreated": "Yield losses in dense, high-nitrogen crops.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Scout the water line",
+     "instruction": "Check the lower sheaths in dense patches.",
+     "rationale": "It starts low.",
+     "mode": "TapRegion",
+     "days": 1,
+     "effect": "Small",
+     "chemical": false
+    },
+    {
+     "title": "Protective spray",
+     "instruction": "Spray a registered fungicide if it climbs on the label's schedule.",
+     "rationale": "Protects healthy growth; it cannot cure what is already infected.",
+     "mode": "SprayApply",
+     "days": 3,
+     "effect": "Protect",
+     "chemical": true
+    },
+    {
+     "title": "Use moderate seeding and nitrogen",
+     "instruction": "Plan wider spacing next crop.",
+     "rationale": "Dense canopies favour it.",
+     "mode": "AdjustSetting",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropManagement",
+     "title": "Avoid excess nitrogen",
+     "detail": "Dense crops suffer most."
+    },
+    {
+     "category": "CropHygiene",
+     "title": "Remove weeds on the bunds",
+     "detail": "They host the fungus."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_LateBlight",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.76,
+     0.74,
+     0.62
+    ],
+    "halo": [
+     0.46,
+     0.32,
+     0.18
+    ],
+    "yellow": [
+     0.84,
+     0.78,
+     0.34
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.6,
+    "wilting": 0.3,
+    "damage": 0.6,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Bleached lesion",
+   "haloLabel": "Brown border",
+   "areaLabel": "Blighted sheath",
+   "lifecycle": [
+    "Resting bodies float on the flood water.",
+    "They infect the sheaths at the water line.",
+    "Snakeskin lesions climb the plant.",
+    "New resting bodies drop into the field."
+   ],
+   "conditions": [
+    "Warm (28-32 °C), humid weather.",
+    "Dense planting.",
+    "High nitrogen.",
+    "Infested fields."
+   ],
+   "photos": [],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: rice sheath blight",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "bacterial_leaf_blight",
+   "name": "Bacterial Leaf Blight",
+   "type": "Bacterial",
+   "part": "Leaf",
+   "pathogen": "Xanthomonas oryzae pv. oryzae",
+   "labels": [
+    "Rice___Bacterial_leaf_blight",
+    "rice bacterial leaf blight",
+    "Bacterial leaf blight"
+   ],
+   "description": "One of the most serious rice diseases: leaves yellow and dry from the tips and edges.",
+   "causes": "Bacteria enter through leaf pores and wounds and spread in irrigation water, rain and wind; storms and heavy nitrogen favour it.",
+   "symptoms": [
+    "Water-soaked to yellow stripes along the leaf edges, starting at the tip",
+    "Stripes turn straw-white with a wavy edge",
+    "Milky drops of bacterial ooze on young lesions in the morning"
+   ],
+   "effect": "Dried leaves cut grain fill; seedlings can wilt (kresek).",
+   "untreated": "Epidemics after storms can halve yields.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Drain the field briefly",
+     "instruction": "Drain and let the field dry for a few days if advised.",
+     "rationale": "Flood water spreads the bacteria.",
+     "mode": "AdjustSetting",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Hold back nitrogen",
+     "instruction": "Skip or split the next nitrogen dose.",
+     "rationale": "Lush rice is more susceptible.",
+     "mode": "AdjustSetting",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Clean up stubble and weeds",
+     "instruction": "Remove infected stubble, straw and grass weeds after harvest.",
+     "rationale": "They carry the bacteria to the next crop.",
+     "mode": "Informational",
+     "days": 2,
+     "effect": "Small",
+     "chemical": false
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropManagement",
+     "title": "Grow resistant varieties",
+     "detail": "The main control."
+    },
+    {
+     "category": "WaterManagement",
+     "title": "Avoid flowing water from infected fields",
+     "detail": "Water carries it field to field."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_MarginScorch",
+    "yellowMask": "T_YellowMask_Margin",
+    "lesion": [
+     0.86,
+     0.82,
+     0.62
+    ],
+    "halo": [
+     0.84,
+     0.8,
+     0.36
+    ],
+    "yellow": [
+     0.88,
+     0.84,
+     0.4
+    ],
+    "lesions": 0.8,
+    "yellowing": 0.8,
+    "wilting": 0.2,
+    "damage": 0.6,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Straw-white stripe",
+   "haloLabel": "Yellow edge",
+   "areaLabel": "Blighted leaf",
+   "lifecycle": [
+    "Bacteria survive in stubble, straw and weeds.",
+    "Water and wind carry them to leaves.",
+    "They enter through pores and wounds at the leaf edge.",
+    "Stripes spread down from the tip and ooze spreads it."
+   ],
+   "conditions": [
+    "Storms and flooding.",
+    "Heavy nitrogen.",
+    "Warm, humid weather.",
+    "Susceptible varieties."
+   ],
+   "photos": [
+    "rice_bacterial_leaf_blight_1"
+   ],
+   "sources": [
+    "CropScan XR model class: Rice___Bacterial_leaf_blight, rice bacterial leaf blight, Bacterial leaf blight",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "brown_spot",
+   "name": "Brown Spot",
+   "type": "Fungal",
+   "part": "Leaf",
+   "pathogen": "Bipolaris oryzae (Cochliobolus miyabeanus)",
+   "labels": [
+    "Rice___Brown_spot",
+    "rice brown spot",
+    "Brown spot"
+   ],
+   "description": "A fungal leaf spot of rice that is worst in poor, nutrient-short soils; it caused the 1943 Bengal famine.",
+   "causes": "The fungus comes in on seed and debris; spores spread by wind in warm, humid weather, mostly on stressed, poorly fed rice.",
+   "symptoms": [
+    "Oval, brown spots the size of a sesame seed, with grey centres",
+    "A yellow halo round older spots",
+    "Spots on the grain husks; discoloured, light grain"
+   ],
+   "effect": "Spotted leaves and grain cut yield and quality.",
+   "untreated": "Severe on poor soils, where it can destroy much of the crop.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Feed the soil",
+     "instruction": "Correct potassium, silicon and nitrogen shortages as advised.",
+     "rationale": "Well-fed rice resists brown spot.",
+     "mode": "AdjustSetting",
+     "days": 3,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Protective spray",
+     "instruction": "Spray a registered fungicide where advised on the label's schedule.",
+     "rationale": "Protects healthy growth; it cannot cure what is already infected.",
+     "mode": "SprayApply",
+     "days": 3,
+     "effect": "Protect",
+     "chemical": true
+    },
+    {
+     "title": "Use clean seed next season",
+     "instruction": "Sow certified or treated seed.",
+     "rationale": "Seed carries the fungus.",
+     "mode": "Informational",
+     "days": 2,
+     "effect": "Small",
+     "chemical": false
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropManagement",
+     "title": "Balanced fertiliser",
+     "detail": "Nutrient-starved rice is the most susceptible."
+    },
+    {
+     "category": "CropManagement",
+     "title": "Clean or treated seed",
+     "detail": "Seed carries the fungus."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_SmallSpots",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.46,
+     0.28,
+     0.14
+    ],
+    "halo": [
+     0.8,
+     0.72,
+     0.3
+    ],
+    "yellow": [
+     0.84,
+     0.78,
+     0.34
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.5,
+    "wilting": 0.4,
+    "damage": 0.6,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Brown spot",
+   "haloLabel": "Yellow halo",
+   "areaLabel": "Spotted leaf",
+   "lifecycle": [
+    "The fungus survives on seed and debris.",
+    "Wind carries spores to the leaves.",
+    "Oval brown spots form, most on stressed plants.",
+    "Spots on the grain carry it to the next crop."
+   ],
+   "conditions": [
+    "Poor, nutrient-short soils.",
+    "Warm, humid weather.",
+    "Drought stress.",
+    "Infected seed."
+   ],
+   "photos": [
+    "rice_brown_spot_1"
+   ],
+   "sources": [
+    "CropScan XR model class: Rice___Brown_spot, rice brown spot, Brown spot",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "tungro",
+   "name": "Rice Tungro",
+   "type": "Viral",
+   "part": "Leaf",
+   "pathogen": "Rice tungro bacilliform virus with rice tungro spherical virus",
+   "labels": [
+    "Rice___Tungro",
+    "rice tungro",
+    "Tungro"
+   ],
+   "description": "A virus disease of rice in South and Southeast Asia: plants are stunted and their leaves turn yellow to orange.",
+   "causes": "Green leafhoppers (Nephotettix virescens) carry the two viruses from infected rice, stubble regrowth and weeds.",
+   "symptoms": [
+    "Young leaves yellow to orange-yellow, starting at the tip",
+    "Leaves twisted, mottled or striped",
+    "Plants stunted, with few tillers and small, partly empty panicles"
+   ],
+   "effect": "Infected plants yield little.",
+   "untreated": "Early infection over a whole area can lose most of the crop.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Remove infected plants",
+     "instruction": "Pull out yellowed, stunted plants and bury them.",
+     "rationale": "They are the virus source for leafhoppers.",
+     "mode": "GrabAndRemove",
+     "days": 1,
+     "effect": "Rogue",
+     "chemical": false
+    },
+    {
+     "title": "Watch the leafhoppers",
+     "instruction": "Check leafhopper numbers and act as advised locally.",
+     "rationale": "Leafhoppers spread the virus.",
+     "mode": "AdjustSetting",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Plough in stubble after harvest",
+     "instruction": "Destroy stubble and ratoons.",
+     "rationale": "Regrowth keeps the virus going between crops.",
+     "mode": "Informational",
+     "days": 2,
+     "effect": "Small",
+     "chemical": false
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropManagement",
+     "title": "Grow resistant varieties",
+     "detail": "The main protection."
+    },
+    {
+     "category": "CropManagement",
+     "title": "Plant at the same time as neighbours",
+     "detail": "Leaves no young rice for leafhoppers between crops."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_Streak",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.9,
+     0.64,
+     0.26
+    ],
+    "halo": [
+     0.86,
+     0.76,
+     0.32
+    ],
+    "yellow": [
+     0.9,
+     0.72,
+     0.3
+    ],
+    "lesions": 0.6,
+    "yellowing": 1.0,
+    "wilting": 0.2,
+    "damage": 0.4,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Orange leaf tip",
+   "haloLabel": "Yellow stripe",
+   "areaLabel": "Stunted tiller",
+   "lifecycle": [
+    "Leafhoppers pick up the viruses from infected rice.",
+    "They carry them to young plants.",
+    "Leaves turn yellow-orange; growth stops.",
+    "Stubble and weeds keep the viruses between crops."
+   ],
+   "conditions": [
+    "Many green leafhoppers.",
+    "Staggered planting.",
+    "Infected stubble nearby.",
+    "Susceptible varieties."
+   ],
+   "photos": [
+    "rice_tungro_1"
+   ],
+   "sources": [
+    "CropScan XR model class: Rice___Tungro, rice tungro, Tungro",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  }
+ ],
+ "aliases": [
+  {
+   "disease": "blast",
+   "labels": [
+    "Rice___Leaf_blast"
+   ]
+  },
+  {
+   "disease": "sheath_blight",
+   "labels": [
+    "Rice___Sheath_blight"
+   ]
+  }
+ ],
+ "healthyLabels": [
+  "Rice___healthy"
+ ]
+}

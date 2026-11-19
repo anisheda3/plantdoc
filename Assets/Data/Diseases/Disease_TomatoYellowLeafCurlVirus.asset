@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_TomatoYellowLeafCurlVirus
+  m_EditorClassIdentifier: 
+  diseaseId: yellow_leaf_curl_virus
+  diseaseName: Yellow Leaf Curl Virus
+  aiLabelAliases:
+  - Tomato___Tomato_Yellow_Leaf_Curl_Virus
+  - tomato_yellow_leaf_curl_virus
+  - tomato yellow leaf curl virus
+  - Tomato leaf yellow virus
+  pathogenType: 2
+  pathogen: 
+  affectedPart: 0
+  sources: []
+  description: A virus (TYLCV, a begomovirus) spread by the silverleaf whitefly (Bemisia
+    tabaci).
+  causes: Whiteflies that fed on infected plants carry the virus to healthy ones;
+    warm weather favours them.
+  effectOnPlant: Infected plants stop growing and set little or no fruit.
+  untreatedOutcome: 'There is no cure: infected plants stay infected and are a source
+    for the whiteflies.'
+  symptoms:
+  - Leaves curl upward and cup
+  - Yellow leaf edges
+  - Small, crumpled new leaves; stunted plants
+  - Flowers drop, few fruit
+  supportingFeatureIds:
+  - leaf_spots
+  - yellowing
+  - leaf_color
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: 2060031f0b26da14086fde8eb2701d46, type: 2}
+  preventionPlan: {fileID: 11400000, guid: cd560cfc0352f4f45bf1409b84bceaa9, type: 2}
+  simulationProfile: {fileID: 11400000, guid: 9e9cfdbc186c14c4c9b8af5403c47afc, type: 2}
+  lifecycleStages:
+  - Whiteflies pick up the virus from infected plants.
+  - They carry it to healthy plants as they feed.
+  - New leaves come out small, curled and yellow-edged.
+  - The plant stops growing and sets little fruit.
+  conditionFactors:
+  - Warm weather that favours whiteflies.
+  - Infected plants or weeds nearby.
+  - No insect-proof cover on young plants.
+  - Susceptible varieties.
+  referencePhotos:
+  - {fileID: 2800000, guid: 969ac4fb434cb5b4c8ac0cc7436accae, type: 3}
+  lesionLabel: Yellow edge
+  haloLabel: Curled margin
+  areaLabel: Stunted growth

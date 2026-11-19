@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_AppleAppleMosaic
+  m_EditorClassIdentifier: 
+  diseaseId: mosaic_virus
+  diseaseName: Apple Mosaic
+  aiLabelAliases:
+  - apple_mosaic_virus
+  - apple mosaic virus
+  pathogenType: 2
+  pathogen: Apple mosaic virus (ApMV, an ilarvirus)
+  affectedPart: 0
+  sources:
+  - 'PlantSeg (Wei et al. 2024, CC BY 4.0) class: apple mosaic virus'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: A virus disease of apple that marks the leaves with pale yellow to
+    cream patches and bands.
+  causes: The virus is carried in the tree's sap and spreads through grafting and
+    budding with infected wood; no insect spreads it.
+  effectOnPlant: Infected trees grow and crop somewhat less; the marks do not spread
+    to healthy trees in the orchard.
+  untreatedOutcome: The tree stays infected for life; yields of sensitive varieties
+    fall over the years.
+  symptoms:
+  - Pale yellow to cream spots, blotches or bands, often along the veins
+  - Most visible on spring leaves
+  - Some leaves scorch and drop in hot weather
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  - yellowing
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: 8b3d80cd9d8643c4b90dcd2708c70c81, type: 2}
+  preventionPlan: {fileID: 11400000, guid: 06d8c6f7b2766f24395350545b89de2e, type: 2}
+  simulationProfile: {fileID: 11400000, guid: 609d805a8f969334eaff17d1eb523eac, type: 2}
+  lifecycleStages:
+  - The virus lives in the tree's sap.
+  - It passes to new trees through grafted buds and rootstocks.
+  - Spring leaves show cream spots and vein bands.
+  - Every tree grafted from it is infected too.
+  conditionFactors:
+  - Uncertified nursery trees.
+  - Grafting from unknown trees.
+  - Cool spring weather (marks show best).
+  - Sensitive varieties.
+  referencePhotos:
+  - {fileID: 2800000, guid: 04e78291659683b498c0d70ed68ef8be, type: 3}
+  lesionLabel: Cream patch
+  haloLabel: Vein band
+  areaLabel: Mottled leaf

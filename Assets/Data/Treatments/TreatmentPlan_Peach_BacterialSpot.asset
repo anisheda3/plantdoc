@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5132a70f51fe6cb4ea3c7d283552eb79, type: 3}
+  m_Name: TreatmentPlan_Peach_BacterialSpot
+  m_EditorClassIdentifier: 
+  treatmentId: peach_bacterial_spot_treatment
+  planName: "Peach \u2014 Bacterial Spot"
+  steps:
+  - {fileID: 11400000, guid: 3cbf60be2e04fed419c834539074ac6b, type: 2}
+  - {fileID: 11400000, guid: f91a18576d78e0244bd10841c4bf6a4e, type: 2}
+  - {fileID: 11400000, guid: 4232abac4c5511048902ee127151ca69, type: 2}
+  residualSeverityFloor: 0.2
+  residualDamageFloor: 0.14
+  disclaimer: Educational guidance only. Treatment does not guarantee recovery. Consult
+    a local agricultural extension service for field decisions.

@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5132a70f51fe6cb4ea3c7d283552eb79, type: 3}
+  m_Name: TreatmentPlan_Broccoli_DownyMildew
+  m_EditorClassIdentifier: 
+  treatmentId: broccoli_downy_mildew_treatment
+  planName: "Broccoli \u2014 Downy Mildew"
+  steps:
+  - {fileID: 11400000, guid: c87446ab9e8b786409858b97e4bdd5f4, type: 2}
+  - {fileID: 11400000, guid: 41ad35c71c6461e42bfd598f4c4c9742, type: 2}
+  - {fileID: 11400000, guid: c8d4c83f58a29ea43ba136206788880c, type: 2}
+  residualSeverityFloor: 0.15
+  residualDamageFloor: 0.1
+  disclaimer: Educational guidance only. Treatment does not guarantee recovery. Consult
+    a local agricultural extension service for field decisions.

@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_GrapeGrapevineLeafroll
+  m_EditorClassIdentifier: 
+  diseaseId: leafroll
+  diseaseName: Grapevine Leafroll
+  aiLabelAliases:
+  - grape_leafroll
+  - grapevine leafroll disease
+  pathogenType: 2
+  pathogen: Grapevine leafroll-associated viruses (mainly GLRaV-3)
+  affectedPart: 0
+  sources:
+  - 'PlantSeg (Wei et al. 2024, CC BY 4.0) class: grapevine leafroll disease'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: A virus disease of grapevines that reddens and rolls the leaves in
+    late summer and spoils the fruit.
+  causes: Spread in infected cuttings and rootstocks, and from vine to vine by mealybugs
+    and soft scale insects.
+  effectOnPlant: Grapes ripen late with less sugar and poor colour.
+  untreatedOutcome: Infected vines stay infected; yield and quality fall over the
+    years and the disease spreads along the row.
+  symptoms:
+  - Red to purple leaves between green main veins (red varieties)
+  - Leaf margins roll downward
+  - Yellowing instead of red on white varieties
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  - yellowing
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: c411d89de3b5a7c47ae6ee6f6ed7f33c, type: 2}
+  preventionPlan: {fileID: 11400000, guid: 8310b93eca8aad441a9f9ac2137560db, type: 2}
+  simulationProfile: {fileID: 11400000, guid: 0cfa619e86594d74eae0161887366bac, type: 2}
+  lifecycleStages:
+  - The virus is in the vine's sap.
+  - Mealybugs feeding on it pick it up.
+  - They carry it to nearby vines; cuttings carry it farther.
+  - Leaves redden and roll from late summer.
+  conditionFactors:
+  - Uncertified planting material.
+  - Mealybugs and soft scale.
+  - Ants tending them.
+  - Older, mixed vineyards.
+  referencePhotos: []
+  lesionLabel: Red leaf
+  haloLabel: Green vein
+  areaLabel: Rolled margin

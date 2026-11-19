@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_BlueberryBlueberryLeafRust
+  m_EditorClassIdentifier: 
+  diseaseId: rust
+  diseaseName: Blueberry Leaf Rust
+  aiLabelAliases:
+  - blueberry_rust
+  - blueberry rust
+  pathogenType: 0
+  pathogen: Thekopsora minima (syn. Pucciniastrum vaccinii)
+  affectedPart: 0
+  sources:
+  - 'PlantSeg (Wei et al. 2024, CC BY 4.0) class: blueberry rust'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: A rust fungus of blueberry leaves; hemlock is its alternate host.
+  causes: Spores blow from nearby hemlocks or infected bushes; warm, humid weather
+    lets them infect.
+  effectOnPlant: Bushes lose leaves early, so fewer flower buds form for next year.
+  untreatedOutcome: Repeated defoliation lowers yields.
+  symptoms:
+  - Small yellow spots on the upper leaf, turning reddish-brown
+  - Orange-yellow powdery pustules underneath
+  - Early leaf drop late in the summer
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  - yellowing
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: 5d235c390446a7147abe447e51c03eaa, type: 2}
+  preventionPlan: {fileID: 11400000, guid: b7e02291d0b23b441900538411753835, type: 2}
+  simulationProfile: {fileID: 11400000, guid: 1555da8b9e029364c8b623cfb77042cf, type: 2}
+  lifecycleStages:
+  - Spores blow from hemlocks or infected bushes.
+  - They infect leaves in warm, humid weather.
+  - Yellow spots form, with orange pustules underneath.
+  - New spores spread from bush to bush.
+  conditionFactors:
+  - Warm, humid summers.
+  - Hemlocks nearby.
+  - Dense plantings.
+  - Susceptible varieties.
+  referencePhotos:
+  - {fileID: 2800000, guid: 1e188f50506b69e41848db2f6a9b020b, type: 3}
+  lesionLabel: Rust pustule
+  haloLabel: Red-brown spot
+  areaLabel: Yellowing leaf

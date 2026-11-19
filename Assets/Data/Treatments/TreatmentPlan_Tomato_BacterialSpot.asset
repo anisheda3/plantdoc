@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5132a70f51fe6cb4ea3c7d283552eb79, type: 3}
+  m_Name: TreatmentPlan_Tomato_BacterialSpot
+  m_EditorClassIdentifier: 
+  treatmentId: tomato_bacterial_spot_treatment
+  planName: "Tomato \u2014 Bacterial Spot"
+  steps:
+  - {fileID: 11400000, guid: ee237ebc4103fda4bb4ff76c1505be81, type: 2}
+  - {fileID: 11400000, guid: ccda8d24a758dc64e92169b620e972fa, type: 2}
+  - {fileID: 11400000, guid: 0212f63d51df37046ae33b9097a41233, type: 2}
+  residualSeverityFloor: 0.18
+  residualDamageFloor: 0.12
+  disclaimer: Educational guidance only. Treatment does not guarantee recovery. Consult
+    a local agricultural extension service for field decisions.

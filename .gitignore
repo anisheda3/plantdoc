@@ -1,0 +1,41 @@
+# Unity generated
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]serSettings/
+[Mm]emoryCaptures/
+*.csproj
+*.sln
+*.userprefs
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Model artefacts (large binaries — distribute out-of-band)
+server/models/*.onnx
+server/models/*.pt
+
+# Local toolchain (never commit)
+.dotnet/
+.nuget/
+
+# Headless harness build output
+tools/headless-verify/bin/
+tools/headless-verify/obj/
+
+# Not for a public repository: downloaded datasets and photos (PlantSeg is CC BY-NC, never shipped),
+# screen recordings, evaluation submissions (personal details, college templates), intermediate exports, builds.
+tools/assets/_cache/
+Reference videos/
+submissions/
+Database/_export/
+training/setup_env.log
+*.apk
+*.aab
+*.log

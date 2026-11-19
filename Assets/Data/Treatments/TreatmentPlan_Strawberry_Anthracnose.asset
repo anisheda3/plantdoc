@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5132a70f51fe6cb4ea3c7d283552eb79, type: 3}
+  m_Name: TreatmentPlan_Strawberry_Anthracnose
+  m_EditorClassIdentifier: 
+  treatmentId: strawberry_anthracnose_treatment
+  planName: "Strawberry \u2014 Anthracnose Fruit Rot"
+  steps:
+  - {fileID: 11400000, guid: 09e3f6ece4dc76d41aaff7aab8e93a22, type: 2}
+  - {fileID: 11400000, guid: 748ffbb154391d44abf8c674a0e99c35, type: 2}
+  - {fileID: 11400000, guid: c087623a5006b534f81057d41aaef490, type: 2}
+  residualSeverityFloor: 0.15
+  residualDamageFloor: 0.1
+  disclaimer: Educational guidance only. Treatment does not guarantee recovery. Consult
+    a local agricultural extension service for field decisions.

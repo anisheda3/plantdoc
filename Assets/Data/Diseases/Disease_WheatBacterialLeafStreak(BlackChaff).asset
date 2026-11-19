@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_WheatBacterialLeafStreak(BlackChaff)
+  m_EditorClassIdentifier: 
+  diseaseId: bacterial_leaf_streak
+  diseaseName: Bacterial Leaf Streak (Black Chaff)
+  aiLabelAliases:
+  - wheat_bacterial_leaf_streak
+  - wheat bacterial leaf streak (black chaff)
+  pathogenType: 1
+  pathogen: Xanthomonas translucens pv. undulosa
+  affectedPart: 0
+  sources:
+  - 'PlantSeg (Wei et al. 2024, CC BY 4.0) class: wheat bacterial leaf streak (black
+    chaff)'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: A bacterial disease of wheat that streaks the leaves and blackens
+    the glumes of the head.
+  causes: Bacteria come in on seed and spread by rain and wind in warm, wet weather.
+  effectOnPlant: Leaf area and grain fill fall.
+  untreatedOutcome: No chemical control works well.
+  symptoms:
+  - Narrow, water-soaked streaks between the leaf veins
+  - Streaks turn brown; droplets of bacterial ooze dry into flakes
+  - Dark purple-black streaks on the glumes (black chaff)
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  - yellowing
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: 5dbe9892654dd5847a65ac7143a35fc4, type: 2}
+  preventionPlan: {fileID: 11400000, guid: a82bbe31430928b489ab420241fedc59, type: 2}
+  simulationProfile: {fileID: 11400000, guid: 75d270cdbcdef9b4689505e5430ef035, type: 2}
+  lifecycleStages:
+  - Bacteria come in on seed.
+  - Rain and wind spread them.
+  - Water-soaked streaks form between the veins.
+  - Glumes blacken as the head forms.
+  conditionFactors:
+  - Warm, wet weather.
+  - Infected seed.
+  - Sprinkler irrigation.
+  - Susceptible varieties.
+  referencePhotos:
+  - {fileID: 2800000, guid: 08b2407605888734a8e7ac35ec885413, type: 3}
+  lesionLabel: Brown streak
+  haloLabel: Water-soaked edge
+  areaLabel: Streaked leaf

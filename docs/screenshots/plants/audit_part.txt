@@ -1,0 +1,2 @@
+species, height (m, profile), height (m, built), spread radius (m), spread/height, lowest point (m) (part), fruit count, fruit centre height range (m), fruit max distance from axis (m)
+cotton, 1.05, 1.03, 0.17, 0.32, -0.002 (Roots), 1 renderer(s), 0.28-0.78, 0.10

@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5b7af7f939da314084e91933dca2790, type: 3}
+  m_Name: Plant_Mango
+  m_EditorClassIdentifier: 
+  plantId: mango
+  plantName: Mango
+  description: 'Mangifera indica: an evergreen tropical fruit tree.'
+  scientificName: Mangifera indica
+  healthyModel: {fileID: 0}
+  leafPrefab: {fileID: 0}
+  thumbnail: {fileID: 0}
+  species: {fileID: 11400000, guid: 539d696442c931346910bf6d82f746fa, type: 2}
+  features:
+  - {fileID: 11400000, guid: e003f3da852d56644be19f05a32c1ffc, type: 2}
+  - {fileID: 11400000, guid: 3453cfa66f7c33147a75d377fe66120e, type: 2}
+  - {fileID: 11400000, guid: 384e23ede7d0591438f622176646940f, type: 2}
+  - {fileID: 11400000, guid: 427819c8c06b57045929d881917ce5ae, type: 2}
+  diseases:
+  - {fileID: 11400000, guid: c6b52f29ba9b3254faf35705cf4b5b33, type: 2}
+  - {fileID: 11400000, guid: 8203b3e1652702340a1820d167679d81, type: 2}
+  - {fileID: 11400000, guid: cfecbc109829816449c34d4ba886ad1b, type: 2}
+  - {fileID: 11400000, guid: 26e10e951bd398b47ad75597d691474e, type: 2}
+  - {fileID: 11400000, guid: a9d639d8ed4228d4bb148c9200d3d27d, type: 2}
+  - {fileID: 11400000, guid: 535069b8b812e6d40b96e6edabcd9da2, type: 2}
+  - {fileID: 11400000, guid: 224a41e01f4dbdc43b704375a6bbb604, type: 2}

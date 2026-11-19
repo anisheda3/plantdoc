@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_SquashDownyMildew
+  m_EditorClassIdentifier: 
+  diseaseId: downy_mildew
+  diseaseName: Downy Mildew
+  aiLabelAliases:
+  - squash_downy_mildew
+  - zucchini downy mildew
+  pathogenType: 6
+  pathogen: Pseudoperonospora cubensis
+  affectedPart: 0
+  sources:
+  - 'PlantSeg (Wei et al. 2024, CC BY 4.0) class: zucchini downy mildew'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: A water-mould disease of cucurbit leaves that spreads fast in humid
+    weather.
+  causes: Spores blow in on the wind from infected crops further south; leaf wetness
+    and humid nights let them infect.
+  effectOnPlant: Leaves die quickly, so fruit is exposed and poorly filled.
+  untreatedOutcome: An unchecked epidemic can kill the leaves of a whole field within
+    weeks.
+  symptoms:
+  - Angular yellow spots bounded by the leaf veins
+  - Grey to purple downy growth under the spots
+  - Spots turn brown and leaves die from the edges
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  - yellowing
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: 1c9ee7e722372a34e8d972eae923f98f, type: 2}
+  preventionPlan: {fileID: 11400000, guid: 4f60f71880786fd4d8539e3a40f0ad7a, type: 2}
+  simulationProfile: {fileID: 11400000, guid: c9bcee0b4fde1474ca1a2a1180519ba0, type: 2}
+  lifecycleStages:
+  - Spores blow in from infected crops.
+  - Humid nights let them infect wet leaves.
+  - Angular yellow spots form, grey down underneath.
+  - New spores spread on the wind.
+  conditionFactors:
+  - Humid nights.
+  - Leaf wetness.
+  - "Cool to warm weather (15-22 \xB0C)."
+  - Infected crops upwind.
+  referencePhotos:
+  - {fileID: 2800000, guid: b180c84a875538b49bf7d7a947e6d42a, type: 3}
+  lesionLabel: Angular spot
+  haloLabel: Brown edge
+  areaLabel: Yellow patch

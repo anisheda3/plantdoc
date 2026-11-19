@@ -1,0 +1,330 @@
+{
+ "plantId": "eggplant",
+ "plantName": "Eggplant",
+ "scientificName": "Solanum melongena",
+ "description": "Solanum melongena (aubergine, brinjal).",
+ "diseases": [
+  {
+   "id": "cercospora_leaf_spot",
+   "name": "Cercospora Leaf Spot",
+   "type": "Fungal",
+   "part": "Leaf",
+   "pathogen": "Cercospora melongenae",
+   "labels": [
+    "eggplant cercospora leaf spot"
+   ],
+   "description": "A fungal leaf spot of eggplant with angular, yellow-edged spots.",
+   "causes": "Spores survive on debris and spread by wind and rain in warm, humid weather.",
+   "symptoms": [
+    "Small, angular to round yellow spots",
+    "Spots turn brown with a grey centre",
+    "Leaves yellow and drop"
+   ],
+   "effect": "Leaf loss lowers yield and exposes fruit to sun.",
+   "untreated": "Severe spotting defoliates plants.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Remove spotted leaves",
+     "instruction": "Pick off spotted leaves when the plants are dry and take them away.",
+     "rationale": "Fewer spores are left to spread.",
+     "mode": "TapRegion",
+     "days": 2,
+     "effect": "Remove",
+     "chemical": false
+    },
+    {
+     "title": "Water at the base",
+     "instruction": "Keep leaves dry.",
+     "rationale": "Spores need wet leaves.",
+     "mode": "AdjustSetting",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Protective spray",
+     "instruction": "Spray a registered fungicide on the label's schedule.",
+     "rationale": "Protects healthy growth; it cannot cure what is already infected.",
+     "mode": "SprayApply",
+     "days": 3,
+     "effect": "Protect",
+     "chemical": true
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropManagement",
+     "title": "Rotate crops",
+     "detail": "Two years away from eggplant."
+    },
+    {
+     "category": "CropHygiene",
+     "title": "Remove debris",
+     "detail": "It carries the fungus."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_SmallSpots",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.52,
+     0.4,
+     0.24
+    ],
+    "halo": [
+     0.84,
+     0.8,
+     0.32
+    ],
+    "yellow": [
+     0.86,
+     0.8,
+     0.32
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.7,
+    "wilting": 0.4,
+    "damage": 0.6,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Brown spot",
+   "haloLabel": "Yellow edge",
+   "areaLabel": "Yellowing leaf",
+   "lifecycle": [
+    "The fungus survives on debris.",
+    "Warm, humid weather spreads spores.",
+    "Angular yellow spots turn brown.",
+    "Leaves yellow and drop."
+   ],
+   "conditions": [
+    "Warm, humid weather.",
+    "Overhead watering.",
+    "Debris left in the field.",
+    "Dense planting."
+   ],
+   "photos": [
+    "eggplant_cercospora_leaf_spot_1"
+   ],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: eggplant cercospora leaf spot",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "phomopsis_fruit_rot",
+   "name": "Phomopsis Blight and Fruit Rot",
+   "type": "Fungal",
+   "part": "Fruit",
+   "pathogen": "Diaporthe vexans (syn. Phomopsis vexans)",
+   "labels": [
+    "eggplant phomopsis fruit rot"
+   ],
+   "description": "A fungal disease of eggplant that rots the fruit and spots the leaves and stems.",
+   "causes": "Spores come in on seed and debris and spread by rain splash in hot, wet weather.",
+   "symptoms": [
+    "Pale, sunken, soft spots on the fruit",
+    "Spots enlarge with rings of tiny black dots (spore bodies)",
+    "Round grey-brown leaf spots; stem cankers"
+   ],
+   "effect": "Rotting fruit is lost, in the field and after harvest.",
+   "untreated": "Can destroy a large part of the crop.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Remove rotting fruit",
+     "instruction": "Pick off rotting fruit when the plants are dry and take them away.",
+     "rationale": "Fewer spores are left to spread.",
+     "mode": "GrabAndRemove",
+     "days": 1,
+     "effect": "Remove",
+     "chemical": false
+    },
+    {
+     "title": "Stop overhead watering",
+     "instruction": "Use drip irrigation.",
+     "rationale": "Splash spreads the spores.",
+     "mode": "AdjustSetting",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Protective spray",
+     "instruction": "Spray a registered fungicide on the label's schedule.",
+     "rationale": "Protects healthy growth; it cannot cure what is already infected.",
+     "mode": "SprayApply",
+     "days": 3,
+     "effect": "Protect",
+     "chemical": true
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropManagement",
+     "title": "Use clean, treated seed",
+     "detail": "Seed carries it."
+    },
+    {
+     "category": "CropManagement",
+     "title": "Rotate 3-4 years",
+     "detail": "Debris keeps it."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_FruitRot",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.62,
+     0.54,
+     0.42
+    ],
+    "halo": [
+     0.2,
+     0.18,
+     0.16
+    ],
+    "yellow": [
+     0.8,
+     0.7,
+     0.4
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.0,
+    "wilting": 0.0,
+    "damage": 0.5,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Sunken rot",
+   "haloLabel": "Black dots",
+   "areaLabel": "Rotting fruit",
+   "lifecycle": [
+    "The fungus comes in on seed and debris.",
+    "Rain splashes spores onto fruit and leaves.",
+    "Pale sunken spots form on the fruit.",
+    "Rings of black spore bodies spread it on."
+   ],
+   "conditions": [
+    "Hot (29-32 °C), wet weather.",
+    "Overhead watering.",
+    "Infected seed.",
+    "Debris in the field."
+   ],
+   "photos": [],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: eggplant phomopsis fruit rot",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "phytophthora_blight",
+   "name": "Phytophthora Blight",
+   "type": "Oomycete",
+   "part": "Fruit",
+   "pathogen": "Phytophthora capsici",
+   "labels": [
+    "eggplant phytophthora blight"
+   ],
+   "description": "A water-mould disease that rots eggplant fruit and can collapse whole plants.",
+   "causes": "The water mould lives in the soil and spreads in water: rain splash, standing water and irrigation; worst on poorly drained soil.",
+   "symptoms": [
+    "Water-soaked, dark patches on the fruit",
+    "White, cottony growth on the rotting fruit",
+    "Dark stem lesions at the soil; plants wilt and die"
+   ],
+   "effect": "Fruit rots and plants can be killed.",
+   "untreated": "Infested fields stay infested for years.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Remove rotting fruit and dead plants",
+     "instruction": "Pick off rotting fruit and dead plants when the plants are dry and take them away.",
+     "rationale": "They release swimming spores.",
+     "mode": "GrabAndRemove",
+     "days": 1,
+     "effect": "Remove",
+     "chemical": false
+    },
+    {
+     "title": "Improve drainage",
+     "instruction": "Raise beds and avoid standing water.",
+     "rationale": "The water mould spreads in water.",
+     "mode": "AdjustSetting",
+     "days": 3,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Protective spray",
+     "instruction": "Spray a registered product for Phytophthora on the label's schedule.",
+     "rationale": "Protects healthy growth; it cannot cure what is already infected.",
+     "mode": "SprayApply",
+     "days": 3,
+     "effect": "Protect",
+     "chemical": true
+    }
+   ],
+   "prevention": [
+    {
+     "category": "WaterManagement",
+     "title": "Plant on raised, well-drained beds",
+     "detail": "The main protection."
+    },
+    {
+     "category": "CropManagement",
+     "title": "Rotate away from peppers, cucurbits and tomato",
+     "detail": "They are hosts too."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_FruitRot",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.24,
+     0.18,
+     0.14
+    ],
+    "halo": [
+     0.88,
+     0.88,
+     0.86
+    ],
+    "yellow": [
+     0.8,
+     0.7,
+     0.4
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.2,
+    "wilting": 0.6,
+    "damage": 0.6,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Dark rot",
+   "haloLabel": "White mould",
+   "areaLabel": "Rotting fruit",
+   "lifecycle": [
+    "The water mould survives in soil.",
+    "Splash and standing water carry spores to plants.",
+    "Fruit rots with white mould; stems get lesions.",
+    "Plants wilt and spores spread in water."
+   ],
+   "conditions": [
+    "Heavy rain.",
+    "Poor drainage.",
+    "Warm weather.",
+    "Host crops grown before."
+   ],
+   "photos": [],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: eggplant phytophthora blight",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  }
+ ],
+ "aliases": [],
+ "healthyLabels": []
+}

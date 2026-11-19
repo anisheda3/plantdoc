@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_GingerLeafSpot
+  m_EditorClassIdentifier: 
+  diseaseId: leaf_spot
+  diseaseName: Leaf Spot
+  aiLabelAliases:
+  - ginger_leaf_spot
+  - ginger leaf spot
+  pathogenType: 0
+  pathogen: Phyllosticta zingiberis
+  affectedPart: 0
+  sources:
+  - 'PlantSeg (Wei et al. 2024, CC BY 4.0) class: ginger leaf spot'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: A fungal leaf spot of ginger in the rainy season.
+  causes: Spores spread by rain splash from infected leaves; frequent rain and humidity
+    favour it.
+  effectOnPlant: Leaf loss reduces rhizome growth.
+  untreatedOutcome: Severe outbreaks cut yield.
+  symptoms:
+  - Small oval, water-soaked spots on young leaves
+  - Spots turn white to papery in the centre with dark brown borders and yellow halos
+  - Spots merge; leaves dry up
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  - yellowing
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: aa230e5c790da90478a64564524c9fb9, type: 2}
+  preventionPlan: {fileID: 11400000, guid: e1c03a16ca4ea584bab2fb9c5b8e8b2e, type: 2}
+  simulationProfile: {fileID: 11400000, guid: 84e5e09c658ba704090bbc9610854e9e, type: 2}
+  lifecycleStages:
+  - The fungus survives on infected leaves.
+  - Rain splashes spores onto young leaves.
+  - Spots with papery centres form.
+  - Spots merge and leaves dry.
+  conditionFactors:
+  - Rainy season.
+  - High humidity.
+  - Dense planting.
+  - Infected debris.
+  referencePhotos: []
+  lesionLabel: Papery spot
+  haloLabel: Brown border
+  areaLabel: Spotted leaf

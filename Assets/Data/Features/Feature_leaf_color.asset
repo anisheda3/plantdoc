@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 112c58a7a6fb7424c85fbf06b7e51d4f, type: 3}
+  m_Name: Feature_leaf_color
+  m_EditorClassIdentifier: 
+  featureId: leaf_color
+  displayName: Leaf Color
+  source: 0
+  optimalValue: 0.95
+  tolerance: 0.1
+  higherIsBetter: 1
+  meaning: Overall greenness of the leaf surface.
+  whyItMatters: Loss of green colour reduces photosynthesis and often signals stress
+    or infection.
+  overlayColor: {r: 0.35, g: 0.8, b: 0.35, a: 1}

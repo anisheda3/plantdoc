@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_BananaCordanaLeafSpot
+  m_EditorClassIdentifier: 
+  diseaseId: cordana_leaf_spot
+  diseaseName: Cordana Leaf Spot
+  aiLabelAliases:
+  - banana_cordana_leaf_spot
+  - banana cordana leaf spot
+  pathogenType: 0
+  pathogen: Neocordana musae (syn. Cordana musae)
+  affectedPart: 0
+  sources:
+  - 'PlantSeg (Wei et al. 2024, CC BY 4.0) class: banana cordana leaf spot'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: A fungal leaf spot of banana with large, pale, oval spots ringed in
+    yellow.
+  causes: Spores spread by wind and rain from infected leaves; it often follows other
+    leaf diseases and wounds.
+  effectOnPlant: Reduces healthy leaf area; usually less damaging than Sigatoka.
+  untreatedOutcome: Many spots combine with other diseases to kill leaves early.
+  symptoms:
+  - Oval, pale brown spots with concentric zones
+  - A dark border and a bright yellow halo round each spot
+  - Spots often start at the leaf edge or along the midrib
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  - yellowing
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: 413d548898137554a97f78b4588b65a7, type: 2}
+  preventionPlan: {fileID: 11400000, guid: 566b21819e30533489aa2b896f97de04, type: 2}
+  simulationProfile: {fileID: 11400000, guid: 8293b0754a2089a498440870acc6a16c, type: 2}
+  lifecycleStages:
+  - Spores come from infected leaves.
+  - Wind and rain carry them to wet leaves.
+  - Oval spots with yellow halos form.
+  - Spots merge with other leaf damage.
+  conditionFactors:
+  - Wet, humid weather.
+  - Wounded leaves.
+  - Dense plantations.
+  - Other leaf diseases present.
+  referencePhotos:
+  - {fileID: 2800000, guid: 8688309df5748244f8098792a1ed8169, type: 3}
+  lesionLabel: Oval spot
+  haloLabel: Yellow halo
+  areaLabel: Spotted leaf

@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5b7af7f939da314084e91933dca2790, type: 3}
+  m_Name: Plant_Soybean
+  m_EditorClassIdentifier: 
+  plantId: soybean
+  plantName: Soybean
+  description: Glycine max.
+  scientificName: Glycine max
+  healthyModel: {fileID: 0}
+  leafPrefab: {fileID: 0}
+  thumbnail: {fileID: 0}
+  species: {fileID: 11400000, guid: 16ae75ae8008bf5419fc568b333490e9, type: 2}
+  features:
+  - {fileID: 11400000, guid: e003f3da852d56644be19f05a32c1ffc, type: 2}
+  - {fileID: 11400000, guid: 3453cfa66f7c33147a75d377fe66120e, type: 2}
+  - {fileID: 11400000, guid: 384e23ede7d0591438f622176646940f, type: 2}
+  - {fileID: 11400000, guid: 427819c8c06b57045929d881917ce5ae, type: 2}
+  diseases:
+  - {fileID: 11400000, guid: 1afbf5b4ff540124fbd8dd3731d6d145, type: 2}
+  - {fileID: 11400000, guid: 193b01fbb1c63a041892d47efe69a1cc, type: 2}
+  - {fileID: 11400000, guid: e9b8c353b1724ee4da7b07637937d307, type: 2}
+  - {fileID: 11400000, guid: a28e92722701a604b87457e5f4dffc79, type: 2}
+  - {fileID: 11400000, guid: 5da7a531edb3cfc488e80a8039bc0a1f, type: 2}
+  - {fileID: 11400000, guid: 69a77388acb034b4190d7f43ef64e50a, type: 2}

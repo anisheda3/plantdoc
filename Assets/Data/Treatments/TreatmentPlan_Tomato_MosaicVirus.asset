@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5132a70f51fe6cb4ea3c7d283552eb79, type: 3}
+  m_Name: TreatmentPlan_Tomato_MosaicVirus
+  m_EditorClassIdentifier: 
+  treatmentId: tomato_mosaic_virus_treatment
+  planName: "Tomato \u2014 Mosaic Virus"
+  steps:
+  - {fileID: 11400000, guid: 5dfb1072ba56196479aa92e89ab758e7, type: 2}
+  - {fileID: 11400000, guid: 73bf91d9e3f356c479d1e55115b5d2f8, type: 2}
+  - {fileID: 11400000, guid: 2eff362394c60cb49849717b65623fa8, type: 2}
+  residualSeverityFloor: 0.45
+  residualDamageFloor: 0.3
+  disclaimer: Educational guidance only. Treatment does not guarantee recovery. Consult
+    a local agricultural extension service for field decisions.

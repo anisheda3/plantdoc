@@ -1,0 +1,440 @@
+{
+ "plantId": "tobacco",
+ "plantName": "Tobacco",
+ "scientificName": "Nicotiana tabacum",
+ "description": "Nicotiana tabacum: a tall annual with very large leaves.",
+ "diseases": [
+  {
+   "id": "blue_mold",
+   "name": "Blue Mold",
+   "type": "Oomycete",
+   "part": "Leaf",
+   "pathogen": "Peronospora tabacina",
+   "labels": [
+    "tobacco blue mold"
+   ],
+   "description": "A water-mould disease of tobacco leaves that can spread rapidly through a region.",
+   "causes": "Spores blow long distances on the wind; cool, wet, cloudy weather favours infection.",
+   "symptoms": [
+    "Yellow spots on the upper leaf",
+    "Blue-grey downy spores on the underside",
+    "Spots merge, leaves pucker and die"
+   ],
+   "effect": "Leaves are destroyed; seedbeds can be wiped out.",
+   "untreated": "Regional epidemics can ruin crops.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Remove infected plants in seedbeds",
+     "instruction": "Pick off infected plants in seedbeds when the plants are dry and take them away.",
+     "rationale": "Stops spores spreading.",
+     "mode": "GrabAndRemove",
+     "days": 1,
+     "effect": "Remove",
+     "chemical": false
+    },
+    {
+     "title": "Ventilate seedbeds and space plants",
+     "instruction": "Reduce humidity.",
+     "rationale": "Spores need wet leaves.",
+     "mode": "AdjustSetting",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Protective spray",
+     "instruction": "Spray a registered product for blue mold on the label's schedule.",
+     "rationale": "Protects healthy growth; it cannot cure what is already infected.",
+     "mode": "SprayApply",
+     "days": 3,
+     "effect": "Protect",
+     "chemical": true
+    }
+   ],
+   "prevention": [
+    {
+     "category": "Monitoring",
+     "title": "Follow regional blue mold warnings",
+     "detail": "Spores travel far."
+    },
+    {
+     "category": "AirCirculation",
+     "title": "Ventilate transplant houses",
+     "detail": "Lower humidity."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_Angular",
+    "yellowMask": "T_YellowMask_Angular",
+    "lesion": [
+     0.52,
+     0.56,
+     0.62
+    ],
+    "halo": [
+     0.8,
+     0.8,
+     0.36
+    ],
+    "yellow": [
+     0.86,
+     0.84,
+     0.38
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.8,
+    "wilting": 0.4,
+    "damage": 0.6,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Blue-grey mould",
+   "haloLabel": "Yellow spot",
+   "areaLabel": "Yellow patch",
+   "lifecycle": [
+    "Spores blow in on the wind.",
+    "Cool, wet weather lets them infect.",
+    "Yellow spots form, blue-grey spores below.",
+    "Spores spread across the region."
+   ],
+   "conditions": [
+    "Cool (15-23 °C), wet weather.",
+    "Cloudy days.",
+    "Dense seedbeds.",
+    "Spores arriving on the wind."
+   ],
+   "photos": [
+    "tobacco_blue_mold_1"
+   ],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: tobacco blue mold",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "brown_spot",
+   "name": "Brown Spot",
+   "type": "Fungal",
+   "part": "Leaf",
+   "pathogen": "Alternaria alternata",
+   "labels": [
+    "tobacco brown spot"
+   ],
+   "description": "A fungal leaf spot of mature tobacco leaves with ringed brown spots.",
+   "causes": "Spores survive on debris and spread by wind; mature, lower leaves in warm, wet weather are infected.",
+   "symptoms": [
+    "Round brown spots with concentric rings",
+    "A yellow halo round each spot",
+    "Spots merge on mature leaves"
+   ],
+   "effect": "Leaf quality falls.",
+   "untreated": "Heavy losses in warm, wet seasons.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Remove lower spotted leaves",
+     "instruction": "Pick off lower spotted leaves when the plants are dry and take them away.",
+     "rationale": "Fewer spores are left to spread.",
+     "mode": "TapRegion",
+     "days": 2,
+     "effect": "Remove",
+     "chemical": false
+    },
+    {
+     "title": "Harvest leaves on time",
+     "instruction": "Do not leave mature leaves on the plant too long.",
+     "rationale": "Mature leaves are most susceptible.",
+     "mode": "AdjustSetting",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Protective spray",
+     "instruction": "Spray a registered fungicide on the label's schedule.",
+     "rationale": "Protects healthy growth; it cannot cure what is already infected.",
+     "mode": "SprayApply",
+     "days": 3,
+     "effect": "Protect",
+     "chemical": true
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropHygiene",
+     "title": "Destroy stalks after harvest",
+     "detail": "Debris carries the fungus."
+    },
+    {
+     "category": "CropManagement",
+     "title": "Grow tolerant varieties",
+     "detail": "Varieties differ."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_EarlyBlight",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.4,
+     0.28,
+     0.16
+    ],
+    "halo": [
+     0.84,
+     0.8,
+     0.32
+    ],
+    "yellow": [
+     0.86,
+     0.8,
+     0.32
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.6,
+    "wilting": 0.4,
+    "damage": 0.6,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Ringed spot",
+   "haloLabel": "Yellow halo",
+   "areaLabel": "Spotted leaf",
+   "lifecycle": [
+    "The fungus survives on debris.",
+    "Wind carries spores to mature leaves.",
+    "Brown ringed spots with halos form.",
+    "Spots merge as leaves mature."
+   ],
+   "conditions": [
+    "Warm, wet weather.",
+    "Mature leaves.",
+    "Debris in the field.",
+    "Late harvest."
+   ],
+   "photos": [
+    "tobacco_brown_spot_1"
+   ],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: tobacco brown spot",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "frogeye_leaf_spot",
+   "name": "Frogeye Leaf Spot",
+   "type": "Fungal",
+   "part": "Leaf",
+   "pathogen": "Cercospora nicotianae",
+   "labels": [
+    "tobacco frogeye leaf spot"
+   ],
+   "description": "A fungal leaf spot of tobacco with small white-centred spots.",
+   "causes": "Spores spread by wind and rain from debris and infected leaves in warm, humid weather.",
+   "symptoms": [
+    "Small round spots with white to grey centres",
+    "A brown border round each spot",
+    "Many spots on mature lower leaves"
+   ],
+   "effect": "Spotted leaves lose value.",
+   "untreated": "Heavy spotting cuts yield and quality.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Remove spotted lower leaves",
+     "instruction": "Pick off spotted lower leaves when the plants are dry and take them away.",
+     "rationale": "Fewer spores are left to spread.",
+     "mode": "TapRegion",
+     "days": 2,
+     "effect": "Remove",
+     "chemical": false
+    },
+    {
+     "title": "Harvest on time",
+     "instruction": "Do not leave ripe leaves in the field.",
+     "rationale": "Ripe leaves are most susceptible.",
+     "mode": "AdjustSetting",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Protective spray",
+     "instruction": "Spray a registered fungicide on the label's schedule.",
+     "rationale": "Protects healthy growth; it cannot cure what is already infected.",
+     "mode": "SprayApply",
+     "days": 3,
+     "effect": "Protect",
+     "chemical": true
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropManagement",
+     "title": "Rotate crops",
+     "detail": "Debris carries it."
+    },
+    {
+     "category": "AirCirculation",
+     "title": "Space plants",
+     "detail": "Less humidity."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_SmallSpots",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.84,
+     0.82,
+     0.76
+    ],
+    "halo": [
+     0.36,
+     0.24,
+     0.14
+    ],
+    "yellow": [
+     0.86,
+     0.8,
+     0.32
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.4,
+    "wilting": 0.4,
+    "damage": 0.5,
+    "seconds": 7.0
+   },
+   "lesionLabel": "White centre",
+   "haloLabel": "Brown border",
+   "areaLabel": "Spotted leaf",
+   "lifecycle": [
+    "The fungus survives on debris.",
+    "Spores spread in warm, humid weather.",
+    "White-centred spots form on ripe leaves.",
+    "New spores spread up the plant."
+   ],
+   "conditions": [
+    "Warm, humid weather.",
+    "Mature leaves.",
+    "Dense planting.",
+    "Debris in the field."
+   ],
+   "photos": [],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: tobacco frogeye leaf spot",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "mosaic_virus",
+   "name": "Tobacco Mosaic",
+   "type": "Viral",
+   "part": "Leaf",
+   "pathogen": "Tobacco mosaic virus (TMV, a tobamovirus)",
+   "labels": [
+    "tobacco mosaic virus"
+   ],
+   "description": "A very stable, contagious virus that mottles and distorts tobacco leaves.",
+   "causes": "Spreads by contact: hands, tools and clothing; it survives for years in debris and dried leaf. No insect is needed.",
+   "symptoms": [
+    "Light and dark green mosaic on the leaves",
+    "Leaves distorted, puckered and narrow",
+    "Plants stunted; sometimes dead patches in hot weather"
+   ],
+   "effect": "Yield and leaf quality fall.",
+   "untreated": "Every handling spreads it along the row.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Remove infected plants",
+     "instruction": "Pull out mottled plants, handling them last.",
+     "rationale": "Every touch spreads the virus.",
+     "mode": "GrabAndRemove",
+     "days": 1,
+     "effect": "Rogue",
+     "chemical": false
+    },
+    {
+     "title": "Wash hands and tools",
+     "instruction": "Wash with soap and disinfect tools between plants.",
+     "rationale": "The virus spreads on hands and tools.",
+     "mode": "AdjustSetting",
+     "days": 1,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Plan resistant varieties",
+     "instruction": "Choose resistant varieties next season.",
+     "rationale": "The main control.",
+     "mode": "Informational",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropHygiene",
+     "title": "Wash hands, no tobacco products near plants",
+     "detail": "Cured tobacco can carry the virus."
+    },
+    {
+     "category": "CropManagement",
+     "title": "Grow resistant varieties",
+     "detail": "Widely available."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_Interveinal",
+    "yellowMask": "T_YellowMask_Mottle",
+    "lesion": [
+     0.72,
+     0.8,
+     0.36
+    ],
+    "halo": [
+     0.34,
+     0.48,
+     0.2
+    ],
+    "yellow": [
+     0.84,
+     0.84,
+     0.4
+    ],
+    "lesions": 0.6,
+    "yellowing": 0.8,
+    "wilting": 0.2,
+    "damage": 0.3,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Light green patch",
+   "haloLabel": "Puckered area",
+   "areaLabel": "Mottled leaf",
+   "lifecycle": [
+    "The virus survives in debris and cured leaf.",
+    "Hands and tools carry it to plants.",
+    "Leaves mottle and pucker.",
+    "Handling spreads it along the row."
+   ],
+   "conditions": [
+    "Handling plants.",
+    "Infected debris.",
+    "Tobacco products near plants.",
+    "Susceptible varieties."
+   ],
+   "photos": [
+    "tobacco_mosaic_virus_1"
+   ],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: tobacco mosaic virus",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  }
+ ],
+ "aliases": [],
+ "healthyLabels": []
+}

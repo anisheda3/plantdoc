@@ -1,0 +1,222 @@
+{
+ "plantId": "ginger",
+ "plantName": "Ginger",
+ "scientificName": "Zingiber officinale",
+ "description": "Zingiber officinale: leafy shoots from an aromatic rhizome.",
+ "diseases": [
+  {
+   "id": "leaf_spot",
+   "name": "Leaf Spot",
+   "type": "Fungal",
+   "part": "Leaf",
+   "pathogen": "Phyllosticta zingiberis",
+   "labels": [
+    "ginger leaf spot"
+   ],
+   "description": "A fungal leaf spot of ginger in the rainy season.",
+   "causes": "Spores spread by rain splash from infected leaves; frequent rain and humidity favour it.",
+   "symptoms": [
+    "Small oval, water-soaked spots on young leaves",
+    "Spots turn white to papery in the centre with dark brown borders and yellow halos",
+    "Spots merge; leaves dry up"
+   ],
+   "effect": "Leaf loss reduces rhizome growth.",
+   "untreated": "Severe outbreaks cut yield.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Remove spotted leaves",
+     "instruction": "Pick off spotted leaves when the plants are dry and take them away.",
+     "rationale": "Fewer spores are left to spread.",
+     "mode": "TapRegion",
+     "days": 2,
+     "effect": "Remove",
+     "chemical": false
+    },
+    {
+     "title": "Mulch and space plants",
+     "instruction": "Reduce splash and improve airflow.",
+     "rationale": "Rain splash spreads spores.",
+     "mode": "AdjustSetting",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Protective spray",
+     "instruction": "Spray a registered fungicide on the label's schedule.",
+     "rationale": "Protects healthy growth; it cannot cure what is already infected.",
+     "mode": "SprayApply",
+     "days": 3,
+     "effect": "Protect",
+     "chemical": true
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropHygiene",
+     "title": "Remove infected leaves and debris",
+     "detail": "Less inoculum."
+    },
+    {
+     "category": "CropManagement",
+     "title": "Use healthy seed rhizomes",
+     "detail": "Start clean."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_SmallSpots",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.82,
+     0.8,
+     0.7
+    ],
+    "halo": [
+     0.36,
+     0.24,
+     0.14
+    ],
+    "yellow": [
+     0.86,
+     0.8,
+     0.32
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.6,
+    "wilting": 0.4,
+    "damage": 0.6,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Papery spot",
+   "haloLabel": "Brown border",
+   "areaLabel": "Spotted leaf",
+   "lifecycle": [
+    "The fungus survives on infected leaves.",
+    "Rain splashes spores onto young leaves.",
+    "Spots with papery centres form.",
+    "Spots merge and leaves dry."
+   ],
+   "conditions": [
+    "Rainy season.",
+    "High humidity.",
+    "Dense planting.",
+    "Infected debris."
+   ],
+   "photos": [],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: ginger leaf spot",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "sheath_blight",
+   "name": "Sheath Blight",
+   "type": "Fungal",
+   "part": "Leaf",
+   "pathogen": "Rhizoctonia solani",
+   "labels": [
+    "ginger sheath blight"
+   ],
+   "description": "A soil-borne fungal blight of the leaf sheaths and leaves of ginger.",
+   "causes": "The fungus lives in the soil and infects the lower sheaths in warm, humid weather, especially in dense, wet plantings.",
+   "symptoms": [
+    "Water-soaked, grey-green lesions on the lower leaf sheaths",
+    "Lesions become large, irregular and bleached with brown edges",
+    "Leaves above the lesions yellow and dry"
+   ],
+   "effect": "Shoots die back, reducing rhizome yield.",
+   "untreated": "Spreads through dense, wet plantings.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Remove affected shoots",
+     "instruction": "Pick off affected shoots when the plants are dry and take them away.",
+     "rationale": "Fewer spores are left to spread.",
+     "mode": "GrabAndRemove",
+     "days": 2,
+     "effect": "Remove",
+     "chemical": false
+    },
+    {
+     "title": "Improve drainage and spacing",
+     "instruction": "Avoid waterlogging and thin dense shoots.",
+     "rationale": "The fungus thrives in wet, crowded conditions.",
+     "mode": "AdjustSetting",
+     "days": 3,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Protective spray",
+     "instruction": "Spray a registered fungicide on the label's schedule.",
+     "rationale": "Protects healthy growth; it cannot cure what is already infected.",
+     "mode": "SprayApply",
+     "days": 3,
+     "effect": "Protect",
+     "chemical": true
+    }
+   ],
+   "prevention": [
+    {
+     "category": "WaterManagement",
+     "title": "Plant on raised, drained beds",
+     "detail": "Wet soil favours it."
+    },
+    {
+     "category": "CropManagement",
+     "title": "Rotate crops",
+     "detail": "It builds up in the soil."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_LateBlight",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.7,
+     0.66,
+     0.54
+    ],
+    "halo": [
+     0.44,
+     0.3,
+     0.18
+    ],
+    "yellow": [
+     0.84,
+     0.78,
+     0.32
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.7,
+    "wilting": 0.4,
+    "damage": 0.6,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Bleached lesion",
+   "haloLabel": "Brown edge",
+   "areaLabel": "Blighted shoot",
+   "lifecycle": [
+    "The fungus survives in soil.",
+    "It infects the lower sheaths in humid weather.",
+    "Bleached lesions spread upward.",
+    "Leaves yellow and shoots die."
+   ],
+   "conditions": [
+    "Warm, humid weather.",
+    "Waterlogged soil.",
+    "Dense planting.",
+    "Infested soil."
+   ],
+   "photos": [],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: ginger sheath blight",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  }
+ ],
+ "aliases": [],
+ "healthyLabels": []
+}

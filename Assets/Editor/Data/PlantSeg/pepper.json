@@ -1,0 +1,244 @@
+{
+ "plantId": "pepper",
+ "plantName": "Pepper",
+ "scientificName": "",
+ "description": "",
+ "diseases": [
+  {
+   "id": "blossom_end_rot",
+   "name": "Blossom End Rot",
+   "type": "Abiotic",
+   "part": "Fruit",
+   "pathogen": "Calcium shortage in the growing fruit (uneven watering)",
+   "labels": [
+    "bell pepper blossom end rot"
+   ],
+   "description": "A disorder, not an infection: the end of the fruit away from the stalk dies because too little calcium reaches it while it grows.",
+   "causes": "Uneven watering (dry spells then heavy watering), drought, root damage or too much nitrogen keep calcium from reaching the fruit; it is rarely a lack of calcium in the soil.",
+   "symptoms": [
+    "Water-soaked patch at the blossom end of the fruit",
+    "The patch turns sunken, tan to black and leathery",
+    "Moulds may grow on the dead patch"
+   ],
+   "effect": "Affected fruit is spoiled; later fruit is fine once watering is even.",
+   "untreated": "Fruit keeps being lost while watering stays uneven.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Remove spoiled fruit",
+     "instruction": "Pick off affected fruit so the plant feeds the healthy ones.",
+     "rationale": "Damaged fruit will not recover.",
+     "mode": "GrabAndRemove",
+     "days": 1,
+     "effect": "Remove",
+     "chemical": false
+    },
+    {
+     "title": "Water evenly",
+     "instruction": "Keep the soil evenly moist; mulch to hold moisture.",
+     "rationale": "Even water moves calcium into the fruit.",
+     "mode": "AdjustSetting",
+     "days": 3,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Ease off nitrogen",
+     "instruction": "Use a balanced feed, not heavy nitrogen.",
+     "rationale": "Lush leaves draw calcium away from the fruit.",
+     "mode": "Informational",
+     "days": 2,
+     "effect": "Small",
+     "chemical": false
+    }
+   ],
+   "prevention": [
+    {
+     "category": "WaterManagement",
+     "title": "Water regularly, mulch",
+     "detail": "Steady moisture is the main prevention."
+    },
+    {
+     "category": "CropManagement",
+     "title": "Test the soil pH and calcium",
+     "detail": "Lime only if the test shows a need."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_EndRot",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.3,
+     0.22,
+     0.12
+    ],
+    "halo": [
+     0.5,
+     0.4,
+     0.22
+    ],
+    "yellow": [
+     0.8,
+     0.7,
+     0.4
+    ],
+    "lesions": 0.8,
+    "yellowing": 0.0,
+    "wilting": 0.0,
+    "damage": 0.3,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Dark patch",
+   "haloLabel": "Water-soaked edge",
+   "areaLabel": "Affected fruit",
+   "lifecycle": [
+    "Fruit grows fast in warm weather.",
+    "Uneven water slows calcium reaching its far end.",
+    "Cells there die: a water-soaked patch appears.",
+    "The patch sinks and turns dark and leathery."
+   ],
+   "conditions": [
+    "Uneven watering.",
+    "Hot, dry spells.",
+    "Heavy nitrogen feeding.",
+    "Root damage."
+   ],
+   "photos": [
+    "pepper_blossom_end_rot_1"
+   ],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: bell pepper blossom end rot",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "frogeye_leaf_spot",
+   "name": "Frogeye Leaf Spot",
+   "type": "Fungal",
+   "part": "Leaf",
+   "pathogen": "Cercospora capsici",
+   "labels": [
+    "bell pepper frogeye leaf spot"
+   ],
+   "description": "A fungal leaf spot of pepper with pale-centred, dark-ringed spots.",
+   "causes": "Spores survive on infected debris and seed and spread by wind and rain splash in warm, humid weather.",
+   "symptoms": [
+    "Round spots with light grey centres",
+    "A dark brown ring round each spot (the 'frog eye')",
+    "Spotted leaves yellow and drop"
+   ],
+   "effect": "Leaf drop exposes fruit to sunscald and reduces yield.",
+   "untreated": "Severe spotting defoliates plants.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Remove spotted leaves",
+     "instruction": "Pick off spotted leaves when the plants are dry.",
+     "rationale": "Fewer spores remain.",
+     "mode": "TapRegion",
+     "days": 2,
+     "effect": "Remove",
+     "chemical": false
+    },
+    {
+     "title": "Water at the base",
+     "instruction": "Avoid wetting the leaves.",
+     "rationale": "Spores need wet leaves.",
+     "mode": "AdjustSetting",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Protective fungicide",
+     "instruction": "Spray a registered product following the label.",
+     "rationale": "Protects new leaves.",
+     "mode": "SprayApply",
+     "days": 3,
+     "effect": "Protect",
+     "chemical": true
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropHygiene",
+     "title": "Remove crop debris",
+     "detail": "The fungus survives on it."
+    },
+    {
+     "category": "CropManagement",
+     "title": "Rotate crops",
+     "detail": "Leave two years before peppers return."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_EarlyBlight",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.7,
+     0.66,
+     0.58
+    ],
+    "halo": [
+     0.3,
+     0.2,
+     0.12
+    ],
+    "yellow": [
+     0.84,
+     0.78,
+     0.34
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.6,
+    "wilting": 0.4,
+    "damage": 0.6,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Grey centre",
+   "haloLabel": "Dark ring",
+   "areaLabel": "Yellowing leaf",
+   "lifecycle": [
+    "The fungus survives on debris and seed.",
+    "Wind and splash carry spores to leaves.",
+    "Grey-centred spots with dark rings form.",
+    "Leaves drop and spores spread."
+   ],
+   "conditions": [
+    "Warm, humid weather.",
+    "Overhead watering.",
+    "Debris from the last crop.",
+    "Dense planting."
+   ],
+   "photos": [
+    "pepper_frogeye_leaf_spot_1"
+   ],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: bell pepper frogeye leaf spot",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  }
+ ],
+ "aliases": [
+  {
+   "disease": "bacterial_spot",
+   "labels": [
+    "bell pepper bacterial spot",
+    "Bell_pepper leaf spot",
+    "Pepper,_bell___Bacterial_spot"
+   ]
+  },
+  {
+   "disease": "powdery_mildew",
+   "labels": [
+    "bell pepper powdery mildew"
+   ]
+  }
+ ],
+ "healthyLabels": [
+  "Bell_pepper leaf",
+  "Pepper,_bell___healthy"
+ ]
+}

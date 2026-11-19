@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_WheatPowderyMildew
+  m_EditorClassIdentifier: 
+  diseaseId: powdery_mildew
+  diseaseName: Powdery Mildew
+  aiLabelAliases:
+  - wheat_powdery_mildew
+  - wheat powdery mildew
+  pathogenType: 0
+  pathogen: Blumeria graminis f. sp. tritici
+  affectedPart: 0
+  sources:
+  - 'PlantSeg (Wei et al. 2024, CC BY 4.0) class: wheat powdery mildew'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: A fungal disease that covers wheat leaves with white, fluffy powder.
+  causes: Spores blow on the wind; cool to mild, humid weather and dense, lush crops
+    favour it; the leaves need not be wet.
+  effectOnPlant: Leaf area falls, reducing grain fill.
+  untreatedOutcome: Heavy early mildew cuts yield.
+  symptoms:
+  - White to grey fluffy patches on the leaves
+  - Patches turn grey-brown with tiny black dots
+  - Leaves yellow under the patches
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  - yellowing
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: 2212866550ddb3442a21a88c2c9c5b59, type: 2}
+  preventionPlan: {fileID: 11400000, guid: 2e69784853e727d4d81737d745a4e606, type: 2}
+  simulationProfile: {fileID: 11400000, guid: f1b7d47454e27fc4d8aad5481eee2246, type: 2}
+  lifecycleStages:
+  - The fungus survives on volunteers and residue.
+  - Spores blow onto the leaves.
+  - White fluffy patches spread.
+  - New spores spread every week.
+  conditionFactors:
+  - "Mild (15-22 \xB0C), humid weather."
+  - Dense crops.
+  - High nitrogen.
+  - Susceptible varieties.
+  referencePhotos:
+  - {fileID: 2800000, guid: 40609f89c0fd19e40bb53b70c9e0e267, type: 3}
+  lesionLabel: White patch
+  haloLabel: Pale area
+  areaLabel: Powdery leaf

@@ -1,0 +1,133 @@
+{
+ "plantId": "orange",
+ "plantName": "Orange",
+ "scientificName": "",
+ "description": "",
+ "diseases": [
+  {
+   "id": "citrus_canker",
+   "name": "Citrus Canker",
+   "type": "Bacterial",
+   "part": "Leaf",
+   "pathogen": "Xanthomonas citri subsp. citri",
+   "labels": [
+    "citrus canker"
+   ],
+   "description": "A bacterial disease of citrus leaves, twigs and fruit that leaves raised, corky spots.",
+   "causes": "Wind-driven rain spreads the bacteria; they enter through pores and wounds, including citrus leafminer tunnels.",
+   "symptoms": [
+    "Raised, corky tan-brown spots on both sides of the leaf",
+    "A water-soaked margin and yellow halo round each spot",
+    "Similar scabby spots on fruit and twigs"
+   ],
+   "effect": "Spotted leaves and fruit drop early; marked fruit cannot be sold fresh.",
+   "untreated": "Heavy infection defoliates trees and causes large fruit losses; the disease is regulated in many countries.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Report it where required",
+     "instruction": "Check whether citrus canker must be reported to the plant-health service in your area.",
+     "rationale": "It is a regulated quarantine disease in many places.",
+     "mode": "Informational",
+     "days": 1,
+     "effect": "Small",
+     "chemical": false
+    },
+    {
+     "title": "Prune out infected shoots in dry weather",
+     "instruction": "Remove spotted twigs and leaves and disinfect the tools.",
+     "rationale": "Lowers the bacteria washed onto new growth.",
+     "mode": "TapRegion",
+     "days": 2,
+     "effect": "Remove",
+     "chemical": false
+    },
+    {
+     "title": "Protect new growth with copper",
+     "instruction": "Spray a registered copper product on the label's schedule.",
+     "rationale": "Copper protects new flushes and young fruit.",
+     "mode": "SprayApply",
+     "days": 3,
+     "effect": "Protect",
+     "chemical": true
+    }
+   ],
+   "prevention": [
+    {
+     "category": "EnvironmentalManagement",
+     "title": "Plant windbreaks",
+     "detail": "Wind-driven rain spreads the bacteria."
+    },
+    {
+     "category": "CropManagement",
+     "title": "Control citrus leafminer",
+     "detail": "Its tunnels let the bacteria in."
+    },
+    {
+     "category": "CropHygiene",
+     "title": "Disinfect tools and equipment",
+     "detail": "Bacteria travel between trees on them."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_SmallSpots",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.52,
+     0.38,
+     0.2
+    ],
+    "halo": [
+     0.86,
+     0.82,
+     0.3
+    ],
+    "yellow": [
+     0.84,
+     0.8,
+     0.34
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.6,
+    "wilting": 0.4,
+    "damage": 0.5,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Corky spot",
+   "haloLabel": "Yellow halo",
+   "areaLabel": "Spotted leaf",
+   "lifecycle": [
+    "Bacteria survive in spots on leaves, twigs and fruit.",
+    "Wind-driven rain splashes them onto new growth.",
+    "They enter through pores and wounds.",
+    "Raised corky spots with yellow halos form."
+   ],
+   "conditions": [
+    "Warm, wet, windy weather.",
+    "Tropical storms.",
+    "Leafminer damage.",
+    "Young, expanding leaves."
+   ],
+   "photos": [
+    "orange_citrus_canker_1"
+   ],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: citrus canker",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  }
+ ],
+ "aliases": [
+  {
+   "disease": "citrus_greening",
+   "labels": [
+    "citrus greening disease",
+    "Orange___Haunglongbing_(Citrus_greening)"
+   ]
+  }
+ ],
+ "healthyLabels": [
+  "Orange___healthy"
+ ]
+}

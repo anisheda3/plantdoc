@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_WheatLeafBlight(SpotBlotch)
+  m_EditorClassIdentifier: 
+  diseaseId: leaf_blight
+  diseaseName: Leaf Blight (Spot Blotch)
+  aiLabelAliases:
+  - wheat_leaf_blight
+  - Wheat___Leaf_blight
+  - wheat leaf blight
+  - wheat spot blotch
+  pathogenType: 0
+  pathogen: Bipolaris sorokiniana (Cochliobolus sativus)
+  affectedPart: 0
+  sources:
+  - 'CropScan XR model class: Wheat___Leaf_blight, wheat leaf blight, wheat spot
+    blotch'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: The main leaf blight of wheat in warm, humid regions such as the plains
+    of South Asia.
+  causes: The fungus comes in on seed and residue; spores spread by wind and rain
+    in warm, humid weather after heading.
+  effectOnPlant: Dried leaves cut grain fill; grain is shrivelled and black-pointed.
+  untreatedOutcome: Severe in late-sown, warm crops.
+  symptoms:
+  - Small, dark brown, oval spots on the lower leaves
+  - Spots grow into long brown blotches with yellow edges
+  - Blotches join; leaves dry from the tip down
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  - yellowing
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: 3157b0e46f801964c82e77ceb19d5979, type: 2}
+  preventionPlan: {fileID: 11400000, guid: b1f74e7f1b970ac47b4a14c0b67735a2, type: 2}
+  simulationProfile: {fileID: 11400000, guid: df9ccd0f73130b240a622672816a386f, type: 2}
+  lifecycleStages:
+  - The fungus survives on seed and residue.
+  - Spores reach the lower leaves.
+  - Brown blotches grow and join.
+  - They climb to the flag leaf after heading.
+  conditionFactors:
+  - Warm, humid weather.
+  - Late sowing.
+  - Residue of the last crop.
+  - Low soil fertility.
+  referencePhotos:
+  - {fileID: 2800000, guid: 791d33779c376364695ca7a797035228, type: 3}
+  lesionLabel: Brown blotch
+  haloLabel: Yellow edge
+  areaLabel: Blighted leaf

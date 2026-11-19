@@ -1,0 +1,29 @@
+{
+ "plantId": "potato",
+ "plantName": "Potato",
+ "scientificName": "",
+ "description": "",
+ "diseases": [],
+ "aliases": [
+  {
+   "disease": "early_blight",
+   "labels": [
+    "potato early blight",
+    "Potato leaf early blight",
+    "Potato___Early_blight"
+   ]
+  },
+  {
+   "disease": "late_blight",
+   "labels": [
+    "potato late blight",
+    "Potato leaf late blight",
+    "Potato___Late_blight"
+   ]
+  }
+ ],
+ "healthyLabels": [
+  "Potato leaf",
+  "Potato___healthy"
+ ]
+}

@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_MangoBacterialCanker(BlackSpot)
+  m_EditorClassIdentifier: 
+  diseaseId: bacterial_canker
+  diseaseName: Bacterial Canker (Black Spot)
+  aiLabelAliases:
+  - mango_bacterial_canker
+  - Bacterial Canker
+  - mango bacterial canker
+  - Mango___Bacterial_canker
+  pathogenType: 1
+  pathogen: Xanthomonas citri pv. mangiferaeindicae
+  affectedPart: 0
+  sources:
+  - 'MangoLeafBD (Mendeley Data) class: Bacterial Canker, mango bacterial canker'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: A bacterial disease of mango leaves, twigs and fruit with raised,
+    angular black spots.
+  causes: Bacteria survive in leaf and twig lesions and spread by wind-driven rain,
+    especially through wounds.
+  effectOnPlant: Spotted leaves drop; fruit is blemished and may rot.
+  untreatedOutcome: Severe outbreaks defoliate trees and spoil most fruit.
+  symptoms:
+  - Small, water-soaked, angular spots limited by the veins
+  - Spots turn raised, black and cracked, often with a yellow halo
+  - Black, star-shaped cracks on fruit that ooze in wet weather
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  - yellowing
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: ef392f51c9e0b054481b6a3af9ea0821, type: 2}
+  preventionPlan: {fileID: 11400000, guid: 05ebb2bdb13e54741a47efcde8a46dd6, type: 2}
+  simulationProfile: {fileID: 11400000, guid: 6d871075bbf73bb4da1372b7d4b45cf5, type: 2}
+  lifecycleStages:
+  - Bacteria survive in leaf and twig lesions.
+  - Wind-driven rain carries them to new leaves.
+  - Angular water-soaked spots turn black and raised.
+  - Fruit gets cracked black spots.
+  conditionFactors:
+  - Wind-driven rain.
+  - Wounds.
+  - Warm, wet weather.
+  - Infected nursery trees.
+  referencePhotos:
+  - {fileID: 2800000, guid: 6865362bc65ebe645ade2bff7a4faf75, type: 3}
+  lesionLabel: Black spot
+  haloLabel: Yellow halo
+  areaLabel: Spotted leaf

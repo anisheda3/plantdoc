@@ -1,0 +1,1098 @@
+{
+ "plantId": "wheat",
+ "plantName": "Wheat",
+ "scientificName": "Triticum aestivum",
+ "description": "Triticum aestivum (bread wheat).",
+ "diseases": [
+  {
+   "id": "bacterial_leaf_streak",
+   "name": "Bacterial Leaf Streak (Black Chaff)",
+   "type": "Bacterial",
+   "part": "Leaf",
+   "pathogen": "Xanthomonas translucens pv. undulosa",
+   "labels": [
+    "wheat bacterial leaf streak (black chaff)"
+   ],
+   "description": "A bacterial disease of wheat that streaks the leaves and blackens the glumes of the head.",
+   "causes": "Bacteria come in on seed and spread by rain and wind in warm, wet weather.",
+   "symptoms": [
+    "Narrow, water-soaked streaks between the leaf veins",
+    "Streaks turn brown; droplets of bacterial ooze dry into flakes",
+    "Dark purple-black streaks on the glumes (black chaff)"
+   ],
+   "effect": "Leaf area and grain fill fall.",
+   "untreated": "No chemical control works well.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Confirm with the ooze",
+     "instruction": "Look for shiny dried ooze flakes on the streaks.",
+     "rationale": "Separates it from fungal streaks.",
+     "mode": "TapRegion",
+     "days": 1,
+     "effect": "Small",
+     "chemical": false
+    },
+    {
+     "title": "Plan clean seed",
+     "instruction": "Use seed from healthy fields.",
+     "rationale": "Seed carries the bacteria.",
+     "mode": "Informational",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Rotate crops",
+     "instruction": "Leave a year away from wheat and barley.",
+     "rationale": "Residue carries it.",
+     "mode": "AdjustSetting",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropManagement",
+     "title": "Use clean seed",
+     "detail": "The main source."
+    },
+    {
+     "category": "CropManagement",
+     "title": "Grow tolerant varieties",
+     "detail": "Varieties differ."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_Streak",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.4,
+     0.3,
+     0.18
+    ],
+    "halo": [
+     0.74,
+     0.72,
+     0.42
+    ],
+    "yellow": [
+     0.84,
+     0.8,
+     0.36
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.5,
+    "wilting": 0.4,
+    "damage": 0.6,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Brown streak",
+   "haloLabel": "Water-soaked edge",
+   "areaLabel": "Streaked leaf",
+   "lifecycle": [
+    "Bacteria come in on seed.",
+    "Rain and wind spread them.",
+    "Water-soaked streaks form between the veins.",
+    "Glumes blacken as the head forms."
+   ],
+   "conditions": [
+    "Warm, wet weather.",
+    "Infected seed.",
+    "Sprinkler irrigation.",
+    "Susceptible varieties."
+   ],
+   "photos": [
+    "wheat_bacterial_leaf_streak_1"
+   ],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: wheat bacterial leaf streak (black chaff)",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "head_scab",
+   "name": "Fusarium Head Blight (Scab)",
+   "type": "Fungal",
+   "part": "Head",
+   "pathogen": "Fusarium graminearum (and other Fusarium spp.)",
+   "labels": [
+    "wheat head scab"
+   ],
+   "description": "A fungal disease of wheat heads that bleaches spikelets and contaminates grain with mycotoxins.",
+   "causes": "Spores from maize and wheat residue infect the heads at flowering in warm, wet weather.",
+   "symptoms": [
+    "Bleached spikelets on a still-green head",
+    "Pink-orange spore masses at the base of spikelets",
+    "Shrivelled, chalky 'tombstone' kernels"
+   ],
+   "effect": "Yield falls and grain may contain mycotoxins (DON).",
+   "untreated": "Contaminated grain can be rejected.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Note how many heads are bleached",
+     "instruction": "Count affected heads.",
+     "rationale": "Guides harvest and grain testing.",
+     "mode": "TapRegion",
+     "days": 1,
+     "effect": "Small",
+     "chemical": false
+    },
+    {
+     "title": "Protective spray",
+     "instruction": "Spray a registered fungicide at early flowering on the label's schedule.",
+     "rationale": "Only flowering-time sprays help.",
+     "mode": "SprayApply",
+     "days": 3,
+     "effect": "Protect",
+     "chemical": true
+    },
+    {
+     "title": "Test the grain",
+     "instruction": "Have harvested grain tested for mycotoxins.",
+     "rationale": "Contaminated grain is a health risk.",
+     "mode": "Informational",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropManagement",
+     "title": "Do not follow maize with wheat",
+     "detail": "Maize residue carries the fungus."
+    },
+    {
+     "category": "CropManagement",
+     "title": "Grow resistant varieties",
+     "detail": "Partial resistance helps."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_FruitRot",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.86,
+     0.8,
+     0.62
+    ],
+    "halo": [
+     0.92,
+     0.56,
+     0.42
+    ],
+    "yellow": [
+     0.86,
+     0.8,
+     0.46
+    ],
+    "lesions": 0.7,
+    "yellowing": 0.1,
+    "wilting": 0.0,
+    "damage": 0.4,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Bleached spikelet",
+   "haloLabel": "Pink spores",
+   "areaLabel": "Scabby head",
+   "lifecycle": [
+    "The fungus survives on maize and wheat residue.",
+    "Spores reach the heads at flowering.",
+    "Spikelets bleach; pink spores form.",
+    "Kernels shrivel and carry mycotoxins."
+   ],
+   "conditions": [
+    "Warm, wet weather at flowering.",
+    "Maize residue.",
+    "Minimum tillage.",
+    "Susceptible varieties."
+   ],
+   "photos": [
+    "wheat_head_scab_1"
+   ],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: wheat head scab",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "leaf_rust",
+   "name": "Leaf Rust (Brown Rust)",
+   "type": "Fungal",
+   "part": "Leaf",
+   "pathogen": "Puccinia triticina",
+   "labels": [
+    "wheat leaf rust"
+   ],
+   "description": "A rust fungus of wheat leaves with scattered orange-brown pustules.",
+   "causes": "Spores blow long distances on the wind; dew on the leaves lets them infect, and new spores form within one to two weeks.",
+   "symptoms": [
+    "Small, round, orange-brown pustules scattered on the upper leaf",
+    "Pustules break through the leaf surface",
+    "Leaves yellow and die early"
+   ],
+   "effect": "Rusted leaves lose their green area, so grain fill suffers.",
+   "untreated": "Severe epidemics can cut yield heavily.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Scout the upper leaves",
+     "instruction": "Check the flag leaf and the leaf below it.",
+     "rationale": "These leaves feed the grain.",
+     "mode": "TapRegion",
+     "days": 1,
+     "effect": "Small",
+     "chemical": false
+    },
+    {
+     "title": "Protective spray",
+     "instruction": "Spray a registered fungicide if rust reaches the upper leaves on the label's schedule.",
+     "rationale": "Protects healthy growth; it cannot cure what is already infected.",
+     "mode": "SprayApply",
+     "days": 3,
+     "effect": "Protect",
+     "chemical": true
+    },
+    {
+     "title": "Plan resistant varieties",
+     "instruction": "Choose varieties rated resistant.",
+     "rationale": "Resistance is the main control.",
+     "mode": "Informational",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropManagement",
+     "title": "Grow resistant varieties",
+     "detail": "Check the latest ratings."
+    },
+    {
+     "category": "CropHygiene",
+     "title": "Control volunteer wheat",
+     "detail": "It carries rust between crops."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_Pustule",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.7,
+     0.36,
+     0.12
+    ],
+    "halo": [
+     0.86,
+     0.8,
+     0.34
+    ],
+    "yellow": [
+     0.86,
+     0.8,
+     0.32
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.6,
+    "wilting": 0.4,
+    "damage": 0.6,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Rust pustule",
+   "haloLabel": "Yellow halo",
+   "areaLabel": "Rusted leaf",
+   "lifecycle": [
+    "Spores blow in or survive on volunteers.",
+    "Dew lets them infect.",
+    "Pustules break through.",
+    "New spores spread every one to two weeks."
+   ],
+   "conditions": [
+    "Mild to warm weather.",
+    "Long dew.",
+    "Volunteer wheat nearby.",
+    "Susceptible varieties."
+   ],
+   "photos": [
+    "wheat_leaf_rust_1"
+   ],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: wheat leaf rust",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "loose_smut",
+   "name": "Loose Smut",
+   "type": "Fungal",
+   "part": "Head",
+   "pathogen": "Ustilago tritici",
+   "labels": [
+    "wheat loose smut"
+   ],
+   "description": "A seed-borne fungal disease that replaces the wheat head with a mass of black spores.",
+   "causes": "The fungus lives inside the seed embryo; infected seed grows into plants whose heads are spore masses that infect neighbouring flowers.",
+   "symptoms": [
+    "Heads emerge as masses of olive-black spores instead of grain",
+    "Spores blow away, leaving a bare stalk (rachis)",
+    "Infected heads emerge a little earlier and taller"
+   ],
+   "effect": "Infected heads produce no grain.",
+   "untreated": "Spores infect neighbouring flowers, so next year's seed is infected.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Note the infected heads",
+     "instruction": "Count smutted heads.",
+     "rationale": "Shows how much seed is infected.",
+     "mode": "TapRegion",
+     "days": 1,
+     "effect": "Small",
+     "chemical": false
+    },
+    {
+     "title": "Do not save seed from this field",
+     "instruction": "Use certified or treated seed next time.",
+     "rationale": "The fungus is inside the seed.",
+     "mode": "Informational",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Treat seed with a systemic seed treatment",
+     "instruction": "Use a registered seed treatment following the label.",
+     "rationale": "Reaches the fungus inside the seed.",
+     "mode": "SprayApply",
+     "days": 2,
+     "effect": "Protect",
+     "chemical": true
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropManagement",
+     "title": "Sow certified, treated seed",
+     "detail": "The main control."
+    },
+    {
+     "category": "CropManagement",
+     "title": "Grow resistant varieties",
+     "detail": "Available in many regions."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_FruitRot",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.16,
+     0.14,
+     0.12
+    ],
+    "halo": [
+     0.3,
+     0.28,
+     0.22
+    ],
+    "yellow": [
+     0.8,
+     0.76,
+     0.4
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.0,
+    "wilting": 0.0,
+    "damage": 0.6,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Black spores",
+   "haloLabel": "Bare rachis",
+   "areaLabel": "Smutted head",
+   "lifecycle": [
+    "The fungus waits inside the seed.",
+    "It grows up with the plant.",
+    "Heads emerge as black spore masses.",
+    "Spores infect neighbouring flowers' seed."
+   ],
+   "conditions": [
+    "Infected seed.",
+    "Humid weather at flowering.",
+    "Saved seed.",
+    "Susceptible varieties."
+   ],
+   "photos": [],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: wheat loose smut",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "powdery_mildew",
+   "name": "Powdery Mildew",
+   "type": "Fungal",
+   "part": "Leaf",
+   "pathogen": "Blumeria graminis f. sp. tritici",
+   "labels": [
+    "wheat powdery mildew"
+   ],
+   "description": "A fungal disease that covers wheat leaves with white, fluffy powder.",
+   "causes": "Spores blow on the wind; cool to mild, humid weather and dense, lush crops favour it; the leaves need not be wet.",
+   "symptoms": [
+    "White to grey fluffy patches on the leaves",
+    "Patches turn grey-brown with tiny black dots",
+    "Leaves yellow under the patches"
+   ],
+   "effect": "Leaf area falls, reducing grain fill.",
+   "untreated": "Heavy early mildew cuts yield.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Scout the lower leaves",
+     "instruction": "Check the lower canopy in dense patches.",
+     "rationale": "It starts low.",
+     "mode": "TapRegion",
+     "days": 1,
+     "effect": "Small",
+     "chemical": false
+    },
+    {
+     "title": "Protective spray",
+     "instruction": "Spray a registered fungicide if it climbs to the upper leaves on the label's schedule.",
+     "rationale": "Protects healthy growth; it cannot cure what is already infected.",
+     "mode": "SprayApply",
+     "days": 3,
+     "effect": "Protect",
+     "chemical": true
+    },
+    {
+     "title": "Moderate nitrogen and seeding",
+     "instruction": "Avoid very dense, lush crops.",
+     "rationale": "Lush crops favour mildew.",
+     "mode": "AdjustSetting",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropManagement",
+     "title": "Grow resistant varieties",
+     "detail": "The main control."
+    },
+    {
+     "category": "CropManagement",
+     "title": "Avoid excess nitrogen",
+     "detail": "Lush growth favours it."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_Colony",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.9,
+     0.9,
+     0.88
+    ],
+    "halo": [
+     0.8,
+     0.84,
+     0.66
+    ],
+    "yellow": [
+     0.84,
+     0.82,
+     0.48
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.5,
+    "wilting": 0.4,
+    "damage": 0.4,
+    "seconds": 7.0
+   },
+   "lesionLabel": "White patch",
+   "haloLabel": "Pale area",
+   "areaLabel": "Powdery leaf",
+   "lifecycle": [
+    "The fungus survives on volunteers and residue.",
+    "Spores blow onto the leaves.",
+    "White fluffy patches spread.",
+    "New spores spread every week."
+   ],
+   "conditions": [
+    "Mild (15-22 °C), humid weather.",
+    "Dense crops.",
+    "High nitrogen.",
+    "Susceptible varieties."
+   ],
+   "photos": [
+    "wheat_powdery_mildew_1"
+   ],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: wheat powdery mildew",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "septoria_blotch",
+   "name": "Septoria Tritici Blotch",
+   "type": "Fungal",
+   "part": "Leaf",
+   "pathogen": "Zymoseptoria tritici",
+   "labels": [
+    "wheat septoria blotch"
+   ],
+   "description": "The most common leaf disease of wheat in wet climates: long brown blotches dotted with black spore bodies.",
+   "causes": "Spores from residue and the lower leaves are splashed upward by rain.",
+   "symptoms": [
+    "Yellow flecks that become long brown blotches between the veins",
+    "Tiny black dots (spore bodies) in the blotches",
+    "Blotches merge and leaves die from the bottom up"
+   ],
+   "effect": "Upper leaves die early and grain fill falls.",
+   "untreated": "Yield losses in wet seasons.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Scout the upper leaves",
+     "instruction": "Check the flag leaf and leaf below.",
+     "rationale": "Rain splashes it upward.",
+     "mode": "TapRegion",
+     "days": 1,
+     "effect": "Small",
+     "chemical": false
+    },
+    {
+     "title": "Protective spray",
+     "instruction": "Spray a registered fungicide at flag-leaf emergence on the label's schedule.",
+     "rationale": "Protects healthy growth; it cannot cure what is already infected.",
+     "mode": "SprayApply",
+     "days": 3,
+     "effect": "Protect",
+     "chemical": true
+    },
+    {
+     "title": "Plan resistant varieties",
+     "instruction": "Choose varieties with good Septoria ratings.",
+     "rationale": "The main control.",
+     "mode": "Informational",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropManagement",
+     "title": "Grow resistant varieties",
+     "detail": "Check ratings."
+    },
+    {
+     "category": "CropManagement",
+     "title": "Avoid very early sowing",
+     "detail": "Early crops build up more disease."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_Cigar",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.46,
+     0.34,
+     0.2
+    ],
+    "halo": [
+     0.8,
+     0.76,
+     0.36
+    ],
+    "yellow": [
+     0.84,
+     0.78,
+     0.34
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.6,
+    "wilting": 0.4,
+    "damage": 0.7,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Brown blotch",
+   "haloLabel": "Black dots",
+   "areaLabel": "Blotched leaf",
+   "lifecycle": [
+    "The fungus survives on residue.",
+    "Rain splashes spores up the plant.",
+    "Brown blotches with black dots form.",
+    "Leaves die from the bottom up."
+   ],
+   "conditions": [
+    "Frequent rain.",
+    "Mild weather.",
+    "Early-sown crops.",
+    "Susceptible varieties."
+   ],
+   "photos": [
+    "wheat_septoria_blotch_1"
+   ],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: wheat septoria blotch",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "stem_rust",
+   "name": "Stem Rust (Black Rust)",
+   "type": "Fungal",
+   "part": "Leaf",
+   "pathogen": "Puccinia graminis f. sp. tritici",
+   "labels": [
+    "wheat stem rust"
+   ],
+   "description": "A rust fungus of wheat stems and leaves; strains such as Ug99 can destroy crops.",
+   "causes": "Spores blow long distances on the wind; dew on the leaves lets them infect, and new spores form within one to two weeks.",
+   "symptoms": [
+    "Elongated, brick-red pustules on stems, sheaths and leaves",
+    "Pustules tear the surface and look ragged",
+    "Pustules turn black late in the season"
+   ],
+   "effect": "Rusted leaves lose their green area, so grain fill suffers.",
+   "untreated": "Severe epidemics can cut yield heavily.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Scout the upper leaves",
+     "instruction": "Check the flag leaf and the leaf below it.",
+     "rationale": "These leaves feed the grain.",
+     "mode": "TapRegion",
+     "days": 1,
+     "effect": "Small",
+     "chemical": false
+    },
+    {
+     "title": "Protective spray",
+     "instruction": "Spray a registered fungicide if rust reaches the upper leaves on the label's schedule.",
+     "rationale": "Protects healthy growth; it cannot cure what is already infected.",
+     "mode": "SprayApply",
+     "days": 3,
+     "effect": "Protect",
+     "chemical": true
+    },
+    {
+     "title": "Plan resistant varieties",
+     "instruction": "Choose varieties rated resistant.",
+     "rationale": "Resistance is the main control.",
+     "mode": "Informational",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropManagement",
+     "title": "Grow resistant varieties",
+     "detail": "Check the latest ratings."
+    },
+    {
+     "category": "CropHygiene",
+     "title": "Control volunteer wheat",
+     "detail": "It carries rust between crops."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_Streak",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.56,
+     0.2,
+     0.12
+    ],
+    "halo": [
+     0.86,
+     0.8,
+     0.34
+    ],
+    "yellow": [
+     0.86,
+     0.8,
+     0.32
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.6,
+    "wilting": 0.4,
+    "damage": 0.6,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Rust pustule",
+   "haloLabel": "Yellow halo",
+   "areaLabel": "Rusted leaf",
+   "lifecycle": [
+    "Spores blow in or survive on volunteers.",
+    "Dew lets them infect.",
+    "Pustules break through.",
+    "New spores spread every one to two weeks."
+   ],
+   "conditions": [
+    "Mild to warm weather.",
+    "Long dew.",
+    "Volunteer wheat nearby.",
+    "Susceptible varieties."
+   ],
+   "photos": [
+    "wheat_stem_rust_1"
+   ],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: wheat stem rust",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "stripe_rust",
+   "name": "Stripe Rust (Yellow Rust)",
+   "type": "Fungal",
+   "part": "Leaf",
+   "pathogen": "Puccinia striiformis f. sp. tritici",
+   "labels": [
+    "wheat stripe rust"
+   ],
+   "description": "A rust fungus of wheat that forms yellow stripes of pustules along the leaves in cool weather.",
+   "causes": "Spores blow long distances on the wind; dew on the leaves lets them infect, and new spores form within one to two weeks.",
+   "symptoms": [
+    "Yellow-orange pustules in long stripes between the veins",
+    "Stripes on leaves and heads",
+    "Leaves yellow and dry early"
+   ],
+   "effect": "Rusted leaves lose their green area, so grain fill suffers.",
+   "untreated": "Severe epidemics can cut yield heavily.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Scout the upper leaves",
+     "instruction": "Check the flag leaf and the leaf below it.",
+     "rationale": "These leaves feed the grain.",
+     "mode": "TapRegion",
+     "days": 1,
+     "effect": "Small",
+     "chemical": false
+    },
+    {
+     "title": "Protective spray",
+     "instruction": "Spray a registered fungicide if rust reaches the upper leaves on the label's schedule.",
+     "rationale": "Protects healthy growth; it cannot cure what is already infected.",
+     "mode": "SprayApply",
+     "days": 3,
+     "effect": "Protect",
+     "chemical": true
+    },
+    {
+     "title": "Plan resistant varieties",
+     "instruction": "Choose varieties rated resistant.",
+     "rationale": "Resistance is the main control.",
+     "mode": "Informational",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropManagement",
+     "title": "Grow resistant varieties",
+     "detail": "Check the latest ratings."
+    },
+    {
+     "category": "CropHygiene",
+     "title": "Control volunteer wheat",
+     "detail": "It carries rust between crops."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_StripeRows",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.92,
+     0.7,
+     0.18
+    ],
+    "halo": [
+     0.86,
+     0.8,
+     0.34
+    ],
+    "yellow": [
+     0.86,
+     0.8,
+     0.32
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.6,
+    "wilting": 0.4,
+    "damage": 0.6,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Rust pustule",
+   "haloLabel": "Yellow halo",
+   "areaLabel": "Rusted leaf",
+   "lifecycle": [
+    "Spores blow in or survive on volunteers.",
+    "Dew lets them infect.",
+    "Pustules break through.",
+    "New spores spread every one to two weeks."
+   ],
+   "conditions": [
+    "Mild to warm weather.",
+    "Long dew.",
+    "Volunteer wheat nearby.",
+    "Susceptible varieties."
+   ],
+   "photos": [
+    "wheat_stripe_rust_1"
+   ],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: wheat stripe rust",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "leaf_blight",
+   "name": "Leaf Blight (Spot Blotch)",
+   "type": "Fungal",
+   "part": "Leaf",
+   "pathogen": "Bipolaris sorokiniana (Cochliobolus sativus)",
+   "labels": [
+    "Wheat___Leaf_blight",
+    "wheat leaf blight",
+    "wheat spot blotch"
+   ],
+   "description": "The main leaf blight of wheat in warm, humid regions such as the plains of South Asia.",
+   "causes": "The fungus comes in on seed and residue; spores spread by wind and rain in warm, humid weather after heading.",
+   "symptoms": [
+    "Small, dark brown, oval spots on the lower leaves",
+    "Spots grow into long brown blotches with yellow edges",
+    "Blotches join; leaves dry from the tip down"
+   ],
+   "effect": "Dried leaves cut grain fill; grain is shrivelled and black-pointed.",
+   "untreated": "Severe in late-sown, warm crops.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Scout the upper leaves",
+     "instruction": "Check the flag leaf and the leaf below for blotches.",
+     "rationale": "These leaves fill the grain.",
+     "mode": "TapRegion",
+     "days": 1,
+     "effect": "Small",
+     "chemical": false
+    },
+    {
+     "title": "Protective spray",
+     "instruction": "Spray a registered fungicide at heading where advised on the label's schedule.",
+     "rationale": "Protects healthy growth; it cannot cure what is already infected.",
+     "mode": "SprayApply",
+     "days": 3,
+     "effect": "Protect",
+     "chemical": true
+    },
+    {
+     "title": "Plan the next crop",
+     "instruction": "Sow on time, with clean seed of a tolerant variety.",
+     "rationale": "Late sowing meets the warm, humid weather it needs.",
+     "mode": "Informational",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropManagement",
+     "title": "Grow tolerant varieties",
+     "detail": "Varieties differ a lot."
+    },
+    {
+     "category": "CropManagement",
+     "title": "Sow on time",
+     "detail": "Late-sown wheat suffers most."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_EarlyBlight",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.36,
+     0.24,
+     0.12
+    ],
+    "halo": [
+     0.8,
+     0.72,
+     0.3
+    ],
+    "yellow": [
+     0.84,
+     0.78,
+     0.34
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.6,
+    "wilting": 0.4,
+    "damage": 0.6,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Brown blotch",
+   "haloLabel": "Yellow edge",
+   "areaLabel": "Blighted leaf",
+   "lifecycle": [
+    "The fungus survives on seed and residue.",
+    "Spores reach the lower leaves.",
+    "Brown blotches grow and join.",
+    "They climb to the flag leaf after heading."
+   ],
+   "conditions": [
+    "Warm, humid weather.",
+    "Late sowing.",
+    "Residue of the last crop.",
+    "Low soil fertility."
+   ],
+   "photos": [
+    "wheat_leaf_blight_1"
+   ],
+   "sources": [
+    "CropScan XR model class: Wheat___Leaf_blight, wheat leaf blight, wheat spot blotch",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "blast",
+   "name": "Wheat Blast",
+   "type": "Fungal",
+   "part": "Head",
+   "pathogen": "Magnaporthe oryzae pathotype Triticum",
+   "labels": [
+    "Wheat___Blast",
+    "wheat blast"
+   ],
+   "description": "A fast, destructive disease of wheat heads, first seen in Brazil and since 2016 in Bangladesh and Zambia.",
+   "causes": "Spores spread by wind and on seed; warm, wet weather at heading lets them infect the rachis and kill the head above it.",
+   "symptoms": [
+    "Heads bleached white above the infection point, while the lower part stays green",
+    "A dark, shiny lesion on the rachis where it was infected",
+    "Shrivelled or no grain in the bleached part"
+   ],
+   "effect": "Bleached heads give little or no grain.",
+   "untreated": "Outbreaks can destroy whole fields within days.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Report suspected blast",
+     "instruction": "Tell the local extension service: it is a quarantine disease in many places.",
+     "rationale": "Early reports slow its spread.",
+     "mode": "Informational",
+     "days": 1,
+     "effect": "Small",
+     "chemical": false
+    },
+    {
+     "title": "Protective spray",
+     "instruction": "Spray a registered fungicide at heading where advised on the label's schedule.",
+     "rationale": "Sprays only protect; they cannot save bleached heads.",
+     "mode": "SprayApply",
+     "days": 3,
+     "effect": "Protect",
+     "chemical": true
+    },
+    {
+     "title": "Do not save the seed",
+     "instruction": "Do not keep seed from affected fields.",
+     "rationale": "Seed carries the fungus to new areas.",
+     "mode": "Informational",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropManagement",
+     "title": "Sow clean seed of resistant varieties",
+     "detail": "Seed carries it; some varieties resist."
+    },
+    {
+     "category": "CropManagement",
+     "title": "Sow early",
+     "detail": "Avoids warm, wet weather at heading."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_FruitRot",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.9,
+     0.88,
+     0.76
+    ],
+    "halo": [
+     0.3,
+     0.24,
+     0.16
+    ],
+    "yellow": [
+     0.86,
+     0.82,
+     0.5
+    ],
+    "lesions": 0.8,
+    "yellowing": 0.1,
+    "wilting": 0.0,
+    "damage": 0.5,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Bleached head",
+   "haloLabel": "Dark rachis lesion",
+   "areaLabel": "Blasted head",
+   "lifecycle": [
+    "Spores come in on seed or wind.",
+    "Warm, wet weather at heading lets them infect.",
+    "A lesion on the rachis cuts off the head above it.",
+    "The head bleaches and sets little grain."
+   ],
+   "conditions": [
+    "Warm, wet weather at heading.",
+    "Infected seed.",
+    "Late sowing.",
+    "Susceptible varieties."
+   ],
+   "photos": [],
+   "sources": [
+    "CropScan XR model class: Wheat___Blast, wheat blast",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  }
+ ],
+ "aliases": [
+  {
+   "disease": "leaf_rust",
+   "labels": [
+    "Wheat___Rust"
+   ]
+  }
+ ],
+ "healthyLabels": [
+  "Wheat___healthy"
+ ]
+}

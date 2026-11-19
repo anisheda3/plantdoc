@@ -1,0 +1,82 @@
+{
+ "plantId": "tomato",
+ "plantName": "Tomato",
+ "scientificName": "",
+ "description": "",
+ "diseases": [],
+ "aliases": [
+  {
+   "disease": "bacterial_spot",
+   "labels": [
+    "tomato bacterial leaf spot",
+    "Tomato leaf bacterial spot",
+    "Tomato___Bacterial_spot"
+   ]
+  },
+  {
+   "disease": "early_blight",
+   "labels": [
+    "tomato early blight",
+    "Tomato Early blight leaf",
+    "Tomato___Early_blight"
+   ]
+  },
+  {
+   "disease": "late_blight",
+   "labels": [
+    "tomato late blight",
+    "Tomato leaf late blight",
+    "Tomato___Late_blight"
+   ]
+  },
+  {
+   "disease": "leaf_mold",
+   "labels": [
+    "tomato leaf mold",
+    "Tomato mold leaf",
+    "Tomato___Leaf_Mold"
+   ]
+  },
+  {
+   "disease": "mosaic_virus",
+   "labels": [
+    "tomato mosaic virus",
+    "Tomato leaf mosaic virus",
+    "Tomato___Tomato_mosaic_virus"
+   ]
+  },
+  {
+   "disease": "septoria_leaf_spot",
+   "labels": [
+    "tomato septoria leaf spot",
+    "Tomato Septoria leaf spot",
+    "Tomato___Septoria_leaf_spot"
+   ]
+  },
+  {
+   "disease": "yellow_leaf_curl_virus",
+   "labels": [
+    "tomato yellow leaf curl virus",
+    "Tomato leaf yellow virus",
+    "Tomato___Tomato_Yellow_Leaf_Curl_Virus"
+   ]
+  },
+  {
+   "disease": "spider_mites",
+   "labels": [
+    "Tomato two spotted spider mites leaf",
+    "Tomato___Spider_mites Two-spotted_spider_mite"
+   ]
+  },
+  {
+   "disease": "target_spot",
+   "labels": [
+    "Tomato___Target_Spot"
+   ]
+  }
+ ],
+ "healthyLabels": [
+  "Tomato leaf",
+  "Tomato___healthy"
+ ]
+}

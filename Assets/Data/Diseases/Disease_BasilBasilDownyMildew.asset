@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_BasilBasilDownyMildew
+  m_EditorClassIdentifier: 
+  diseaseId: downy_mildew
+  diseaseName: Basil Downy Mildew
+  aiLabelAliases:
+  - basil_downy_mildew
+  - basil downy mildew
+  pathogenType: 6
+  pathogen: Peronospora belbahrii
+  affectedPart: 0
+  sources:
+  - 'PlantSeg (Wei et al. 2024, CC BY 4.0) class: basil downy mildew'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: A water-mould disease that yellows basil leaves and covers their undersides
+    with grey-purple spores.
+  causes: Spores come in on infected seed and transplants and blow in on the wind;
+    warm, humid nights with wet leaves let them infect.
+  effectOnPlant: Leaves are unsaleable; plants can be lost within days.
+  untreatedOutcome: The whole planting can be lost in humid weather.
+  symptoms:
+  - Yellowing between the main veins of the upper leaf
+  - Grey to purple-brown fuzzy spores on the underside
+  - Leaves turn brown and drop
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  - yellowing
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: 709503d9587dd604ca04e33e90aa9432, type: 2}
+  preventionPlan: {fileID: 11400000, guid: 2d0ed7b738886a441b9d35a45f3b77ba, type: 2}
+  simulationProfile: {fileID: 11400000, guid: 7070125431b7d644a91a6e45d88a77a4, type: 2}
+  lifecycleStages:
+  - Spores arrive on seed, transplants or wind.
+  - Humid nights let them infect wet leaves.
+  - Leaves yellow between the veins.
+  - Grey-purple spores form underneath and spread.
+  conditionFactors:
+  - Warm, humid nights.
+  - Long leaf wetness.
+  - Crowded plants.
+  - Susceptible sweet basil.
+  referencePhotos:
+  - {fileID: 2800000, guid: 1980e69b648b4164d91fd7582964dfcc, type: 3}
+  lesionLabel: Yellow patch
+  haloLabel: Grey-purple spores
+  areaLabel: Yellowing leaf

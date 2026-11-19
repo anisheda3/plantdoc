@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_EggplantPhytophthoraBlight
+  m_EditorClassIdentifier: 
+  diseaseId: phytophthora_blight
+  diseaseName: Phytophthora Blight
+  aiLabelAliases:
+  - eggplant_phytophthora_blight
+  - eggplant phytophthora blight
+  pathogenType: 6
+  pathogen: Phytophthora capsici
+  affectedPart: 1
+  sources:
+  - 'PlantSeg (Wei et al. 2024, CC BY 4.0) class: eggplant phytophthora blight'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: A water-mould disease that rots eggplant fruit and can collapse whole
+    plants.
+  causes: 'The water mould lives in the soil and spreads in water: rain splash, standing
+    water and irrigation; worst on poorly drained soil.'
+  effectOnPlant: Fruit rots and plants can be killed.
+  untreatedOutcome: Infested fields stay infested for years.
+  symptoms:
+  - Water-soaked, dark patches on the fruit
+  - White, cottony growth on the rotting fruit
+  - Dark stem lesions at the soil; plants wilt and die
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  - wilting
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: fd1963bca900d2b4a8e898e7e20e24a3, type: 2}
+  preventionPlan: {fileID: 11400000, guid: e756129a40819994080a11df043d905e, type: 2}
+  simulationProfile: {fileID: 11400000, guid: 5423b81699974a74da4c34be6967a04d, type: 2}
+  lifecycleStages:
+  - The water mould survives in soil.
+  - Splash and standing water carry spores to plants.
+  - Fruit rots with white mould; stems get lesions.
+  - Plants wilt and spores spread in water.
+  conditionFactors:
+  - Heavy rain.
+  - Poor drainage.
+  - Warm weather.
+  - Host crops grown before.
+  referencePhotos: []
+  lesionLabel: Dark rot
+  haloLabel: White mould
+  areaLabel: Rotting fruit

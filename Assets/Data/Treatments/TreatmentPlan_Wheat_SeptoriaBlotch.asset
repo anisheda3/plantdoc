@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5132a70f51fe6cb4ea3c7d283552eb79, type: 3}
+  m_Name: TreatmentPlan_Wheat_SeptoriaBlotch
+  m_EditorClassIdentifier: 
+  treatmentId: wheat_septoria_blotch_treatment
+  planName: "Wheat \u2014 Septoria Tritici Blotch"
+  steps:
+  - {fileID: 11400000, guid: 7e6396f266e633447b9012b8a16a4731, type: 2}
+  - {fileID: 11400000, guid: 9f85a213df69ece4da5c598aa582de7b, type: 2}
+  - {fileID: 11400000, guid: aceb28cefab369841a1d3b2fd980d3f7, type: 2}
+  residualSeverityFloor: 0.15
+  residualDamageFloor: 0.1
+  disclaimer: Educational guidance only. Treatment does not guarantee recovery. Consult
+    a local agricultural extension service for field decisions.

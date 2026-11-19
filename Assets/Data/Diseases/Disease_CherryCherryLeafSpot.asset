@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_CherryCherryLeafSpot
+  m_EditorClassIdentifier: 
+  diseaseId: leaf_spot
+  diseaseName: Cherry Leaf Spot
+  aiLabelAliases:
+  - cherry_leaf_spot
+  - cherry leaf spot
+  pathogenType: 0
+  pathogen: Blumeriella jaapii
+  affectedPart: 0
+  sources:
+  - 'PlantSeg (Wei et al. 2024, CC BY 4.0) class: cherry leaf spot'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: A fungal disease of cherry leaves that causes spotting, yellowing
+    and early leaf fall.
+  causes: Spores from last year's fallen leaves are splashed onto young leaves in
+    wet spring and summer weather.
+  effectOnPlant: Trees lose many leaves by midsummer, so fruit ripens poorly.
+  untreatedOutcome: Repeated early leaf loss weakens trees and makes them prone to
+    winter injury.
+  symptoms:
+  - Small purple to red-brown spots on the upper leaf
+  - White to pink spore masses under the spots in wet weather
+  - Spotted leaves turn yellow and drop
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  - yellowing
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: 9e7fd1016524f3c468db7e6369e427fe, type: 2}
+  preventionPlan: {fileID: 11400000, guid: 26b0dbc1ef259e848869d027c79205ba, type: 2}
+  simulationProfile: {fileID: 11400000, guid: 62c5804e1d15b614f8836a8b96dfddac, type: 2}
+  lifecycleStages:
+  - The fungus overwinters in fallen leaves.
+  - Spring rain splashes spores onto young leaves.
+  - Purple spots appear; spores form underneath.
+  - Leaves yellow and drop, and new spores spread.
+  conditionFactors:
+  - Wet spring and summer.
+  - Fallen leaves left under the tree.
+  - A dense canopy.
+  - Susceptible sour and sweet cherries.
+  referencePhotos:
+  - {fileID: 2800000, guid: 8bfc38a71f6dd6c40828d9c7b0b4c613, type: 3}
+  lesionLabel: Purple spot
+  haloLabel: Red margin
+  areaLabel: Yellowing leaf

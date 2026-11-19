@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_BananaAnthracnose
+  m_EditorClassIdentifier: 
+  diseaseId: anthracnose
+  diseaseName: Anthracnose
+  aiLabelAliases:
+  - banana_anthracnose
+  - banana anthracnose
+  pathogenType: 0
+  pathogen: Colletotrichum musae
+  affectedPart: 1
+  sources:
+  - 'PlantSeg (Wei et al. 2024, CC BY 4.0) class: banana anthracnose'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: A fungal rot of ripening banana fruit, mostly after harvest.
+  causes: Spores from dead leaves and flower remains infect green fruit through wounds;
+    the rot appears as the fruit ripens.
+  effectOnPlant: Fruit spoils quickly in ripening and storage.
+  untreatedOutcome: Losses rise with bruising and warm storage.
+  symptoms:
+  - Dark brown to black, sunken spots on ripening fruit
+  - Salmon-pink spore masses on the spots
+  - Spots join; the rot reaches the pulp
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: 4f1f4ccc3720d084694e235c4b68636b, type: 2}
+  preventionPlan: {fileID: 11400000, guid: be082af0c8090404789006cb110d8899, type: 2}
+  simulationProfile: {fileID: 11400000, guid: 1fc6d029282a24b4894e57dfeb0048df, type: 2}
+  lifecycleStages:
+  - Spores live on dead leaves and flower parts.
+  - They infect green fruit, often at wounds.
+  - The infection waits until ripening.
+  - Black, sunken spots spread over the fruit.
+  conditionFactors:
+  - Warm, humid weather.
+  - Bruised fruit.
+  - Dead leaves near the bunch.
+  - Warm storage.
+  referencePhotos:
+  - {fileID: 2800000, guid: 3f49b7513515ffa4798552bdca6002b7, type: 3}
+  lesionLabel: Black spot
+  haloLabel: Pink spores
+  areaLabel: Rotting fruit

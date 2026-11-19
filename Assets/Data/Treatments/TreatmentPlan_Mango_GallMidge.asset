@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5132a70f51fe6cb4ea3c7d283552eb79, type: 3}
+  m_Name: TreatmentPlan_Mango_GallMidge
+  m_EditorClassIdentifier: 
+  treatmentId: mango_gall_midge_treatment
+  planName: "Mango \u2014 Gall Midge"
+  steps:
+  - {fileID: 11400000, guid: b6d99e7f53659c848aef11affb708353, type: 2}
+  - {fileID: 11400000, guid: e4d8bf0c5e81c844fa5931ec4422c587, type: 2}
+  - {fileID: 11400000, guid: 3007d9a7db7cd7d4fbb84e8e8deda7fa, type: 2}
+  residualSeverityFloor: 0.15
+  residualDamageFloor: 0.1
+  disclaimer: Educational guidance only. Treatment does not guarantee recovery. Consult
+    a local agricultural extension service for field decisions.

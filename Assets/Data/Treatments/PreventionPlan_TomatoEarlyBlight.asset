@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5089f68aca984594ca14f61c1675569f, type: 3}
+  m_Name: PreventionPlan_TomatoEarlyBlight
+  m_EditorClassIdentifier: 
+  preventionId: tomato_early_blight_prevention
+  measures:
+  - category: 0
+    title: Remove and destroy infected debris
+    detail: Early blight overwinters on crop residue and volunteer plants. Clear
+      fallen leaves and end-of-season debris rather than leaving them in the bed.
+  - category: 0
+    title: Sanitise pruning tools
+    detail: Clean blades between plants so cuts do not carry inoculum from an infected
+      plant to a healthy one.
+  - category: 1
+    title: Avoid overhead irrigation
+    detail: Water at the soil line early in the day so leaves do not stay wet for
+      long periods.
+  - category: 2
+    title: Space and stake plants
+    detail: Staking and adequate spacing let foliage dry quickly and reduce leaf-to-leaf
+      contact.
+  - category: 3
+    title: Scout lower leaves weekly
+    detail: Early blight typically starts on older, lower leaves as small concentric-ringed
+      spots. Early detection makes management far easier.
+  - category: 5
+    title: Rotate crops and choose tolerant varieties
+    detail: Avoid planting tomato or potato in the same ground in consecutive seasons,
+      and prefer varieties with documented tolerance where available.

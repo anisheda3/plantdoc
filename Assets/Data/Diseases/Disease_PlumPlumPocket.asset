@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_PlumPlumPocket
+  m_EditorClassIdentifier: 
+  diseaseId: pocket_disease
+  diseaseName: Plum Pocket
+  aiLabelAliases:
+  - plum_pocket_disease
+  - plum pocket disease
+  pathogenType: 0
+  pathogen: Taphrina pruni
+  affectedPart: 1
+  sources:
+  - 'PlantSeg (Wei et al. 2024, CC BY 4.0) class: plum pocket disease'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: A fungal disease that turns young plums into swollen, hollow, stoneless
+    'pockets'.
+  causes: Spores on the bark and buds infect the flowers and young fruit in cool,
+    wet spring weather.
+  effectOnPlant: Affected fruit is lost.
+  untreatedOutcome: Losses can be heavy in wet springs.
+  symptoms:
+  - Young fruit swells, elongates and becomes hollow and stoneless
+  - Fruit turns pale, then grey-white with spores
+  - Pockets shrivel, turn black and drop
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: 68a312071bded394586e2c2295400b2e, type: 2}
+  preventionPlan: {fileID: 11400000, guid: 7d34cff666c58664d9e2e64c952e8137, type: 2}
+  simulationProfile: {fileID: 11400000, guid: 8087510e1a783844abfca3c5a5c77672, type: 2}
+  lifecycleStages:
+  - Spores overwinter on bark and buds.
+  - Cool, wet weather lets them infect the flowers.
+  - Young fruit swells into hollow pockets.
+  - Pockets grow a grey bloom of spores and drop.
+  conditionFactors:
+  - Cool, wet spring.
+  - No dormant spray.
+  - Susceptible varieties.
+  - Wild plums nearby.
+  referencePhotos:
+  - {fileID: 2800000, guid: 381d8f562fd5de2429e16cea603b4c8a, type: 3}
+  lesionLabel: Pale pocket
+  haloLabel: Grey bloom
+  areaLabel: Deformed fruit

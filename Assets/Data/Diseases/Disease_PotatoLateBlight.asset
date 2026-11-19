@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_PotatoLateBlight
+  m_EditorClassIdentifier: 
+  diseaseId: late_blight
+  diseaseName: Late Blight
+  aiLabelAliases:
+  - Potato___Late_blight
+  - potato_late_blight
+  - phytophthora
+  - potato late blight
+  - Potato leaf late blight
+  pathogenType: 0
+  pathogen: 
+  affectedPart: 0
+  sources: []
+  description: A destructive water-mould disease (Phytophthora infestans) of potato
+    and tomato.
+  causes: "Cool (10\u201325 \xB0C), wet weather; airborne spores from nearby infected
+    plants or cull piles."
+  effectOnPlant: Destroys foliage within days and can rot tubers in the ground and
+    in store.
+  untreatedOutcome: Whole crops can be lost in a wet week.
+  symptoms:
+  - Large water-soaked, dark patches
+  - White mould on leaf undersides when humid
+  - Brown rot in tubers
+  supportingFeatureIds:
+  - leaf_spots
+  - yellowing
+  - leaf_color
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: 4d9d3ce1fde483643b17e78ffe9400cc, type: 2}
+  preventionPlan: {fileID: 11400000, guid: 7bd3dafe65cfaf04782279d982a40f8d, type: 2}
+  simulationProfile: {fileID: 11400000, guid: 1224dbafb79bab848a7e426fb87ddd10, type: 2}
+  lifecycleStages:
+  - Spores arrive on the wind or from infected tubers and volunteer plants.
+  - In cool, wet weather they land on leaves and infect within hours.
+  - Greasy grey-green blotches appear and may grow white fuzz underneath.
+  - The tissue collapses and releases more spores, so it can spread through a crop
+    in days.
+  conditionFactors:
+  - "Cool nights, roughly 10\u201316 \xB0C, with mild days."
+  - 'Leaves wet for many hours: fog, rain or heavy dew.'
+  - Infected plants, cull piles or volunteers nearby.
+  - A dense canopy that stays humid.
+  referencePhotos:
+  - {fileID: 2800000, guid: c42378e611baf244d882ab6c7677fa43, type: 3}
+  - {fileID: 2800000, guid: 9351d11960042ad449b99a0b59ec18a0, type: 3}
+  lesionLabel: Blighted patch
+  haloLabel: Pale edge
+  areaLabel: Collapsing tissue

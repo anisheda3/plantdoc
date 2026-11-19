@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5b7af7f939da314084e91933dca2790, type: 3}
+  m_Name: Plant_Rice
+  m_EditorClassIdentifier: 
+  plantId: rice
+  plantName: Rice
+  description: 'Oryza sativa: a tillering grass grown in flooded fields.'
+  scientificName: Oryza sativa
+  healthyModel: {fileID: 0}
+  leafPrefab: {fileID: 0}
+  thumbnail: {fileID: 0}
+  species: {fileID: 11400000, guid: 08a3aa7253e5c154fa2f592214a2f325, type: 2}
+  features:
+  - {fileID: 11400000, guid: e003f3da852d56644be19f05a32c1ffc, type: 2}
+  - {fileID: 11400000, guid: 3453cfa66f7c33147a75d377fe66120e, type: 2}
+  - {fileID: 11400000, guid: 384e23ede7d0591438f622176646940f, type: 2}
+  - {fileID: 11400000, guid: 427819c8c06b57045929d881917ce5ae, type: 2}
+  diseases:
+  - {fileID: 11400000, guid: 3045ec760bd42744c9f8a514470fa86a, type: 2}
+  - {fileID: 11400000, guid: 8bae59719d2c1fb4ca896cda368ed526, type: 2}
+  - {fileID: 11400000, guid: f11a14c9088253f4aaa96ebc7e542310, type: 2}
+  - {fileID: 11400000, guid: 61539d2bfa559f544ad4755176293d37, type: 2}
+  - {fileID: 11400000, guid: b78892802f849b245bbb0a5756ad51f7, type: 2}

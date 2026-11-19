@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_ChilliPowderyMildew
+  m_EditorClassIdentifier: 
+  diseaseId: powdery_mildew
+  diseaseName: Powdery Mildew
+  aiLabelAliases:
+  - chilli_powdery_mildew
+  - powdery mildew
+  - chilli powdery mildew
+  pathogenType: 0
+  pathogen: Leveillula taurica
+  affectedPart: 0
+  sources:
+  - 'chili v2 (Roboflow) / Chilli Leaf Disease Dataset (Mendeley Data) class: powdery
+    mildew, chilli powdery mildew'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: 'A powdery mildew that grows inside chilli leaves: white powder underneath,
+    yellow patches on top.'
+  causes: Spores blow on the wind; warm days, cool nights and dry leaves favour it.
+  effectOnPlant: Heavy leaf drop cuts yield and causes sunscald.
+  untreatedOutcome: Severe attacks defoliate plants.
+  symptoms:
+  - Pale yellow patches on the upper leaf
+  - White to grey powdery growth on the underside
+  - Leaves drop, leaving fruit exposed
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  - yellowing
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: 833ad14e23595464186c40d211f7ec79, type: 2}
+  preventionPlan: {fileID: 11400000, guid: 52ed6ab826d7c714a954eb531013fffd, type: 2}
+  simulationProfile: {fileID: 11400000, guid: 91db718a4e92e3542acb96cf2ce7d000, type: 2}
+  lifecycleStages:
+  - Spores blow in from infected plants.
+  - They infect the leaves from below.
+  - Yellow patches show on top, white powder under.
+  - Leaves drop as it spreads.
+  conditionFactors:
+  - Warm days, cool nights.
+  - Dry leaves.
+  - Dense planting.
+  - Older plants.
+  referencePhotos:
+  - {fileID: 2800000, guid: 08f17e93bc802ac4290dffffe644e7d7, type: 3}
+  lesionLabel: White patch
+  haloLabel: Yellow patch
+  areaLabel: Powdery area

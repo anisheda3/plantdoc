@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5132a70f51fe6cb4ea3c7d283552eb79, type: 3}
+  m_Name: TreatmentPlan_Cauliflower_AlternariaLeafSpot
+  m_EditorClassIdentifier: 
+  treatmentId: cauliflower_alternaria_leaf_spot_treatment
+  planName: "Cauliflower \u2014 Alternaria Leaf Spot"
+  steps:
+  - {fileID: 11400000, guid: 979fcf97a41111f4f835dc90e9868a59, type: 2}
+  - {fileID: 11400000, guid: f8bab2b9dcc52f142ae6ef797c523156, type: 2}
+  - {fileID: 11400000, guid: 66ee661ab08474f4889cd4633c40a014, type: 2}
+  residualSeverityFloor: 0.15
+  residualDamageFloor: 0.1
+  disclaimer: Educational guidance only. Treatment does not guarantee recovery. Consult
+    a local agricultural extension service for field decisions.

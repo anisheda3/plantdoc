@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_CucumberAngularLeafSpot
+  m_EditorClassIdentifier: 
+  diseaseId: angular_leaf_spot
+  diseaseName: Angular Leaf Spot
+  aiLabelAliases:
+  - cucumber_angular_leaf_spot
+  - cucumber angular leaf spot
+  pathogenType: 1
+  pathogen: Pseudomonas syringae pv. lachrymans
+  affectedPart: 0
+  sources:
+  - 'PlantSeg (Wei et al. 2024, CC BY 4.0) class: cucumber angular leaf spot'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: A bacterial leaf spot of cucumber with angular, vein-bounded spots
+    that tear out.
+  causes: Bacteria come in on seed and spread by rain splash, handling and insects
+    in warm, wet weather.
+  effectOnPlant: Leaves are ragged; fruit can be spotted and rot.
+  untreatedOutcome: Heavy infection defoliates plants.
+  symptoms:
+  - Small, water-soaked, angular spots bounded by the veins
+  - A milky ooze on the spots in humid mornings
+  - Spots dry, turn tan and fall out, leaving ragged holes
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  - yellowing
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: dca0f1409a0ed344a836a1ce6c09814a, type: 2}
+  preventionPlan: {fileID: 11400000, guid: 28e7a74ac06688343b0f3141b465e6df, type: 2}
+  simulationProfile: {fileID: 11400000, guid: dfebead7f55cafa43b9ccf566cadd30b, type: 2}
+  lifecycleStages:
+  - Bacteria come in on seed or debris.
+  - Rain and handling spread them.
+  - Angular water-soaked spots form.
+  - Spots dry and tear out.
+  conditionFactors:
+  - Warm, wet weather.
+  - Overhead irrigation.
+  - Infected seed.
+  - Handling wet plants.
+  referencePhotos:
+  - {fileID: 2800000, guid: 270ca05ad07f7014d96515b6db1771b2, type: 3}
+  lesionLabel: Angular spot
+  haloLabel: Water-soaked edge
+  areaLabel: Ragged leaf

@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_TomatoBacterialSpot
+  m_EditorClassIdentifier: 
+  diseaseId: bacterial_spot
+  diseaseName: Bacterial Spot
+  aiLabelAliases:
+  - Tomato___Bacterial_spot
+  - tomato_bacterial_spot
+  - tomato bacterial leaf spot
+  - Tomato leaf bacterial spot
+  pathogenType: 1
+  pathogen: 
+  affectedPart: 0
+  sources: []
+  description: A bacterial disease (Xanthomonas species) of tomato and pepper leaves,
+    stems and fruit.
+  causes: Warm, wet weather; rain or overhead-water splash; infected seed or transplants.
+  effectOnPlant: Spotted leaves yellow and drop; fruit is blemished.
+  untreatedOutcome: Heavy leaf drop exposes fruit to sunscald and cuts yield.
+  symptoms:
+  - Small dark, greasy spots on leaves
+  - Yellow halo around spots
+  - Raised scabby spots on green fruit
+  supportingFeatureIds:
+  - leaf_spots
+  - yellowing
+  - leaf_color
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: ee4ad16f8903fa44aa3a944c1e0e3b4c, type: 2}
+  preventionPlan: {fileID: 11400000, guid: 39a883237a4ac9a4c85c4829387be741, type: 2}
+  simulationProfile: {fileID: 11400000, guid: 53391f3efbade554998d74f139642d15, type: 2}
+  lifecycleStages:
+  - The bacteria survive on seed, debris and volunteer plants.
+  - Rain splash and wet hands carry them onto leaves.
+  - Small water-soaked spots turn dark with yellow halos.
+  - Spots join, leaves drop, and fruit gets scabby spots.
+  conditionFactors:
+  - "Warm, wet weather (about 24-30 \xB0C)."
+  - Rain or overhead watering.
+  - Handling wet plants.
+  - Infected seed or transplants.
+  referencePhotos:
+  - {fileID: 2800000, guid: 57adec41c7ae7c3409e862fdf0abc45f, type: 3}
+  lesionLabel: Greasy dark spot
+  haloLabel: Yellow halo
+  areaLabel: Spotted area

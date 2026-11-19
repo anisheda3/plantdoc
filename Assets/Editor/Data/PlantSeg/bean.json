@@ -1,0 +1,332 @@
+{
+ "plantId": "bean",
+ "plantName": "Bean",
+ "scientificName": "Phaseolus vulgaris",
+ "description": "Phaseolus vulgaris (common bean, bush type).",
+ "diseases": [
+  {
+   "id": "halo_blight",
+   "name": "Halo Blight",
+   "type": "Bacterial",
+   "part": "Leaf",
+   "pathogen": "Pseudomonas savastanoi pv. phaseolicola",
+   "labels": [
+    "bean halo blight"
+   ],
+   "description": "A bacterial disease of beans with small brown spots inside wide yellow-green halos.",
+   "causes": "The bacteria come in on infected seed and spread by rain splash, wind and handling in cool, wet weather.",
+   "symptoms": [
+    "Small water-soaked spots that turn brown",
+    "A wide yellow-green halo round each spot",
+    "Greasy spots on pods; young leaves yellow overall"
+   ],
+   "effect": "Leaves and pods are spotted; yield and seed quality fall.",
+   "untreated": "Infected seed carries it into the next crop.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Remove badly spotted plants",
+     "instruction": "Pick off badly spotted plants when the plants are dry and take them away.",
+     "rationale": "Fewer bacteria splash around.",
+     "mode": "GrabAndRemove",
+     "days": 1,
+     "effect": "Remove",
+     "chemical": false
+    },
+    {
+     "title": "Stay out of wet crops",
+     "instruction": "Do not handle or work among wet plants.",
+     "rationale": "Spreads the bacteria.",
+     "mode": "AdjustSetting",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Copper spray where advised",
+     "instruction": "Spray a registered copper product following the label.",
+     "rationale": "Slows spread to new leaves.",
+     "mode": "SprayApply",
+     "days": 3,
+     "effect": "Protect",
+     "chemical": true
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropManagement",
+     "title": "Sow certified, disease-free seed",
+     "detail": "The main control."
+    },
+    {
+     "category": "CropManagement",
+     "title": "Rotate for 2-3 years",
+     "detail": "Residue carries the bacteria."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_SmallSpots",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.4,
+     0.28,
+     0.14
+    ],
+    "halo": [
+     0.8,
+     0.86,
+     0.38
+    ],
+    "yellow": [
+     0.84,
+     0.86,
+     0.4
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.8,
+    "wilting": 0.4,
+    "damage": 0.5,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Brown spot",
+   "haloLabel": "Yellow halo",
+   "areaLabel": "Yellowing leaf",
+   "lifecycle": [
+    "Bacteria come in on seed.",
+    "Rain splash spreads them.",
+    "Brown spots with wide halos form.",
+    "Pods and seed are infected."
+   ],
+   "conditions": [
+    "Cool (16-20 °C), wet weather.",
+    "Infected seed.",
+    "Handling wet plants.",
+    "Overhead watering."
+   ],
+   "photos": [],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: bean halo blight",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "mosaic_virus",
+   "name": "Bean Common Mosaic",
+   "type": "Viral",
+   "part": "Leaf",
+   "pathogen": "Bean common mosaic virus (BCMV, a potyvirus)",
+   "labels": [
+    "bean mosaic virus"
+   ],
+   "description": "A virus disease that mottles and curls bean leaves.",
+   "causes": "Carried in seed and spread by aphids that probe infected plants.",
+   "symptoms": [
+    "Light and dark green mosaic on the leaves",
+    "Leaves puckered, curled down and narrow",
+    "Stunted plants with fewer pods"
+   ],
+   "effect": "Yield falls.",
+   "untreated": "Infected seed spreads it to the next crop.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Remove infected plants early",
+     "instruction": "Pull out mottled plants while few.",
+     "rationale": "Fewer sources for aphids.",
+     "mode": "GrabAndRemove",
+     "days": 1,
+     "effect": "Rogue",
+     "chemical": false
+    },
+    {
+     "title": "Control weeds and aphids",
+     "instruction": "Keep weeds down round the crop.",
+     "rationale": "Hosts for aphids and the virus.",
+     "mode": "AdjustSetting",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Use certified seed next time",
+     "instruction": "Buy virus-free seed of resistant varieties.",
+     "rationale": "The main control.",
+     "mode": "Informational",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropManagement",
+     "title": "Grow resistant varieties",
+     "detail": "Widely available."
+    },
+    {
+     "category": "CropManagement",
+     "title": "Sow certified seed",
+     "detail": "Seed carries it."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_Interveinal",
+    "yellowMask": "T_YellowMask_Mottle",
+    "lesion": [
+     0.7,
+     0.78,
+     0.34
+    ],
+    "halo": [
+     0.32,
+     0.46,
+     0.2
+    ],
+    "yellow": [
+     0.84,
+     0.84,
+     0.4
+    ],
+    "lesions": 0.6,
+    "yellowing": 0.8,
+    "wilting": 0.2,
+    "damage": 0.3,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Light green patch",
+   "haloLabel": "Puckered area",
+   "areaLabel": "Mottled leaf",
+   "lifecycle": [
+    "Infected seed gives infected seedlings.",
+    "Aphids carry the virus onward.",
+    "Leaves mottle and curl.",
+    "Seed from infected plants carries it."
+   ],
+   "conditions": [
+    "Infected seed.",
+    "Aphids.",
+    "Weeds round the crop.",
+    "Susceptible varieties."
+   ],
+   "photos": [
+    "bean_mosaic_virus_1"
+   ],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: bean mosaic virus",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  },
+  {
+   "id": "rust",
+   "name": "Bean Rust",
+   "type": "Fungal",
+   "part": "Leaf",
+   "pathogen": "Uromyces appendiculatus",
+   "labels": [
+    "bean rust"
+   ],
+   "description": "A rust fungus of bean leaves.",
+   "causes": "Spores blow in on the wind or survive on old bean debris; leaves wet for 10+ hours in mild weather get infected.",
+   "symptoms": [
+    "Small white flecks that become rusty red-brown pustules",
+    "Pustules often ringed by a yellow halo",
+    "Heavily infected leaves yellow and drop"
+   ],
+   "effect": "Leaf loss reduces pod fill.",
+   "untreated": "Severe early rust can cut yield substantially.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Remove rusted leaves",
+     "instruction": "Pick off rusted leaves when the plants are dry and take them away.",
+     "rationale": "Fewer spores are left to spread.",
+     "mode": "TapRegion",
+     "days": 2,
+     "effect": "Remove",
+     "chemical": false
+    },
+    {
+     "title": "Space plants and avoid evening watering",
+     "instruction": "Keep leaves dry overnight.",
+     "rationale": "Rust needs long leaf wetness.",
+     "mode": "AdjustSetting",
+     "days": 2,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "Protective spray",
+     "instruction": "Spray a registered fungicide on the label's schedule.",
+     "rationale": "Protects healthy growth; it cannot cure what is already infected.",
+     "mode": "SprayApply",
+     "days": 3,
+     "effect": "Protect",
+     "chemical": true
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropManagement",
+     "title": "Grow resistant varieties",
+     "detail": "Many exist."
+    },
+    {
+     "category": "CropHygiene",
+     "title": "Remove old bean debris",
+     "detail": "Spores survive on it."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_Pustule",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.56,
+     0.28,
+     0.12
+    ],
+    "halo": [
+     0.84,
+     0.8,
+     0.32
+    ],
+    "yellow": [
+     0.86,
+     0.8,
+     0.32
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.6,
+    "wilting": 0.4,
+    "damage": 0.5,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Rust pustule",
+   "haloLabel": "Yellow halo",
+   "areaLabel": "Rusted leaf",
+   "lifecycle": [
+    "Spores survive on debris or blow in.",
+    "Long dew lets them infect.",
+    "Rusty pustules break through.",
+    "New spores spread every 10-15 days."
+   ],
+   "conditions": [
+    "Mild (17-27 °C) weather.",
+    "Long dew.",
+    "Bean debris nearby.",
+    "Susceptible varieties."
+   ],
+   "photos": [
+    "bean_rust_1"
+   ],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: bean rust",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  }
+ ],
+ "aliases": [],
+ "healthyLabels": []
+}

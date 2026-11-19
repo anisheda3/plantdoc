@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_TomatoLeafMold
+  m_EditorClassIdentifier: 
+  diseaseId: leaf_mold
+  diseaseName: Leaf Mold
+  aiLabelAliases:
+  - Tomato___Leaf_Mold
+  - tomato_leaf_mold
+  - tomato leaf mold
+  - Tomato mold leaf
+  pathogenType: 0
+  pathogen: 
+  affectedPart: 0
+  sources: []
+  description: A fungal disease (Passalora fulva) of tomato leaves, mostly in greenhouses
+    and tunnels.
+  causes: Very humid air (above about 85%) and leaves that stay wet; poor ventilation;
+    spores survive on debris and structures.
+  effectOnPlant: Infected leaves lose their green tissue and drop, starting low on
+    the plant.
+  untreatedOutcome: Heavy leaf loss in a humid house cuts fruit size and yield.
+  symptoms:
+  - Pale green to yellow patches on the upper leaf
+  - Olive-green to brown velvety mould underneath
+  - Leaves curl, wither and drop
+  supportingFeatureIds:
+  - leaf_spots
+  - yellowing
+  - leaf_color
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: 30dedb1a2bf296b4e91e6947697a75cc, type: 2}
+  preventionPlan: {fileID: 11400000, guid: 46fe39d60f9dd434588be9bf3782cc7e, type: 2}
+  simulationProfile: {fileID: 11400000, guid: 451d93b6a76bc394194bcf978fa16648, type: 2}
+  lifecycleStages:
+  - Spores survive on debris and greenhouse surfaces.
+  - In very humid air they infect the leaf undersides.
+  - Pale patches show on top, olive mould underneath.
+  - Leaves wither and the mould releases more spores.
+  conditionFactors:
+  - Humidity above about 85%.
+  - Mild to warm temperatures.
+  - Poor ventilation under cover.
+  - Dense, unpruned plants.
+  referencePhotos:
+  - {fileID: 2800000, guid: b6f719dc8e6c3e8469e9bf33c4813793, type: 3}
+  lesionLabel: Mould patch
+  haloLabel: Pale patch
+  areaLabel: Yellowing leaf

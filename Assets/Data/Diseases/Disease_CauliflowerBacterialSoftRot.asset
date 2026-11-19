@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_CauliflowerBacterialSoftRot
+  m_EditorClassIdentifier: 
+  diseaseId: bacterial_soft_rot
+  diseaseName: Bacterial Soft Rot
+  aiLabelAliases:
+  - cauliflower_bacterial_soft_rot
+  - cauliflower bacterial soft rot
+  pathogenType: 1
+  pathogen: Pectobacterium carotovorum (and related species)
+  affectedPart: 2
+  sources:
+  - 'PlantSeg (Wei et al. 2024, CC BY 4.0) class: cauliflower bacterial soft rot'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: A bacterial rot that turns parts of the cauliflower curd soft, slimy
+    and foul-smelling.
+  causes: Soil bacteria enter the curd through wounds, insect damage and frost cracks,
+    especially when water sits on the head in warm weather.
+  effectOnPlant: Rotted heads are lost, in the field and in storage.
+  untreatedOutcome: The rot spreads to neighbouring heads in wet weather.
+  symptoms:
+  - Water-soaked, tan patches on the curd
+  - The patches turn soft, slimy and brown
+  - A strong rotten smell
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: 7e212ea49a1133c4288ad1e9d3ae6e21, type: 2}
+  preventionPlan: {fileID: 11400000, guid: d930c66352fc0f842a7a3f84601e60c9, type: 2}
+  simulationProfile: {fileID: 11400000, guid: 08c103d662d1df742be5a3444047e4ef, type: 2}
+  lifecycleStages:
+  - Soil bacteria splash onto the plant.
+  - They enter through wounds in the curd.
+  - Water-soaked patches go soft and slimy.
+  - Ooze spreads them to other heads.
+  conditionFactors:
+  - Warm, wet weather.
+  - Water sitting on the curd.
+  - Insect and frost wounds.
+  - Poor drainage.
+  referencePhotos: []
+  lesionLabel: Slimy patch
+  haloLabel: Water-soaked edge
+  areaLabel: Rotting curd

@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_WheatLeafRust(BrownRust)
+  m_EditorClassIdentifier: 
+  diseaseId: leaf_rust
+  diseaseName: Leaf Rust (Brown Rust)
+  aiLabelAliases:
+  - wheat_leaf_rust
+  - wheat leaf rust
+  - Wheat___Rust
+  pathogenType: 0
+  pathogen: Puccinia triticina
+  affectedPart: 0
+  sources:
+  - 'PlantSeg (Wei et al. 2024, CC BY 4.0) class: wheat leaf rust'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: A rust fungus of wheat leaves with scattered orange-brown pustules.
+  causes: Spores blow long distances on the wind; dew on the leaves lets them infect,
+    and new spores form within one to two weeks.
+  effectOnPlant: Rusted leaves lose their green area, so grain fill suffers.
+  untreatedOutcome: Severe epidemics can cut yield heavily.
+  symptoms:
+  - Small, round, orange-brown pustules scattered on the upper leaf
+  - Pustules break through the leaf surface
+  - Leaves yellow and die early
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  - yellowing
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: a5c73694faa2a964585a0c1623a527ba, type: 2}
+  preventionPlan: {fileID: 11400000, guid: d6b010305e0637848852cb4354097946, type: 2}
+  simulationProfile: {fileID: 11400000, guid: 53e3db25e24a927439a47e12d1bfc472, type: 2}
+  lifecycleStages:
+  - Spores blow in or survive on volunteers.
+  - Dew lets them infect.
+  - Pustules break through.
+  - New spores spread every one to two weeks.
+  conditionFactors:
+  - Mild to warm weather.
+  - Long dew.
+  - Volunteer wheat nearby.
+  - Susceptible varieties.
+  referencePhotos:
+  - {fileID: 2800000, guid: 2619a27067ff0a043b4ba402a8c7dc5e, type: 3}
+  lesionLabel: Rust pustule
+  haloLabel: Yellow halo
+  areaLabel: Rusted leaf

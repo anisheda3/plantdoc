@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5089f68aca984594ca14f61c1675569f, type: 3}
+  m_Name: PreventionPlan_TomatoLateBlight
+  m_EditorClassIdentifier: 
+  preventionId: tomato_late_blight_prevention
+  measures:
+  - category: 0
+    title: Destroy cull piles and volunteers
+    detail: Late blight survives on living tissue such as leftover tubers and volunteer
+      plants.
+  - category: 3
+    title: Watch regional blight forecasts
+    detail: Risk rises sharply during cool, wet periods; regional alerts give useful
+      early warning.
+  - category: 4
+    title: Manage humidity under cover
+    detail: Ventilate tunnels and greenhouses to prevent condensation on foliage.

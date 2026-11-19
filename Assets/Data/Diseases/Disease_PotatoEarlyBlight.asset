@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_PotatoEarlyBlight
+  m_EditorClassIdentifier: 
+  diseaseId: early_blight
+  diseaseName: Early Blight
+  aiLabelAliases:
+  - Potato___Early_blight
+  - potato_early_blight
+  - potato early blight
+  - Potato leaf early blight
+  pathogenType: 0
+  pathogen: 
+  affectedPart: 0
+  sources: []
+  description: A common fungal leaf disease of potato caused by Alternaria solani.
+  causes: Warm, humid weather with long leaf wetness; stressed or under-fed plants;
+    inoculum on crop debris.
+  effectOnPlant: Lesions destroy leaf area and weaken the plant late in the season.
+  untreatedOutcome: Early defoliation reduces tuber size and yield.
+  symptoms:
+  - Dark spots with concentric target rings
+  - Yellowing around spots
+  - Older, lower leaves first
+  supportingFeatureIds:
+  - leaf_spots
+  - yellowing
+  - leaf_color
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: 855929e7b601b054daf14f62c7cea2ff, type: 2}
+  preventionPlan: {fileID: 11400000, guid: 3251d71b260c58d4f90034e44d606fba, type: 2}
+  simulationProfile: {fileID: 11400000, guid: f56b192df71496341bac1dd8b8b57c3d, type: 2}
+  lifecycleStages:
+  - Spores survive on crop debris and in the soil between seasons.
+  - Wind and splashing water carry them to the lower, older leaves.
+  - Dark spots with rings and yellow halos appear within days in warm, damp weather.
+  - Spots join, leaves yellow and drop, and new spores spread to nearby plants.
+  conditionFactors:
+  - "Warm days, roughly 24\u201329 \xB0C, with humid nights."
+  - Leaves staying wet from dew, rain or overhead watering.
+  - Older or stressed plants, especially those short of nitrogen.
+  - Plants close together, or infected debris left on the ground.
+  referencePhotos:
+  - {fileID: 2800000, guid: 8f498da233d0dee4e86a5a273387afaa, type: 3}
+  lesionLabel: Ringed lesion
+  haloLabel: Yellow halo
+  areaLabel: Yellowing leaf

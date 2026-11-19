@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5b7af7f939da314084e91933dca2790, type: 3}
+  m_Name: Plant_Grape
+  m_EditorClassIdentifier: 
+  plantId: grape
+  plantName: Grape
+  description: Vitis vinifera (grapevine).
+  scientificName: Vitis vinifera
+  healthyModel: {fileID: 0}
+  leafPrefab: {fileID: 0}
+  thumbnail: {fileID: 0}
+  species: {fileID: 11400000, guid: 92463907f87c0ac49b4a4aa566bd9b76, type: 2}
+  features:
+  - {fileID: 11400000, guid: e003f3da852d56644be19f05a32c1ffc, type: 2}
+  - {fileID: 11400000, guid: 3453cfa66f7c33147a75d377fe66120e, type: 2}
+  - {fileID: 11400000, guid: 384e23ede7d0591438f622176646940f, type: 2}
+  - {fileID: 11400000, guid: 427819c8c06b57045929d881917ce5ae, type: 2}
+  diseases:
+  - {fileID: 11400000, guid: 8af58008f2eedeb46acfa032f9434f32, type: 2}
+  - {fileID: 11400000, guid: 77e9286ac1188214cbb84f85d1cc6543, type: 2}
+  - {fileID: 11400000, guid: c29fe5df61a351248b81108cbdf1244f, type: 2}
+  - {fileID: 11400000, guid: 1c2c8e393d0cbbb419fe87349fe33f79, type: 2}
+  - {fileID: 11400000, guid: e9d9cb2114126df40b977c3cbd9d3f7a, type: 2}

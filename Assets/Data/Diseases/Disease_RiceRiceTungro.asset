@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_RiceRiceTungro
+  m_EditorClassIdentifier: 
+  diseaseId: tungro
+  diseaseName: Rice Tungro
+  aiLabelAliases:
+  - rice_tungro
+  - Rice___Tungro
+  - rice tungro
+  - Tungro
+  pathogenType: 2
+  pathogen: Rice tungro bacilliform virus with rice tungro spherical virus
+  affectedPart: 0
+  sources:
+  - 'CropScan XR model class: Rice___Tungro, rice tungro, Tungro'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: 'A virus disease of rice in South and Southeast Asia: plants are stunted
+    and their leaves turn yellow to orange.'
+  causes: Green leafhoppers (Nephotettix virescens) carry the two viruses from infected
+    rice, stubble regrowth and weeds.
+  effectOnPlant: Infected plants yield little.
+  untreatedOutcome: Early infection over a whole area can lose most of the crop.
+  symptoms:
+  - Young leaves yellow to orange-yellow, starting at the tip
+  - Leaves twisted, mottled or striped
+  - Plants stunted, with few tillers and small, partly empty panicles
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  - yellowing
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: 540630ecda73cda4a82f0c45d8715847, type: 2}
+  preventionPlan: {fileID: 11400000, guid: 2ab15a9dc8b7c5a4d965742d6a28b0eb, type: 2}
+  simulationProfile: {fileID: 11400000, guid: 1432ad6f44e641345bacc2bc3d7f111a, type: 2}
+  lifecycleStages:
+  - Leafhoppers pick up the viruses from infected rice.
+  - They carry them to young plants.
+  - Leaves turn yellow-orange; growth stops.
+  - Stubble and weeds keep the viruses between crops.
+  conditionFactors:
+  - Many green leafhoppers.
+  - Staggered planting.
+  - Infected stubble nearby.
+  - Susceptible varieties.
+  referencePhotos:
+  - {fileID: 2800000, guid: 8f14a2b6a9bf7d04182cc0026a42a5e9, type: 3}
+  lesionLabel: Orange leaf tip
+  haloLabel: Yellow stripe
+  areaLabel: Stunted tiller

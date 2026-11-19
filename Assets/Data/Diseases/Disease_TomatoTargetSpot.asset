@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_TomatoTargetSpot
+  m_EditorClassIdentifier: 
+  diseaseId: target_spot
+  diseaseName: Target Spot
+  aiLabelAliases:
+  - Tomato___Target_Spot
+  - tomato_target_spot
+  pathogenType: 0
+  pathogen: 
+  affectedPart: 0
+  sources: []
+  description: A fungal disease (Corynespora cassiicola) of tomato leaves, stems
+    and fruit.
+  causes: Warm, humid weather with long leaf wetness; dense canopies; spores survive
+    on debris.
+  effectOnPlant: Spots merge and leaves drop, starting in the lower canopy.
+  untreatedOutcome: Defoliation and fruit spots reduce yield and quality.
+  symptoms:
+  - Brown spots with concentric rings
+  - Light brown centres that may crack
+  - Yellow halo round the spots
+  supportingFeatureIds:
+  - leaf_spots
+  - yellowing
+  - leaf_color
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: a094a75d09f3faf49b0ffadd9bc01d55, type: 2}
+  preventionPlan: {fileID: 11400000, guid: 6d5169bf6ddc7de46bb1385910f86f1d, type: 2}
+  simulationProfile: {fileID: 11400000, guid: 7d6551e4f83653c4c8d2b4f810070c29, type: 2}
+  lifecycleStages:
+  - The fungus survives on crop debris.
+  - Spores land on leaves wet for many hours.
+  - Brown spots with concentric rings appear.
+  - Spots merge and leaves drop.
+  conditionFactors:
+  - Warm, humid weather.
+  - Long leaf wetness.
+  - A dense canopy.
+  - Debris from the last crop.
+  referencePhotos:
+  - {fileID: 2800000, guid: 7d1034e050750e84daadb6733824b239, type: 3}
+  lesionLabel: Ringed spot
+  haloLabel: Yellow halo
+  areaLabel: Affected leaf

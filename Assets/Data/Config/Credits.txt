@@ -1,0 +1,167 @@
+CREDITS
+
+Icons: Lucide (https://lucide.dev), ISC licence.
+Font: Inter by Rasmus Andersson, SIL Open Font License 1.1.
+Plant leaf textures: healthy-leaf photographs from the PlantVillage dataset (Hughes & Salathe 2015; CC0 1.0, via the Hugging Face mirror DScomp380/plant_village), cut out and packed into atlases by tools/assets/make_plant_textures.py. Stem, bark, soil and root textures are generated from noise.
+Photographs are used under the licences shown; CC BY and CC BY-SA images are credited here.
+
+DISEASE REFERENCE PHOTOS
+- PlantVillage Apple - Black rot (photo 22) - PlantVillage (Hughes & Salathe 2015) - CC0 1.0
+- Healthy-nature-apple-leaf (24326106195).jpg - www.Pixel.la Free Stock Photos - CC0
+- Panašování listu jabloně.JPG - Juan de Vojníkov - CC BY-SA 3.0
+- Cedar apple rust 3110.jpg - Ronincmc - CC BY-SA 4.0
+- Cedar-apple rust 3.jpg - Botond Balogh - Public domain
+- Camuesta con sarna.JPG - Lin linao - CC BY-SA 3.0
+- Venturia inaequalis 355533267.jpg - Ian Dickie - CC BY 4.0
+- Banana anthracnose - 5684779434.jpg - Plant pests and diseases - CC0
+- Banana black leaf streak, caused by Mycosphaerella fijiensis - 1396264 - Plant pests and diseases - CC0
+- Banana bunchy top - 28341541981.jpg - Plant pests and diseases - CC0
+- Cordana leaf spot by Cordana musae.jpg - Scot Nelson - CC0
+- Banana (Variety- Koa e Kea)- Fusarium wilt (Panama disease) - 40318102 - Plant pests and diseases - CC0
+- Starr-110822-8250-Ocimum basilicum-leaves with basil downy mildew Pero - Forest and Kim Starr - CC BY 3.0 us
+- Bohnen - Phaseolus - Bean common mosaic virus (BCMV) - Howard F. Schwa - Howard F. Schwartz, Colorado State University, Bugwood.org - CC BY 3.0
+- Uromyces appendiculatus, pycnia, 5365336.jpg - Howard F. Schwartz, Colorado State University, United States - CC BY 3.0 us
+- Monilinia vaccinii-corymbosi apothecia.jpg - University of Georgia Plant Pathology , University of Georgia, Bugwood - CC BY 3.0
+- Starr-110621-6276-Vaccinium hybrid-Southern highbush cv Misty leaf wit - Forest and Kim Starr - CC BY 3.0 us
+- Oparzelina borówki wysokiej a1 4).jpg - Jerzy Opioła - CC BY-SA 4.0
+- Brokkoli Alternaria Befall Agroscope Birgitte Bauer und Matthias Lutz. - Birgitte Bauer und Matthias Lutz, Agrocope, Wädenswil, Schweiz. - CC BY-SA 4.0
+- Brokkoli Falscher Mehltau am Blatt-Foto Agroscope.jpg - Agroscope Müller-Thurgau-Strasse 29 8820 Wädenswil Schweiz - CC BY-SA 4.0
+- Brokkoli Alternaria-Blattbefall mit Vergilbung-Josef Schlaghecken.jpg - Schlaghecken Josef - CC BY-SA 4.0
+- Chinakohl Alternaria-2-DLR-NW-jk.jpg - Jochen Kreiselmaier, Pflanzenschutzberater am Dienstleistungszentrum L - CC BY-SA 4.0
+- Xanthomonas campestris pv raphani symptoms savoy cabbage.jpg - Joana Vicente - CC0
+- Chinakohl 3 Falscher Mehltau-Brand.jpg - W. Brand, Pflanzenschutzberater Pfalzmarkt, Mutterstadt. - CC BY 4.0
+- Alternaria dauci on a carrot stem.png - ApplemanCooperKutzke - CC BY-SA 3.0
+- Alternaria brassicicola host symptoms.jpg - Seemadua, S. Department of Agriculture, Thailand - CC BY 3.0 au
+- Cercospora apii.jpg - Scot Nelson - CC0
+- Cherry Leaf Spot 2.jpg - Glen R. Stanosz, University of Wisconsin-Madison; Mary L. Torsello, US - Public domain
+- PlantVillage Cherry - Powdery mildew (photo 07) - PlantVillage (Hughes & Salathe 2015) - CC0 1.0
+- Pepper Disease in Tropical Bonakanda.jpg - DannykhorskhiLXII - CC BY-SA 4.0
+- Yellow curl leaf disease Pj IMG 3163.jpg - Kembangraps - CC0
+- 'Cercospora capsici.jpg - David B. Langston, University of Georgia - CC BY 3.0 us
+- 5573619-PPT-powdery mildew (Leveillula taurica).jpg - Dr. Parthasarathy Seethapathy, Amrita School of Agricultural Sciences, - CC BY 3.0
+- CSIRO ScienceImage 7704 Silverleaf whitefly Bemisia tabaci biotype B.j - division, CSIRO - CC BY 3.0
+- Cercospora Berry Blotch.jpg - Scot Nelson - CC0
+- Coffee brown eye spot.jpg - Nivetha.atr - CC BY-SA 4.0
+- Hemileia vastatrix.jpg - Howard F. Schwartz - CC BY 3.0 us
+- PlantVillage Corn - Common rust (photo 08) - PlantVillage (Hughes & Salathe 2015) - CC0 1.0
+- PlantVillage Corn - Cercospora leaf spot Gray leaf spot (photo 12) - PlantVillage (Hughes & Salathe 2015) - CC0 1.0
+- PlantVillage Corn - Northern Leaf Blight (photo 23) - PlantVillage (Hughes & Salathe 2015) - CC0 1.0
+- Maisbeulenbrand Maisbrand Ustilago maydis.jpg - Holger Krisp - CC BY 3.0
+- Angular leaf spot of cucumber 5359665.jpg - Howard F. Schwartz, Colorado State University, Bugwood.org - CC BY 3.0 us
+- Bacterial wilt.JPG - Eeshie - CC BY-SA 3.0
+- Cercospora Melongenae.jpg - Scot Nelson - CC0
+- Rust on garlic plants.jpg - Downtowngal - Public domain
+- PlantVillage Grape - Black rot (photo 18) - PlantVillage (Hughes & Salathe 2015) - CC0 1.0
+- Plasmopara viticola 305150885.jpg - Bruce Cook - CC0
+- PlantVillage Grape - Esca  Black Measles (photo 13) - PlantVillage (Hughes & Salathe 2015) - CC0 1.0
+- PlantVillage Grape - Leaf blight  Isariopsis Leaf Spot (photo 05) - PlantVillage (Hughes & Salathe 2015) - CC0 1.0
+- IJssla wit (Iceberg with Bremia lactucae).jpg - Rasbak - CC BY-SA 3.0
+- Lactuca Salat 1 - Lettuce mosaic virus - Roswitha Ulrich.jpg - Roswitha Ulrich, Pflanzenschutzdienst, Hessen - CC BY-SA 4.0
+- Mango (Mangifera indica) Bacterial black spot caused by Xanthomonas ci - Scot Nelson - CC0
+- Bacterial black spot of mango caused by Xanthomonas citri pv. mangifer - Scot Nelson - CC0
+- Mango leaf gall midge on leaf.jpg - Gutam2000 - CC BY 4.0
+- Mango powdery mildew flowers 2.jpg - Scot Nelson, Wayne Nishijima - Public domain
+- Sooty mould in mango.jpg - Srimv20244 - CC BY-SA 4.0
+- Acer pseudoplatanus, mit Rhytisma acerinum (Ahorn-Runzelschorf) - Blie - Speifensender - CC0
+- Xanthomonas axonopodis canker 1 (8233192838).jpg - Scot Nelson - CC0
+- PlantVillage Orange - Haunglongbing  Citrus greening (photo 19) - PlantVillage (Hughes & Salathe 2015) - CC0 1.0
+- PlantVillage Peach - Bacterial spot (photo 12) - PlantVillage (Hughes & Salathe 2015) - CC0 1.0
+- Peach- Monilinia fruit rot (Brown rot).jpg - m.borden - CC BY-SA 2.0
+- Taphrina deformans 73707297.jpg - Duarte Frade - CC BY 4.0
+- Tranzschelia discolor (33).jpg - Colin Meurk - CC BY-SA 4.0
+- Lesions on Peach Fruit.jpg - Clemson University - USDA Cooperative Extension Slide Series - CC BY 3.0 us
+- Bacterial leaf spot of pepper (14954536360).jpg - Scot Nelson - CC0
+- Bacterial leaf spot of pepper (14954498489).jpg - Scot Nelson - CC0
+- Blossomrotcloseup.jpg - Siltloam - Public domain
+- Paprika Passalora capsicicola -1- Bedlan-Gemüse 11-2012.jpg - Dr. Gerhard Bedlan - CC BY-SA 4.0
+- Xanthomonas arboricola pv. pruni WF4.jpg - Jerzy Opioła - CC BY-SA 4.0
+- Monilinia fructicola.jpg - Mary Ann Hansen - CC BY 3.0 us
+- Viruses-04-02853-g001.png - Jiri Sochor, Petr Babula, Vojtech Adam, Boris Krska, and Rene Kizek - CC BY 3.0
+- Taphrina pruni 71501402.jpg - Susan Marley - CC BY 4.0
+- Starr-110924-9553-Syzygium cumini-leaves with ohia rust Puccinia psidi - Forest and Kim Starr - CC BY 3.0 us
+- Alternaria solani IMG 1661.jpg - Linnea Stridh - CC BY-SA 4.0
+- Late blight on potato leaf 2.jpg - Howard F. Schwartz, Colorado State University, United States - CC BY 3.0 us
+- Phytophthora infestans on potato leaf.jpg - Mary Ann Hansen, Virginia Polytechnic Institute and State University,  - CC BY 3.0 us
+- Apple tree with fire blight.jpg - Sebastian Stabinger - CC BY-SA 3.0
+- Himbeere (Rubus idaeus) mit Grauschimmel (Botrytis cinerea)-Josef Schl - Schlaghecken Josef - CC BY 4.0
+- Coryneopsis.rubi.-.lindsey.jpg - James Lindsey - CC BY-SA 3.0
+- Phragmidium rubi-idaei 133985948.jpg - Евгений Бениханов - CC BY 4.0
+- Bacterial blight of rice.jpeg - Donald Groth, Louisiana State University AgCenter, Bugwood.org - CC BY 3.0 us
+- Rice blast Magnaporthe grisea.jpg - unknown - Public domain
+- Cochliobolus miyabeanus.jpg - Donald Groth, Louisiana State University AgCenter - CC BY 3.0 us
+- Rice plants affected by tungro disease1.jpg - Nozaki Michio (JIRCAS Photo Archive) - CC BY 2.0
+- Bacterial Blight of Soybean.jpg - Dean Malvick - Attribution
+- K-deficient soyabean Cedara 2013 02 08 08 22 58 7477.jpg - Alandmanson - CC BY-SA 4.0
+- Peronospora manshurica on soybean leaf.jpg - Clemson University - USDA Cooperative Extension Slide Series, , United - CC BY 3.0
+- Soja Mancha Ojo de Rana MOR.jpg - Maggilautaro - Public domain
+- Symptoms of Soybean Mosaic Virus 2012.jpg - Daren Mueller, Iowa State University, Bugwood.org - CC BY 3.0 us
+- Soybean rust.jpg - unknown - Public domain
+- Bacterial wilt.JPG - Eeshie - CC BY-SA 3.0
+- Falscher Mehltau.jpg - Christian Hummert (Ixitixel) - CC BY-SA 3.0
+- PlantVillage Squash - Powdery mildew (photo 17) - PlantVillage (Hughes & Salathe 2015) - CC0 1.0
+- Yellow Mosaic Virus on yellow squash leaf.jpg - Babahu - CC0
+- PlantVillage Strawberry - Leaf scorch (photo 07) - PlantVillage (Hughes & Salathe 2015) - CC0 1.0
+- Sugarcane mosaic virus.jpg - Jeffrey W. Lotz, Florida Department of Agriculture and Consumer Servic - CC BY 3.0 us
+- Пламеница на тутунот (Peronospora tabacina) – Силен степен на зараза.j - Tashkoskip - CC BY-SA 4.0
+- Alternariaalternata.jpg - unknown - CC BY 3.0 us
+- Мозаик и некрози на тутун (Tobacco mosaic virus).jpg - Tashkoskip - CC BY-SA 4.0
+- PlantVillage Tomato - Bacterial spot (photo 08) - PlantVillage (Hughes & Salathe 2015) - CC0 1.0
+- Alternaria solani a1 (2).jpg - Jerzy Opioła - CC BY-SA 4.0
+- Early blight on tomato leaves (7871930010).jpg - Dwight Sipler from Stow, MA, USA - CC BY 2.0
+- Alternaria solani - leaf lesions.jpg - Clemson University - USDA Cooperative Extension Slide Series - CC BY 3.0 us
+- Tomato late blight leaf sporulating lesions 1 (5816170621).jpg - Scot Nelson from Honolulu, Hawaii, USA - CC0
+- Late blight on tomato leaf (7871756748).jpg - Dwight Sipler from Stow, MA, USA - CC BY 2.0
+- PlantVillage Tomato - Leaf Mold (photo 28) - PlantVillage (Hughes & Salathe 2015) - CC0 1.0
+- PlantVillage Tomato - Tomato mosaic virus (photo 10) - PlantVillage (Hughes & Salathe 2015) - CC0 1.0
+- PlantVillage Tomato - Septoria leaf spot (photo 09) - PlantVillage (Hughes & Salathe 2015) - CC0 1.0
+- PlantVillage Tomato - Spider mites Two spotted spider mite (photo 06) - PlantVillage (Hughes & Salathe 2015) - CC0 1.0
+- PlantVillage Tomato - Target Spot (photo 20) - PlantVillage (Hughes & Salathe 2015) - CC0 1.0
+- PlantVillage Tomato - Tomato Yellow Leaf Curl Virus (photo 16) - PlantVillage (Hughes & Salathe 2015) - CC0 1.0
+- Life cycle of Bacterial Leaf Streak.jpg - Donald Groth, Louisiana State University AgCenter, Bugwood.org - CC BY 3.0
+- Fusarium culmorum (02).jpg - Barbara Scherm, Virgilio Balmas, Francesca Spanu, Giovanna Pani, Giova - CC BY 4.0
+- Cochliobolus sativus - Lindsey.jpg - James Lindsey - CC BY-SA 3.0
+- Wheat leaf rust on wheat.jpg - James Kolmer - Public domain
+- Blumeria graminis on leaf.jpg - Clemson University - USDA Cooperative Extension Slide Series, - CC BY 3.0 us
+- Diseases of wheat, oats, barley, and rye (1960) (20786070559).jpg - Internet Archive Book Images - Public domain
+- Stem rust close up.jpg - unknown - Public domain
+- Dz. rūsa z.tritikāle 2015.jpg - Brauna55 - CC BY-SA 4.0
+
+TREATMENT PHOTOS
+- Mature Tomato Plants and Young Cucumber Plants in Dutch Buckets - Alabama Extension - CC0 1.0
+- Tomatenpflanze - Tomato plant - Томатное растение - hutschinetto - BY-SA 2.0
+- I love to take care about trees - Tery14 - BY-SA 2.0
+- Kick the leaves - CAJC: in the PNW - BY-SA 2.0
+- Spray bottles - unknown - CC0 1.0
+- Free garden water sprayer image - unknown - CC0 1.0
+
+BACKGROUNDS AND LEAF PHOTOS
+- Seedlings Growing - Solo Shutter - CC0 1.0
+- stocks-1800 - Artem Beliaikin - CC0 1.0
+- Seedlings Growing - Solo Shutter - CC0 1.0
+- Free leaf white background image - unknown - CC0 1.0
+- Single Isolated Leaf White Background - unknown - CC0 1.0
+- A banana leaf.JPG - Thamizhpparithi Maari - CC BY-SA 3.0
+- Banana leaf (India, 2010).jpg - Ahmedabad2018 - CC BY-SA 4.0
+- Banana Leaf at Agua Azul (8264762788).jpg - Rob Young from United Kingdom - CC BY 2.0
+- Basil 2.png - Tiia Monto - CC BY-SA 4.0
+- Albahaca basilic hojas pesto.jpg - Crista Castellanos - CC BY-SA 4.0
+- Buschbohnen Sorten Beurteilung-Josef Schlaghecken.jpg - Schlaghecken Josef - CC BY-SA 4.0
+- Broccoli-leaf-big.jpg - Etbe - CC BY 2.5 au
+- Daucus carota 15-p.bot-daucu.carota-05.jpg - Ayotte, Gilles, 1948- - CC BY-SA 4.0
+- Daucus carota 15-p.bot-daucu.carota-06.jpg - Ayotte, Gilles, 1948- - CC BY-SA 4.0
+- Coffea arabica coffee tuvvur.JPG - Monalperoth - CC BY-SA 4.0
+- CSIRO ScienceImage 405 Genetically Modified Cotton Leaf.jpg - division, CSIRO - CC BY 3.0
+- Auberginen Kartoffelkäfer-Josef Schlaghecken-1.jpg - Schlaghecken Josef - CC BY 4.0
+- Allium sativum 15-p.bot-lilia.alliu-001.jpg - Ayotte, Gilles, 1948- - CC BY-SA 4.0
+- Ingwer (Zingiber officinale) Bätter 24 cm lang-Josef Schlaghecken.jpg - Schlaghecken Josef - CC BY-SA 4.0
+- 2018-06-01 (129) Lactuca sativa (garden lettuce) Nature at Bichlhäusl  - GT1976 - CC BY-SA 4.0
+- La laitue 02.jpg - Alpha0111 - CC BY-SA 4.0
+- Mangifera indica20090409 16.jpg - Bff - CC BY-SA 3.0
+- Acer platanoides 15-p.bot-a.platanoides-019.jpg - Ayotte, Gilles, 1948- - CC BY-SA 4.0
+- Acer platanoides 15-p.bot-a.platanoides-021.jpg - Ayotte, Gilles, 1948- - CC BY-SA 4.0
+- Acer platanoides 15-p.bot-a.platanoides-023.jpg - Ayotte, Gilles, 1948- - CC BY-SA 4.0
+- Clementine012.png - asdfVic (Vicasdf9) - CC BY-SA 3.0
+- Folla Pexegueiro 006eue.jpg - Luis Miguel Bugallo Sánchez (Lmbuga)  Copyright: GFDL (GNU Free Docume - CC BY-SA 3.0
+- -2020-05-25 Courgette plant, Trimingham (1).JPG - Kolforn (Kolforn) I'd appreciate if you could mail me (Kolforn@gmail.c - CC BY-SA 4.0
+- -2020-05-25 Courgette plant, Trimingham (2).JPG - Kolforn (Kolforn) I'd appreciate if you could mail me (Kolforn@gmail.c - CC BY-SA 4.0
+- Nicotiana tabacum 'Tobacco' (Solanaceae) leaf.JPG - Magnus Manske - CC BY-SA 2.5

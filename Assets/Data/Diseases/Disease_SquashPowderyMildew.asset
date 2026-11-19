@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_SquashPowderyMildew
+  m_EditorClassIdentifier: 
+  diseaseId: powdery_mildew
+  diseaseName: Powdery Mildew
+  aiLabelAliases:
+  - Squash___Powdery_mildew
+  - squash_powdery_mildew
+  - squash powdery mildew
+  - zucchini powdery mildew
+  - Squash Powdery mildew leaf
+  pathogenType: 0
+  pathogen: 
+  affectedPart: 0
+  sources: []
+  description: A fungal disease (Podosphaera xanthii and others) of squash, pumpkin,
+    cucumber and melon.
+  causes: Warm days, dense plants and shade; spores blow in on the wind and do not
+    need wet leaves.
+  effectOnPlant: Leaves die early, which cuts yield and fruit quality.
+  untreatedOutcome: Plants can lose most of their leaves late in the season.
+  symptoms:
+  - White powdery spots that spread over the leaf
+  - Older leaves yellow and dry
+  - Stems and petioles also turn white
+  supportingFeatureIds:
+  - leaf_spots
+  - yellowing
+  - leaf_color
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: 3f1aeb2a7234d4749aaaa35ead1a56fa, type: 2}
+  preventionPlan: {fileID: 11400000, guid: 7c387244e45132a488aa176f214544ea, type: 2}
+  simulationProfile: {fileID: 11400000, guid: da123b92d780f45449064e97045d4c30, type: 2}
+  lifecycleStages:
+  - Spores arrive on the wind from other cucurbits.
+  - They infect leaves without needing them to be wet.
+  - White powdery spots spread over the leaf.
+  - Leaves yellow and die, and spores spread on.
+  conditionFactors:
+  - Warm days and dense plants.
+  - Shade.
+  - Dry leaves are enough.
+  - Older leaves later in the season.
+  referencePhotos:
+  - {fileID: 2800000, guid: 07a71f163d7273541af37409ec9f3ada, type: 3}
+  lesionLabel: White spot
+  haloLabel: Pale patch
+  areaLabel: Powdery area

@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_GrapeEsca(BlackMeasles)
+  m_EditorClassIdentifier: 
+  diseaseId: esca
+  diseaseName: Esca (Black Measles)
+  aiLabelAliases:
+  - Grape___Esca_(Black_Measles)
+  - grape_esca
+  pathogenType: 0
+  pathogen: 
+  affectedPart: 0
+  sources: []
+  description: A trunk disease of grapevines caused by wood-rotting fungi (Phaeomoniella
+    chlamydospora, Phaeoacremonium species and others).
+  causes: The fungi enter through pruning wounds and grow in the wood over years;
+    leaf symptoms appear in summer.
+  effectOnPlant: The wood is slowly destroyed; leaves scorch and fruit is spotted.
+  untreatedOutcome: Vines decline over years and can die suddenly; there is no cure.
+  symptoms:
+  - '''Tiger stripes'': yellow or red bands between the veins that turn brown'
+  - Small dark spots on berries (measles)
+  - Sudden wilting of a whole vine in hot weather
+  supportingFeatureIds:
+  - leaf_spots
+  - yellowing
+  - leaf_color
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: 08bf430b89b7c3d4f9330a5b75c0ac5f, type: 2}
+  preventionPlan: {fileID: 11400000, guid: a0354f69a99dac6439011b8995944262, type: 2}
+  simulationProfile: {fileID: 11400000, guid: 5657fe87d1014dc4fa89207fc87541ed, type: 2}
+  lifecycleStages:
+  - Fungal spores enter through pruning wounds.
+  - The fungi grow in the wood for years, unseen.
+  - In summer, leaves show tiger stripes and berries get dark spots.
+  - The vine declines or suddenly collapses.
+  conditionFactors:
+  - Pruning wounds made in wet weather.
+  - Older vines.
+  - Infected planting material.
+  - Hot weather (sudden collapse).
+  referencePhotos:
+  - {fileID: 2800000, guid: fca011041c62efc44b981cb21bffa04e, type: 3}
+  lesionLabel: Dead stripe
+  haloLabel: Yellow band
+  areaLabel: Tiger-striped leaf

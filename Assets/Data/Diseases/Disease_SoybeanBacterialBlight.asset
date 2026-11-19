@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_SoybeanBacterialBlight
+  m_EditorClassIdentifier: 
+  diseaseId: bacterial_blight
+  diseaseName: Bacterial Blight
+  aiLabelAliases:
+  - soybean_bacterial_blight
+  - soybean bacterial blight
+  pathogenType: 1
+  pathogen: Pseudomonas savastanoi pv. glycinea
+  affectedPart: 0
+  sources:
+  - 'PlantSeg (Wei et al. 2024, CC BY 4.0) class: soybean bacterial blight'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: A bacterial leaf spot of soybean in cool, wet weather.
+  causes: The bacteria survive in residue and seed and spread by wind-driven rain
+    into the leaves.
+  effectOnPlant: Usually minor; severe cases reduce yield.
+  untreatedOutcome: Ragged leaves in cool, wet years.
+  symptoms:
+  - Small angular, water-soaked spots
+  - Spots turn dark brown with a yellow-green halo
+  - Spots merge; dead tissue tears out, leaves look ragged
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  - yellowing
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: d0df09e5f321350478f6ac1ee5d26747, type: 2}
+  preventionPlan: {fileID: 11400000, guid: 49c8e4bab658d41428119a1418d116e8, type: 2}
+  simulationProfile: {fileID: 11400000, guid: 74eb5bf867535564a8185471c1690ff4, type: 2}
+  lifecycleStages:
+  - Bacteria survive in residue and seed.
+  - Wind-driven rain splashes them onto leaves.
+  - Water-soaked spots turn brown with halos.
+  - Dead tissue falls out.
+  conditionFactors:
+  - Cool, wet weather.
+  - Wind-driven rain.
+  - Infested residue.
+  - Infected seed.
+  referencePhotos:
+  - {fileID: 2800000, guid: 1ad401cdbdbc7a04db817cae18e63888, type: 3}
+  lesionLabel: Angular spot
+  haloLabel: Yellow halo
+  areaLabel: Ragged leaf

@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5b7af7f939da314084e91933dca2790, type: 3}
+  m_Name: Plant_Apple
+  m_EditorClassIdentifier: 
+  plantId: apple
+  plantName: Apple
+  description: Malus domestica.
+  scientificName: Malus domestica
+  healthyModel: {fileID: 0}
+  leafPrefab: {fileID: 0}
+  thumbnail: {fileID: 0}
+  species: {fileID: 11400000, guid: 0a329bbee3dc08546825bc340a2e7d09, type: 2}
+  features:
+  - {fileID: 11400000, guid: e003f3da852d56644be19f05a32c1ffc, type: 2}
+  - {fileID: 11400000, guid: 3453cfa66f7c33147a75d377fe66120e, type: 2}
+  - {fileID: 11400000, guid: 384e23ede7d0591438f622176646940f, type: 2}
+  - {fileID: 11400000, guid: 427819c8c06b57045929d881917ce5ae, type: 2}
+  diseases:
+  - {fileID: 11400000, guid: 4f53a20b5e1388043899cc59df6e5f52, type: 2}
+  - {fileID: 11400000, guid: 95fd01fb616722e4e9df14d443a1b812, type: 2}
+  - {fileID: 11400000, guid: d698ada7f5041a046808d56e3ff76e80, type: 2}
+  - {fileID: 11400000, guid: b660dea3c45c6764483fd1043e29afc1, type: 2}

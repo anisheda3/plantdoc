@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_BroccoliRingSpot
+  m_EditorClassIdentifier: 
+  diseaseId: ring_spot
+  diseaseName: Ring Spot
+  aiLabelAliases:
+  - broccoli_ring_spot
+  - broccoli ring spot
+  pathogenType: 0
+  pathogen: Mycosphaerella brassicicola
+  affectedPart: 0
+  sources:
+  - 'PlantSeg (Wei et al. 2024, CC BY 4.0) class: broccoli ring spot'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: A fungal leaf spot of brassicas with grey spots full of tiny black
+    dots in rings.
+  causes: Spores from brassica debris spread by wind and rain in cool, wet weather.
+  effectOnPlant: Outer leaves die early; spots can mark the harvested part.
+  untreatedOutcome: Heavy spotting lowers yield and quality.
+  symptoms:
+  - Round grey to brown spots, 3-20 mm, with a green-yellow border
+  - Tiny black dots arranged in rings within the spots
+  - Spotted leaves yellow and drop
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  - yellowing
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: 1973523ac7075084eab9f1f9dab8f1bc, type: 2}
+  preventionPlan: {fileID: 11400000, guid: f0b05cc2f1028304a9a3d424427d6b59, type: 2}
+  simulationProfile: {fileID: 11400000, guid: be282d76809a8b14bbe4b7ac691f10ce, type: 2}
+  lifecycleStages:
+  - The fungus survives on brassica debris.
+  - Cool, wet weather spreads spores.
+  - Grey spots with rings of black dots form.
+  - Spores spread to new leaves.
+  conditionFactors:
+  - Cool, wet weather.
+  - Brassica debris.
+  - Long leaf wetness.
+  - Overwintered crops.
+  referencePhotos:
+  - {fileID: 2800000, guid: 29aac475638aac544a39187606c147ba, type: 3}
+  lesionLabel: Grey spot
+  haloLabel: Ring of dots
+  areaLabel: Spotted leaf

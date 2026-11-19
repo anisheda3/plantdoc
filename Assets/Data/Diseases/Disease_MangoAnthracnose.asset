@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_MangoAnthracnose
+  m_EditorClassIdentifier: 
+  diseaseId: anthracnose
+  diseaseName: Anthracnose
+  aiLabelAliases:
+  - mango_anthracnose
+  - Anthracnose
+  - mango anthracnose
+  - Mango___Anthracnose
+  pathogenType: 0
+  pathogen: Colletotrichum gloeosporioides (and related species)
+  affectedPart: 0
+  sources:
+  - 'MangoLeafBD (Mendeley Data) class: Anthracnose, mango anthracnose'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: 'The most important disease of mango: dark spots on young leaves,
+    blackened flowers and rotting fruit.'
+  causes: Spores from infected leaves, twigs and old flower stalks spread by rain
+    splash; wet weather at flushing and flowering favours it.
+  effectOnPlant: Leaf spotting, flower loss and fruit rot reduce the crop.
+  untreatedOutcome: Repeated years of blossom blight can cut yields heavily.
+  symptoms:
+  - Small dark brown to black spots on young leaves, often with a yellow edge
+  - Spots join; leaf tissue dries and may fall out
+  - Black, withered flower panicles; sunken black spots on ripening fruit
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  - yellowing
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: 07ad745b3d2e9e54abc5776ac0c68f74, type: 2}
+  preventionPlan: {fileID: 11400000, guid: 2db85858b4ec68e48821863c12c78091, type: 2}
+  simulationProfile: {fileID: 11400000, guid: 80a7e2822ba945943ac4d6defb06c515, type: 2}
+  lifecycleStages:
+  - The fungus lives on leaves, twigs and old flower stalks.
+  - Rain splashes spores onto new flushes and flowers.
+  - Dark spots form on leaves; flowers blacken.
+  - Fruit is infected and rots as it ripens.
+  conditionFactors:
+  - Rain at flushing and flowering.
+  - High humidity.
+  - Dense crowns.
+  - Susceptible varieties.
+  referencePhotos:
+  - {fileID: 2800000, guid: ff461786b4de6a144ac0466b11b02415, type: 3}
+  lesionLabel: Black spot
+  haloLabel: Yellow edge
+  areaLabel: Spotted leaf

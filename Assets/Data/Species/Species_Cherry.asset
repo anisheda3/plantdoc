@@ -1,0 +1,113 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bdf586ed54df4c4bb04bad3c2a44bdc, type: 3}
+  m_Name: Species_Cherry
+  m_EditorClassIdentifier: 
+  speciesId: cherry
+  displayName: Cherry
+  archetype: 1
+  seed: 83
+  height: 1.3
+  inPot: 0
+  potColor: {r: 0.72, g: 0.38, b: 0.24, a: 1}
+  rootCount: 9
+  rootSpread: 0.55
+  rootRadius: 0.022
+  rootTint: {r: 0.8, g: 0.7, b: 0.64, a: 1}
+  moundRadius: 0.16
+  moundHeight: 0.055
+  rootHairs: 1
+  rootNodules: 0
+  braceRoots: 0
+  mainStems: 1
+  stemSplay: 0
+  sideBranches: 2
+  firstLeafHeight: 0.12
+  stemRadius: 0.017
+  stemColor: {r: 0.78, g: 0.86, b: 0.62, a: 1}
+  stemLean: 0.03
+  crownHeight: 0
+  woodyStems: 0
+  oppositeLeaves: 0
+  stalkShare: 0.86
+  grassTassel: 0
+  leafAtlas: {fileID: 2800000, guid: 77aa2a557a1898e4dba6591ee291c193, type: 3}
+  leafRects:
+  - serializedVersion: 2
+    x: 0.005859375
+    y: 0.02238806
+    width: 0.16699219
+    height: 0.95522386
+  - serializedVersion: 2
+    x: 0.18457031
+    y: 0.02238806
+    width: 0.18164062
+    height: 0.95522386
+  - serializedVersion: 2
+    x: 0.3779297
+    y: 0.02238806
+    width: 0.1694336
+    height: 0.95522386
+  leafAspects:
+  - 0.66796875
+  - 0.7265625
+  - 0.6777344
+  leafFold: 0.07
+  leafForm: 1
+  leafCount: 13
+  leafSize: {x: 0.03, y: 0.022}
+  leafletPairs: 3
+  interjectedLeaflets: 0
+  trifoliateRachis: 0
+  heroLeaf: 0
+  petioleLength: 0.2
+  petioleRise: 1
+  petioleInset: 0
+  bladeLift: 0
+  strapSpread: 0
+  strapArch: 1
+  leafWidth: 0.5
+  serration: 0.07
+  teeth: 8
+  leafDroop: 0.06
+  leafTint: {r: 0.96, g: 1, b: 0.94, a: 1}
+  flowerCount: 0
+  flowerRadius: 0.07
+  flowerColor: {r: 0.98, g: 0.7, b: 0.12, a: 1}
+  flowerForm: 0
+  flowerPetals: 5
+  flowerThroat: {r: 0.95, g: 0.55, b: 0.08, a: 1}
+  flowerCentre: {r: 0.95, g: 0.78, b: 0.16, a: 1}
+  flowerCone: 0
+  flowerCluster: 1
+  flowerNod: 30
+  flowerZone: {x: 0.62, y: 0.95}
+  flowerSpike: 0
+  fruit: 5
+  fruitColors:
+  - {r: 0.82, g: 0.07, b: 0.1, a: 1}
+  - {r: 0.7, g: 0.05, b: 0.09, a: 1}
+  - {r: 0.9, g: 0.16, b: 0.12, a: 1}
+  fruitCount: 24
+  fruitDisplayScale: 1.8
+  fruitCluster: 3
+  fruitRadius: 0.0034
+  trunkHeight: 0.52
+  trunkRadius: 0.034
+  trunkCount: 1
+  trunkSplay: 12
+  branchLevels: 2
+  branchesPerLevel: 4
+  canopyRadius: 0.4
+  leavesPerTip: 70
+  canopyLeafScale: 1.8
+  barkColor: {r: 0.62, g: 0.44, b: 0.4, a: 1}

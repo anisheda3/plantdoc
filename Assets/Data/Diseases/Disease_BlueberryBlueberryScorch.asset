@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_BlueberryBlueberryScorch
+  m_EditorClassIdentifier: 
+  diseaseId: scorch
+  diseaseName: Blueberry Scorch
+  aiLabelAliases:
+  - blueberry_scorch
+  - blueberry scorch
+  pathogenType: 2
+  pathogen: Blueberry scorch virus (BlScV, a carlavirus)
+  affectedPart: 0
+  sources:
+  - 'PlantSeg (Wei et al. 2024, CC BY 4.0) class: blueberry scorch'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: A virus disease that blights blossoms and scorches the leaf edges
+    of highbush blueberry.
+  causes: Aphids carry the virus from infected bushes; it also travels in infected
+    cuttings.
+  effectOnPlant: Fruit set fails on affected branches.
+  untreatedOutcome: Infected bushes decline over a few years; the virus spreads along
+    the row.
+  symptoms:
+  - Blossoms and young leaves die suddenly at flowering
+  - Brown, scorched leaf margins
+  - Some varieties only show yellowing or red leaf edges
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  - yellowing
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: 076035414f7e6f14fb193ce39129325e, type: 2}
+  preventionPlan: {fileID: 11400000, guid: a363a640c8540d4428a9a5ead7037ccb, type: 2}
+  simulationProfile: {fileID: 11400000, guid: 5328b33c046a67f4e8e929696553c0aa, type: 2}
+  lifecycleStages:
+  - Aphids feed on an infected bush.
+  - They carry the virus to healthy bushes.
+  - At bloom, flowers and young leaves die back.
+  - Leaf edges scorch; the bush declines.
+  conditionFactors:
+  - Aphids.
+  - Infected bushes nearby.
+  - Uncertified plants.
+  - Sensitive varieties.
+  referencePhotos:
+  - {fileID: 2800000, guid: 9aa611950cfcef64a8b04905becf8007, type: 3}
+  lesionLabel: Scorched edge
+  haloLabel: Red margin
+  areaLabel: Blighted shoot

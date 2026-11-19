@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_SugarcaneSugarcaneMosaic
+  m_EditorClassIdentifier: 
+  diseaseId: mosaic
+  diseaseName: Sugarcane Mosaic
+  aiLabelAliases:
+  - sugarcane_mosaic
+  - Mosaic
+  - sugarcane mosaic
+  - Sugarcane___Mosaic
+  pathogenType: 2
+  pathogen: Sugarcane mosaic virus (SCMV) and related potyviruses
+  affectedPart: 0
+  sources:
+  - 'Sugarcane Leaf Disease Dataset (Mendeley Data) class: Mosaic, sugarcane mosaic'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: A virus disease that mottles sugarcane leaves with pale green streaks.
+  causes: Aphids spread the virus; infected seed cane (setts) carries it into new
+    fields.
+  effectOnPlant: Growth and sugar yield fall.
+  untreatedOutcome: Infected setts carry it into every new planting.
+  symptoms:
+  - Pale green to yellow streaks and patches between darker green areas
+  - Most visible at the base of young leaves
+  - Stunted canes in severe cases
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  - yellowing
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: faca1865da8347341bb601dd41e3c470, type: 2}
+  preventionPlan: {fileID: 11400000, guid: 5eb8035b1880e2e4c9bc2451fd838e82, type: 2}
+  simulationProfile: {fileID: 11400000, guid: 29acb9304edfa0b4eac40c1dc8ce5f1d, type: 2}
+  lifecycleStages:
+  - Infected setts give infected shoots.
+  - Aphids carry the virus to nearby plants.
+  - Pale streaks appear on young leaves.
+  - Infected canes are used as seed and spread it on.
+  conditionFactors:
+  - Infected seed cane.
+  - Aphids.
+  - Grass weeds.
+  - Susceptible varieties.
+  referencePhotos:
+  - {fileID: 2800000, guid: 981a6b44f93726c489d518a073621a36, type: 3}
+  lesionLabel: Pale streak
+  haloLabel: Green island
+  areaLabel: Mottled leaf

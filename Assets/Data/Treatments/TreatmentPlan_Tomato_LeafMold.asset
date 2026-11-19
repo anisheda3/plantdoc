@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5132a70f51fe6cb4ea3c7d283552eb79, type: 3}
+  m_Name: TreatmentPlan_Tomato_LeafMold
+  m_EditorClassIdentifier: 
+  treatmentId: tomato_leaf_mold_treatment
+  planName: "Tomato \u2014 Leaf Mold"
+  steps:
+  - {fileID: 11400000, guid: 49c48aef50ed81c4ead074add8ab8584, type: 2}
+  - {fileID: 11400000, guid: e5d2dfb4cadb71747a3a56b1a62bc48c, type: 2}
+  - {fileID: 11400000, guid: cc1d99c90553bc34088686fbff54b39d, type: 2}
+  residualSeverityFloor: 0.15
+  residualDamageFloor: 0.1
+  disclaimer: Educational guidance only. Treatment does not guarantee recovery. Consult
+    a local agricultural extension service for field decisions.

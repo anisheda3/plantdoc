@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5b7af7f939da314084e91933dca2790, type: 3}
+  m_Name: Plant_Corn
+  m_EditorClassIdentifier: 
+  plantId: corn
+  plantName: Corn
+  description: Zea mays (maize).
+  scientificName: Zea mays
+  healthyModel: {fileID: 0}
+  leafPrefab: {fileID: 0}
+  thumbnail: {fileID: 0}
+  species: {fileID: 11400000, guid: ce7c37c1fc24a3f41bd8c34efb6784f8, type: 2}
+  features:
+  - {fileID: 11400000, guid: e003f3da852d56644be19f05a32c1ffc, type: 2}
+  - {fileID: 11400000, guid: 3453cfa66f7c33147a75d377fe66120e, type: 2}
+  - {fileID: 11400000, guid: 384e23ede7d0591438f622176646940f, type: 2}
+  - {fileID: 11400000, guid: 427819c8c06b57045929d881917ce5ae, type: 2}
+  diseases:
+  - {fileID: 11400000, guid: 5c70dc8c68035254ca0b62bf94cd9cf8, type: 2}
+  - {fileID: 11400000, guid: 4a403c47cbd8077459a3745d7195a417, type: 2}
+  - {fileID: 11400000, guid: d584e048ad240184c9ebd48966a76e39, type: 2}
+  - {fileID: 11400000, guid: eb661f2b9a0ddc54ea331323fcae7354, type: 2}

@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5b7af7f939da314084e91933dca2790, type: 3}
+  m_Name: Plant_Carrot
+  m_EditorClassIdentifier: 
+  plantId: carrot
+  plantName: Carrot
+  description: 'Daucus carota subsp. sativus: grown for its orange taproot.'
+  scientificName: Daucus carota subsp. sativus
+  healthyModel: {fileID: 0}
+  leafPrefab: {fileID: 0}
+  thumbnail: {fileID: 0}
+  species: {fileID: 11400000, guid: 9e7360d44c032b9489476c9fbb2776a1, type: 2}
+  features:
+  - {fileID: 11400000, guid: e003f3da852d56644be19f05a32c1ffc, type: 2}
+  - {fileID: 11400000, guid: 3453cfa66f7c33147a75d377fe66120e, type: 2}
+  - {fileID: 11400000, guid: 384e23ede7d0591438f622176646940f, type: 2}
+  - {fileID: 11400000, guid: 427819c8c06b57045929d881917ce5ae, type: 2}
+  diseases:
+  - {fileID: 11400000, guid: 5a2605914f808104abd08c0a0f459960, type: 2}
+  - {fileID: 11400000, guid: 1630683ad3ecbc04f9dbf746512aa8a5, type: 2}
+  - {fileID: 11400000, guid: b91a883b422a7ea4fa3cf995b288cc70, type: 2}

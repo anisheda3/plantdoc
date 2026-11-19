@@ -1,0 +1,113 @@
+{
+ "plantId": "maple",
+ "plantName": "Maple",
+ "scientificName": "Acer pseudoplatanus",
+ "description": "Acer pseudoplatanus (sycamore maple), the main host of tar spot; also Norway maple.",
+ "diseases": [
+  {
+   "id": "tar_spot",
+   "name": "Tar Spot",
+   "type": "Fungal",
+   "part": "Leaf",
+   "pathogen": "Rhytisma acerinum",
+   "labels": [
+    "maple tar spot"
+   ],
+   "description": "A fungal leaf disease of maples that leaves raised black spots like drops of tar.",
+   "causes": "Spores from last year's fallen leaves are released in spring and infect the new leaves in wet weather.",
+   "symptoms": [
+    "Yellow-green spots appear in early summer",
+    "Raised, glossy black 'tar' spots, 1-2 cm, form in late summer",
+    "A yellow margin round the spots; some early leaf drop"
+   ],
+   "effect": "Mostly cosmetic; trees are rarely harmed.",
+   "untreated": "Heavy years cause some early leaf fall.",
+   "severityFloor": 0.15,
+   "damageFloor": 0.1,
+   "steps": [
+    {
+     "title": "Rake up fallen leaves",
+     "instruction": "Collect and compost or remove leaves in autumn.",
+     "rationale": "The fungus overwinters in them.",
+     "mode": "GrabAndRemove",
+     "days": 2,
+     "effect": "Remove",
+     "chemical": false
+    },
+    {
+     "title": "Keep the tree vigorous",
+     "instruction": "Water in drought and mulch the root area.",
+     "rationale": "Healthy trees are not harmed.",
+     "mode": "AdjustSetting",
+     "days": 3,
+     "effect": "Cultural",
+     "chemical": false
+    },
+    {
+     "title": "No spraying needed",
+     "instruction": "Fungicides are not normally needed for tar spot.",
+     "rationale": "The disease does not threaten the tree.",
+     "mode": "Informational",
+     "days": 1,
+     "effect": "Small",
+     "chemical": false
+    }
+   ],
+   "prevention": [
+    {
+     "category": "CropHygiene",
+     "title": "Remove fallen leaves each autumn",
+     "detail": "Fewer spores next spring."
+    }
+   ],
+   "look": {
+    "mask": "T_LesionMask_TarSpot",
+    "yellowMask": "T_YellowingMask",
+    "lesion": [
+     0.06,
+     0.06,
+     0.06
+    ],
+    "halo": [
+     0.86,
+     0.82,
+     0.28
+    ],
+    "yellow": [
+     0.86,
+     0.8,
+     0.3
+    ],
+    "lesions": 0.9,
+    "yellowing": 0.4,
+    "wilting": 0.4,
+    "damage": 0.3,
+    "seconds": 7.0
+   },
+   "lesionLabel": "Tar spot",
+   "haloLabel": "Yellow margin",
+   "areaLabel": "Spotted leaf",
+   "lifecycle": [
+    "The fungus overwinters in fallen leaves.",
+    "In spring, spores infect new leaves.",
+    "Yellow-green spots appear in summer.",
+    "Black tar spots form and fall with the leaves."
+   ],
+   "conditions": [
+    "Wet springs.",
+    "Fallen leaves left under the tree.",
+    "Sheltered, humid sites.",
+    "Sycamore and Norway maple."
+   ],
+   "photos": [
+    "maple_tar_spot_1"
+   ],
+   "sources": [
+    "PlantSeg (Wei et al. 2024, CC BY 4.0) class: maple tar spot",
+    "Content: general plant-pathology knowledge (APS disease compendia, university extension guides, UC IPM); not reviewed by a plant pathologist."
+   ]
+  }
+ ],
+ "aliases": [],
+ "healthyLabels": []
+}

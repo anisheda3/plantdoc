@@ -1,0 +1,39 @@
+{
+  "name": "PlantDoctor.Editor",
+  "rootNamespace": "PlantDoctor.EditorTools",
+  "references": [
+    "PlantDoctor.Runtime",
+    "Unity.TextMeshPro",
+    "UnityEngine.UI",
+    "UnityEditor.UI",
+    "Unity.InputSystem",
+    "Unity.RenderPipelines.Universal.Runtime",
+    "Unity.XR.ARFoundation",
+    "Unity.XR.ARSubsystems",
+    "Unity.XR.CoreUtils",
+    "Unity.XR.Management",
+    "Unity.XR.Management.Editor",
+    "Unity.XR.ARCore",
+    "Unity.XR.ARCore.Editor"
+  ],
+  "includePlatforms": [ "Editor" ],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [
+    {
+      "name": "com.unity.xr.arfoundation",
+      "expression": "5.0.0",
+      "define": "PLANTDOCTOR_AR_FOUNDATION"
+    },
+    {
+      "name": "com.unity.xr.arcore",
+      "expression": "5.0.0",
+      "define": "PLANTDOCTOR_ARCORE"
+    }
+  ],
+  "noEngineReferences": false
+}

@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_SoybeanSoybeanRust
+  m_EditorClassIdentifier: 
+  diseaseId: rust
+  diseaseName: Soybean Rust
+  aiLabelAliases:
+  - soybean_rust
+  - bean rust
+  pathogenType: 0
+  pathogen: Phakopsora pachyrhizi
+  affectedPart: 0
+  sources:
+  - 'PlantSeg (Wei et al. 2024, CC BY 4.0) class: bean rust'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: 'Asian soybean rust: a fast-spreading rust fungus that can strip soybean
+    fields of their leaves.'
+  causes: "Spores blow long distances on the wind; leaf wetness of 6+ hours at 15-28
+    \xB0C lets them infect. The fungus does not survive cold winters."
+  effectOnPlant: Rapid leaf loss cuts pod fill and yield.
+  untreatedOutcome: Unchecked epidemics can cause heavy yield losses.
+  symptoms:
+  - Small tan to red-brown spots, starting on the lower leaves
+  - Volcano-shaped pustules on the underside releasing tan spores
+  - Leaves yellow and drop early
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  - yellowing
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: 013d6464e6bdbac43a2822941092eb4d, type: 2}
+  preventionPlan: {fileID: 11400000, guid: cbd9f284016e49f4686462074acc18f4, type: 2}
+  simulationProfile: {fileID: 11400000, guid: 75424a2fd70a2054ab33b059da73d959, type: 2}
+  lifecycleStages:
+  - Spores blow in from warmer regions.
+  - They infect leaves wet for several hours.
+  - Tan lesions with pustules form underneath.
+  - Millions of new spores spread up the field.
+  conditionFactors:
+  - Long leaf wetness.
+  - "15-28 \xB0C."
+  - Spores arriving on the wind.
+  - Dense canopy at flowering.
+  referencePhotos:
+  - {fileID: 2800000, guid: fd0ea5ad57fc8cf4d9d9d47def9c0505, type: 3}
+  lesionLabel: Rust lesion
+  haloLabel: Tan pustule
+  areaLabel: Yellowing leaf

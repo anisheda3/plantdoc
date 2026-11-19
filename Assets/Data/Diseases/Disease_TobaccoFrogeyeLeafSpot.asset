@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_TobaccoFrogeyeLeafSpot
+  m_EditorClassIdentifier: 
+  diseaseId: frogeye_leaf_spot
+  diseaseName: Frogeye Leaf Spot
+  aiLabelAliases:
+  - tobacco_frogeye_leaf_spot
+  - tobacco frogeye leaf spot
+  pathogenType: 0
+  pathogen: Cercospora nicotianae
+  affectedPart: 0
+  sources:
+  - 'PlantSeg (Wei et al. 2024, CC BY 4.0) class: tobacco frogeye leaf spot'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: A fungal leaf spot of tobacco with small white-centred spots.
+  causes: Spores spread by wind and rain from debris and infected leaves in warm,
+    humid weather.
+  effectOnPlant: Spotted leaves lose value.
+  untreatedOutcome: Heavy spotting cuts yield and quality.
+  symptoms:
+  - Small round spots with white to grey centres
+  - A brown border round each spot
+  - Many spots on mature lower leaves
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: e266561ddb6d4274296130186ae81f77, type: 2}
+  preventionPlan: {fileID: 11400000, guid: 00dc73c9f3c185949aae02531267c323, type: 2}
+  simulationProfile: {fileID: 11400000, guid: f5a3dbe9adda1d948be446e1d0cf4490, type: 2}
+  lifecycleStages:
+  - The fungus survives on debris.
+  - Spores spread in warm, humid weather.
+  - White-centred spots form on ripe leaves.
+  - New spores spread up the plant.
+  conditionFactors:
+  - Warm, humid weather.
+  - Mature leaves.
+  - Dense planting.
+  - Debris in the field.
+  referencePhotos: []
+  lesionLabel: White centre
+  haloLabel: Brown border
+  areaLabel: Spotted leaf

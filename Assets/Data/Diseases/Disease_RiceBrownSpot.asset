@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2925bd0c6a5ea9a4fbbc9ab434791dc5, type: 3}
+  m_Name: Disease_RiceBrownSpot
+  m_EditorClassIdentifier: 
+  diseaseId: brown_spot
+  diseaseName: Brown Spot
+  aiLabelAliases:
+  - rice_brown_spot
+  - Rice___Brown_spot
+  - rice brown spot
+  - Brown spot
+  pathogenType: 0
+  pathogen: Bipolaris oryzae (Cochliobolus miyabeanus)
+  affectedPart: 0
+  sources:
+  - 'CropScan XR model class: Rice___Brown_spot, rice brown spot, Brown spot'
+  - 'Content: general plant-pathology knowledge (APS disease compendia, university
+    extension guides, UC IPM); not reviewed by a plant pathologist.'
+  description: A fungal leaf spot of rice that is worst in poor, nutrient-short soils;
+    it caused the 1943 Bengal famine.
+  causes: The fungus comes in on seed and debris; spores spread by wind in warm,
+    humid weather, mostly on stressed, poorly fed rice.
+  effectOnPlant: Spotted leaves and grain cut yield and quality.
+  untreatedOutcome: Severe on poor soils, where it can destroy much of the crop.
+  symptoms:
+  - Oval, brown spots the size of a sesame seed, with grey centres
+  - A yellow halo round older spots
+  - Spots on the grain husks; discoloured, light grain
+  supportingFeatureIds:
+  - leaf_spots
+  - leaf_color
+  - yellowing
+  moderateSeverityThreshold: 0.35
+  severeSeverityThreshold: 0.7
+  treatmentPlan: {fileID: 11400000, guid: 3f8f0273380e94d4594c52586fb28e78, type: 2}
+  preventionPlan: {fileID: 11400000, guid: 8071b7a13f6669e4dae06b7afb2d5ece, type: 2}
+  simulationProfile: {fileID: 11400000, guid: 271d0e888c073464c98d3634c309130b, type: 2}
+  lifecycleStages:
+  - The fungus survives on seed and debris.
+  - Wind carries spores to the leaves.
+  - Oval brown spots form, most on stressed plants.
+  - Spots on the grain carry it to the next crop.
+  conditionFactors:
+  - Poor, nutrient-short soils.
+  - Warm, humid weather.
+  - Drought stress.
+  - Infected seed.
+  referencePhotos:
+  - {fileID: 2800000, guid: 388fd27ea714cdd48a4df68c52c58cce, type: 3}
+  lesionLabel: Brown spot
+  haloLabel: Yellow halo
+  areaLabel: Spotted leaf

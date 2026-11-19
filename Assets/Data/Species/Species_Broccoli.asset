@@ -1,0 +1,105 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bdf586ed54df4c4bb04bad3c2a44bdc, type: 3}
+  m_Name: Species_Broccoli
+  m_EditorClassIdentifier: 
+  speciesId: broccoli
+  displayName: Broccoli
+  archetype: 2
+  seed: 229
+  height: 0.75
+  inPot: 0
+  potColor: {r: 0.72, g: 0.38, b: 0.24, a: 1}
+  rootCount: 12
+  rootSpread: 0.3
+  rootRadius: 0.007
+  rootTint: {r: 1, g: 1, b: 1, a: 1}
+  moundRadius: 0.1
+  moundHeight: 0.04
+  rootHairs: 1
+  rootNodules: 0
+  braceRoots: 0
+  mainStems: 1
+  stemSplay: 0
+  sideBranches: 2
+  firstLeafHeight: 0.12
+  stemRadius: 0.02
+  stemColor: {r: 0.62, g: 0.72, b: 0.56, a: 1}
+  stemLean: 0.03
+  crownHeight: 0.34
+  woodyStems: 0
+  oppositeLeaves: 0
+  stalkShare: 0.86
+  grassTassel: 0
+  leafAtlas: {fileID: 2800000, guid: 30664b7b999ba7b429c086e50dd21216, type: 3}
+  leafRects:
+  - serializedVersion: 2
+    x: 0.005859375
+    y: 0.02238806
+    width: 0.12695312
+    height: 0.95522386
+  - serializedVersion: 2
+    x: 0.14453125
+    y: 0.02238806
+    width: 0.12695312
+    height: 0.95522386
+  leafAspects:
+  - 0.5078125
+  - 0.5078125
+  leafFold: 0.06
+  leafForm: 1
+  leafCount: 14
+  leafSize: {x: 0.6, y: 0.38}
+  leafletPairs: 3
+  interjectedLeaflets: 0
+  trifoliateRachis: 0
+  heroLeaf: 0
+  petioleLength: 0.5
+  petioleRise: 0.72
+  petioleInset: 0
+  bladeLift: 0
+  strapSpread: 0
+  strapArch: 1
+  leafWidth: 0.5
+  serration: 0.07
+  teeth: 8
+  leafDroop: 0.1
+  leafTint: {r: 0.86, g: 0.96, b: 0.98, a: 1}
+  flowerCount: 0
+  flowerRadius: 0.07
+  flowerColor: {r: 0.98, g: 0.7, b: 0.12, a: 1}
+  flowerForm: 0
+  flowerPetals: 5
+  flowerThroat: {r: 0.95, g: 0.55, b: 0.08, a: 1}
+  flowerCentre: {r: 0.95, g: 0.78, b: 0.16, a: 1}
+  flowerCone: 0
+  flowerCluster: 1
+  flowerNod: 30
+  flowerZone: {x: 0.62, y: 0.95}
+  flowerSpike: 0
+  fruit: 18
+  fruitColors:
+  - {r: 0.2, g: 0.36, b: 0.17, a: 1}
+  fruitCount: 1
+  fruitDisplayScale: 1
+  fruitCluster: 1
+  fruitRadius: 0.085
+  trunkHeight: 0.55
+  trunkRadius: 0.04
+  trunkCount: 1
+  trunkSplay: 12
+  branchLevels: 2
+  branchesPerLevel: 4
+  canopyRadius: 0.45
+  leavesPerTip: 8
+  canopyLeafScale: 1
+  barkColor: {r: 0.36, g: 0.27, b: 0.2, a: 1}
